@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services(HTML-Bootstrap)</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+   Name:  Services 1
+-->
+    <style>
+      .ezy__service1 {
+        /* Bootstrap variables */
+        --bs-body-color: #2b323c;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__service1 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__service1,
+      .ezy__service1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__service1,
+      .ezy__service1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__service1,
+      .ezy__service1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__service1-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__service1-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__service1-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      .ezy__service1-card [class*="col-"]:nth-of-type(1n) .ezy__service1-icon {
+        background-color: rgba(252, 110, 92, 0.1);
+        color: rgba(252, 110, 92, 1);
+      }
+
+      .ezy__service1-card [class*="col-"]:nth-of-type(2n) .ezy__service1-icon {
+        background-color: rgba(4, 121, 193, 0.1);
+        color: rgba(4, 121, 193, 1);
+      }
+
+      .ezy__service1-card [class*="col-"]:nth-of-type(3n) .ezy__service1-icon {
+        background-color: rgba(255, 214, 0, 0.1);
+        color: rgba(255, 214, 0, 1);
+      }
+
+      .ezy__service1-icon {
+        width: 74px;
+        height: 74px;
+        border-radius: 10px;
+        font-size: 32px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ezy__service1-title {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__service1-content {
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__service1">
+      <div class="container">
+        <div class="row justify-content-center mb-4 mb-sm-5">
+          <div class="col-lg-6 text-center">
+            <h2 class="ezy__service1-heading mb-4">Our Services</h2>
+            <p class="ezy__service1-sub-heading mb-4">
+              It’s no secret that the digital industry is booming. From exciting Viverra tellus startups to global
+              brands.
+            </p>
+          </div>
+        </div>
+        <div class="row ezy__service1-card">
+          <div class="col-md-4">
+            <div class="p-xl-4">
+              <div class="ezy__service1-icon mb-4"><i class="fas fa-cannabis"></i></div>
+              <h4 class="ezy__service1-title fs-4 mb-3">Product Design</h4>
+              <p class="ezy__service1-content mb-0">
+                Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid
+                blanditiis eligendi qui.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5 mt-md-0">
+            <div class="p-xl-4">
+              <div class="ezy__service1-icon mb-4"><i class="fas fa-random"></i></div>
+              <h4 class="ezy__service1-title fs-4 mb-3">Content Marketing</h4>
+              <p class="ezy__service1-content mb-0">
+                More off this less hello salamander lied porpoise much over tightly circa horse taped.Some quick example
+                text to build.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5 mt-md-0">
+            <div class="p-xl-4">
+              <div class="ezy__service1-icon mb-4"><i class="fas fa-camera"></i></div>
+              <h4 class="ezy__service1-title fs-4 mb-3">Digital Strategy</h4>
+              <p class="ezy__service1-content mb-0">
+                Vitae bibendum egestas magna sit elit non. Netus volutpat felis Orci commodo mauris digital industry is
+                booming adipiscing semper amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  Services 2
+-->
+    <style>
+      .ezy__service2 {
+        /* Bootstrap variables */
+        --bs-body-color: #2b323c;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 8px 44px rgba(227, 238, 255, 0.48);
+
+        background: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__service2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__service2,
+      .ezy__service2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #fff;
+        --ezy-item-shadow: 0px 8px 44px rgba(182, 198, 222, 0.48);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__service2,
+      .ezy__service2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #25313f;
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__service2,
+      .ezy__service2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #162231;
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__service2-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__service2-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__service2-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      .ezy__service2-item {
+        background-color: var(--ezy-item-bg);
+        box-shadow: var(--ezy-item-shadow);
+        border-radius: 20px;
+        height: 100%;
+        border: none;
+      }
+
+      .ezy__service2-card [class*="col-"]:nth-of-type(1n) .ezy__service2-icon {
+        background-color: rgba(252, 110, 92, 0.1);
+        color: rgba(252, 110, 92, 1);
+      }
+
+      .ezy__service2-card [class*="col-"]:nth-of-type(2n) .ezy__service2-icon {
+        background-color: rgba(4, 121, 193, 0.1);
+        color: rgba(4, 121, 193, 1);
+      }
+
+      .ezy__service2-card [class*="col-"]:nth-of-type(3n) .ezy__service2-icon {
+        background-color: rgba(255, 214, 0, 0.1);
+        color: rgba(255, 214, 0, 1);
+      }
+
+      .ezy__service2-icon {
+        width: 94px;
+        height: 94px;
+        border-radius: 50%;
+        font-size: 32px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ezy__service2-title {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__service2-content {
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__service2">
+      <div class="container">
+        <div class="row justify-content-center mb-md-5">
+          <div class="col-lg-6 text-center">
+            <h2 class="ezy__service2-heading mb-4">Services We Provide</h2>
+            <p class="ezy__service2-sub-heading mb-0">
+              Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis
+              eligendi qui.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center ezy__service2-card">
+          <div class="col-md-4 mt-5 mt-md-0">
+            <div class="card ezy__service2-item">
+              <div class="card-body px-lg-4 py-lg-5">
+                <div class="ezy__service2-icon mb-4"><i class="fas fa-cannabis"></i></div>
+                <h4 class="ezy__service2-title fs-4 mb-3">Branding</h4>
+                <p class="ezy__service2-content mb-0">
+                  Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid
+                  blanditiis eligendi qui.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5 mt-md-0">
+            <div class="card ezy__service2-item">
+              <div class="card-body px-lg-4 py-lg-5">
+                <div class="ezy__service2-icon mb-4"><i class="fas fa-random"></i></div>
+                <h4 class="ezy__service2-title fs-4 mb-3">Content Writing</h4>
+                <p class="ezy__service2-content mb-0">
+                  It’s easier to reach yours have the right savings account. It’s easier to reach your savings goals
+                  when you have the right savings account
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5 mt-md-0">
+            <div class="card ezy__service2-item">
+              <div class="card-body px-lg-4 py-lg-5">
+                <div class="ezy__service2-icon mb-4"><i class="fas fa-camera"></i></div>
+                <h4 class="ezy__service2-title fs-4 mb-3">Web Development</h4>
+                <p class="ezy__service2-content mb-0">
+                  Sed ut in perspiciatis unde omnis iste natus error sit on i tatem accusantium doloremque laudantium,
+                  totam rem aperiam, eaque ipsa quae.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  Services 3
+-->
+    <style>
+      .ezy__service3 {
+        /* Bootstrap variables */
+        --bs-body-color: #2b323c;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 8px 44px rgba(227, 238, 255, 0.48);
+        background: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__service3 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__service3,
+      .ezy__service3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #fff;
+        --ezy-item-shadow: 0px 8px 44px rgba(182, 198, 222, 0.48);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__service3,
+      .ezy__service3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #344150;
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__service3,
+      .ezy__service3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(22, 34, 49);
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__service3-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__service3-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__service3-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      .ezy__service3-item {
+        background-color: var(--ezy-item-bg);
+        box-shadow: var(--ezy-item-shadow);
+        border-radius: 20px;
+        border: none;
+      }
+
+      .ezy__service3-card [class*="col-"]:nth-of-type(1n) .ezy__service3-icon {
+        color: #ffffff;
+        background-color: rgba(252, 110, 92, 1);
+      }
+
+      .ezy__service3-card [class*="col-"]:nth-of-type(2n) .ezy__service3-icon {
+        color: #ffffff;
+        background-color: rgba(4, 121, 193, 1);
+      }
+
+      .ezy__service3-card [class*="col-"]:nth-of-type(3n) .ezy__service3-icon {
+        color: #ffffff;
+        background-color: rgba(255, 214, 0, 1);
+      }
+
+      .ezy__service3-icon {
+        width: 94px;
+        height: 94px;
+        border-radius: 50%;
+        font-size: 32px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -48px;
+      }
+
+      .ezy__service3-title {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__service3-content {
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__service3">
+      <div class="container">
+        <div class="row justify-content-center mb-md-4">
+          <div class="col-lg-6 text-center">
+            <h2 class="ezy__service3-heading mb-4">What We Do</h2>
+            <p class="ezy__service3-sub-heading mb-0">
+              Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis
+              eligendi qui.
+            </p>
+          </div>
+        </div>
+        <div class="row ezy__service3-card">
+          <div class="col-md-4 mt-5">
+            <div class="card ezy__service3-item mt-5">
+              <div class="ezy__service3-icon"><i class="fas fa-cannabis"></i></div>
+              <div class="card-body px-lg-4 pt-4 pb-lg-5">
+                <h4 class="ezy__service3-title fs-4 mb-3">SEO Analysis</h4>
+                <p class="ezy__service3-content mb-0">
+                  It’s easier to reach yours have the right savings account. It’s easier to reach your savings goals
+                  when you have the right savings account.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5">
+            <div class="card ezy__service3-item mt-5">
+              <div class="ezy__service3-icon"><i class="fas fa-random"></i></div>
+              <div class="card-body px-lg-4 pt-4 pb-lg-5">
+                <h4 class="ezy__service3-title fs-4 mb-3">Content Marketing</h4>
+                <p class="ezy__service3-content mb-0">
+                  Sed ut in perspiciatis unde omnis iste natus error sit on i tatem accusantium doloremque laudantium,
+                  totam rem aperiam, eaque ipsa quae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5">
+            <div class="card ezy__service3-item mt-5">
+              <div class="ezy__service3-icon"><i class="fas fa-camera"></i></div>
+              <div class="card-body px-lg-4 pt-4 pb-lg-5">
+                <h4 class="ezy__service3-title fs-4 mb-3">Photography</h4>
+                <p class="ezy__service3-content mb-0">
+                  Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid
+                  blanditiis eligendi qui.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  Services 4
+-->
+    <style>
+      .ezy__service4 {
+        /* Bootstrap variables */
+        --bs-body-color: #2b323c;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__service4 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__service4,
+      .ezy__service4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__service4,
+      .ezy__service4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__service4,
+      .ezy__service4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__service4-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__service4-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__service4-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      .ezy__service4-item {
+        background-color: transparent;
+        box-shadow: var(--ezy-item-shadow);
+        border-radius: 20px;
+        height: 100%;
+        border: none;
+      }
+
+      .ezy__service4-card [class*="col-"]:nth-of-type(1n) .ezy__service4-icon {
+        color: rgba(252, 110, 92, 1);
+      }
+
+      .ezy__service4-card [class*="col-"]:nth-of-type(2n) .ezy__service4-icon {
+        color: rgba(4, 121, 193, 1);
+      }
+
+      .ezy__service4-card [class*="col-"]:nth-of-type(3n) .ezy__service4-icon {
+        color: rgba(255, 214, 0, 1);
+      }
+
+      .ezy__service4-icon {
+        font-size: 32px;
+      }
+
+      .ezy__service4-title {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__service4-content {
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__service4">
+      <div class="container">
+        <div class="row justify-content-center mb-md-5">
+          <div class="col-lg-6 text-center">
+            <h2 class="ezy__service4-heading mb-4">Our Services</h2>
+            <p class="ezy__service4-sub-heading mb-0">
+              Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis
+              eligendi qui.
+            </p>
+          </div>
+        </div>
+        <div class="row ezy__service4-card">
+          <div class="col-md-4 mt-5 mt-md-0">
+            <div class="card ezy__service4-item">
+              <div class="card-body px-lg-4 py-lg-5">
+                <div class="ezy__service4-icon mb-4"><i class="fas fa-cannabis"></i></div>
+                <h4 class="ezy__service4-title fs-4 mb-3">Product Design</h4>
+                <p class="ezy__service4-content mb-0">
+                  More off this less hello salamander lied porpoise much over tightly circa horse taped.Some quick
+                  example text to build.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5 mt-md-0">
+            <div class="card ezy__service4-item">
+              <div class="card-body px-lg-4 py-lg-5">
+                <div class="ezy__service4-icon mb-4"><i class="fas fa-random"></i></div>
+                <h4 class="ezy__service4-title fs-4 mb-3">Content Marketing</h4>
+                <p class="ezy__service4-content mb-0">
+                  It’s easier to reach yours have the right savings account. It’s easier to reach your savings goals
+                  when you have the right savings account.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5 mt-md-0">
+            <div class="card ezy__service4-item">
+              <div class="card-body px-lg-4 py-lg-5">
+                <div class="ezy__service4-icon mb-4"><i class="fas fa-camera"></i></div>
+                <h4 class="ezy__service4-title fs-4 mb-3">Digital Strategy</h4>
+                <p class="ezy__service4-content mb-0">
+                  Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid
+                  blanditiis eligendi qui.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  Services 5
+-->
+    <style>
+      .ezy__service5 {
+        /* Bootstrap variables */
+        --bs-body-color: #2b323c;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-list-bg: #ffffff;
+        --ezy-list-shadow: 0px 8px 44px rgba(227, 238, 255, 0.48);
+        --ezy-card-bg: #f2f6fe;
+        --ezy-card-shadow: 0px 8px 44px rgba(227, 238, 255, 0.48);
+
+        background: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__service5 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__service5,
+      .ezy__service5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-list-bg: #fff;
+        --ezy-list-shadow: 0px 8px 44px rgba(203, 224, 250, 0.48);
+        --ezy-card-bg: #dde7fb;
+        --ezy-card-shadow: 0px 8px 44px rgba(203, 224, 255, 0.48);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__service5,
+      .ezy__service5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-list-bg: #313d4b;
+        --ezy-list-shadow: none;
+        --ezy-card-bg: #2a3749;
+        --ezy-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__service5,
+      .ezy__service5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-list-bg: #162231;
+        --ezy-list-shadow: none;
+        --ezy-card-bg: #121d2c;
+        --ezy-card-shadow: none;
+      }
+
+      .ezy__service5-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__service5-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__service5-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      .ezy__service5-list {
+        background-color: var(--ezy-list-bg);
+        box-shadow: var(--ezy-list-shadow);
+        border-radius: 30px;
+      }
+
+      .ezy__service5-card {
+        background-color: transparent;
+        border-radius: 20px;
+        height: 100%;
+        border: none;
+        transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
+      }
+
+      .ezy__service5-card:hover,
+      .ezy__service5-card.active {
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+        transform: translateY(-4px);
+      }
+
+      .ezy__service5-card [class*="col-"]:nth-of-type(1n) .ezy__service5-icon {
+        background-color: rgba(252, 110, 92, 0.1);
+        color: rgba(252, 110, 92, 1);
+      }
+
+      .ezy__service5-card [class*="col-"]:nth-of-type(2n) .ezy__service5-icon {
+        background-color: rgba(4, 121, 193, 0.1);
+        color: rgba(4, 121, 193, 1);
+      }
+
+      .ezy__service5-card [class*="col-"]:nth-of-type(3n) .ezy__service5-icon {
+        background-color: rgba(255, 214, 0, 0.1);
+        color: rgba(255, 214, 0, 1);
+      }
+
+      .ezy__service5-icon {
+        font-size: 32px;
+      }
+
+      .ezy__service5-title {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__service5-content {
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__service5">
+      <div class="container">
+        <div class="row justify-content-center mb-md-5">
+          <div class="col-lg-6 text-center">
+            <h2 class="ezy__service5-heading mb-4">Our Sectors of Work</h2>
+            <p class="ezy__service5-sub-heading mb-0">
+              Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis
+              eligendi qui.
+            </p>
+          </div>
+        </div>
+        <div class="ezy__service5-list text-center p-3">
+          <div class="row">
+            <div class="col-md-4 mt-5 mt-md-0">
+              <div class="card ezy__service5-card">
+                <div class="card-body px-lg-4 py-lg-5">
+                  <img
+                    class="ezy__service5-icon mb-4"
+                    src="https://cdn.easyfrontend.com/pictures/services/service_illustration_1.svg"
+                    width="150"
+                  />
+                  <h4 class="ezy__service5-title fs-4 mb-3">Web Design</h4>
+                  <p class="ezy__service5-content mb-0">
+                    It’s easier to reach yours have the right savings account. It’s easier to reach your savings goals
+                    when you have the right savings account
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-5 mt-md-0">
+              <div class="card ezy__service5-card active">
+                <div class="card-body px-lg-4 py-lg-5">
+                  <img
+                    class="ezy__service5-icon mb-4"
+                    src="https://cdn.easyfrontend.com/pictures/services/service_illustration_3.svg"
+                    width="150"
+                  />
+                  <h4 class="ezy__service5-title fs-4 mb-3">Product Rise</h4>
+                  <p class="ezy__service5-content mb-0">
+                    Sed ut in perspiciatis unde omnis iste natus error sit on i tatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-5 mt-md-0">
+              <div class="card ezy__service5-card">
+                <div class="card-body px-lg-4 py-lg-5">
+                  <img
+                    class="ezy__service5-icon mb-4"
+                    src="https://cdn.easyfrontend.com/pictures/services/service_illustration_2.svg"
+                    width="150"
+                  />
+                  <h4 class="ezy__service5-title fs-4 mb-3">Data Managment</h4>
+                  <p class="ezy__service5-content mb-0">
+                    Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid
+                    blanditiis eligendi qui.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+    Name: Product Cart 1
+-->
+    <style>
+      .ezy__epcart1 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 235, 235, 235;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #f5f7fd;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+        position: relative;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart1 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epcart1,
+      .ezy__epcart1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 230, 232, 236;
+        --ezy-card-bg: rgb(255, 255, 255);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epcart1,
+      .ezy__epcart1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 38, 63, 99;
+        --ezy-card-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epcart1,
+      .ezy__epcart1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 38, 63, 99;
+        --ezy-card-bg: rgb(30, 39, 53);
+      }
+
+      .ezy__epcart1-heading a {
+        font-size: 16px;
+        line-height: 18px;
+        color: var(--bs-body-color);
+        text-decoration: none;
+      }
+
+      .ezy__epcart1-heading a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart1-heading a {
+          font-size: 17px;
+          line-height: 19px;
+        }
+      }
+
+      .ezy__epcart1-price {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(var(--ezy-theme-color-rgb));
+      }
+
+      .ezy__epcart1-title {
+        font-size: 15px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epcart1-image {
+        min-width: 50px;
+        width: 50px;
+        height: auto;
+        background-color: rgb(var(--ezy-secondary-color-rgb));
+        border: 1px solid rgba(var(--ezy-secondary-color-rgb), 1);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart1-image {
+          min-width: 120px;
+          width: 120px;
+        }
+      }
+
+      .ezy__epcart1-qty {
+        width: 144px;
+      }
+
+      .ezy__epcart1-qty .btn {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(var(--ezy-theme-color-rgb));
+      }
+
+      .ezy__epcart1-qty .btn:hover {
+        background-color: rgb(var(--ezy-secondary-color-rgb));
+      }
+
+      .ezy__epcart1-qty .btn:first-child {
+        border-radius: 50rem 0 0 50rem !important;
+      }
+
+      .ezy__epcart1-qty .btn:last-child {
+        border-radius: 0 50rem 50rem 0 !important;
+      }
+
+      .ezy__epcart1-qty .form-control {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        background-color: transparent;
+        color: var(--bs-body-color);
+        padding: 0;
+      }
+
+      .ezy__epcart1-qty .btn,
+      .ezy__epcart1-qty .form-control {
+        border-color: rgb(var(--ezy-secondary-color-rgb));
+        height: 40px;
+      }
+
+      .ezy__epcart1-btn {
+        font-size: 14px;
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+        height: 42px;
+        min-width: 42px;
+      }
+
+      .ezy__epcart1-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: var(--ezy-button-color);
+      }
+
+      .ezy__epcart1-del {
+        width: 38px;
+        height: 38px;
+        background-color: rgba(var(--ezy-secondary-color-rgb), 1);
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epcart1-del:hover {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epcart1-card {
+        background-color: var(--ezy-card-bg);
+        border: none;
+        border-radius: 10px;
+      }
+
+      .ezy__epcart1-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb));
+        opacity: 1;
+      }
+
+      .ezy__epcart1-content {
+        color: var(--bs-body-color);
+        opacity: 0.7;
+      }
+    </style>
+    <section class="ezy__epcart1" id="ezy__epcart1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="card ezy__epcart1-card mb-3">
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart1-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio17.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart1-heading mb-3">
+                    <a href="#!">
+                      Luxury Black Matte Paint Custom Laser Logo Square Wooden Gift Box Watch Men for your Luxury Brand
+                      Heren Horloge
+                    </a>
+                  </div>
+                  <div>
+                    <h3 class="ezy__epcart1-price mb-0">Rs. 11,328</h3>
+                    <div class="input-group ezy__epcart1-qty mt-3">
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">-</button>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="1"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">+</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn ezy__epcart1-del d-inline-flex align-items-center rounded-circle">
+                    <i class="fas fa-trash-alt fs-6"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card ezy__epcart1-card mb-3">
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart1-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio3.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart1-heading mb-3">
+                    <a href="#!">
+                      Iron Handle 60 90 Sheets Clothes Pet Dog Cat Hair Adhesive Sticky Lint. Storage Welded Nesting
+                      Metal Foldable Logistics Steel Wire Mesh
+                    </a>
+                  </div>
+                  <div>
+                    <h3 class="ezy__epcart1-price mb-0">Rs. 5,411</h3>
+
+                    <div class="input-group ezy__epcart1-qty mt-3">
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">-</button>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="5"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">+</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn ezy__epcart1-del d-inline-flex align-items-center rounded-circle">
+                    <i class="fas fa-trash-alt fs-6"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card ezy__epcart1-card mb-3">
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart1-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio13.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart1-heading mb-3">
+                    <a href="#!">
+                      2022 Europe And America Hot Sell Stainless Steel Hot Sell Spoon Gift Coffee Stir Spoon Gold-plated
+                      Dessert Spoon
+                    </a>
+                  </div>
+                  <div>
+                    <h3 class="ezy__epcart1-price mb-0">Rs. 21,345</h3>
+
+                    <div class="input-group ezy__epcart1-qty mt-3">
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">-</button>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="3"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">+</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn ezy__epcart1-del d-inline-flex align-items-center rounded-circle">
+                    <i class="fas fa-trash-alt fs-6"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card ezy__epcart1-card mb-3">
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart1-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart1-heading mb-3">
+                    <a href="#!">
+                      3150A Withdrawable Type Indoor AC High Voltage Vacuum Circuit Breaker High Quality With
+                      Professional Manufacturer
+                    </a>
+                  </div>
+                  <div>
+                    <h3 class="ezy__epcart1-price mb-0">Rs. 27,351</h3>
+
+                    <div class="input-group ezy__epcart1-qty mt-3">
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">-</button>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="4"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">+</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn ezy__epcart1-del d-inline-flex align-items-center rounded-circle">
+                    <i class="fas fa-trash-alt fs-6"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card ezy__epcart1-card sticky-top">
+              <div class="card-body p-md-4">
+                <h6 class="mb-4 opacity-75">Order Summary</h6>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Sub total</span>
+                  <span class="fw-bold">$2099</span>
+                </div>
+                <hr class="ezy__epcart1-hr" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Shipping Fee</span>
+                  <span class="fw-bold">$99</span>
+                </div>
+                <hr class="ezy__epcart1-hr" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Tax</span>
+                  <span class="fw-bold">$168</span>
+                </div>
+                <hr class="ezy__epcart1-hr" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fs-5 fw-bold">Total</span>
+                  <span class="fw-bold">$2238</span>
+                </div>
+              </div>
+              <div class="card-body px-md-4 pb-md-4">
+                <button class="btn ezy__epcart1-btn w-100">BUY (13)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Product Cart 2
+-->
+    <style>
+      .ezy__epcart2 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 235, 235, 235;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #f5f7fd;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+        position: relative;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epcart2,
+      .ezy__epcart2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 230, 232, 236;
+        --ezy-card-bg: rgb(255, 255, 255);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epcart2,
+      .ezy__epcart2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 38, 63, 99;
+        --ezy-card-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epcart2,
+      .ezy__epcart2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 38, 63, 99;
+        --ezy-card-bg: rgb(30, 39, 53);
+      }
+
+      .ezy__epcart2-heading a {
+        font-size: 16px;
+        line-height: 18px;
+        color: var(--bs-body-color);
+        text-decoration: none;
+      }
+
+      .ezy__epcart2-heading a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart2-heading a {
+          font-size: 17px;
+          line-height: 19px;
+        }
+      }
+
+      .ezy__epcart2-price {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(var(--ezy-theme-color-rgb));
+      }
+
+      .ezy__epcart2-title {
+        font-size: 15px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epcart2-image {
+        min-width: 50px;
+        width: 50px;
+        height: auto;
+        background-color: rgb(var(--ezy-secondary-color-rgb));
+        border: 1px solid rgba(var(--ezy-secondary-color-rgb), 1);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart2-image {
+          min-width: 120px;
+          width: 120px;
+        }
+      }
+
+      .ezy__epcart2-qty {
+        width: 144px;
+      }
+
+      .ezy__epcart2-qty .btn {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(var(--ezy-theme-color-rgb));
+        background-color: transparent;
+      }
+
+      .ezy__epcart2-qty .btn:hover {
+        background-color: rgb(var(--ezy-secondary-color-rgb));
+      }
+
+      .ezy__epcart2-qty .btn:first-child {
+        border-radius: 50rem 0 0 50rem !important;
+      }
+
+      .ezy__epcart2-qty .btn:last-child {
+        border-radius: 0 50rem 50rem 0 !important;
+      }
+
+      .ezy__epcart2-qty .form-control {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        background-color: transparent;
+        color: var(--bs-body-color);
+        padding: 0;
+      }
+
+      .ezy__epcart2-qty .btn,
+      .ezy__epcart2-qty .form-control {
+        border-color: rgb(var(--ezy-secondary-color-rgb));
+        height: 40px;
+      }
+
+      .ezy__epcart2-btn {
+        font-size: 14px;
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+        height: 42px;
+        min-width: 42px;
+      }
+
+      .ezy__epcart2-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: var(--ezy-button-color);
+      }
+
+      .ezy__epcart2-del {
+        width: 38px;
+        height: 38px;
+        background-color: rgba(var(--ezy-secondary-color-rgb), 1);
+        border: none;
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epcart2-del:hover {
+        border: none;
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epcart2-card {
+        background-color: var(--ezy-card-bg);
+        border: none;
+        border-radius: 10px;
+      }
+
+      .ezy__epcart2-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb));
+        opacity: 1;
+      }
+
+      .ezy__epcart2-content {
+        color: var(--bs-body-color);
+        opacity: 0.7;
+      }
+    </style>
+    <section class="ezy__epcart2" id="ezy__epcart2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="card ezy__epcart2-card mb-3">
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart2-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio14.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart2-heading mb-3">
+                    <a href="#!">
+                      ABUK Home Appliance Surge Protector Voltage Brownout Plug Outlet Power Strip Surge Protector With
+                      Pass Button
+                    </a>
+                  </div>
+                  <div>
+                    <h3 class="ezy__epcart2-price mb-0">Rs. 158</h3>
+                    <div class="input-group ezy__epcart2-qty mt-3">
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">-</button>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="2"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">+</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn ezy__epcart2-del d-inline-flex align-items-center rounded-circle">
+                    <i class="fas fa-trash-alt fs-6"></i>
+                  </button>
+                </div>
+              </div>
+              <hr class="ezy__epcart2-hr my-0" />
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart2-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio20.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart2-heading mb-3">
+                    <a href="#!">
+                      Forsining 3d Logo Design Hollow Engraving Black Gold Case Leather Skeleton Mechanical Watches Men
+                      Luxury Brand Heren Horloge
+                    </a>
+                  </div>
+                  <div>
+                    <h3 class="ezy__epcart2-price mb-0">Rs. 7,390</h3>
+
+                    <div class="input-group ezy__epcart2-qty mt-3">
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">-</button>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="2"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">+</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn ezy__epcart2-del d-inline-flex align-items-center rounded-circle">
+                    <i class="fas fa-trash-alt fs-6"></i>
+                  </button>
+                </div>
+              </div>
+              <hr class="ezy__epcart2-hr my-0" />
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart2-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio19.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart2-heading mb-3">
+                    <a href="#!">
+                      Factory Brand Wholesale 5# Zinc Accessories Custom Hook Slider Metal #5 For Clothing garment
+                      jacket
+                    </a>
+                  </div>
+                  <div>
+                    <h3 class="ezy__epcart2-price mb-0">Rs. 21,452</h3>
+
+                    <div class="input-group ezy__epcart2-qty mt-3">
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">-</button>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="2"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">+</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn ezy__epcart2-del d-inline-flex align-items-center rounded-circle">
+                    <i class="fas fa-trash-alt fs-6"></i>
+                  </button>
+                </div>
+              </div>
+              <hr class="ezy__epcart2-hr my-0" />
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart2-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio15.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart2-heading mb-3">
+                    <a href="#!">
+                      Factory Direct Sales Stainless Steel Heat Resistant Custom Compression Spring Manufacturer Spring
+                      Steel
+                    </a>
+                  </div>
+                  <div>
+                    <h3 class="ezy__epcart2-price mb-0">Rs. 17,652</h3>
+
+                    <div class="input-group ezy__epcart2-qty mt-3">
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">-</button>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="2"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button class="btn px-3 py-1 d-inline-flex justify-content-center" type="button">+</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn ezy__epcart2-del d-inline-flex align-items-center rounded-circle">
+                    <i class="fas fa-trash-alt fs-6"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card ezy__epcart2-card sticky-top">
+              <div class="card-body p-md-4">
+                <h6 class="mb-4 opacity-75">Order Summary</h6>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Sub total</span>
+                  <span class="fw-bold">$4,898</span>
+                </div>
+                <hr class="ezy__epcart2-hr" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Shipping Fee</span>
+                  <span class="fw-bold">$99</span>
+                </div>
+                <hr class="ezy__epcart2-hr" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Tax</span>
+                  <span class="fw-bold">$231</span>
+                </div>
+                <hr class="ezy__epcart2-hr" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fs-5 fw-bold">Total</span>
+                  <span class="fw-bold">$5,641</span>
+                </div>
+              </div>
+              <div class="card-body px-md-4 pb-md-4">
+                <button class="btn ezy__epcart2-btn w-100">BUY (0)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+    <!--
+    Name: Product Cart 3
+-->
+    <style>
+      .ezy__epcart3 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #f5f7fd;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+        position: relative;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart3 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epcart3,
+      .ezy__epcart3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-card-bg: rgb(255, 255, 255);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epcart3,
+      .ezy__epcart3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epcart3,
+      .ezy__epcart3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(30, 39, 53);
+      }
+
+      .ezy__epcart3-heading a {
+        font-size: 16px;
+        line-height: 18px;
+        color: var(--bs-body-color);
+        text-decoration: none;
+      }
+
+      .ezy__epcart3-heading a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart3-heading a {
+          font-size: 17px;
+          line-height: 19px;
+        }
+      }
+
+      .ezy__epcart3-price {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(var(--ezy-theme-color-rgb));
+      }
+
+      .ezy__epcart3-title {
+        font-size: 15px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epcart3-image {
+        min-width: 50px;
+        width: 50px;
+        height: auto;
+        background-color: rgb(var(--ezy-secondary-color-rgb), 0.05);
+        border: 1px solid rgba(var(--ezy-secondary-color-rgb), 0.05);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart3-image {
+          min-width: 120px;
+          width: 120px;
+        }
+      }
+
+      .ezy__epcart3-qty {
+        width: 95px;
+      }
+
+      .ezy__epcart3-qty .btn {
+        font-size: 13px;
+        font-weight: bold;
+        color: rgb(var(--ezy-theme-color-rgb));
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0 !important;
+        border: none;
+        width: 30px;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ezy__epcart3-qty .btn:hover {
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+      }
+
+      .ezy__epcart3-qty .form-control {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epcart3-qty .input-group-text,
+      .ezy__epcart3-qty .form-control {
+        border-color: rgb(var(--ezy-secondary-color-rgb), 0.7);
+        background-color: transparent;
+        height: 40px;
+        border-radius: 8px !important;
+        overflow: hidden;
+      }
+
+      .ezy__epcart3-btn {
+        font-size: 14px;
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+        height: 42px;
+        min-width: 42px;
+      }
+
+      .ezy__epcart3-btn:hover {
+        border: rgba(var(--ezy-theme-color-rgb), 0.9);
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: var(--ezy-button-color);
+      }
+
+      .ezy__epcart3-del {
+        color: rgb(var(--bs-body-color)) !important;
+        background-color: transparent;
+        border: 0;
+        height: 35px;
+        width: 35px;
+      }
+
+      .ezy__epcart3-del:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+      }
+
+      .ezy__epcart3-card {
+        background-color: var(--ezy-card-bg);
+        border: none;
+        border-radius: 10px;
+      }
+
+      .ezy__epcart3-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb), 0.05);
+        opacity: 1;
+      }
+
+      .ezy__epcart3-content {
+        color: var(--bs-body-color);
+        opacity: 0.7;
+      }
+    </style>
+    <section class="ezy__epcart3" id="ezy__epcart3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="card ezy__epcart3-card mb-3">
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart3-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_5.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart3-heading mb-3">
+                    <a href="#!">
+                      PD-04 Carbon Fiber Insole Poron Plantar Fasciitis Arch Support Flat Feet Orthopedic Insoles Custom
+                      Orthotics
+                    </a>
+                  </div>
+                  <div>
+                    <div class="input-group ezy__epcart3-qty mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="2"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                        <button class="btn" type="button"><i class="fas fa-chevron-up"></i></button>
+                        <button class="btn" type="button"><i class="fas fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                    <h3 class="ezy__epcart3-price mb-0">Rs. 251</h3>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="btn ezy__epcart3-del d-inline-flex justify-content-center align-items-center rounded-circle p-0"
+                  >
+                    <i class="fas fa-times fs-6"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card ezy__epcart3-card mb-3">
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart3-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_6.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart3-heading mb-3">
+                    <a href="#!">
+                      Wholesale Hexagon Pine Solid Wood Brand Women Watch Display Box Custom Logo Wooden Watch Luxury
+                      Box
+                    </a>
+                  </div>
+                  <div>
+                    <div class="input-group ezy__epcart3-qty mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="2"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                        <button class="btn" type="button"><i class="fas fa-chevron-up"></i></button>
+                        <button class="btn" type="button"><i class="fas fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                    <h3 class="ezy__epcart3-price mb-0">Rs. 3,517</h3>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="btn ezy__epcart3-del d-inline-flex justify-content-center align-items-center rounded-circle p-0"
+                  >
+                    <i class="fas fa-times fs-6"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card ezy__epcart3-card mb-3">
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart3-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_7.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart3-heading mb-3">
+                    <a href="#!">
+                      Lks01 Men'S Suits Casual Collar Blazers Youthful Handsome Trend Slim Fit Printed Blazers Plus Size
+                      Men'S Jackets
+                    </a>
+                  </div>
+                  <div>
+                    <div class="input-group ezy__epcart3-qty mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="2"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                        <button class="btn" type="button"><i class="fas fa-chevron-up"></i></button>
+                        <button class="btn" type="button"><i class="fas fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                    <h3 class="ezy__epcart3-price mb-0">Rs. 7,351</h3>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="btn ezy__epcart3-del d-inline-flex justify-content-center align-items-center rounded-circle p-0"
+                  >
+                    <i class="fas fa-times fs-6"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card ezy__epcart3-card mb-3">
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart3-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio5.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart3-heading mb-3">
+                    <a href="#!">
+                      Factory Direct Queendom Certipur-Us Luxury Comfortable Sell Top Spring Bed 'Matress' Hotel
+                      Mattress Springs
+                    </a>
+                  </div>
+                  <div>
+                    <div class="input-group ezy__epcart3-qty mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="2"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                        <button class="btn" type="button"><i class="fas fa-chevron-up"></i></button>
+                        <button class="btn" type="button"><i class="fas fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                    <h3 class="ezy__epcart3-price mb-0">Rs. 1,782</h3>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="btn ezy__epcart3-del d-inline-flex justify-content-center align-items-center rounded-circle p-0"
+                  >
+                    <i class="fas fa-times fs-6"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card ezy__epcart3-card sticky-top">
+              <div class="card-body p-md-4">
+                <h6 class="mb-4 opacity-75">Order Summary</h6>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Sub total</span>
+                  <span class="fw-bold">$4,871</span>
+                </div>
+                <hr class="ezy__epcart3-hr" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Shipping Fee</span>
+                  <span class="fw-bold">$99</span>
+                </div>
+                <hr class="ezy__epcart3-hr" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Tax</span>
+                  <span class="fw-bold">$209</span>
+                </div>
+                <hr class="ezy__epcart3-hr" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fs-5 fw-bold">Total</span>
+                  <span class="fw-bold">$5,431</span>
+                </div>
+              </div>
+              <div class="card-body px-md-4 pb-md-4">
+                <button class="btn ezy__epcart3-btn w-100">BUY (0)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Product Cart 4
+-->
+    <style>
+      .ezy__epcart4 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #f5f7fd;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+        position: relative;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart4 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epcart4,
+      .ezy__epcart4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-card-bg: rgb(255, 255, 255);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epcart4,
+      .ezy__epcart4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epcart4,
+      .ezy__epcart4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(30, 39, 53);
+      }
+
+      .ezy__epcart4-heading a {
+        font-size: 16px;
+        line-height: 18px;
+        color: var(--bs-body-color);
+        text-decoration: none;
+      }
+
+      .ezy__epcart4-heading a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart4-heading a {
+          font-size: 17px;
+          line-height: 19px;
+        }
+      }
+
+      .ezy__epcart4-price {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(var(--ezy-theme-color-rgb));
+      }
+
+      .ezy__epcart4-title {
+        font-size: 15px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epcart4-image {
+        min-width: 50px;
+        width: 50px;
+        height: auto;
+        background-color: rgb(var(--ezy-secondary-color-rgb), 0.05);
+        border: 1px solid rgba(var(--ezy-secondary-color-rgb), 0.05);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart4-image {
+          min-width: 120px;
+          width: 120px;
+        }
+      }
+
+      .ezy__epcart4-qty {
+        width: 95px;
+      }
+
+      .ezy__epcart4-qty .btn {
+        font-size: 13px;
+        font-weight: bold;
+        color: rgb(var(--ezy-theme-color-rgb));
+        padding: 0;
+        border-radius: 0 !important;
+        border: none;
+        width: 30px;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ezy__epcart4-qty .btn:hover {
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+      }
+
+      .ezy__epcart4-qty .form-control {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epcart4-qty .input-group-text,
+      .ezy__epcart4-qty .form-control {
+        border-color: rgb(var(--ezy-secondary-color-rgb), 0.7);
+        background-color: transparent;
+        height: 40px;
+        border-radius: 8px !important;
+        overflow: hidden;
+      }
+
+      .ezy__epcart4-btn {
+        font-size: 14px;
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+        height: 42px;
+        min-width: 42px;
+      }
+
+      .ezy__epcart4-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: var(--ezy-button-color);
+      }
+
+      .ezy__epcart4-del {
+        color: rgb(var(--bs-body-color)) !important;
+        height: 35px;
+        width: 35px;
+      }
+
+      .ezy__epcart4-del:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+      }
+
+      .ezy__epcart4-card {
+        background-color: var(--ezy-card-bg);
+        border: none;
+        border-radius: 10px;
+      }
+
+      .ezy__epcart4-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb), 0.05);
+        opacity: 1;
+      }
+
+      .ezy__epcart4-content {
+        color: var(--bs-body-color);
+        opacity: 0.7;
+      }
+    </style>
+    <section class="ezy__epcart4" id="ezy__epcart4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="card ezy__epcart4-card mb-3">
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart4-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio15.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart4-heading mb-3">
+                    <a href="#!">
+                      Wholesale Hexagon Pine Solid Wood Brand Women Watch Display Box Custom Logo Wooden Watch Luxury
+                      Box
+                    </a>
+                  </div>
+                  <div>
+                    <div class="input-group ezy__epcart4-qty mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="2"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                        <button class="btn" type="button"><i class="fas fa-chevron-up"></i></button>
+                        <button class="btn" type="button"><i class="fas fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                    <h3 class="ezy__epcart4-price mb-0">Rs. 7,351</h3>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="btn ezy__epcart4-del d-inline-flex justify-content-center align-items-center rounded-circle p-0"
+                  >
+                    <i class="fas fa-times fs-6"></i>
+                  </button>
+                </div>
+              </div>
+              <hr class="ezy__epcart4-hr my-0" />
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart4-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio3.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart4-heading mb-3">
+                    <a href="#!">
+                      Forsining 3d Logo Design Hollow Engraving Black Gold Case Leather Skeleton Mechanical Watches Men
+                      Luxury Brand Heren Horloge
+                    </a>
+                  </div>
+                  <div>
+                    <div class="input-group ezy__epcart4-qty mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="2"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                        <button class="btn" type="button"><i class="fas fa-chevron-up"></i></button>
+                        <button class="btn" type="button"><i class="fas fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                    <h3 class="ezy__epcart4-price mb-0">Rs. 251</h3>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="btn ezy__epcart4-del d-inline-flex justify-content-center align-items-center rounded-circle p-0"
+                  >
+                    <i class="fas fa-times fs-6"></i>
+                  </button>
+                </div>
+              </div>
+              <hr class="ezy__epcart4-hr my-0" />
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart4-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio19.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart4-heading mb-3">
+                    <a href="#!">
+                      ABUK Home Appliance Surge Protector Voltage Brownout Plug Outlet Power Strip Surge Protector With
+                      Pass Button
+                    </a>
+                  </div>
+                  <div>
+                    <div class="input-group ezy__epcart4-qty mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="2"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                        <button class="btn" type="button"><i class="fas fa-chevron-up"></i></button>
+                        <button class="btn" type="button"><i class="fas fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                    <h3 class="ezy__epcart4-price mb-0">Rs. 8,441</h3>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="btn ezy__epcart4-del d-inline-flex justify-content-center align-items-center rounded-circle p-0"
+                  >
+                    <i class="fas fa-times fs-6"></i>
+                  </button>
+                </div>
+              </div>
+              <hr class="ezy__epcart4-hr my-0" />
+              <div class="card-body d-flex align-items-start p-md-4">
+                <div class="ezy__epcart4-image me-3 me-md-4">
+                  <a href="#!">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio17.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <div class="ezy__epcart4-heading mb-3">
+                    <a href="#!">
+                      Factory Brand Wholesale 5# Zinc Accessories Custom Hook Slider Metal #5 For Clothing garment
+                      jacket
+                    </a>
+                  </div>
+                  <div>
+                    <div class="input-group ezy__epcart4-qty mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        value="2"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                        <button class="btn" type="button"><i class="fas fa-chevron-up"></i></button>
+                        <button class="btn" type="button"><i class="fas fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                    <h3 class="ezy__epcart4-price mb-0">Rs. 1,941</h3>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn ezy__epcart4-del d-inline-flex align-items-center rounded-circle">
+                    <i class="fas fa-times fs-6"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card ezy__epcart4-card sticky-top">
+              <div class="card-body p-md-4">
+                <h6 class="mb-4 opacity-75">Order Summary</h6>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Sub total</span>
+                  <span class="fw-bold">$3,242</span>
+                </div>
+                <hr class="ezy__epcart4-hr" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Shipping Fee</span>
+                  <span class="fw-bold">$209</span>
+                </div>
+                <hr class="ezy__epcart4-hr" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Tax</span>
+                  <span class="fw-bold">$453</span>
+                </div>
+                <hr class="ezy__epcart4-hr" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fs-5 fw-bold">Total</span>
+                  <span class="fw-bold">$3,452</span>
+                </div>
+              </div>
+              <div class="card-body px-md-4 pb-md-4">
+                <button class="btn ezy__epcart4-btn w-100">BUY (0)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Product Cart 5
+-->
+    <style>
+      .ezy__epcart5 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #f5f7fd;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+        position: relative;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart5 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epcart5,
+      .ezy__epcart5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-card-bg: rgb(255, 255, 255);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epcart5,
+      .ezy__epcart5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epcart5,
+      .ezy__epcart5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(30, 39, 53);
+      }
+
+      .ezy__epcart5-heading a {
+        font-size: 16px;
+        line-height: 18px;
+        color: var(--bs-body-color);
+        text-decoration: none;
+      }
+
+      .ezy__epcart5-heading a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart5-heading a {
+          font-size: 17px;
+          line-height: 19px;
+        }
+      }
+
+      .ezy__epcart5-price {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(var(--ezy-theme-color-rgb));
+      }
+
+      .ezy__epcart5-title {
+        font-size: 15px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epcart5-image {
+        min-width: 50px;
+        width: 50px;
+        height: auto;
+        background-color: rgb(var(--ezy-secondary-color-rgb), 0.05);
+        border: 1px solid rgba(var(--ezy-secondary-color-rgb), 0.05);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epcart5-image {
+          min-width: 120px;
+          width: 120px;
+        }
+      }
+
+      .ezy__epcart5-qty {
+        width: 95px;
+      }
+
+      .ezy__epcart5-qty .btn {
+        font-size: 13px;
+        font-weight: bold;
+        color: rgb(var(--ezy-theme-color-rgb));
+        padding: 0;
+        border-radius: 0 !important;
+        border: none;
+        width: 30px;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ezy__epcart5-qty .btn:hover {
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+      }
+
+      .ezy__epcart5-qty .form-control {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epcart5-qty .input-group-text,
+      .ezy__epcart5-qty .form-control {
+        border-color: rgb(var(--ezy-secondary-color-rgb), 0.7);
+        background-color: transparent;
+        height: 40px;
+        border-radius: 8px !important;
+        overflow: hidden;
+      }
+
+      .ezy__epcart5-btn {
+        font-size: 14px;
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+        height: 42px;
+        min-width: 42px;
+      }
+
+      .ezy__epcart5-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: var(--ezy-button-color);
+      }
+
+      .ezy__epcart5-del {
+        color: rgb(var(--bs-body-color)) !important;
+        height: 35px;
+        width: 35px;
+      }
+
+      .ezy__epcart5-del:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+      }
+
+      .ezy__epcart5-card,
+      .ezy__epcart5-order {
+        border: none;
+        border-radius: 10px;
+      }
+
+      .ezy__epcart5-card {
+        background-color: var(--ezy-card-bg);
+      }
+
+      .ezy__epcart5-order {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+      }
+
+      .ezy__epcart5-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb), 0.05);
+        opacity: 1;
+      }
+
+      .ezy__epcart5-content {
+        color: var(--bs-body-color);
+        opacity: 0.7;
+      }
+    </style>
+    <section class="ezy__epcart5" id="ezy__epcart5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="card ezy__epcart5-card mb-3">
+              <div class="card-body p-md-4 p-lg-5">
+                <div class="d-flex align-items-start">
+                  <div class="ezy__epcart5-image me-3 me-md-4">
+                    <a href="#!">
+                      <img
+                        src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio8.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <div class="ezy__epcart5-heading mb-3">
+                      <a href="#!">
+                        Lks01 Men'S Suits Casual Collar Blazers Youthful Handsome Trend Slim Fit Printed Blazers Plus
+                        Size Men'S Jackets
+                      </a>
+                    </div>
+                    <div>
+                      <div class="input-group ezy__epcart5-qty mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                          value="2"
+                          aria-label="Example text with button addon"
+                          aria-describedby="button-addon1"
+                        />
+                        <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                          <button class="btn" type="button"><i class="fas fa-chevron-up"></i></button>
+                          <button class="btn" type="button"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                      </div>
+                      <h3 class="ezy__epcart5-price mb-0">Rs. 2,311</h3>
+                    </div>
+                  </div>
+                  <div class="ms-3">
+                    <button
+                      class="btn ezy__epcart5-del d-inline-flex justify-content-center align-items-center rounded-circle p-0"
+                    >
+                      <i class="fas fa-times fs-6"></i>
+                    </button>
+                  </div>
+                </div>
+                <hr class="ezy__epcart5-hr my-3 my-md-4" />
+                <div class="d-flex align-items-start">
+                  <div class="ezy__epcart5-image me-3 me-md-4">
+                    <a href="#!">
+                      <img
+                        src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio2.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <div class="ezy__epcart5-heading mb-3">
+                      <a href="#!">
+                        Factory Direct Queendom Certipur-Us Luxury Comfortable Sell Top Spring Bed 'Matress' Hotel
+                        Mattress Springs
+                      </a>
+                    </div>
+                    <div>
+                      <div class="input-group ezy__epcart5-qty mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                          value="2"
+                          aria-label="Example text with button addon"
+                          aria-describedby="button-addon1"
+                        />
+                        <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                          <button class="btn" type="button"><i class="fas fa-chevron-up"></i></button>
+                          <button class="btn" type="button"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                      </div>
+                      <h3 class="ezy__epcart5-price mb-0">Rs. 34,523</h3>
+                    </div>
+                  </div>
+                  <div class="ms-3">
+                    <button
+                      class="btn ezy__epcart5-del d-inline-flex justify-content-center align-items-center rounded-circle p-0"
+                    >
+                      <i class="fas fa-times fs-6"></i>
+                    </button>
+                  </div>
+                </div>
+                <hr class="ezy__epcart5-hr my-3 my-md-4" />
+                <div class="d-flex align-items-start">
+                  <div class="ezy__epcart5-image me-3 me-md-4">
+                    <a href="#!">
+                      <img
+                        src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio10.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <div class="ezy__epcart5-heading mb-3">
+                      <a href="#!">
+                        PD-04 Carbon Fiber Insole Poron Plantar Fasciitis Arch Support Flat Feet Orthopedic Insoles
+                        Custom Orthotics
+                      </a>
+                    </div>
+                    <div>
+                      <div class="input-group ezy__epcart5-qty mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                          value="2"
+                          aria-label="Example text with button addon"
+                          aria-describedby="button-addon1"
+                        />
+                        <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                          <button class="btn" type="button"><i class="fas fa-chevron-up"></i></button>
+                          <button class="btn" type="button"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                      </div>
+                      <h3 class="ezy__epcart5-price mb-0">Rs. 2,374</h3>
+                    </div>
+                  </div>
+                  <div class="ms-3">
+                    <button
+                      class="btn ezy__epcart5-del d-inline-flex justify-content-center align-items-center rounded-circle p-0"
+                    >
+                      <i class="fas fa-times fs-6"></i>
+                    </button>
+                  </div>
+                </div>
+                <hr class="ezy__epcart5-hr my-3 my-md-4" />
+                <div class="d-flex align-items-start">
+                  <div class="ezy__epcart5-image me-3 me-md-4">
+                    <a href="#!">
+                      <img
+                        src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio12.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <div class="ezy__epcart5-heading mb-3">
+                      <a href="#!">
+                        Forsining 3d Logo Design Hollow Engraving Black Gold Case Leather Skeleton Mechanical Watches
+                        Men Luxury Brand Heren Horloge
+                      </a>
+                    </div>
+                    <div>
+                      <div class="input-group ezy__epcart5-qty mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                          value="2"
+                          aria-label="Example text with button addon"
+                          aria-describedby="button-addon1"
+                        />
+                        <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                          <button class="btn" type="button"><i class="fas fa-chevron-up"></i></button>
+                          <button class="btn" type="button"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                      </div>
+                      <h3 class="ezy__epcart5-price mb-0">Rs. 8,765</h3>
+                    </div>
+                  </div>
+                  <div class="ms-3">
+                    <button
+                      class="btn ezy__epcart5-del d-inline-flex justify-content-center align-items-center rounded-circle p-0"
+                    >
+                      <i class="fas fa-times fs-6"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body p-md-4 p-lg-5">
+                <div class="card ezy__epcart5-order">
+                  <div class="card-body p-md-4 p-xl-5">
+                    <div class="row">
+                      <div class="col-md-6 pe-md-5">
+                        <h5 class="mb-4">Order Summary</h5>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                          <span>Shipping Fee</span>
+                          <span class="fs-5 fw-bold">$234</span>
+                        </div>
+                        <hr class="ezy__epcart5-hr d-md-none" />
+                      </div>
+                      <div class="col-md-6 ps-xl-5">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <span>Sub total</span>
+                          <span class="fs-5 fw-bold">$32,422</span>
+                        </div>
+                        <hr class="ezy__epcart5-hr" />
+                        <div class="d-flex justify-content-between align-items-center">
+                          <span>Tax</span>
+                          <span class="fs-5 fw-bold">$549</span>
+                        </div>
+                        <hr class="ezy__epcart5-hr" />
+                        <div class="d-flex justify-content-between align-items-center">
+                          <span class="fs-5 fw-bold">Total</span>
+                          <span class="fs-5 fw-bold">$45,644</span>
+                        </div>
+
+                        <button class="btn ezy__epcart5-btn w-100 mt-4 mt-lg-5">BUY (0)</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

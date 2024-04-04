@@ -1,0 +1,2449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+    Name: Product Quick Overview 1
+-->
+    <style>
+.ezy__epqoverview1 {
+  /* Bootstrap variables */
+  --bs-body-color: #23262f;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-secondary-color-rgb: 237, 237, 237;
+  --ezy-button-color: #fff;
+
+  color: var(--bs-body-color);
+}
+
+/* Gray Block Style */
+.gray .ezy__epqoverview1,
+.ezy__epqoverview1.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 225, 221, 221;
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__epqoverview1,
+.ezy__epqoverview1.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+/* Dark Block Style */
+.dark .ezy__epqoverview1,
+.ezy__epqoverview1.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+.ezy__epqoverview1-heading {
+  font-size: 24px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__epqoverview1-heading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+section.ezy__epqoverview1,
+.ezy__epqoverview1 .modal-content {
+  background-color: var(--bs-body-bg);
+}
+
+.ezy__epqoverview1 .btn-close {
+  z-index: 11;
+  color: var(--bs-body-color);
+  background-image: none;
+}
+
+.ezy__epqoverview1-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview1-title {
+  font-size: 15px;
+  color: var(--bs-body-color);
+}
+
+.ezy__epqoverview1-qty {
+  width: 180px;
+}
+
+.ezy__epqoverview1-qty .btn {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview1-qty .btn:hover {
+  background-color: rgb(var(--ezy-secondary-color-rgb));
+}
+
+.ezy__epqoverview1-qty .btn:first-child {
+  border-radius: 50rem 0 0 50rem !important;
+}
+
+.ezy__epqoverview1-qty .btn:last-child {
+  border-radius: 0 50rem 50rem 0 !important;
+}
+
+.ezy__epqoverview1-qty .form-control {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  color: var(--bs-body-color);
+}
+
+.ezy__epqoverview1-qty .btn,
+.ezy__epqoverview1-qty .form-control {
+  border-color: rgb(var(--ezy-secondary-color-rgb));
+  height: 48px;
+}
+
+.ezy__epqoverview1-radios .btn {
+  border-color: rgb(var(--ezy-secondary-color-rgb));
+  background-color: rgba(var(--ezy-secondary-color-rgb), 0.7);
+  color: var(--bs-body-color);
+  font-size: 13px;
+  padding: 3px 17px;
+}
+
+.ezy__epqoverview1-radios .btn:hover {
+  background-color: rgba(var(--ezy-secondary-color-rgb), 1);
+}
+
+.ezy__epqoverview1-radios .btn-check:checked + .btn {
+  background-color: rgb(var(--ezy-secondary-color-rgb));
+  color: var(--bs-body-color);
+  border-color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview1-btn {
+  font-size: 14px;
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: rgb(var(--ezy-theme-color-rgb));
+  color: var(--ezy-button-color);
+  height: 42px;
+  min-width: 42px;
+}
+
+.ezy__epqoverview1-btn:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+  color: var(--ezy-button-color);
+}
+
+.ezy__epqoverview1-share {
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview1-share:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview1-bg-holder {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 350px;
+  width: 100%;
+}
+    </style>
+<section class="ezy__epqoverview1 py-5">
+  <div class="container">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ezy__epqoverview1">
+      Product Quick Overview 1
+    </button>
+  </div>
+</section>
+<div
+  class="ezy__epqoverview1 modal fade"
+  id="ezy__epqoverview1"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content overflow-hidden">
+      <button
+        type="button"
+        class="btn-close position-absolute end-0 top-0 mt-3 me-3"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+      <div class="modal-body p-0">
+        <div class="row">
+          <div class="col-lg-6 position-relative">
+            <div
+              class="ezy__epqoverview1-bg-holder"
+              style="background-image: url(https://cdn.easyfrontend.com/pictures/ecommerce/ep-grid2_1.jpg)"
+            ></div>
+          </div>
+          <div class="col-lg-6 mt-4 mt-md-0">
+            <div class="px-4 py-5">
+              <div class="mb-4 mb-lg-5">
+                <h1 class="ezy__epqoverview1-heading mb-3">
+                  Women's Classic-Fit Long-Sleeve Full-Zip Polar Soft Fleece Jacket
+                </h1>
+                <h3 class="ezy__epqoverview1-price mb-0">Rs.4576</h3>
+              </div>
+
+              <form action="#!">
+                <div class="mb-4">
+                  <h5 class="ezy__epqoverview1-title mb-2">Color</h5>
+                  <div
+                    class="btn-group ezy__epqoverview1-radios d-block mb-2"
+                    role="group"
+                    aria-label="Basic radio toggle button group"
+                  >
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview1-color"
+                      id="ezy__epqoverview1-color1"
+                      autocomplete="off"
+                      checked
+                    />
+                    <label class="btn rounded-pill me-2 mt-1" for="ezy__epqoverview1-color1">Multi</label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview1-color"
+                      id="ezy__epqoverview1-color2"
+                      autocomplete="off"
+                    />
+                    <label class="btn rounded-pill me-2 mt-1" for="ezy__epqoverview1-color2">Red</label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview1-color"
+                      id="ezy__epqoverview1-color3"
+                      autocomplete="off"
+                    />
+                    <label class="btn rounded-pill me-2 mt-1" for="ezy__epqoverview1-color3">Blue</label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview1-color"
+                      id="ezy__epqoverview1-color4"
+                      autocomplete="off"
+                    />
+                    <label class="btn rounded-pill me-2 mt-1" for="ezy__epqoverview1-color4">Green</label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview1-color"
+                      id="ezy__epqoverview1-color5"
+                      autocomplete="off"
+                    />
+                    <label class="btn rounded-pill me-2 mt-1" for="ezy__epqoverview1-color5">Black</label>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <h5 class="ezy__epqoverview1-title mb-0">
+                    Size: <span class="opacity-50">Extra Extra Small</span>
+                  </h5>
+                  <div
+                    class="btn-group ezy__epqoverview1-radios d-block mb-2"
+                    role="group"
+                    aria-label="Basic radio toggle button group"
+                  >
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview1-size"
+                      id="ezy__epqoverview1-size1"
+                      autocomplete="off"
+                      checked=""
+                    />
+                    <label
+                      class="ezy__epqoverview1-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview1-size1"
+                    >
+                      XXS
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview1-size"
+                      id="ezy__epqoverview1-size2"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview1-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview1-size2"
+                    >
+                      XS
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview1-size"
+                      id="ezy__epqoverview1-size3"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview1-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview1-size3"
+                    >
+                      S
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview1-size"
+                      id="ezy__epqoverview1-size4"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview1-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview1-size4"
+                    >
+                      M
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview1-size"
+                      id="ezy__epqoverview1-size5"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview1-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview1-size5"
+                    >
+                      L
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview1-size"
+                      id="ezy__epqoverview1-size6"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview1-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview1-size6"
+                    >
+                      XL
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview1-size"
+                      id="ezy__epqoverview1-size7"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview1-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview1-size7"
+                    >
+                      XXL
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview1-size"
+                      id="ezy__epqoverview1-size8"
+                      autocomplete="off"
+                      disabled=""
+                    />
+                    <label
+                      class="ezy__epqoverview1-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview1-size8"
+                    >
+                      XXXL
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <h5 class="ezy__epqoverview1-title mb-2">QTY</h5>
+                  <div class="input-group ezy__epqoverview1-qty d-inline-flex mb-2">
+                    <button class="btn px-4" type="button">-</button>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder=""
+                      value="2"
+                      aria-label="Example text with button addon"
+                      aria-describedby="button-addon1"
+                    />
+                    <button class="btn px-4" type="button">+</button>
+                  </div>
+                </div>
+
+                <div>
+                  <button class="btn ezy__epqoverview1-btn text-uppercase w-100 px-4 me-1">Add To Cart</button>
+                  <button class="btn btn-link ezy__epqoverview1-share text-decoration-none w-100 mt-1">
+                    View Details
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <br />
+
+    <!--
+    Name: Product Quick Overview 2
+-->
+    <style>
+.ezy__epqoverview2 {
+  /* Bootstrap variables */
+  --bs-body-color: #23262f;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-secondary-color-rgb: 237, 237, 237;
+  --ezy-button-color: #fff;
+
+  color: var(--bs-body-color);
+}
+
+/* Gray Block Style */
+.gray .ezy__epqoverview2,
+.ezy__epqoverview2.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 225, 221, 221;
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__epqoverview2,
+.ezy__epqoverview2.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+/* Dark Block Style */
+.dark .ezy__epqoverview2,
+.ezy__epqoverview2.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+.ezy__epqoverview2-heading {
+  font-size: 24px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__epqoverview2-heading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+section.ezy__epqoverview2,
+.ezy__epqoverview2 .modal-content {
+  background-color: var(--bs-body-bg);
+}
+
+.ezy__epqoverview2 .btn-close {
+  z-index: 11;
+}
+
+.ezy__epqoverview2-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview2-title {
+  font-size: 15px;
+  color: var(--bs-body-color);
+}
+
+.ezy__epqoverview2-qty {
+  width: 180px;
+}
+
+.ezy__epqoverview2-qty .btn {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview2-qty .btn:hover {
+  background-color: rgb(var(--ezy-secondary-color-rgb));
+}
+
+.ezy__epqoverview2-qty .btn:first-child {
+  border-radius: 50rem 0 0 50rem !important;
+}
+
+.ezy__epqoverview2-qty .btn:last-child {
+  border-radius: 0 50rem 50rem 0 !important;
+}
+
+.ezy__epqoverview2-qty .form-control {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  color: var(--bs-body-color);
+}
+
+.ezy__epqoverview2-qty .btn,
+.ezy__epqoverview2-qty .form-control {
+  border-color: rgb(var(--ezy-secondary-color-rgb));
+  height: 48px;
+}
+
+.ezy__epqoverview2-radios .btn {
+  border-color: rgb(var(--ezy-secondary-color-rgb));
+  background-color: rgba(var(--ezy-secondary-color-rgb), 0.7);
+  color: var(--bs-body-color);
+  font-size: 13px;
+  padding: 3px 17px;
+}
+
+.ezy__epqoverview2-radios .btn:hover {
+  background-color: rgba(var(--ezy-secondary-color-rgb), 1);
+}
+
+.ezy__epqoverview2-radios .btn-check:checked + .btn {
+  background-color: rgb(var(--ezy-secondary-color-rgb));
+  color: var(--bs-body-color);
+  border-color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview2-btn {
+  font-size: 14px;
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: rgb(var(--ezy-theme-color-rgb));
+  color: var(--ezy-button-color);
+  height: 42px;
+  min-width: 42px;
+}
+
+.ezy__epqoverview2-btn:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+  color: var(--ezy-button-color);
+}
+
+.ezy__epqoverview2-share {
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview2-share:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview2-gallery li {
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(var(--ezy-secondary-color-rgb), 0.4);
+  border: 1px solid rgb(var(--ezy-secondary-color-rgb));
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+    </style>
+<section class="ezy__epqoverview2 py-5">
+  <div class="container">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ezy__epqoverview2">
+      Product Quick Overview 2
+    </button>
+  </div>
+</section>
+<div
+  class="ezy__epqoverview2 modal fade"
+  id="ezy__epqoverview2"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content overflow-hidden">
+      <button
+        type="button"
+        class="btn-close position-absolute end-0 top-0 mt-3 me-3"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+      <div class="modal-body p-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="d-flex">
+              <div class="text-center flex-grow-1 pe-4">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/ecommerce/headphone1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+
+              <ul class="nav flex-column align-items-center ezy__epqoverview2-gallery">
+                <a href="#!">
+                  <li>
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/ecommerce/headphone1-1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                </a>
+                <a href="#!">
+                  <li>
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/ecommerce/headphone1-2.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                </a>
+                <a href="#!">
+                  <li>
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/ecommerce/headphone1-3.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="mt-4 mt-lg-5">
+          <div class="row mb-4">
+            <div class="col">
+              <h1 class="ezy__epqoverview2-heading mb-0 flex-grow-1">Hands-Free Call, Voice Assistant - Black.</h1>
+            </div>
+            <div class="col-12 col-lg-auto">
+              <h3 class="ezy__epqoverview2-price mb-3 text-nowrap">Rs. 4521</h3>
+            </div>
+          </div>
+
+          <form action="#!">
+            <div class="mb-4">
+              <h5 class="ezy__epqoverview2-title mb-2">Color</h5>
+              <div
+                class="btn-group ezy__epqoverview2-radios d-block mb-2"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="ezy__epqoverview2-color"
+                  id="ezy__epqoverview2-color1"
+                  autocomplete="off"
+                  checked
+                />
+                <label class="btn rounded-pill me-2 mt-1" for="ezy__epqoverview2-color1">Multi</label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="ezy__epqoverview2-color"
+                  id="ezy__epqoverview2-color2"
+                  autocomplete="off"
+                />
+                <label class="btn rounded-pill me-2 mt-1" for="ezy__epqoverview2-color2">Red</label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="ezy__epqoverview2-color"
+                  id="ezy__epqoverview2-color3"
+                  autocomplete="off"
+                />
+                <label class="btn rounded-pill me-2 mt-1" for="ezy__epqoverview2-color3">Blue</label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="ezy__epqoverview2-color"
+                  id="ezy__epqoverview2-color4"
+                  autocomplete="off"
+                />
+                <label class="btn rounded-pill me-2 mt-1" for="ezy__epqoverview2-color4">Green</label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="ezy__epqoverview2-color"
+                  id="ezy__epqoverview2-color5"
+                  autocomplete="off"
+                />
+                <label class="btn rounded-pill me-2 mt-1" for="ezy__epqoverview2-color5">Black</label>
+              </div>
+            </div>
+            <div class="mb-4">
+              <h5 class="ezy__epqoverview2-title mb-0">Size: <span class="opacity-50">Extra Extra Small</span></h5>
+              <div
+                class="btn-group ezy__epqoverview2-radios d-block mb-2"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="ezy__epqoverview2-size"
+                  id="ezy__epqoverview2-size1"
+                  autocomplete="off"
+                  checked=""
+                />
+                <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epqoverview2-size1">
+                  XXS
+                </label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="ezy__epqoverview2-size"
+                  id="ezy__epqoverview2-size2"
+                  autocomplete="off"
+                />
+                <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epqoverview2-size2">
+                  XS
+                </label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="ezy__epqoverview2-size"
+                  id="ezy__epqoverview2-size3"
+                  autocomplete="off"
+                />
+                <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epqoverview2-size3">
+                  S
+                </label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="ezy__epqoverview2-size"
+                  id="ezy__epqoverview2-size4"
+                  autocomplete="off"
+                />
+                <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epqoverview2-size4">
+                  M
+                </label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="ezy__epqoverview2-size"
+                  id="ezy__epqoverview2-size5"
+                  autocomplete="off"
+                />
+                <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epqoverview2-size5">
+                  L
+                </label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="ezy__epqoverview2-size"
+                  id="ezy__epqoverview2-size6"
+                  autocomplete="off"
+                />
+                <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epqoverview2-size6">
+                  XL
+                </label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="ezy__epqoverview2-size"
+                  id="ezy__epqoverview2-size7"
+                  autocomplete="off"
+                />
+                <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epqoverview2-size7">
+                  XXL
+                </label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="ezy__epqoverview2-size"
+                  id="ezy__epqoverview2-size8"
+                  autocomplete="off"
+                  disabled=""
+                />
+                <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epqoverview2-size8">
+                  XXXL
+                </label>
+              </div>
+            </div>
+            <div class="mb-4">
+              <h5 class="ezy__epqoverview2-title mb-2">QTY</h5>
+              <div class="input-group ezy__epqoverview2-qty d-inline-flex mb-2">
+                <button class="btn px-4" type="button">-</button>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder=""
+                  value="2"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+                <button class="btn px-4" type="button">+</button>
+              </div>
+            </div>
+
+            <div>
+              <button class="btn ezy__epqoverview2-btn text-uppercase w-100 px-4 me-1">Add To Cart</button>
+              <button class="btn btn-link ezy__epqoverview2-share text-decoration-none w-100 mt-1">
+                View Details
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <br />
+
+    <!--
+    Name: Product Quick Overview 3
+-->
+    <style>
+.ezy__epqoverview3 {
+  /* Bootstrap variables */
+  --bs-body-color: #23262f;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-secondary-color-rgb: 237, 237, 237;
+  --ezy-button-color: #fff;
+  --ezy-product-color: rgba(var(--ezy-secondary-color-rgb), 0.5);
+
+  color: var(--bs-body-color);
+}
+
+/* Gray Block Style */
+.gray .ezy__epqoverview3,
+.ezy__epqoverview3.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 225, 221, 221;
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__epqoverview3,
+.ezy__epqoverview3.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+/* Dark Block Style */
+.dark .ezy__epqoverview3,
+.ezy__epqoverview3.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+.ezy__epqoverview3-heading {
+  font-size: 24px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__epqoverview3-heading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+section.ezy__epqoverview3,
+.ezy__epqoverview3 .modal-content {
+  background-color: var(--bs-body-bg);
+}
+
+.ezy__epqoverview3 .btn-close {
+  z-index: 11;
+}
+
+.ezy__epqoverview3-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview3-title {
+  font-size: 15px;
+  color: var(--bs-body-color);
+}
+
+.ezy__epqoverview3-qty {
+  width: 180px;
+}
+
+.ezy__epqoverview3-qty .btn {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview3-qty .btn:hover {
+  background-color: rgb(var(--ezy-secondary-color-rgb));
+}
+
+.ezy__epqoverview3-qty .btn:first-child {
+  border-radius: 50rem 0 0 50rem !important;
+}
+
+.ezy__epqoverview3-qty .btn:last-child {
+  border-radius: 0 50rem 50rem 0 !important;
+}
+
+.ezy__epqoverview3-qty .form-control {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  color: var(--bs-body-color);
+}
+
+.ezy__epqoverview3-qty .btn,
+.ezy__epqoverview3-qty .form-control {
+  border-color: rgb(var(--ezy-secondary-color-rgb));
+  height: 48px;
+}
+
+.ezy__epqoverview3-radios .btn {
+  border-width: 2px;
+  border-color: var(--bs-body-bg) !important;
+  background-color: rgba(var(--ezy-secondary-color-rgb), 0.5);
+  background-color: var(--ezy-product-color);
+  color: var(--bs-body-color);
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50rem !important;
+  outline: 1px solid transparent;
+  padding: 0;
+}
+
+.ezy__epqoverview3-radios .btn:hover {
+  background-color: var(--ezy-product-color);
+  outline-color: var(--ezy-product-color);
+}
+
+.ezy__epqoverview3-radios .btn-check:checked + .btn {
+  background-color: var(--ezy-product-color);
+  outline-color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview3-radios .btn-check:disabled + .btn {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.ezy__epqoverview3-btn,
+.ezy__epqoverview3-btn-outline {
+  font-size: 14px;
+  height: 42px;
+  min-width: 42px;
+}
+
+.ezy__epqoverview3-btn {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: rgb(var(--ezy-theme-color-rgb));
+  color: var(--ezy-button-color);
+}
+
+.ezy__epqoverview3-btn-outline {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: transparent;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview3-btn-outline:hover,
+.ezy__epqoverview3-btn:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.9) !important;
+  color: var(--ezy-button-color);
+}
+
+.ezy__epqoverview3-fav,
+.ezy__epqoverview3-share {
+  color: rgb(var(--ezy-theme-color-rgb));
+  height: 42px;
+}
+
+.ezy__epqoverview3-fav:hover,
+.ezy__epqoverview3-share:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview3-gallery li {
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(var(--ezy-secondary-color-rgb), 0.4);
+  border: 1px solid rgb(var(--ezy-secondary-color-rgb));
+  border-radius: 8px;
+  margin-bottom: 10px;
+  /* padding: 8px; */
+}
+    </style>
+<section class="ezy__epqoverview3 py-5">
+  <div class="container">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ezy__epqoverview3">
+      Product Quick Overview 3
+    </button>
+  </div>
+</section>
+<div
+  class="ezy__epqoverview3 modal fade"
+  id="ezy__epqoverview3"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content overflow-hidden">
+      <button
+        type="button"
+        class="btn-close position-absolute end-0 top-0 mt-3 me-3"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+      <div class="modal-body p-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="d-flex">
+              <div class="text-center flex-grow-1 pe-4">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/ecommerce/product36.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+
+              <ul class="nav flex-column align-items-center ezy__epqoverview3-gallery">
+                <a href="#!">
+                  <li>
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/ecommerce/product36.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                </a>
+                <a href="#!">
+                  <li>
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/ecommerce/product38.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                </a>
+                <a href="#!">
+                  <li>
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/ecommerce/product37.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 mt-lg-5">
+          <div class="row mb-4">
+            <div class="col">
+              <h1 class="ezy__epqoverview3-heading mb-0 flex-grow-1"> Oil - Ribbed Bottle 40ml</h1>
+            </div>
+            <div class="col-12 col-lg-auto">
+              <h3 class="ezy__epqoverview3-price mb-3 text-nowrap">Rs.2855</h3>
+            </div>
+          </div>
+
+          <form action="#!">
+            <div class="row">
+              <div class="col-auto mb-4 pe-lg-5">
+                <h5 class="ezy__epqoverview3-title mb-2">Color</h5>
+                <div
+                  class="btn-group ezy__epqoverview3-radios d-block mb-2"
+                  role="group"
+                  aria-label="Basic radio toggle button group"
+                >
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="ezy__epqoverview3-color"
+                    id="ezy__epqoverview3-color1"
+                    autocomplete="off"
+                    checked
+                  />
+                  <label
+                    class="btn me-1 mt-1"
+                    style="--ezy-product-color: #ffc107"
+                    for="ezy__epqoverview3-color1"
+                  ></label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="ezy__epqoverview3-color"
+                    id="ezy__epqoverview3-color2"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn me-1 mt-1"
+                    style="--ezy-product-color: #3aa9f3"
+                    for="ezy__epqoverview3-color2"
+                  ></label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="ezy__epqoverview3-color"
+                    id="ezy__epqoverview3-color3"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn me-1 mt-1"
+                    style="--ezy-product-color: #ff7171"
+                    for="ezy__epqoverview3-color3"
+                  ></label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="ezy__epqoverview3-color"
+                    id="ezy__epqoverview3-color4"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn me-1 mt-1"
+                    style="--ezy-product-color: #161d25"
+                    for="ezy__epqoverview3-color4"
+                  ></label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="ezy__epqoverview3-color"
+                    id="ezy__epqoverview3-color5"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn me-1 mt-1"
+                    style="--ezy-product-color: #ff0000"
+                    for="ezy__epqoverview3-color5"
+                  ></label>
+                </div>
+              </div>
+              <div class="mb-4">
+                <h5 class="ezy__epqoverview3-title mb-0">
+                  Size: <span class="opacity-50">Extra Extra Small</span>
+                </h5>
+                <div
+                  class="btn-group ezy__epqoverview3-radios d-block mb-2"
+                  role="group"
+                  aria-label="Basic radio toggle button group"
+                >
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="ezy__epqoverview3-size"
+                    id="ezy__epqoverview3-size1"
+                    autocomplete="off"
+                    checked=""
+                  />
+                  <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epqoverview3-size1">
+                    XXS
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="ezy__epqoverview3-size"
+                    id="ezy__epqoverview3-size2"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="ezy__epqoverview3-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                    for="ezy__epqoverview3-size2"
+                  >
+                    XS
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="ezy__epqoverview3-size"
+                    id="ezy__epqoverview3-size3"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="ezy__epqoverview3-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                    for="ezy__epqoverview3-size3"
+                  >
+                    S
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="ezy__epqoverview3-size"
+                    id="ezy__epqoverview3-size4"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="ezy__epqoverview3-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                    for="ezy__epqoverview3-size4"
+                  >
+                    M
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="ezy__epqoverview3-size"
+                    id="ezy__epqoverview3-size5"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="ezy__epqoverview3-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                    for="ezy__epqoverview3-size5"
+                  >
+                    L
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="ezy__epqoverview3-size"
+                    id="ezy__epqoverview3-size6"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="ezy__epqoverview3-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                    for="ezy__epqoverview3-size6"
+                  >
+                    XL
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="ezy__epqoverview3-size"
+                    id="ezy__epqoverview3-size7"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="ezy__epqoverview3-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                    for="ezy__epqoverview3-size7"
+                  >
+                    XXL
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="ezy__epqoverview3-size"
+                    id="ezy__epqoverview3-size8"
+                    autocomplete="off"
+                    disabled=""
+                  />
+                  <label
+                    class="ezy__epqoverview3-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                    for="ezy__epqoverview3-size8"
+                  >
+                    XXXL
+                  </label>
+                </div>
+              </div>
+              <div class="col-auto mb-4">
+                <h5 class="ezy__epqoverview3-title mb-2">QTY</h5>
+                <div class="input-group ezy__epqoverview3-qty d-inline-flex mb-2">
+                  <button class="btn px-4" type="button">-</button>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder=""
+                    value="2"
+                    aria-label="Example text with button addon"
+                    aria-describedby="button-addon1"
+                  />
+                  <button class="btn px-4" type="button">+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col d-flex">
+                <button class="btn ezy__epqoverview3-btn text-uppercase w-100 px-4 me-2 me-lg-3">
+                  Add To Cart
+                </button>
+                <button class="btn btn-link ezy__epqoverview3-btn-outline text-decoration-none w-100">
+                  View Details
+                </button>
+              </div>
+              <div class="col-sm-auto mt-2 mt-sm-0 d-flex justify-content-center">
+                <button
+                  class="btn btn-link ezy__epqoverview3-fav d-inline-flex align-items-center text-decoration-none"
+                >
+                  <i class="far fa-heart fs-5"></i>
+                </button>
+                <button
+                  class="btn btn-link ezy__epqoverview3-share d-inline-flex align-items-center text-decoration-none"
+                >
+                  <i class="fas fa-share-alt fs-5"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <br />
+
+    <!--
+    Name: Product Quick Overview 4
+-->
+    <style>
+.ezy__epqoverview4 {
+  /* Bootstrap variables */
+  --bs-body-color: #23262f;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-secondary-color-rgb: 237, 237, 237;
+  --ezy-button-color: #fff;
+  --ezy-product-color: rgba(var(--ezy-secondary-color-rgb), 0.5);
+
+  color: var(--bs-body-color);
+}
+
+/* Gray Block Style */
+.gray .ezy__epqoverview4,
+.ezy__epqoverview4.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 225, 221, 221;
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__epqoverview4,
+.ezy__epqoverview4.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+/* Dark Block Style */
+.dark .ezy__epqoverview4,
+.ezy__epqoverview4.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+.ezy__epqoverview4-heading {
+  font-size: 24px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__epqoverview4-heading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+section.ezy__epqoverview4,
+.ezy__epqoverview4 .modal-content {
+  background-color: var(--bs-body-bg);
+}
+
+.ezy__epqoverview4 .btn-close {
+  z-index: 11;
+}
+
+.ezy__epqoverview4-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview4-title {
+  font-size: 15px;
+  color: var(--bs-body-color);
+}
+
+.ezy__epqoverview4-qty {
+  width: 180px;
+}
+
+.ezy__epqoverview4-qty .btn {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview4-qty .btn:hover {
+  background-color: rgb(var(--ezy-secondary-color-rgb));
+}
+
+.ezy__epqoverview4-qty .btn:first-child {
+  border-radius: 50rem 0 0 50rem !important;
+}
+
+.ezy__epqoverview4-qty .btn:last-child {
+  border-radius: 0 50rem 50rem 0 !important;
+}
+
+.ezy__epqoverview4-qty .form-control {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  color: var(--bs-body-color);
+}
+
+.ezy__epqoverview4-qty .btn,
+.ezy__epqoverview4-qty .form-control {
+  border-color: rgb(var(--ezy-secondary-color-rgb));
+  height: 48px;
+}
+
+.ezy__epqoverview4-radios .btn {
+  border-width: 2px;
+  border-color: var(--bs-body-bg) !important;
+  background-color: rgba(var(--ezy-secondary-color-rgb), 0.5);
+  background-color: var(--ezy-product-color);
+  color: var(--bs-body-color);
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50rem !important;
+  outline: 1px solid transparent;
+  padding: 0;
+}
+
+.ezy__epqoverview4-radios .btn:hover {
+  background-color: var(--ezy-product-color);
+  outline-color: var(--ezy-product-color);
+}
+
+.ezy__epqoverview4-radios .btn-check:checked + .btn {
+  background-color: var(--ezy-product-color);
+  outline-color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview4-radios .btn-check:disabled + .btn {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.ezy__epqoverview4-btn,
+.ezy__epqoverview4-btn-outline {
+  font-size: 14px;
+  height: 42px;
+  min-width: 42px;
+}
+
+.ezy__epqoverview4-btn {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: rgb(var(--ezy-theme-color-rgb));
+  color: var(--ezy-button-color);
+}
+
+.ezy__epqoverview4-btn-outline {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: transparent;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview4-btn-outline:hover,
+.ezy__epqoverview4-btn:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.9) !important;
+  color: var(--ezy-button-color);
+}
+
+.ezy__epqoverview4-fav,
+.ezy__epqoverview4-share {
+  color: rgb(var(--ezy-theme-color-rgb));
+  height: 42px;
+}
+
+.ezy__epqoverview4-fav:hover,
+.ezy__epqoverview4-share:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview4-gallery li {
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(var(--ezy-secondary-color-rgb), 0.4);
+  border: 1px solid rgb(var(--ezy-secondary-color-rgb));
+  border-radius: 8px;
+  margin-right: 10px;
+  padding: 8px;
+}
+.ezy__epqoverview4-gallery img{
+  max-height: 85px;
+}
+
+.ezy__epqoverview4-card {
+  background-color: rgb(var(--ezy-secondary-color-rgb), 0.4);
+}
+    </style>
+<section class="ezy__epqoverview4 py-5">
+  <div class="container">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ezy__epqoverview4">
+      Product Quick Overview 4
+    </button>
+  </div>
+</section>
+<div
+  class="ezy__epqoverview4 modal fade"
+  id="ezy__epqoverview4"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content overflow-hidden">
+      <button
+        type="button"
+        class="btn-close position-absolute end-0 top-0 mt-3 me-3"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+      <div class="modal-body p-0">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="ezy__epqoverview4-card p-3">
+              <div class="text-center flex-grow-1 py-4">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/products/bag1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+
+              <ul class="nav ezy__epqoverview4-gallery">
+                <a href="#!">
+                  <li>
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/products/bag2.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                </a>
+                <a href="#!">
+                  <li>
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/products/bag1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                </a>
+                <a href="#!">
+                  <li>
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/products/bag3.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4 mt-md-0">
+            <div class="px-4 py-5">
+              <div class="mb-4">
+                <h1 class="ezy__epqoverview4-heading mb-4 flex-grow-1">
+                  Waterproof PU Leather Large Carry On Bag Travel Tote Duffel Bag
+                </h1>
+                <h3 class="ezy__epqoverview4-price mb-3 text-nowrap">Rs. 8452.90</h3>
+              </div>
+
+              <form action="#!">
+                <div class="mb-4">
+                  <h5 class="ezy__epqoverview4-title mb-2">Color</h5>
+                  <div
+                    class="btn-group ezy__epqoverview4-radios d-block mb-2"
+                    role="group"
+                    aria-label="Basic radio toggle button group"
+                  >
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview4-color"
+                      id="ezy__epqoverview4-color1"
+                      autocomplete="off"
+                      checked
+                    />
+                    <label
+                      class="btn me-1 mt-1"
+                      style="--ezy-product-color: #ffc107"
+                      for="ezy__epqoverview4-color1"
+                    ></label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview4-color"
+                      id="ezy__epqoverview4-color2"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="btn me-1 mt-1"
+                      style="--ezy-product-color: #3aa9f3"
+                      for="ezy__epqoverview4-color2"
+                    ></label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview4-color"
+                      id="ezy__epqoverview4-color3"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="btn me-1 mt-1"
+                      style="--ezy-product-color: #ff7171"
+                      for="ezy__epqoverview4-color3"
+                    ></label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview4-color"
+                      id="ezy__epqoverview4-color4"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="btn me-1 mt-1"
+                      style="--ezy-product-color: #161d25"
+                      for="ezy__epqoverview4-color4"
+                    ></label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview4-color"
+                      id="ezy__epqoverview4-color5"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="btn me-1 mt-1"
+                      style="--ezy-product-color: #ff0000"
+                      for="ezy__epqoverview4-color5"
+                    ></label>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <h5 class="ezy__epqoverview4-title mb-0">
+                    Size: <span class="opacity-50">Extra Extra Small</span>
+                  </h5>
+                  <div
+                    class="btn-group ezy__epqoverview4-radios d-block mb-2"
+                    role="group"
+                    aria-label="Basic radio toggle button group"
+                  >
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview4-size"
+                      id="ezy__epqoverview4-size1"
+                      autocomplete="off"
+                      checked=""
+                    />
+                    <label
+                      class="ezy__epqoverview4-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview4-size1"
+                    >
+                      XXS
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview4-size"
+                      id="ezy__epqoverview4-size2"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview4-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview4-size2"
+                    >
+                      XS
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview4-size"
+                      id="ezy__epqoverview4-size3"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview4-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview4-size3"
+                    >
+                      S
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview4-size"
+                      id="ezy__epqoverview4-size4"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview4-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview4-size4"
+                    >
+                      M
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview4-size"
+                      id="ezy__epqoverview4-size5"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview4-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview4-size5"
+                    >
+                      L
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview4-size"
+                      id="ezy__epqoverview4-size6"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview4-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview4-size6"
+                    >
+                      XL
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview4-size"
+                      id="ezy__epqoverview4-size7"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview4-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview4-size7"
+                    >
+                      XXL
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview4-size"
+                      id="ezy__epqoverview4-size8"
+                      autocomplete="off"
+                      disabled=""
+                    />
+                    <label
+                      class="ezy__epqoverview4-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview4-size8"
+                    >
+                      XXXL
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <h5 class="ezy__epqoverview4-title mb-2">QTY</h5>
+                  <div class="input-group ezy__epqoverview4-qty d-inline-flex mb-2">
+                    <button class="btn px-4" type="button">-</button>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder=""
+                      value="2"
+                      aria-label="Example text with button addon"
+                      aria-describedby="button-addon1"
+                    />
+                    <button class="btn px-4" type="button">+</button>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col d-flex">
+                    <button class="btn ezy__epqoverview4-btn text-uppercase w-100 px-4 me-2 me-lg-3">
+                      Add To Cart
+                    </button>
+                    <button class="btn btn-link ezy__epqoverview4-btn-outline text-decoration-none w-100">
+                      View Details
+                    </button>
+                  </div>
+                  <div class="col-12 mt-2">
+                    <button
+                      class="btn btn-link ezy__epqoverview4-fav d-inline-flex align-items-center text-decoration-none"
+                    >
+                      <i class="far fa-heart fs-5 me-1"></i> Add to wishlist
+                    </button>
+                    <button
+                      class="btn btn-link ezy__epqoverview4-share d-inline-flex align-items-center text-decoration-none"
+                    >
+                      <i class="fas fa-share-alt fs-5 me-1"></i> Share
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <br />
+
+    <!--
+    Name: Product Quick Overview 5
+-->
+    <style>
+.ezy__epqoverview5 {
+  /* Bootstrap variables */
+  --bs-body-color: #23262f;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-secondary-color-rgb: 237, 237, 237;
+  --ezy-button-color: #fff;
+  --ezy-product-color: rgba(var(--ezy-secondary-color-rgb), 0.5);
+
+  color: var(--bs-body-color);
+}
+
+/* Gray Block Style */
+.gray .ezy__epqoverview5,
+.ezy__epqoverview5.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 225, 221, 221;
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__epqoverview5,
+.ezy__epqoverview5.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+/* Dark Block Style */
+.dark .ezy__epqoverview5,
+.ezy__epqoverview5.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+.ezy__epqoverview5-heading {
+  font-size: 24px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__epqoverview5-heading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+section.ezy__epqoverview5,
+.ezy__epqoverview5 .modal-content {
+  background-color: var(--bs-body-bg);
+}
+
+.ezy__epqoverview5 .btn-close {
+  z-index: 11;
+}
+
+.ezy__epqoverview5-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview5-title {
+  font-size: 15px;
+  color: var(--bs-body-color);
+}
+
+.ezy__epqoverview5-qty {
+  width: 180px;
+}
+
+.ezy__epqoverview5-qty .btn {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview5-qty .btn:hover {
+  background-color: rgb(var(--ezy-secondary-color-rgb));
+}
+
+.ezy__epqoverview5-qty .btn:first-child {
+  border-radius: 50rem 0 0 50rem !important;
+}
+
+.ezy__epqoverview5-qty .btn:last-child {
+  border-radius: 0 50rem 50rem 0 !important;
+}
+
+.ezy__epqoverview5-qty .form-control {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  color: var(--bs-body-color);
+}
+
+.ezy__epqoverview5-qty .btn,
+.ezy__epqoverview5-qty .form-control {
+  border-color: rgb(var(--ezy-secondary-color-rgb));
+  height: 48px;
+}
+
+.ezy__epqoverview5-radios .btn {
+  border-width: 2px;
+  border-color: var(--bs-body-bg) !important;
+  background-color: rgba(var(--ezy-secondary-color-rgb), 0.5);
+  background-color: var(--ezy-product-color);
+  color: var(--bs-body-color);
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50rem !important;
+  outline: 1px solid transparent;
+  padding: 0;
+}
+
+.ezy__epqoverview5-radios .btn:hover {
+  background-color: var(--ezy-product-color);
+  outline-color: var(--ezy-product-color);
+}
+
+.ezy__epqoverview5-radios .btn-check:checked + .btn {
+  background-color: var(--ezy-product-color);
+  outline-color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview5-radios .btn-check:disabled + .btn {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.ezy__epqoverview5-btn,
+.ezy__epqoverview5-btn-outline {
+  font-size: 14px;
+  height: 42px;
+  min-width: 42px;
+}
+
+.ezy__epqoverview5-btn {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: rgb(var(--ezy-theme-color-rgb));
+  color: var(--ezy-button-color);
+}
+
+.ezy__epqoverview5-btn-outline {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: transparent;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview5-btn-outline:hover,
+.ezy__epqoverview5-btn:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.9) !important;
+  color: var(--ezy-button-color);
+}
+
+.ezy__epqoverview5-fav,
+.ezy__epqoverview5-share {
+  color: rgb(var(--ezy-theme-color-rgb));
+  height: 42px;
+}
+
+.ezy__epqoverview5-fav:hover,
+.ezy__epqoverview5-share:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epqoverview5-gallery li {
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(var(--ezy-secondary-color-rgb), 0.4);
+  border: 1px solid rgb(var(--ezy-secondary-color-rgb));
+  border-radius: 8px;
+  margin-right: 10px;
+  padding: 8px;
+}
+
+.ezy__epqoverview5-card {
+  background-color: rgb(var(--ezy-secondary-color-rgb), 0.4);
+}
+    </style>
+<section class="ezy__epqoverview5 py-5">
+  <div class="container">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ezy__epqoverview5">
+      Product Quick Overview 5
+    </button>
+  </div>
+</section>
+<div
+  class="ezy__epqoverview5 modal fade"
+  id="ezy__epqoverview5"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content overflow-hidden">
+      <button
+        type="button"
+        class="btn-close position-absolute end-0 top-0 mt-3 me-3"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+      <div class="modal-body p-0">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="ezy__epqoverview5-card p-3">
+              <div class="text-center flex-grow-1 py-4">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/products/lamp1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+
+              <ul class="nav ezy__epqoverview5-gallery">
+                <a href="#!">
+                  <li>
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/products/lamp1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                </a>
+                <a href="#!">
+                  <li>
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/products/lamp2.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                </a>
+                <a href="#!">
+                  <li>
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/products/lamp3.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4 mt-md-0">
+            <div class="px-4 py-5">
+              <div class="mb-4">
+                <h1 class="ezy__epqoverview5-heading mb-4 flex-grow-1">
+                  Switch Plug Touch Bud Table Lamps LED Creative Mushroom Lamp Makaron
+                </h1>
+                <h3 class="ezy__epqoverview5-price mb-3 text-nowrap">Rs. 2000.41</h3>
+              </div>
+
+              <form action="#!">
+                <div class="mb-4">
+                  <h5 class="ezy__epqoverview5-title mb-2">Color</h5>
+                  <div
+                    class="btn-group ezy__epqoverview5-radios d-block mb-2"
+                    role="group"
+                    aria-label="Basic radio toggle button group"
+                  >
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview5-color"
+                      id="ezy__epqoverview5-color1"
+                      autocomplete="off"
+                      checked
+                    />
+                    <label
+                      class="btn me-1 mt-1"
+                      style="--ezy-product-color: #ffc107"
+                      for="ezy__epqoverview5-color1"
+                    ></label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview5-color"
+                      id="ezy__epqoverview5-color2"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="btn me-1 mt-1"
+                      style="--ezy-product-color: #3aa9f3"
+                      for="ezy__epqoverview5-color2"
+                    ></label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview5-color"
+                      id="ezy__epqoverview5-color3"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="btn me-1 mt-1"
+                      style="--ezy-product-color: #ff7171"
+                      for="ezy__epqoverview5-color3"
+                    ></label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview5-color"
+                      id="ezy__epqoverview5-color4"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="btn me-1 mt-1"
+                      style="--ezy-product-color: #161d25"
+                      for="ezy__epqoverview5-color4"
+                    ></label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview5-color"
+                      id="ezy__epqoverview5-color5"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="btn me-1 mt-1"
+                      style="--ezy-product-color: #ff0000"
+                      for="ezy__epqoverview5-color5"
+                    ></label>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <h5 class="ezy__epqoverview5-title mb-0">
+                    Size: <span class="opacity-50">Extra Extra Small</span>
+                  </h5>
+                  <div
+                    class="btn-group ezy__epqoverview5-radios d-block mb-2"
+                    role="group"
+                    aria-label="Basic radio toggle button group"
+                  >
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview5-size"
+                      id="ezy__epqoverview5-size1"
+                      autocomplete="off"
+                      checked=""
+                    />
+                    <label
+                      class="ezy__epqoverview5-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview5-size1"
+                    >
+                      XXS
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview5-size"
+                      id="ezy__epqoverview5-size2"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview5-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview5-size2"
+                    >
+                      XS
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview5-size"
+                      id="ezy__epqoverview5-size3"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview5-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview5-size3"
+                    >
+                      S
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview5-size"
+                      id="ezy__epqoverview5-size4"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview5-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview5-size4"
+                    >
+                      M
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview5-size"
+                      id="ezy__epqoverview5-size5"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview5-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview5-size5"
+                    >
+                      L
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview5-size"
+                      id="ezy__epqoverview5-size6"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview5-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview5-size6"
+                    >
+                      XL
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview5-size"
+                      id="ezy__epqoverview5-size7"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="ezy__epqoverview5-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview5-size7"
+                    >
+                      XXL
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="ezy__epqoverview5-size"
+                      id="ezy__epqoverview5-size8"
+                      autocomplete="off"
+                      disabled=""
+                    />
+                    <label
+                      class="ezy__epqoverview5-content btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1"
+                      for="ezy__epqoverview5-size8"
+                    >
+                      XXXL
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <h5 class="ezy__epqoverview5-title mb-2">QTY</h5>
+                  <div class="input-group ezy__epqoverview5-qty d-inline-flex mb-2">
+                    <button class="btn px-4" type="button">-</button>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder=""
+                      value="2"
+                      aria-label="Example text with button addon"
+                      aria-describedby="button-addon1"
+                    />
+                    <button class="btn px-4" type="button">+</button>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col d-flex">
+                    <button class="btn ezy__epqoverview5-btn text-uppercase w-100 px-4 me-2 me-lg-3">
+                      Add To Cart
+                    </button>
+                    <button class="btn btn-link ezy__epqoverview5-btn-outline text-decoration-none w-100">
+                      View Details
+                    </button>
+                  </div>
+                  <div class="col-12 mt-2">
+                    <button
+                      class="btn btn-link ezy__epqoverview5-fav d-inline-flex align-items-center text-decoration-none"
+                    >
+                      <i class="far fa-heart fs-5 me-1"></i> Add to wishlist
+                    </button>
+                    <button
+                      class="btn btn-link ezy__epqoverview5-share d-inline-flex align-items-center text-decoration-none"
+                    >
+                      <i class="fas fa-share-alt fs-5 me-1"></i> Share
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <br />
+
+  </body>
+</html>

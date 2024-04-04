@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EasyFrontend</title>
+
+  <!-- Color Scheme-->
+  <script src="../../assets/demo/script.js"></script>
+  <script>
+    appendHeadInfo("bootstrap");
+  </script>
+</head>
+
+<body style="background: #000" class="">
+  <!--
+   Name:  eproductlist 1
+-->
+  <style>
+.ezy__eproductlist1 {
+  /* Bootstrap variables */
+  --bs-body-color: #000;
+  --bs-body-bg: #fff;
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-rating-color: #f0c800;
+  --ezy-success-color: #00d27a;
+  --ezy-warning-color: #f5803e;
+  --ezy-danger-color: #e63757;
+  --ezy-new-text-color: #ffffff;
+
+  background-color: var(--bs-body-bg);
+  padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+  .ezy__eproductlist1 {
+    padding: 100px 0;
+  }
+}
+
+/* Gray Block Style */
+.gray .ezy__eproductlist1,
+.ezy__eproductlist1.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__eproductlist1,
+.ezy__eproductlist1.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+}
+
+/* Dark Block Style */
+.dark .ezy__eproductlist1,
+.ezy__eproductlist1.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #fff;
+  --bs-body-bg: rgb(11, 23, 39);
+}
+
+.ezy__eproductlist1 img {
+  max-height: 270px;
+}
+
+.ezy__eproductlist1-new-text {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: var(--ezy-success-color);
+  color: var(--ezy-new-text-color);
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+/* title, sub-title */
+.ezy__eproductlist1-title {
+  font-size: 19px;
+  line-height: 1.2;
+  color: var(--bs-body-color);
+}
+
+.ezy__eproductlist1-title:hover,
+.ezy__eproductlist1-sub-title:hover {
+  text-decoration: underline;
+}
+
+.ezy__eproductlist1-sub-title {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--bs-body-color);
+  opacity: 0.6;
+}
+
+.ezy__eproductlist1 a {
+  text-decoration: none;
+}
+
+/* specifications */
+.ezy__eproductlist1-specifications li {
+  font-size: 16px;
+  color: var(--bs-body-color);
+  opacity: 0.6;
+}
+
+/* prices */
+.ezy__eproductlist1-discount-price {
+  color: var(--ezy-theme-color);
+  font-size: 24px;
+}
+
+.ezy__eproductlist1-real-price {
+  color: var(--bs-body-color);
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.55;
+}
+
+.ezy__eproductlist1-real-price h5 {
+  font-size: 14px;
+}
+
+/* rating */
+.ezy__eproductlist1-rating {
+  color: var(--ezy-rating-color);
+  font-size: 15px;
+}
+
+.ezy__eproductlist1-rating .count {
+  color: var(--bs-body-color);
+  opacity: 0.7;
+}
+
+/* availability */
+.ezy__eproductlist1-shipping,
+.ezy__eproductlist1-stock {
+  color: var(--bs-body-color);
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.ezy__eproductlist1-available {
+  color: var(--ezy-success-color);
+}
+
+.ezy__eproductlist1-not-available {
+  color: var(--ezy-danger-color);
+}
+
+/* icons */
+.ezy__eproductlist1-fav,
+.ezy__eproductlist1-cart {
+  width: 100%;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.ezy__eproductlist1-fav {
+  color: var(--ezy-theme-color);
+  border-color: var(--ezy-theme-color);
+}
+
+.ezy__eproductlist1-fav:hover {
+  color: #fff;
+  background-color: var(--ezy-theme-color);
+  border-color: var(--ezy-theme-color);
+}
+
+.ezy__eproductlist1-cart {
+  background-color: var(--ezy-theme-color);
+  border-color: var(--ezy-theme-color);
+}
+
+.ezy__eproductlist1-cart:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+  border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+}
+  </style>
+<section class="ezy__eproductlist1">
+  <div class="container">
+    <div class="row">
+      <!-- each item -->
+      <div class="col-12">
+        <div class="row">
+          <!-- image -->
+          <div class="col-12 col-xl-4 position-relative">
+            <h6 class="ezy__eproductlist1-new-text">New</h6>
+            <!-- img starts -->
+            <a href="#">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_11_1.png" alt="..."
+                class="rounded img-fluid w-100" />
+            </a>
+          </div>
+          <!-- details -->
+          <div class="col-12 col-lg-7 col-xl-5 pt-4 pt-xl-0 px-lg-4">
+            <!-- title -->
+            <a href="#">
+              <h5 class="ezy__eproductlist1-title">
+                2021 Apple iMac (24-inch, Apple M1 chip with 8‑core CPU and 8‑core GPU, 8GB RAM, 256GB)
+              </h5>
+            </a>
+            <!-- sub title -->
+            <a href="#">
+              <h5 class="ezy__eproductlist1-sub-title">Computer & Accessories</h5>
+            </a>
+            <!-- specifications -->
+            <ul class="ezy__eproductlist1-specifications ps-4 pt-3">
+              <li>16GB RAM</li>
+              <li>1TB SSD Hard Drive</li>
+              <li>10-core Intel Xeon</li>
+              <li>Mac OS</li>
+              <li>Secured</li>
+            </ul>
+          </div>
+
+          <!-- buttons -->
+          <div class="col-12 col-lg-5 col-xl-3 pt-4 pt-xl-0">
+            <!-- price -->
+            <div class="mb-4">
+              <h5 class="ezy__eproductlist1-discount-price">$1199.5</h5>
+              <div class="ezy__eproductlist1-real-price d-flex align-items-center">
+                <h5 class="text-decoration-line-through mb-0 me-1">$2399</h5>
+                <span>-50%</span>
+              </div>
+            </div>
+            <ul class="nav flex-column my-3">
+              <li class="mb-1">
+                <!-- ratings -->
+                <div class="d-flex align-items-center ezy__eproductlist1-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="count ms-1">(8)</span>
+                </div>
+              </li>
+              <li>
+                <span class="ezy__eproductlist1-shipping">Shipping Cost: $50</span>
+              </li>
+              <li>
+                <span class="ezy__eproductlist1-stock">
+                  Stock: <span class="ezy__eproductlist1-available">Available</span>
+                </span>
+              </li>
+            </ul>
+
+            <!-- icons -->
+            <div class="d-flex flex-column mt-4">
+              <a href="#" class="btn btn-outline-danger ezy__eproductlist1-fav me-2"><i
+                  class="fas fa-heart me-2"></i><span>Favourite</span>
+              </a>
+              <a href="#" class="btn btn-primary ezy__eproductlist1-cart mt-2"><i
+                  class="fas fa-shopping-cart me-2"></i><span>Add to Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- each item -->
+      <div class="col-12 mt-5">
+        <div class="row">
+          <!-- image -->
+          <div class="col-12 col-xl-4 position-relative">
+            <h6 class="ezy__eproductlist1-new-text">New</h6>
+            <!-- img starts -->
+            <a href="#">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_11_2.png" alt="..."
+                class="rounded img-fluid w-100" />
+            </a>
+          </div>
+          <!-- details -->
+          <div class="col-12 col-lg-7 col-xl-5 pt-4 pt-xl-0 px-lg-4">
+            <!-- title -->
+            <a href="#">
+              <h5 class="ezy__eproductlist1-title">
+                2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM
+              </h5>
+            </a>
+            <!-- sub title -->
+            <a href="#">
+              <h5 class="ezy__eproductlist1-sub-title">Computer & Accessories</h5>
+            </a>
+            <!-- specifications -->
+            <ul class="ezy__eproductlist1-specifications ps-4 pt-3">
+              <li>16GB RAM</li>
+              <li>1TB SSD Hard Drive</li>
+              <li>10-core Intel Xeon</li>
+              <li>Mac OS</li>
+              <li>Secured</li>
+            </ul>
+          </div>
+
+          <!-- buttons -->
+          <div class="col-12 col-lg-5 col-xl-3 pt-4 pt-xl-0">
+            <!-- price -->
+            <div class="mb-4">
+              <h5 class="ezy__eproductlist1-discount-price">$1199.5</h5>
+              <div class="ezy__eproductlist1-real-price d-flex align-items-center">
+                <h5 class="text-decoration-line-through mb-0 me-1">$2399</h5>
+                <span>-50%</span>
+              </div>
+            </div>
+            <ul class="nav flex-column my-3">
+              <li class="mb-1">
+                <!-- ratings -->
+                <div class="d-flex align-items-center ezy__eproductlist1-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="count ms-1">(8)</span>
+                </div>
+              </li>
+              <li>
+                <span class="ezy__eproductlist1-shipping">Shipping Cost: $50</span>
+              </li>
+              <li>
+                <span class="ezy__eproductlist1-stock">
+                  Stock: <span class="ezy__eproductlist1-available">Available</span>
+                </span>
+              </li>
+            </ul>
+
+            <!-- icons -->
+            <div class="d-flex flex-column mt-4">
+              <a href="#" class="btn btn-outline-danger ezy__eproductlist1-fav me-2"><i
+                  class="fas fa-heart me-2"></i><span>Favourite</span>
+              </a>
+              <a href="#" class="btn btn-primary ezy__eproductlist1-cart mt-2"><i
+                  class="fas fa-shopping-cart me-2"></i><span>Add to Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- each item -->
+      <div class="col-12 mt-5">
+        <div class="row">
+          <!-- image -->
+          <div class="col-12 col-xl-4 position-relative">
+            <h6 class="ezy__eproductlist1-new-text">New</h6>
+            <!-- img starts -->
+            <a href="#">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_11_3.png" alt="..."
+                class="rounded img-fluid w-100" />
+            </a>
+          </div>
+          <!-- details -->
+          <div class="col-12 col-lg-7 col-xl-5 pt-4 pt-xl-0 px-lg-4">
+            <!-- title -->
+            <a href="#">
+              <h5 class="ezy__eproductlist1-title">
+                Lenovo - Tab P11 Plus - Tablet - 11" 2K Display - MediaTek Octa-Core Processor - 4GB Memory - 128GB
+                Storage
+              </h5>
+            </a>
+            <!-- sub title -->
+            <a href="#">
+              <h5 class="ezy__eproductlist1-sub-title">Computer & Accessories</h5>
+            </a>
+            <!-- specifications -->
+            <ul class="ezy__eproductlist1-specifications ps-4 pt-3">
+              <li>16GB RAM</li>
+              <li>1TB SSD Hard Drive</li>
+              <li>10-core Intel Xeon</li>
+              <li>Mac OS</li>
+              <li>Secured</li>
+            </ul>
+          </div>
+
+          <!-- buttons -->
+          <div class="col-12 col-lg-5 col-xl-3 pt-4 pt-xl-0">
+            <!-- price -->
+            <div class="mb-4">
+              <h5 class="ezy__eproductlist1-discount-price">$1199.5</h5>
+              <div class="ezy__eproductlist1-real-price d-flex align-items-center">
+                <h5 class="text-decoration-line-through mb-0 me-1">$2399</h5>
+                <span>-50%</span>
+              </div>
+            </div>
+            <ul class="nav flex-column my-3">
+              <li class="mb-1">
+                <!-- ratings -->
+                <div class="d-flex align-items-center ezy__eproductlist1-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="count ms-1">(8)</span>
+                </div>
+              </li>
+              <li>
+                <span class="ezy__eproductlist1-shipping">Shipping Cost: $50</span>
+              </li>
+              <li>
+                <span class="ezy__eproductlist1-stock">
+                  Stock: <span class="ezy__eproductlist1-available">Available</span>
+                </span>
+              </li>
+            </ul>
+
+            <!-- icons -->
+            <div class="d-flex flex-column mt-4">
+              <a href="#" class="btn btn-outline-danger ezy__eproductlist1-fav me-2"><i
+                  class="fas fa-heart me-2"></i><span>Favourite</span>
+              </a>
+              <a href="#" class="btn btn-primary ezy__eproductlist1-cart mt-2"><i
+                  class="fas fa-shopping-cart me-2"></i><span>Add to Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+
+</html>

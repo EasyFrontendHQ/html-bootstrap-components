@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+  <body>
+    <!--
+Name:  Video 1
+-->
+    <!--
+  Name: Video 1
+ -->
+    <style>
+      .ezy__video1 {
+        /* Bootstrap variables */
+        --bs-body-color: #000;
+        --bs-body-bg: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-heading-color: #19264b;
+        --ezy-content-color: #22222e;
+
+        background: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__video1,
+      .ezy__video1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #fff;
+        --bs-body-bg: #000;
+
+        /* Easy Frontend variables */
+        --ezy-heading-color: #fff;
+        --ezy-content-color: #fff;
+      }
+
+      .ezy__video1-heading {
+        color: var(--ezy-heading-color);
+
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 47px;
+      }
+      .ezy__video1-sub-heading {
+        color: var(--ezy-sub-heading-color);
+
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+      }
+
+      .ezy__video1-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: #ffffff96;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .ezy__video1-icon:hover {
+        background-color: #ffffff44;
+      }
+      .ezy__video1-icon i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+
+        color: #fff;
+        font-size: 24px;
+      }
+      .ezy__video1-modal {
+        width: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        z-index: 11;
+      }
+      .ezy__video1-close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+
+        color: #000;
+        background-color: #ffffff6c;
+        padding: 10px 20px;
+        font-size: 22px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .ezy__video1-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        background-color: #000000c7;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+    </style>
+
+    <section class="ezy__video1">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-6">
+            <h2 class="ezy__video1-heading mb-4">Blog Section</h2>
+            <p class="ezy__video1-sub-heading mb-0">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container position-relative">
+        <video width="100%" controls autoplay poster="https://cdn.easyfrontend.com/pictures/video/video_1_1.png">
+          <source src="https://cdn.easyfrontend.com/videos/video_1.mp4" type="video/mp4" id="ezy__video1MyVideo" />
+        </video>
+        <div class="ezy__video1-icon" onclick="ezy__video1PlayVideo('../../video.mp4')">
+          <i class="fas fa-play"></i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-12 col-lg-7">
+            <h2 class="ezy__video1-heading mb-5">Its our first blog for you</h2>
+            <p class="ezy__video1-sub-heading">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you!It’s easier to reach your savings goals when you have the right savings account. Take a
+              look and find the right one for you!
+            </p>
+            <p class="ezy__video1-sub-heading pt-3">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you!It’s easier to reach your savings goals.It’s easier to reach your savings goals when you
+              have the right savings account.It’s easier to reach your savings goals when you have the right savings
+              account. Take a look and find the right one for you!It’s easier to reach your savings goals.It’s easier to
+              reach your savings goals when you have the right savings account.
+            </p>
+          </div>
+          <div class="col-12 col-lg-5 text-lg-end">
+            <div class="ezy__video1-image position-relative p-3 pe-lg-0">
+              <!-- <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg" alt="" class="w-100" /> -->
+              <video width="100%" controls autoplay poster="https://cdn.easyfrontend.com/pictures/video/video_1_2.png">
+                <source
+                  src="https://cdn.easyfrontend.com/videos/video_1.mp4"
+                  type="video/mp4"
+                  id="ezy__video1MyVideo"
+                />
+              </video>
+              <div class="ezy__video1-icon" onclick="ezy__video1PlayVideo('./videoOne.mp4')">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="ezy__video1-image position-relative p-3 pe-lg-0">
+              <!-- <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg" alt="" class="w-100" /> -->
+              <video width="100%" controls autoplay poster="https://cdn.easyfrontend.com/pictures/video/video_1_3.png">
+                <source
+                  src="https://cdn.easyfrontend.com/videos/video_1.mp4"
+                  type="video/mp4"
+                  id="ezy__video1MyVideo"
+                />
+              </video>
+              <div class="ezy__video1-icon" onclick="ezy__video1PlayVideo('./videoOne.mp4')">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container ezy__video1-modal" id="ezy__video1Modal">
+        <video width="100%" controls autoplay>
+          <source src="" type="video/mp4" id="ezy__video1MyVideo" />
+        </video>
+        <div class="ezy__video1-close" onclick="ezy__video1StopVideo()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="ezy__video1-overlay" id="ezy__video1Overlay"></div>
+    </section>
+
+    <!-- script -->
+    <script>
+      const ezy__video1Modal = document.getElementById("ezy__video1Modal"),
+        ezy__video1MyVideo = document.getElementById("ezy__video1MyVideo"),
+        ezy__video1Overlay = document.getElementById("ezy__video1Overlay");
+
+      const ezy__video1StopVideo = () => {
+        ezy__video1Modal.style.display = "none";
+        ezy__video1Overlay.style.display = "none";
+      };
+
+      const ezy__video1PlayVideo = (file) => {
+        ezy__video1MyVideo.src = file;
+        ezy__video1Modal.style.display = "block";
+        ezy__video1Overlay.style.display = "block";
+      };
+    </script>
+
+    <br />
+    <!--******************
+Name:  Video 2
+*********************-->
+    <style>
+      .ezy__video2 {
+        /* Bootstrap variables */
+        --bs-body-color: #000;
+        --bs-body-bg: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-heading-color: #19264b;
+        --ezy-sub-heading-color: #22222e;
+
+        background: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__video2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__video2,
+      .ezy__video2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #fff;
+        --bs-body-bg: #000;
+
+        /* Easy Frontend variables */
+        --ezy-heading-color: #fff;
+        --ezy-sub-heading-color: #fff;
+      }
+
+      .ezy__video2-heading {
+        color: var(--ezy-heading-color);
+
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 47px;
+      }
+      .ezy__video2-sub-heading {
+        color: var(--ezy-sub-heading-color);
+
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+      }
+
+      .ezy__video2-shape {
+        background-image: linear-gradient(100deg, #92bfad, #66a19f);
+        position: absolute;
+        left: 18%;
+        right: -100vw;
+        bottom: -100vh;
+        top: 90px;
+      }
+
+      .ezy__video2-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: #ffffff96;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .ezy__video2-icon:hover {
+        background-color: #ffffff44;
+      }
+      .ezy__video2-icon i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+      }
+      .ezy__video2-modal {
+        width: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        z-index: 11;
+      }
+      .ezy__video2-close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+
+        color: #000;
+        background-color: #ffffff6c;
+        padding: 10px 20px;
+        font-size: 22px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .ezy__video2-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        background-color: #000000c7;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+    </style>
+
+    <section class="ezy__video2">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-6">
+            <h2 class="ezy__video2-heading mb-4">Blog Section</h2>
+            <p class="ezy__video2-sub-heading mb-0">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-4 mt-md-5 position-relative">
+        <div class="ezy__video2-shape"></div>
+        <div class="row ezy__video2-gallery position-relative">
+          <div class="col-md-2 px-md-0 my-2 my-md-0 position-relative">
+            <img src="https://cdn.easyfrontend.com/pictures/video/video_2_1.png" alt="" class="w-100" />
+            <div class="ezy__video2-icon" onclick="ezy__video2PlayVideo('./videoOne.mp4')">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="col-md-2 px-md-0 my-2 my-md-0 position-relative">
+            <img src="./two.png" alt="" class="w-100" />
+            <div class="ezy__video2-icon" onclick="ezy__video2PlayVideo('./videoOne.mp4')">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="col-md-2 px-md-0 my-2 my-md-0 position-relative">
+            <img src="./three.png" alt="" class="w-100" />
+            <div class="ezy__video2-icon" onclick="ezy__video2PlayVideo('./videoOne.mp4')">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="col-md-2 px-md-0 my-2 my-md-0 position-relative">
+            <img src="./one.png" alt="" class="w-100" />
+            <div class="ezy__video2-icon" onclick="ezy__video2PlayVideo('./videoOne.mp4')">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="col-md-2 px-md-0 my-2 my-md-0 position-relative">
+            <img src="./two.png" alt="" class="w-100" />
+            <div class="ezy__video2-icon" onclick="ezy__video2PlayVideo('./videoOne.mp4')">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container ezy__video2-modal" id="ezy__video2Modal">
+        <video width="100%" controls autoplay>
+          <source src="./videoOne.mp4" type="video/mp4" id="ezy__video2MyVideo" />
+        </video>
+        <div class="ezy__video2-close" onclick="ezy__video2StopVideo()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="ezy__video2-overlay" id="ezy__video2Overlay"></div>
+    </section>
+
+    <script>
+      const ezy__video2Modal = document.getElementById("ezy__video2Modal"),
+        ezy__video2MyVideo = document.getElementById("ezy__video2MyVideo"),
+        ezy__video2Overlay = document.getElementById("ezy__video2Overlay");
+
+      const ezy__video2StopVideo = () => {
+        ezy__video2Modal.style.display = "none";
+        ezy__video2Overlay.style.display = "none";
+      };
+
+      const ezy__video2PlayVideo = (file) => {
+        ezy__video2MyVideo.src = file;
+        ezy__video2Modal.style.display = "block";
+        ezy__video2Overlay.style.display = "block";
+      };
+    </script>
+
+    <br />
+    <!--******************
+Name:  Video 3
+*********************-->
+    <style>
+      .ezy__video3 {
+        /* Bootstrap variables */
+        --bs-body-color: #000;
+        --bs-body-bg: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-heading-color: #19264b;
+        --ezy-content-color: #22222e;
+
+        background: var(--bs-body-bg);
+        padding: 60px 0;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__video3,
+      .ezy__video3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #fff;
+        --bs-body-bg: #000;
+
+        /* Easy Frontend variables */
+        --ezy-heading-color: #fff;
+        --ezy-sub-heading-color: #fff;
+      }
+
+      .ezy__video3-heading {
+        color: var(--ezy-heading-color);
+
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 47px;
+      }
+      .ezy__video3-sub-heading {
+        color: var(--ezy-sub-heading-color);
+
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+      }
+
+      .ezy__video3-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: #ffffff96;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .ezy__video3-icon:hover {
+        background-color: #ffffff44;
+      }
+      .ezy__video3-icon i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+      }
+
+      .ezy__video3-modal {
+        width: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        z-index: 11;
+      }
+      .ezy__video3-close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+
+        color: #000;
+        background-color: #ffffff6c;
+        padding: 10px 20px;
+        font-size: 22px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .ezy__video3-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        background-color: #000000c7;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+    </style>
+
+    <section class="ezy__video3">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-6">
+            <h2 class="ezy__video3-heading mb-4">Blog Section</h2>
+            <p class="ezy__video3-sub-heading mb-0">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row my-5 text-center">
+          <div class="col-12 col-lg-4 p-2 position-relative">
+            <img src="./one.png" alt="" />
+            <div class="ezy__video3-icon" onclick="ezy__video3PlayVideo('./videoOne.mp4')">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-2 position-relative">
+            <img src="./two.png" alt="" />
+            <div class="ezy__video3-icon" onclick="ezy__video3PlayVideo('./videoOne.mp4')">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-2 position-relative">
+            <img src="./three.png" alt="" />
+            <div class="ezy__video3-icon" onclick="ezy__video3PlayVideo('./videoOne.mp4')">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container ezy__video3-modal" id="ezy__video3Modal">
+        <video width="100%" controls autoplay>
+          <source src="./videoOne.mp4" type="video/mp4" id="ezy__video3MyVideo" />
+        </video>
+        <div class="ezy__video3-close" onclick="ezy__video3StopVideo()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="ezy__video3-overlay" id="ezy__video3Overlay"></div>
+    </section>
+
+    <!-- script -->
+    <script>
+      const ezy__video3Modal = document.getElementById("ezy__video3Modal"),
+        ezy__video3MyVideo = document.getElementById("ezy__video3MyVideo"),
+        ezy__video3Overlay = document.getElementById("ezy__video3Overlay");
+
+      const ezy__video3StopVideo = () => {
+        ezy__video3Modal.style.display = "none";
+        ezy__video3Overlay.style.display = "none";
+      };
+
+      const ezy__video3PlayVideo = (file) => {
+        ezy__video3MyVideo.src = file;
+        ezy__video3Modal.style.display = "block";
+        ezy__video3Overlay.style.display = "block";
+      };
+    </script>
+
+    <br />
+    <!--******************
+Name:  Video 4
+*********************-->
+    <style>
+      .ezy__video4 {
+        /* Bootstrap variables */
+        --bs-body-color: #000;
+        --bs-body-bg: #fff;
+
+        background: url(./Rectangle\ 3878.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__video4,
+      .ezy__video4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #fff;
+        --bs-body-bg: #000;
+      }
+
+      .ezy__video4-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: #ffffff96;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .ezy__video4-icon:hover {
+        background-color: #dadada8f;
+      }
+      .ezy__video4-icon i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+
+        color: rgb(90, 90, 90);
+        font-size: 24px;
+      }
+
+      .ezy__video4-modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 100%;
+        display: none;
+        z-index: 11;
+      }
+      .ezy__video4-close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+
+        color: #000;
+        background-color: #ffffff6c;
+        padding: 10px 20px;
+        font-size: 22px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .ezy__video4-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        background-color: #000000c7;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+    </style>
+
+    <section class="ezy__video4">
+      <div class="container">
+        <div class="col-12 p-0 py-5 position-relative">
+          <img src="./one.png" alt="" width="100%" height="auto" />
+          <div class="ezy__video4-icon" onclick="ezy__video4PlayVideo('./videoOne.mp4')">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal -->
+      <div class="container ezy__video4-modal" id="ezy__video4Modal">
+        <video width="100%" controls autoplay>
+          <source src="./videoOne.mp4" type="video/mp4" id="ezy__video4MyVideo" />
+        </video>
+        <div class="ezy__video4-close" onclick="ezy__video4StopVideo()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="ezy__video4-overlay" id="ezy__video4Overlay"></div>
+    </section>
+
+    <!-- script -->
+    <script>
+      const ezy__video4Modal = document.getElementById("ezy__video4Modal"),
+        ezy__video4MyVideo = document.getElementById("ezy__video4MyVideo"),
+        ezy__video4Overlay = document.getElementById("ezy__video4Overlay");
+
+      const ezy__video4StopVideo = () => {
+        ezy__video4Modal.style.display = "none";
+        ezy__video4Overlay.style.display = "none";
+      };
+
+      const ezy__video4PlayVideo = (file) => {
+        ezy__video4MyVideo.src = file;
+        ezy__video4Modal.style.display = "block";
+        ezy__video4Overlay.style.display = "block";
+      };
+    </script>
+
+    <br />
+    <!--******************
+Name:  Video 5
+*********************-->
+    <style>
+      .ezy__video5 {
+        /* Bootstrap variables */
+        --bs-body-color: #000;
+        --bs-body-bg: #fff;
+
+        background: var(--bs-body-bg);
+
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        padding: 60px 0;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__video5,
+      .ezy__video5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #fff;
+        --bs-body-bg: #000;
+      }
+      .ezy__video5 img {
+        border-radius: 10px;
+      }
+
+      .ezy__video5-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: #ffffff96;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .ezy__video5-icon:hover {
+        background-color: #ffffff44;
+      }
+      .ezy__video5-icon i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+      }
+
+      .ezy__video5-modal {
+        width: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        z-index: 11;
+      }
+      .ezy__video5-close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+
+        color: #000;
+        background-color: #ffffff6c;
+        padding: 10px 20px;
+        font-size: 22px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .ezy__video5-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        background-color: #000000c7;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+    </style>
+
+    <section class="ezy__video5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 py-5 position-relative">
+            <img src="./one.png" alt="" width="100%" height="auto" />
+            <div class="ezy__video5-icon" onclick="ezy__video5PlayVideo('./videoOne.mp4')">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3 position-relative">
+            <img src="./two.png" alt="" width="100%" />
+            <div class="ezy__video5-icon" onclick="ezy__video5PlayVideo('./videoOne.mp4')">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5 mt-md-0 position-relative">
+            <img src="./three.png" alt="" width="100%" />
+            <div class="ezy__video5-icon" onclick="ezy__video5PlayVideo('./videoOne.mp4')">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5 mt-md-0 position-relative">
+            <img src="./four.png" alt="" width="100%" />
+            <div class="ezy__video5-icon" onclick="ezy__video5PlayVideo('./videoOne.mp4')">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5 mt-md-0 position-relative">
+            <img src="./five.png" alt="" width="100%" />
+            <div class="ezy__video5-icon" onclick="ezy__video5PlayVideo('./videoOne.mp4')">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container ezy__video5-modal" id="ezy__video5Modal">
+        <video width="100%" controls autoplay>
+          <source src="./videoOne.mp4" type="video/mp4" id="ezy__video5MyVideo" />
+        </video>
+        <div class="ezy__video5-close" onclick="ezy__video5StopVideo()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="ezy__video5-overlay" id="ezy__video5Overlay"></div>
+    </section>
+
+    <!-- script -->
+    <script>
+      const ezy__video5Modal = document.getElementById("ezy__video5Modal"),
+        ezy__video5MyVideo = document.getElementById("ezy__video5MyVideo"),
+        ezy__video5Overlay = document.getElementById("ezy__video5Overlay");
+
+      const ezy__video5StopVideo = () => {
+        ezy__video5Modal.style.display = "none";
+        ezy__video5Overlay.style.display = "none";
+      };
+
+      const ezy__video5PlayVideo = (file) => {
+        ezy__video5MyVideo.src = file;
+        ezy__video5Modal.style.display = "block";
+        ezy__video5Overlay.style.display = "block";
+      };
+    </script>
+
+  </body>
+</html>

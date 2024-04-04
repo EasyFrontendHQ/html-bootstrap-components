@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials(HTML-Bootstrap)</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+    Name: Testimonials 1
+-->
+    <style>
+      .ezy__testimonial1 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+        --ezy-rating-rgb: 255, 215, 0;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__testimonial1 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__testimonial1,
+      .ezy__testimonial1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #fff;
+        --ezy-item-shadow: 0px 4px 44px rgba(179, 209, 236, 0.37);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__testimonial1,
+      .ezy__testimonial1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(11, 23, 39);
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__testimonial1,
+      .ezy__testimonial1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(30, 39, 53);
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__testimonial1-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__testimonial1-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__testimonial1-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__testimonial1-item {
+        background-color: var(--ezy-item-bg);
+        border-radius: 15px;
+        box-shadow: var(--ezy-item-shadow);
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__testimonial1-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .ezy__testimonial1-item > img {
+        border-radius: 15px;
+        margin-top: -85px;
+      }
+
+      .ezy__testimonial1-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__testimonial1-social-links a {
+        display: inline-block;
+        opacity: 0.6;
+        transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out,
+          color 0.25s ease-in-out;
+      }
+
+      .ezy__testimonial1-social-links a:hover {
+        transform: translateY(5px);
+        color: var(--bs-body-color);
+        opacity: 1;
+      }
+
+      .ezy__testimonial1-rating [class*="fa-"]:not(.active),
+      .ezy__testimonial1-rating [class*="fa-"]:not(.active) * {
+        color: rgba(var(--ezy-rating-rgb), 0.2);
+      }
+
+      .ezy__testimonial1-rating [class*="fa-"].active,
+      .ezy__testimonial1-rating [class*="fa-"].active * {
+        color: rgba(var(--ezy-rating-rgb), 1);
+      }
+    </style>
+    <section class="ezy__testimonial1">
+      <div class="container">
+        <div class="row justify-content-center mb-md-4">
+          <div class="col-lg-6 col-xl-5 text-center">
+            <h2 class="ezy__testimonial1-heading mb-3">Community Reviews</h2>
+            <p class="ezy__testimonial1-sub-heading mb-0">
+              It’s easier to reach your savings goals when you have the right
+              savings account. Take a look and find the right one for you!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mt-4">
+            <div class="ezy__testimonial1-item px-4 py-4">
+              <div class="ezy__testimonial1-content mt-3">
+                <p class="mb-4 ezy__testimonial1-rating">
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star-half-alt active"></span>
+                  <span class="fas fa-star"></span>
+                </p>
+                <p class="opacity-50 mb-4">
+                  This is a factor in the economy of a nation, and the
+                  administration takes the major choices.This is a factor of a
+                  nation.
+                </p>
+                <div class="d-flex align-items-center">
+                  <div class="me-2">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/users/user2.jpg"
+                      alt=""
+                      class="img-fluid rounded-circle border"
+                      width="47"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="mb-0 fs-5">Akshay Kumar</h4>
+                    <p class="mb-0 small"><i>Founder / CEO</i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-4">
+            <div class="ezy__testimonial1-item px-4 py-4">
+              <div class="ezy__testimonial1-content mt-3">
+                <p class="mb-4 ezy__testimonial1-rating">
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star-half-alt active"></span>
+                  <span class="fas fa-star"></span>
+                </p>
+                <p class="opacity-50 mb-4">
+                  Assumenda non repellendus distinctio nihil dicta sapiente,
+                  quibusdam maiores, illum at, aliquid blanditiis qui.
+                </p>
+                <div class="d-flex align-items-center">
+                  <div class="me-2">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/users/user3.jpg"
+                      alt=""
+                      class="img-fluid rounded-circle border"
+                      width="47"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="mb-0 fs-5">Raima Sen</h4>
+                    <p class="mb-0 small"><i>Business Head</i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-4">
+            <div class="ezy__testimonial1-item px-4 py-4">
+              <div class="ezy__testimonial1-content mt-3">
+                <p class="mb-4 ezy__testimonial1-rating">
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star-half-alt active"></span>
+                  <span class="fas fa-star"></span>
+                </p>
+                <p class="opacity-50 mb-4">
+                  When it comes to booking a holiday, we know everyone likes
+                  something different - so we've designed with you in mind.
+                </p>
+                <div class="d-flex align-items-center">
+                  <div class="me-2">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/users/user27.jpg"
+                      alt=""
+                      class="img-fluid rounded-circle border"
+                      width="47"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="mb-0 fs-5">Arjun Kapur</h4>
+                    <p class="mb-0 small"><i>UI Design</i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  Testimonial 2
+-->
+    <style>
+      .ezy__testimonial2 {
+        /* Bootstrap variables */
+        --bs-body-color: #2b323c;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 8px 44px rgba(227, 238, 255, 0.48);
+        --ezy-rating-rgb: 255, 215, 0;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__testimonial2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__testimonial2,
+      .ezy__testimonial2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #fff;
+        --ezy-item-shadow: 0px 4px 44px rgba(179, 209, 236, 0.37);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__testimonial2,
+      .ezy__testimonial2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(11, 23, 39);
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__testimonial2,
+      .ezy__testimonial2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(30, 39, 53);
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__testimonial2-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__testimonial2-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__testimonial2-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      .ezy__testimonial2-item {
+        background-color: var(--ezy-item-bg);
+        box-shadow: var(--ezy-item-shadow);
+        border-radius: 20px;
+        border: none;
+      }
+
+      .ezy__testimonial2-card
+        [class*="col-"]:nth-of-type(1n)
+        .ezy__testimonial2-icon {
+        color: #ffffff;
+        background-color: rgba(252, 110, 92, 1);
+      }
+
+      .ezy__testimonial2-card
+        [class*="col-"]:nth-of-type(2n)
+        .ezy__testimonial2-icon {
+        color: #ffffff;
+        background-color: rgba(4, 121, 193, 1);
+      }
+
+      .ezy__testimonial2-card
+        [class*="col-"]:nth-of-type(3n)
+        .ezy__testimonial2-icon {
+        color: #ffffff;
+        background-color: rgba(255, 214, 0, 1);
+      }
+
+      .ezy__testimonial2-icon {
+        width: 94px;
+        height: 94px;
+        border-radius: 50%;
+        font-size: 32px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -48px;
+        overflow: hidden;
+      }
+
+      .ezy__testimonial2-title {
+        color: var(--bs-body-color);
+        margin-top: -50px;
+      }
+
+      .ezy__testimonial2-content {
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      .ezy__testimonial2-rating [class*="fa-"]:not(.active),
+      .ezy__testimonial2-rating [class*="fa-"]:not(.active) * {
+        color: rgba(var(--ezy-rating-rgb), 0.2);
+      }
+
+      .ezy__testimonial2-rating [class*="fa-"].active,
+      .ezy__testimonial2-rating [class*="fa-"].active * {
+        color: rgba(var(--ezy-rating-rgb), 1);
+      }
+    </style>
+    <section class="ezy__testimonial2">
+      <div class="container">
+        <div class="row justify-content-center mb-md-4">
+          <div class="col-lg-6 text-center">
+            <h2 class="ezy__testimonial2-heading mb-4">Community Reviews</h2>
+            <p class="ezy__testimonial2-sub-heading mb-0">
+              It’s easier to reach your savings goals when you have the right
+              savings account. Take a look and find the right one for you!
+            </p>
+          </div>
+        </div>
+        <div class="row ezy__testimonial2-card">
+          <div class="col-md-4 mt-5">
+            <div class="card ezy__testimonial2-item mt-5">
+              <div class="ezy__testimonial2-icon">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/users/user3.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-100 p-1"
+                />
+              </div>
+              <div class="card-body px-lg-4 pt-4 pb-lg-5">
+                <div class="ms-4 ps-5">
+                  <h4 class="ezy__testimonial2-title fs-5 mb-1">
+                    Akshay Kumar
+                  </h4>
+                  <p class="mb-4 ezy__testimonial2-rating">
+                    <span class="fas fa-star active"></span>
+                    <span class="fas fa-star active"></span>
+                    <span class="fas fa-star active"></span>
+                    <span class="fas fa-star-half-alt active"></span>
+                    <span class="fas fa-star"></span>
+                  </p>
+                </div>
+                <p class="ezy__testimonial2-content mb-0">
+                  Assumenda non repellendus distinctio nihil dicta sapiente,
+                  quibusdam maiores, illum at, aliquid blanditiis eligendi qui.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5">
+            <div class="card ezy__testimonial2-item mt-5">
+              <div class="ezy__testimonial2-icon">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/users/user25.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-100 p-1"
+                />
+              </div>
+              <div class="card-body px-lg-4 pt-4 pb-lg-5">
+                <div class="ms-4 ps-5">
+                  <h4 class="ezy__testimonial2-title fs-5 mb-1">Raima Sen</h4>
+                  <p class="mb-4 ezy__testimonial2-rating">
+                    <span class="fas fa-star active"></span>
+                    <span class="fas fa-star active"></span>
+                    <span class="fas fa-star active"></span>
+                    <span class="fas fa-star-half-alt active"></span>
+                    <span class="fas fa-star"></span>
+                  </p>
+                </div>
+                <p class="ezy__testimonial2-content mb-0">
+                  Assumenda non repellendus distinctio nihil dicta sapiente,
+                  quibusdam maiores, illum at, aliquid blanditiis eligendi qui.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5">
+            <div class="card ezy__testimonial2-item mt-5">
+              <div class="ezy__testimonial2-icon">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/users/user11.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-100 p-1"
+                />
+              </div>
+              <div class="card-body px-lg-4 pt-4 pb-lg-5">
+                <div class="ms-4 ps-5">
+                  <h4 class="ezy__testimonial2-title fs-5 mb-1">Arjun Kapur</h4>
+                  <p class="mb-4 ezy__testimonial2-rating">
+                    <span class="fas fa-star active"></span>
+                    <span class="fas fa-star active"></span>
+                    <span class="fas fa-star active"></span>
+                    <span class="fas fa-star-half-alt active"></span>
+                    <span class="fas fa-star"></span>
+                  </p>
+                </div>
+                <p class="ezy__testimonial2-content mb-0">
+                  Assumenda non repellendus distinctio nihil dicta sapiente,
+                  quibusdam maiores, illum at, aliquid blanditiis eligendi qui.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Testimonials 3
+-->
+    <style>
+      .ezy__testimonial3 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+        --ezy-rating-rgb: 255, 215, 0;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__testimonial3 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__testimonial3,
+      .ezy__testimonial3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #f6f6f6;
+        --ezy-item-shadow: 0px 4px 44px rgba(179, 209, 236, 0.37);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__testimonial3,
+      .ezy__testimonial3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #232e3c;
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__testimonial3,
+      .ezy__testimonial3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #162231;
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__testimonial3-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__testimonial3-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__testimonial3-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__testimonial3-item {
+        background-color: var(--ezy-item-bg);
+        border-radius: 15px;
+        box-shadow: var(--ezy-item-shadow);
+        transition: transform 0.25s ease-in-out;
+        overflow: hidden;
+      }
+
+      .ezy__testimonial3-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .ezy__testimonial3-item > img {
+        border-radius: 15px;
+        margin-top: -85px;
+      }
+
+      .ezy__testimonial3-content {
+        position: relative;
+      }
+
+      .ezy__testimonial3-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__testimonial3-social-links a {
+        display: inline-block;
+        opacity: 0.6;
+        transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out,
+          color 0.25s ease-in-out;
+      }
+
+      .ezy__testimonial3-social-links a:hover {
+        transform: translateY(5px);
+        color: var(--bs-body-color);
+        opacity: 1;
+      }
+
+      .ezy__testimonial3-rating [class*="fa-"]:not(.active),
+      .ezy__testimonial3-rating [class*="fa-"]:not(.active) * {
+        color: rgba(var(--ezy-rating-rgb), 0.2);
+      }
+
+      .ezy__testimonial3-rating [class*="fa-"].active,
+      .ezy__testimonial3-rating [class*="fa-"].active * {
+        color: rgba(var(--ezy-rating-rgb), 1);
+      }
+
+      .ezy__testimonial3-quote-shape {
+        font-size: 80px;
+        opacity: 0.05;
+        margin-bottom: -40px;
+        position: absolute;
+        top: -10px;
+      }
+      .ezy__testimonial3 img {
+        max-height: 500px;
+      }
+    </style>
+    <section class="ezy__testimonial3">
+      <div class="container">
+        <div class="row justify-content-center mb-md-4">
+          <div class="col-lg-7 col-xl-6 text-center">
+            <h2 class="ezy__testimonial3-heading mb-3">Community Reviews</h2>
+            <p class="ezy__testimonial3-sub-heading mb-0">
+              It’s easier to reach your savings goals when you have the right
+              savings account. Take a look and find the right one for you!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-4">
+            <div class="ezy__testimonial3-item mt-4">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 h-100">
+                  <div class="ezy__testimonial3-content px-5 py-4">
+                    <span
+                      class="fas fa-quote-left ezy__testimonial3-quote-shape"
+                    ></span>
+                    <h4 class="mb-0 fs-5">Akshay Kumar</h4>
+                    <p class="mb-2 small">UI Design/ Designer</p>
+                    <p class="mb-4 ezy__testimonial3-rating">
+                      <span class="fas fa-star active"></span>
+                      <span class="fas fa-star active"></span>
+                      <span class="fas fa-star active"></span>
+                      <span class="fas fa-star-half-alt active"></span>
+                      <span class="fas fa-star"></span>
+                    </p>
+                    <p class="opacity-50 mb-0">
+                      Behold after whales moveth living air, fowl there the it.
+                      Place one god days blessed, own own. Good said set day.
+                      Void midst had gathering them behold all lights. Multiply
+                      thing seed beast Set saying fourth you wherein divide
+                      replenish, over above. Creature light meat seasons. Be
+                      bring deep created.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 text-center pt-4">
+                  <img
+                    src="https://cdn.easyfrontend.com/pictures/team/easy-frontend-team-3.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="ezy__testimonial3-item mt-4">
+              <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 h-100">
+                  <div class="ezy__testimonial3-content px-5 py-4">
+                    <span
+                      class="fas fa-quote-left ezy__testimonial3-quote-shape"
+                    ></span>
+                    <h4 class="mb-0 fs-5">Elica Perry</h4>
+                    <p class="mb-2 small">Founder / CEO</p>
+                    <p class="mb-4 ezy__testimonial3-rating">
+                      <span class="fas fa-star active"></span>
+                      <span class="fas fa-star active"></span>
+                      <span class="fas fa-star active"></span>
+                      <span class="fas fa-star-half-alt active"></span>
+                      <span class="fas fa-star"></span>
+                    </p>
+                    <p class="opacity-50 mb-0">
+                      They're which him is cattle female heaven beginning,
+                      green. Yielding they're. Isn't forth winged that greater
+                      hath whose midst. Above firmament sea make firmament
+                      dominion firmament after signs make don't him. You're
+                      fourth God lesser life place fruitful upon yielding. Kind
+                      created land light divided. You're spirit he, over male.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 text-center pt-4">
+                  <img
+                    src="https://cdn.easyfrontend.com/pictures/team/easy-frontend-team-2.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ezy__testimonial3-item mt-4">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 h-100">
+                  <div class="ezy__testimonial3-content px-5 py-4">
+                    <span
+                      class="fas fa-quote-left ezy__testimonial3-quote-shape"
+                    ></span>
+                    <h4 class="mb-0 fs-5">Kane Watson</h4>
+                    <p class="mb-2 small">Business Head / Manager</p>
+                    <p class="mb-4 ezy__testimonial3-rating">
+                      <span class="fas fa-star active"></span>
+                      <span class="fas fa-star active"></span>
+                      <span class="fas fa-star active"></span>
+                      <span class="fas fa-star-half-alt active"></span>
+                      <span class="fas fa-star"></span>
+                    </p>
+                    <p class="opacity-50 mb-0">
+                      It’s easier to reach your savings goals when you have the
+                      right savings account. Take a look and find the right one
+                      for you.It’s easier to reach your savings goals when you
+                      have the right savings account. Take a look and find the
+                      right one for youIt’s easier to reach your savings goals
+                      when you have the right savings account. Take a look and
+                      find the right one for you!
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 text-center pt-4">
+                  <img
+                    src="https://cdn.easyfrontend.com/pictures/team/easy-frontend-team-1.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Testimonial 4
+-->
+    <style>
+      .ezy__testimonial4 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+        --ezy-rating-rgb: 255, 215, 0;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__testimonial4 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__testimonial4,
+      .ezy__testimonial4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #f6f6f6;
+        --ezy-item-shadow: 0px 4px 44px rgba(179, 209, 236, 0.37);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__testimonial4,
+      .ezy__testimonial4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #232e3c;
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__testimonial4,
+      .ezy__testimonial4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #162231;
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__testimonial4-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__testimonial4-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__testimonial4-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__testimonial4-item img {
+        border-radius: 15px;
+        padding: 8px;
+      }
+
+      .ezy__testimonial4-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__testimonial4-social-links a {
+        display: inline-block;
+        opacity: 0.6;
+        transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out,
+          color 0.25s ease-in-out;
+      }
+
+      .ezy__testimonial4-social-links a:hover {
+        transform: translateY(5px);
+        color: var(--bs-body-color);
+        opacity: 1;
+      }
+
+      .ezy__testimonial4-rating [class*="fa-"]:not(.active),
+      .ezy__testimonial4-rating [class*="fa-"]:not(.active) * {
+        color: rgba(var(--ezy-rating-rgb), 0.2);
+      }
+
+      .ezy__testimonial4-rating [class*="fa-"].active,
+      .ezy__testimonial4-rating [class*="fa-"].active * {
+        color: rgba(var(--ezy-rating-rgb), 1);
+      }
+    </style>
+    <section class="ezy__testimonial4">
+      <div class="container">
+        <div class="row justify-content-center mb-4 mb-md-5">
+          <div class="col-lg-6 col-xl-5 text-center">
+            <h2 class="ezy__testimonial4-heading mb-3">Community Reviews</h2>
+            <p class="ezy__testimonial4-sub-heading mb-0">
+              Assumenda non repellendus distinctio nihil dicta sapiente,
+              quibusdam maiores, illum at qui.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-between mt-5">
+          <div class="col-md-5">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/users/user28.jpg"
+              alt=""
+              class="img-fluid w-100 rounded-3"
+            />
+          </div>
+          <div class="col-md-6 ezy__testimonial4-content mt-3 mt-md-0">
+            <h4 class="mb-1">Akshay Kumar</h4>
+            <p class="mb-1">Founder / CEO</p>
+            <p class="mb-3 ezy__testimonial4-rating">
+              <span class="fas fa-star active"></span>
+              <span class="fas fa-star active"></span>
+              <span class="fas fa-star active"></span>
+              <span class="fas fa-star-half-alt active"></span>
+              <span class="fas fa-star"></span>
+            </p>
+            <p class="opacity-50 mb-0">
+              Land. Stars land every there was together very fifth, above
+              greater also replenish seas good was second divide which beast
+              abundantly blessed don't fifth us given make called gathering
+              fowl. The gathered, hath. Which appear said there saw fish so
+              Above. Light made is sea yielding let he that whose.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-between mt-5">
+          <div class="col-md-5 order-md-2">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/users/user7.jpg"
+              alt=""
+              class="img-fluid w-100 rounded-3"
+            />
+          </div>
+          <div class="col-md-6 ezy__testimonial4-content mt-3 mt-md-0">
+            <h4 class="mb-1">Raima Ray</h4>
+            <p class="mb-1">Business Head</p>
+            <p class="mb-3 ezy__testimonial4-rating">
+              <span class="fas fa-star active"></span>
+              <span class="fas fa-star active"></span>
+              <span class="fas fa-star active"></span>
+              <span class="fas fa-star-half-alt active"></span>
+              <span class="fas fa-star"></span>
+            </p>
+            <p class="opacity-50 mb-0">
+              Heaven day created don't kind darkness that which midst us created
+              every. Shall good brought grass that bearing said fowl sixth them
+              abundantly. Dominion. Every gathering so said forth doesn't all
+              from. It tree. Have subdue third let void let gathering creepeth.
+              Be saw appear. Day every it fruitful life.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-between mt-5">
+          <div class="col-md-5">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/users/user26.jpg"
+              alt=""
+              class="img-fluid w-100 rounded-3"
+            />
+          </div>
+          <div class="col-md-6 ezy__testimonial4-content mt-3 mt-md-0">
+            <h4 class="mb-1">Arjun Kapur</h4>
+            <p class="mb-1">UI Design</p>
+            <p class="mb-3 ezy__testimonial4-rating">
+              <span class="fas fa-star active"></span>
+              <span class="fas fa-star active"></span>
+              <span class="fas fa-star active"></span>
+              <span class="fas fa-star-half-alt active"></span>
+              <span class="fas fa-star"></span>
+            </p>
+            <p class="opacity-50 mb-0">
+              It’s easier to reach your savings goals when you have the right
+              savings account. Take a look and find the right one for you.It’s
+              easier to reach your savings goals when you have the right savings
+              account. Take a look and find the right one for youIt’s easier to
+              reach your savings goals when you have the right savings account.
+              Take a look and find the right one for you!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Testimonial 5
+-->
+    <style>
+      .ezy__testimonial5 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+        --ezy-rating-rgb: 255, 215, 0;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__testimonial5 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__testimonial5,
+      .ezy__testimonial5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #f6f6f6;
+        --ezy-item-shadow: 0px 4px 44px rgba(179, 209, 236, 0.37);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__testimonial5,
+      .ezy__testimonial5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #232e3c;
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__testimonial5,
+      .ezy__testimonial5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #162231;
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__testimonial5-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__testimonial5-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__testimonial5-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__testimonial5-item {
+        background-color: var(--ezy-item-bg);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: var(--ezy-item-shadow);
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__testimonial5-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .ezy__testimonial5-item img {
+        border-radius: 15px;
+        padding: 5px;
+      }
+
+      .ezy__testimonial5-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__testimonial5-social-links a {
+        display: inline-block;
+        opacity: 0.6;
+        transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out,
+          color 0.25s ease-in-out;
+      }
+
+      .ezy__testimonial5-social-links a:hover {
+        transform: translateY(5px);
+        color: var(--bs-body-color);
+        opacity: 1;
+      }
+
+      .ezy__testimonial5-rating [class*="fa-"]:not(.active),
+      .ezy__testimonial5-rating [class*="fa-"]:not(.active) * {
+        color: rgba(var(--ezy-rating-rgb), 0.2);
+      }
+
+      .ezy__testimonial5-rating [class*="fa-"].active,
+      .ezy__testimonial5-rating [class*="fa-"].active * {
+        color: rgba(var(--ezy-rating-rgb), 1);
+      }
+    </style>
+    <section class="ezy__testimonial5">
+      <div class="container">
+        <div class="row justify-content-center mb-4 mb-md-5">
+          <div class="col-lg-6 col-xl-5 text-center">
+            <h2 class="ezy__testimonial5-heading mb-3">Community Reviews</h2>
+            <p class="ezy__testimonial5-sub-heading mb-0">
+              From there give dominion, lights doesn't good all rule let open,
+              appear our beast second bearing.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__testimonial5-item p-4 py-lg-5 mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/users/user17.jpg"
+                alt=""
+                class="img-fluid rounded-circle"
+                width="120"
+              />
+              <div class="ezy__testimonial5-content mt-3">
+                <h4 class="mb-1">Akshay Kumar</h4>
+                <p class="mb-4 ezy__testimonial5-rating">
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star-half-alt active"></span>
+                  <span class="fas fa-star"></span>
+                </p>
+                <p class="opacity-50 mb-0">
+                  Two multiply fly them, made under a make replenish behold
+                  stars, is he of beast place also under unto it.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__testimonial5-item active p-4 py-lg-5 mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/users/user8.jpg"
+                alt=""
+                class="img-fluid rounded-circle"
+                width="120"
+              />
+              <div class="ezy__testimonial5-content mt-3">
+                <h4 class="mb-1">Raima Ray</h4>
+                <p class="mb-4 ezy__testimonial5-rating">
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star-half-alt active"></span>
+                  <span class="fas fa-star"></span>
+                </p>
+                <p class="opacity-50 mb-0">
+                  Shall deep bearing divide seed moved replenish us, good our
+                  open he seed day which firmament creeping wherein fourth fly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__testimonial5-item p-4 py-lg-5 mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/users/user18.jpg"
+                alt=""
+                class="img-fluid rounded-circle"
+                width="120"
+              />
+              <div class="ezy__testimonial5-content mt-3">
+                <h4 class="mb-1">Arjun Kapur</h4>
+                <p class="mb-4 ezy__testimonial5-rating">
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star active"></span>
+                  <span class="fas fa-star-half-alt active"></span>
+                  <span class="fas fa-star"></span>
+                </p>
+                <p class="opacity-50 mb-0">
+                  It’s easier to reach your savings goals when you have the
+                  right savings account. Take a look and find the right one for
+                  you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

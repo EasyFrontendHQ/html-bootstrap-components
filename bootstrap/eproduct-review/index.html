@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+        appendHeadInfo("bootstrap");
+    </script>
+</head>
+
+<body>
+<!--
+Name: Product Review 1
+-->
+<style>
+    .ezy__epreview1 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #f5f7fd;
+        --ezy-rating-color: #ffc107;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+        position: relative;
+    }
+
+    @media (min-width: 768px) {
+        .ezy__epreview1 {
+            padding: 100px 0;
+        }
+    }
+
+    /* Gray Block Style */
+    .gray .ezy__epreview1,
+    .ezy__epreview1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-card-bg: rgb(255, 255, 255);
+    }
+
+    /* Dark Gray Block Style */
+    .dark-gray .ezy__epreview1,
+    .ezy__epreview1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(11, 23, 39);
+    }
+
+    /* Dark Block Style */
+    .dark .ezy__epreview1,
+    .ezy__epreview1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(30, 39, 53);
+    }
+
+    .ezy__epreview1 a {
+        font-weight: 500;
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: none;
+    }
+
+    .ezy__epreview1 a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: underline;
+    }
+
+    .ezy__epreview1-btn,
+    .ezy__epreview1-btn-outline {
+        font-size: 14px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .ezy__epreview1-btn {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epreview1-btn-outline {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: transparent;
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epreview1-btn-outline:hover,
+    .ezy__epreview1-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9) !important;
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epreview1-btn-text {
+        color: var(--bs-body-color);
+        background-color: transparent;
+        min-width: 35px;
+        height: 35px;
+    }
+
+    .ezy__epreview1-btn-text:hover {
+        background-color: rgba(var(--ezy-secondary-color-rgb), 0.05);
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epreview1-card {
+        border: none;
+        border-radius: 5px;
+        background-color: var(--ezy-card-bg);
+    }
+
+    .ezy__epreview1-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb), 0.05);
+        opacity: 1;
+    }
+
+    .ezy__epreview1-content {
+        font-size: 14px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epreview1-profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ezy__epreview1-rating {
+        color: var(--ezy-rating-color);
+    }
+</style>
+<section class="ezy__epreview1" id="ezy__epreview1">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+                <div class="card ezy__epreview1-card mb-3">
+                    <div class="card-body p-md-4">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="fs-4">Customer Review</h2>
+                            <div>
+                                <button class="btn ezy__epreview1-btn-outline py-1 px-md-4">New Comment</button>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview1-hr my-3"/>
+                        <div>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="ezy__epreview1-profile rounded-circle me-2 overflow-hidden">
+                                    <img alt="" class="img-fluid"
+                                         src="https://cdn.easyfrontend.com/pictures/users/user2.jpg"/>
+                                </div>
+                                <div class="d-flex flex-grow-1 justify-content-between">
+                                    <div>
+                                        <h5 class="fs-6 mb-1">Elica Perry</h5>
+                                        <p class="ezy__epreview1-content fw-light mb-0">
+                          <span class="ezy__epreview1-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">5.0</span>
+                                        </p>
+                                    </div>
+                                    <p class="ezy__epreview1-content opacity-50 mb-0">july 11,2020</p>
+                                </div>
+                            </div>
+                            <p class="ezy__epreview1-content opacity-75 mb-4">
+                                WA wonderful serenity has taken possession of my entire soul, like these sweet mornings
+                                of spring
+                                which I enjoy with my whole heart. I am alone, and feel the charm of existence in this
+                                spot, which
+                                was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed
+                                in the
+                                exquisite sense of mere tranquil existence, that I neglect my talents. I should be
+                                incapable of
+                                drawing a single stroke at the present moment.
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button
+                                        class="btn ezy__epreview1-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none me-4"
+                                >
+                                    <i class="far fa-thumbs-up fs-6 me-2"></i> Like (20)
+                                </button>
+                                <button
+                                        class="btn ezy__epreview1-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none"
+                                >
+                                    <i class="far fa-thumbs-down fs-6 me-2"></i> Dislike (6)
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview1-hr my-3"/>
+                        <div>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="ezy__epreview1-profile rounded-circle me-2 overflow-hidden">
+                                    <img alt="" class="img-fluid"
+                                         src="https://cdn.easyfrontend.com/pictures/users/user25.jpg"/>
+                                </div>
+                                <div class="d-flex flex-grow-1 justify-content-between">
+                                    <div>
+                                        <h5 class="fs-6 mb-1">Ben Stokes</h5>
+                                        <p class="ezy__epreview1-content fw-light mb-0">
+                          <span class="ezy__epreview1-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">5.0</span>
+                                        </p>
+                                    </div>
+                                    <p class="ezy__epreview1-content opacity-50 mb-0">Aug 22,2020</p>
+                                </div>
+                            </div>
+                            <p class="ezy__epreview1-content opacity-75 mb-4">
+                                Well received seems solid, serious seller and word, fast delivery, thank you and
+                                congratulations.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt
+                                mollit anim id est laborum.ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident,
+                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button
+                                        class="btn ezy__epreview1-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none me-4"
+                                >
+                                    <i class="far fa-thumbs-up fs-6 me-2"></i> Like (73)
+                                </button>
+                                <button
+                                        class="btn ezy__epreview1-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none"
+                                >
+                                    <i class="far fa-thumbs-down fs-6 me-2"></i> Dislike (3)
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview1-hr my-3"/>
+                        <div>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="ezy__epreview1-profile rounded-circle me-2 overflow-hidden">
+                                    <img alt="" class="img-fluid"
+                                         src="https://cdn.easyfrontend.com/pictures/users/user26.jpg"/>
+                                </div>
+                                <div class="d-flex flex-grow-1 justify-content-between">
+                                    <div>
+                                        <h5 class="fs-6 mb-1">John Alex</h5>
+                                        <p class="ezy__epreview1-content fw-light mb-0">
+                          <span class="ezy__epreview1-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">5.0</span>
+                                        </p>
+                                    </div>
+                                    <p class="ezy__epreview1-content opacity-50 mb-0">Feb 14,2020</p>
+                                </div>
+                            </div>
+                            <p class="ezy__epreview1-content opacity-75 mb-4">
+                                A wonderful serenity has taken possession of my entire soul, like these sweet mornings
+                                of spring
+                                which I enjoy with my whole heart. I am alone, and feel the charm of existence in this
+                                spot, which
+                                was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed
+                                in the
+                                exquisite sense of mere tranquil existence, that I neglect my talents. I should be
+                                incapable of
+                                drawing a single stroke at the present moment.
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button
+                                        class="btn ezy__epreview1-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none me-4"
+                                >
+                                    <i class="far fa-thumbs-up fs-6 me-2"></i> Like (17)
+                                </button>
+                                <button
+                                        class="btn ezy__epreview1-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none"
+                                >
+                                    <i class="far fa-thumbs-down fs-6 me-2"></i> Dislike (19)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body py-4 py-lg-5 text-center">
+                        <button class="btn ezy__epreview1-btn px-4 px-md-5">Load More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br/>
+
+<!--
+Name: Product Review 2
+-->
+<style>
+    .ezy__epreview2 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #f5f7fd;
+        --ezy-rating-color: #ffc107;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+        position: relative;
+    }
+
+    @media (min-width: 768px) {
+        .ezy__epreview2 {
+            padding: 100px 0;
+        }
+    }
+
+    /* Gray Block Style */
+    .gray .ezy__epreview2,
+    .ezy__epreview2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-card-bg: rgb(255, 255, 255);
+    }
+
+    /* Dark Gray Block Style */
+    .dark-gray .ezy__epreview2,
+    .ezy__epreview2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(11, 23, 39);
+    }
+
+    /* Dark Block Style */
+    .dark .ezy__epreview2,
+    .ezy__epreview2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(30, 39, 53);
+    }
+
+    .ezy__epreview2 a {
+        font-weight: 500;
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: none;
+    }
+
+    .ezy__epreview2 a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: underline;
+    }
+
+    .ezy__epreview2-btn,
+    .ezy__epreview2-btn-outline {
+        font-size: 14px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .ezy__epreview2-btn {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epreview2-btn-outline {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: transparent;
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epreview2-btn-outline:hover,
+    .ezy__epreview2-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9) !important;
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epreview2-btn-text {
+        color: var(--bs-body-color);
+        background-color: transparent;
+        min-width: 35px;
+        height: 35px;
+    }
+
+    .ezy__epreview2-btn-text:hover {
+        background-color: rgba(var(--ezy-secondary-color-rgb), 0.05);
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epreview2-card {
+        border: none;
+        border-radius: 5px;
+        background-color: var(--ezy-card-bg);
+    }
+
+    .ezy__epreview2-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb), 0.05);
+        opacity: 1;
+    }
+
+    .ezy__epreview2-content {
+        font-size: 14px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epreview2-profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ezy__epreview2-rating {
+        color: var(--ezy-rating-color);
+    }
+</style>
+<section class="ezy__epreview2" id="ezy__epreview2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+                <div class="card ezy__epreview2-card mb-3">
+                    <div class="card-body p-md-4">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="fs-4">Customer Review</h2>
+                            <div>
+                                <button class="btn ezy__epreview2-btn-outline py-1 px-md-4">New Comment</button>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview2-hr my-3"/>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="d-flex mb-4">
+                                    <div class="ezy__epreview2-profile rounded-circle me-2 overflow-hidden">
+                                        <img alt="" class="img-fluid"
+                                             src="https://cdn.easyfrontend.com/pictures/users/user8.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-1 mt-1">Amy Jones</h5>
+                                        <p class="ezy__epreview2-content fw-light mb-3">
+                          <span class="ezy__epreview2-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">5.0</span>
+                                        </p>
+                                        <p class="ezy__epreview2-content opacity-50 mb-0">Comment At</p>
+                                        <p class="fw-bold mb-0">July 11,2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="ezy__epreview2-content opacity-75 mb-4">
+                                    Well received seems solid, serious seller and word, fast delivery, thank you and
+                                    congratulations.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt
+                                    mollit anim id est laborum.ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <div class="d-flex justify-content-end">
+                                    <button
+                                            class="btn ezy__epreview2-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none me-4"
+                                    >
+                                        <i class="far fa-thumbs-up fs-6 me-2"></i> Like (20)
+                                    </button>
+                                    <button
+                                            class="btn ezy__epreview2-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none"
+                                    >
+                                        <i class="far fa-thumbs-down fs-6 me-2"></i> Dislike (6)
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview2-hr my-3"/>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="d-flex mb-4">
+                                    <div class="ezy__epreview2-profile rounded-circle me-2 overflow-hidden">
+                                        <img alt="" class="img-fluid"
+                                             src="https://cdn.easyfrontend.com/pictures/users/user28.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-1 mt-1">Rishab Pant</h5>
+                                        <p class="ezy__epreview2-content fw-light mb-3">
+                          <span class="ezy__epreview2-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">4.0</span>
+                                        </p>
+                                        <p class="ezy__epreview2-content opacity-50 mb-0">Comment At</p>
+                                        <p class="fw-bold mb-0">Dev 03,2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="ezy__epreview2-content opacity-75 mb-4">
+                                    The European languages are members of the same family. Their separate existence is a
+                                    myth. For
+                                    science, music, sport, etc, Europe uses the same vocabulary. The languages only
+                                    differ in their
+                                    grammar, their pronunciation and their most common words. Everyone realizes why a
+                                    new common
+                                    language would be desirable: one could refuse to pay expensive translators.
+                                </p>
+                                <div class="d-flex justify-content-end">
+                                    <button
+                                            class="btn ezy__epreview2-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none me-4"
+                                    >
+                                        <i class="far fa-thumbs-up fs-6 me-2"></i> Like (23)
+                                    </button>
+                                    <button
+                                            class="btn ezy__epreview2-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none"
+                                    >
+                                        <i class="far fa-thumbs-down fs-6 me-2"></i> Dislike (1)
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview2-hr my-3"/>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="d-flex mb-4">
+                                    <div class="ezy__epreview2-profile rounded-circle me-2 overflow-hidden">
+                                        <img alt="" class="img-fluid"
+                                             src="https://cdn.easyfrontend.com/pictures/users/user15.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-1 mt-1">Tammy Beaumont</h5>
+                                        <p class="ezy__epreview2-content fw-light mb-3">
+                          <span class="ezy__epreview2-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">5.0</span>
+                                        </p>
+                                        <p class="ezy__epreview2-content opacity-50 mb-0">Comment At</p>
+                                        <p class="fw-bold mb-0">March 28,2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="ezy__epreview2-content opacity-75 mb-4">
+                                    Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia, there
+                                    live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                    the Semantics, a
+                                    large language ocean. A small river named Duden flows by their place and supplies it
+                                    with the
+                                    necessary regelialia. It is a paradisematic country, in which roasted parts of
+                                    sentences fly into
+                                    your mouth.
+                                </p>
+                                <div class="d-flex justify-content-end">
+                                    <button
+                                            class="btn ezy__epreview2-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none me-4"
+                                    >
+                                        <i class="far fa-thumbs-up fs-6 me-2"></i> Like (24)
+                                    </button>
+                                    <button
+                                            class="btn ezy__epreview2-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none"
+                                    >
+                                        <i class="far fa-thumbs-down fs-6 me-2"></i> Dislike (9)
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body py-4 py-lg-5 text-center">
+                        <button class="btn ezy__epreview2-btn px-4 px-md-5">Load More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br/>
+
+<!--
+Name: Product Review 3
+-->
+<style>
+    .ezy__epreview3 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #f5f7fd;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+        position: relative;
+    }
+
+    @media (min-width: 768px) {
+        .ezy__epreview3 {
+            padding: 100px 0;
+        }
+    }
+
+    /* Gray Block Style */
+    .gray .ezy__epreview3,
+    .ezy__epreview3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-card-bg: rgb(255, 255, 255);
+    }
+
+    /* Dark Gray Block Style */
+    .dark-gray .ezy__epreview3,
+    .ezy__epreview3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(11, 23, 39);
+    }
+
+    /* Dark Block Style */
+    .dark .ezy__epreview3,
+    .ezy__epreview3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(30, 39, 53);
+    }
+
+    .ezy__epreview3 a {
+        font-weight: 500;
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: none;
+    }
+
+    .ezy__epreview3 a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: underline;
+    }
+
+    .ezy__epreview3-btn,
+    .ezy__epreview3-btn-outline {
+        font-size: 14px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .ezy__epreview3-btn {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epreview3-btn-outline {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: transparent;
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epreview3-btn-outline:hover,
+    .ezy__epreview3-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9) !important;
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epreview3-btn-text {
+        border: 1px solid rgba(var(--ezy-secondary-color-rgb), 0.08);
+        color: var(--bs-body-color);
+        background-color: transparent;
+        min-width: 35px;
+        height: 35px;
+    }
+
+    .ezy__epreview3-btn-text:hover {
+        border-color: transparent;
+        background-color: rgba(var(--ezy-secondary-color-rgb), 0.05);
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epreview3-card {
+        border: none;
+        border-radius: 5px;
+        background-color: var(--ezy-card-bg);
+    }
+
+    .ezy__epreview3-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb), 0.05);
+        opacity: 1;
+    }
+
+    .ezy__epreview3-content {
+        font-size: 14px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epreview3-profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ezy__epreview3-rating {
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epreview3-rating-range {
+        width: 60px;
+        min-width: 60px;
+    }
+
+    .ezy__epreview3 .progress {
+        height: 5px;
+    }
+
+    .ezy__epreview3 .progress-bar {
+        background-color: rgb(var(--ezy-theme-color-rgb));
+    }
+</style>
+<section class="ezy__epreview3" id="ezy__epreview3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+                <div class="card ezy__epreview3-card mb-3">
+                    <div class="card-body p-md-4">
+                        <h4 class="fs-4">Reviewer Recommendetion</h4>
+                        <div class="d-flex flex-wrap align-items-center fs-1">91%</div>
+                        <p class="ezy__epreview3-content opacity-75 mb-4 mb-md-5">
+                            Recomded by 6 reviewers who responded, 5 would recommend this product.
+                        </p>
+
+                        <div class="d-flex flex-wrap align-items-center">
+                            <span class="fs-1">4.5</span>
+                            <span class="ezy__epreview3-rating ms-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                        </div>
+                        <p class="ezy__epreview3-content opacity-75 mb-4">Average rating based on 2345 reviews</p>
+                        <div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview3-rating-range">
+                                    <p class="ezy__epreview3-content fw-bold mb-0">
+                                        <span class="opacity-50">5</span>
+                                        <span class="ezy__epreview3-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="0"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview3-content opacity-50 mb-0">123</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview3-rating-range">
+                                    <p class="ezy__epreview3-content fw-bold mb-0">
+                                        <span class="opacity-50">4</span>
+                                        <span class="ezy__epreview3-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="90"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 90%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview3-content opacity-50 mb-0">55</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview3-rating-range">
+                                    <p class="ezy__epreview3-content fw-bold mb-0">
+                                        <span class="opacity-50">3</span>
+                                        <span class="ezy__epreview3-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="80"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 80%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview3-content opacity-50 mb-0">12</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview3-rating-range">
+                                    <p class="ezy__epreview3-content fw-bold mb-0">
+                                        <span class="opacity-50">2</span>
+                                        <span class="ezy__epreview3-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="60"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 60%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview3-content opacity-50 mb-0">4</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview3-rating-range">
+                                    <p class="ezy__epreview3-content fw-bold mb-0">
+                                        <span class="opacity-50">1</span>
+                                        <span class="ezy__epreview3-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="30"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 30%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview3-content opacity-50 mb-0">3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="ezy__epreview3-hr my-0"/>
+                    <div class="card-body p-md-4">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="fs-4">Customer Review</h2>
+                            <div>
+                                <button class="btn ezy__epreview3-btn-outline py-1 px-md-4">New Comment</button>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview3-hr my-3"/>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="mb-4">
+                                    <div class="ezy__epreview3-profile rounded-circle me-2 overflow-hidden">
+                                        <img alt="" class="img-fluid"
+                                             src="https://cdn.easyfrontend.com/pictures/users/user20.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-1 mt-1">Alice Capsey</h5>
+                                        <p class="ezy__epreview3-content fw-light mb-3">
+                          <span class="ezy__epreview3-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">3.7</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <p class="ezy__epreview3-content opacity-75 mb-4">
+                                    Well received seems solid, serious seller and word, fast delivery, thank you and
+                                    congratulations.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt
+                                    mollit anim id est laborum.ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <div class="d-flex flex-wrap justify-content-end align-items-center">
+                                    <span class="me-3">Helpful?</span>
+                                    <button class="btn ezy__epreview3-btn-text border-2 me-2 py-1">Yes (45)</button>
+                                    <button class="btn ezy__epreview3-btn-text border-2 py-1">No (13)</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview3-hr my-3"/>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="mb-4">
+                                    <div class="ezy__epreview3-profile rounded-circle me-2 overflow-hidden">
+                                        <img alt="" class="img-fluid"
+                                             src="https://cdn.easyfrontend.com/pictures/users/user11.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-1 mt-1">Kate Cross</h5>
+                                        <p class="ezy__epreview3-content fw-light mb-3">
+                          <span class="ezy__epreview3-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">5.0</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <p class="ezy__epreview3-content opacity-75 mb-4">
+                                    One morning, when Gregor Samsa woke from troubled dreams, he found himself
+                                    transformed in his bed
+                                    into a horrible vermin. He lay on his armour-like back, and if he lifted his head a
+                                    little he
+                                    could see his brown belly, slightly domed and divided by arches into stiff sections.
+                                    The bedding
+                                    was hardly able to cover it and seemed ready to slide off any moment.
+                                </p>
+                                <div class="d-flex flex-wrap justify-content-end align-items-center">
+                                    <span class="me-3">Helpful?</span>
+                                    <button class="btn ezy__epreview3-btn-text border-2 me-2 py-1">Yes (17)</button>
+                                    <button class="btn ezy__epreview3-btn-text border-2 py-1">No (56)</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview3-hr my-3"/>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="mb-4">
+                                    <div class="ezy__epreview3-profile rounded-circle me-2 overflow-hidden">
+                                        <img alt="" class="img-fluid"
+                                             src="https://cdn.easyfrontend.com/pictures/users/user10.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-1 mt-1">Maia Bouchier</h5>
+                                        <p class="ezy__epreview3-content fw-light mb-3">
+                          <span class="ezy__epreview3-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">5.0</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <p class="ezy__epreview3-content opacity-75 mb-4">
+                                    Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.
+                                    Por scientie,
+                                    musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in
+                                    li grammatica,
+                                    li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un
+                                    nov lingua
+                                    franca: On refusa continuar payar custosi traductores. At solmen va esser necessi
+                                    far uniform
+                                    grammatica, pronunciation e plu sommun paroles.
+                                </p>
+                                <div class="d-flex flex-wrap justify-content-end align-items-center">
+                                    <span class="me-3">Helpful?</span>
+                                    <button class="btn ezy__epreview3-btn-text border-2 me-2 py-1">Yes (11)</button>
+                                    <button class="btn ezy__epreview3-btn-text border-2 py-1">No (1)</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body py-4 py-lg-5 text-center">
+                        <button class="btn ezy__epreview3-btn px-4 px-md-5">Load More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br/>
+
+<!--
+Name: Product Review 4
+-->
+<style>
+    .ezy__epreview4 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #f5f7fd;
+        --ezy-rating-color: #ffc107;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+        position: relative;
+    }
+
+    @media (min-width: 768px) {
+        .ezy__epreview4 {
+            padding: 100px 0;
+        }
+    }
+
+    /* Gray Block Style */
+    .gray .ezy__epreview4,
+    .ezy__epreview4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-card-bg: rgb(255, 255, 255);
+    }
+
+    /* Dark Gray Block Style */
+    .dark-gray .ezy__epreview4,
+    .ezy__epreview4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(11, 23, 39);
+    }
+
+    /* Dark Block Style */
+    .dark .ezy__epreview4,
+    .ezy__epreview4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(30, 39, 53);
+    }
+
+    .ezy__epreview4 a {
+        font-weight: 500;
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: none;
+    }
+
+    .ezy__epreview4 a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: underline;
+    }
+
+    .ezy__epreview4-btn,
+    .ezy__epreview4-btn-outline {
+        font-size: 14px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .ezy__epreview4-btn {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epreview4-btn-outline {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: transparent;
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epreview4-btn-outline:hover,
+    .ezy__epreview4-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9) !important;
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epreview4-btn-text {
+        color: var(--bs-body-color);
+        background-color: transparent;
+        min-width: 35px;
+        height: 35px;
+    }
+
+    .ezy__epreview4-btn-text:hover {
+        background-color: rgba(var(--ezy-secondary-color-rgb), 0.05);
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epreview4-card {
+        border: none;
+        border-radius: 5px;
+        background-color: var(--ezy-card-bg);
+    }
+
+    .ezy__epreview4-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb), 0.05);
+        opacity: 1;
+    }
+
+    .ezy__epreview4-content {
+        font-size: 14px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epreview4-profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ezy__epreview4-rating {
+        color: var(--ezy-rating-color);
+    }
+
+    .ezy__epreview4-rating-range {
+        width: 60px;
+        min-width: 60px;
+    }
+
+    .ezy__epreview4 .progress {
+        height: 5px;
+    }
+
+    .ezy__epreview4 .progress-bar {
+        background-color: rgb(var(--ezy-theme-color-rgb));
+    }
+</style>
+<section class="ezy__epreview4" id="ezy__epreview4">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+                <div class="card ezy__epreview4-card mb-3">
+                    <div class="card-body p-md-4">
+                        <h4 class="fs-4">Reviewer Recommendetion</h4>
+                        <div class="d-flex flex-wrap align-items-center fs-1">91%</div>
+                        <p class="ezy__epreview4-content opacity-75 mb-4 mb-md-5">
+                            Recomded by 6 reviewers who responded, 5 would recommend this product.
+                        </p>
+
+                        <div class="d-flex flex-wrap align-items-center">
+                            <span class="fs-1">4.5</span>
+                            <span class="ezy__epreview4-rating ms-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                        </div>
+                        <p class="ezy__epreview4-content opacity-75 mb-4">Average rating based on 2345 reviews</p>
+                        <div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview4-rating-range">
+                                    <p class="ezy__epreview4-content fw-bold mb-0">
+                                        <span class="opacity-50">5</span>
+                                        <span class="ezy__epreview4-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="0"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview4-content opacity-50 mb-0">123</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview4-rating-range">
+                                    <p class="ezy__epreview4-content fw-bold mb-0">
+                                        <span class="opacity-50">4</span>
+                                        <span class="ezy__epreview4-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="90"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 90%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview4-content opacity-50 mb-0">55</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview4-rating-range">
+                                    <p class="ezy__epreview4-content fw-bold mb-0">
+                                        <span class="opacity-50">3</span>
+                                        <span class="ezy__epreview4-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="80"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 80%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview4-content opacity-50 mb-0">12</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview4-rating-range">
+                                    <p class="ezy__epreview4-content fw-bold mb-0">
+                                        <span class="opacity-50">2</span>
+                                        <span class="ezy__epreview4-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="60"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 60%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview4-content opacity-50 mb-0">4</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview4-rating-range">
+                                    <p class="ezy__epreview4-content fw-bold mb-0">
+                                        <span class="opacity-50">1</span>
+                                        <span class="ezy__epreview4-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="30"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 30%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview4-content opacity-50 mb-0">3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="ezy__epreview4-hr my-0"/>
+                    <div class="card-body p-md-4">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="fs-4">Customer Review</h2>
+                            <div>
+                                <button class="btn ezy__epreview4-btn-outline py-1 px-md-4">New Comment</button>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview4-hr my-3"/>
+                        <div>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="ezy__epreview4-profile rounded-circle me-2 overflow-hidden">
+                                    <img alt="" class="img-fluid"
+                                         src="https://cdn.easyfrontend.com/pictures/users/user18.jpg"/>
+                                </div>
+                                <div class="d-flex flex-grow-1 justify-content-between">
+                                    <div>
+                                        <h5 class="fs-6 mb-1">Freya Kemp</h5>
+                                        <p class="ezy__epreview4-content fw-light mb-0">
+                          <span class="ezy__epreview4-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">5.0</span>
+                                        </p>
+                                    </div>
+                                    <p class="ezy__epreview4-content opacity-50 mb-0">Jan 24,2020</p>
+                                </div>
+                            </div>
+                            <p class="ezy__epreview4-content opacity-75 mb-4">
+                                Well received seems solid, serious seller and word, fast delivery, thank you and
+                                congratulations.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt
+                                mollit anim id est laborum.ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident,
+                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button
+                                        class="btn ezy__epreview4-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none me-4"
+                                >
+                                    <i class="far fa-thumbs-up fs-6 me-2"></i> Like (12)
+                                </button>
+                                <button
+                                        class="btn ezy__epreview4-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none"
+                                >
+                                    <i class="far fa-thumbs-down fs-6 me-2"></i> Dislike (3)
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview4-hr my-3"/>
+                        <div>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="ezy__epreview4-profile rounded-circle me-2 overflow-hidden">
+                                    <img alt="" class="img-fluid"
+                                         src="https://cdn.easyfrontend.com/pictures/users/user4.jpg"/>
+                                </div>
+                                <div class="d-flex flex-grow-1 justify-content-between">
+                                    <div>
+                                        <h5 class="fs-6 mb-1">Issy Wong</h5>
+                                        <p class="ezy__epreview4-content fw-light mb-0">
+                          <span class="ezy__epreview4-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">4.7</span>
+                                        </p>
+                                    </div>
+                                    <p class="ezy__epreview4-content opacity-50 mb-0">June 10,2020</p>
+                                </div>
+                            </div>
+                            <p class="ezy__epreview4-content opacity-75 mb-4">
+                                A wonderful serenity has taken possession of my entire soul, like these sweet mornings
+                                of spring
+                                which I enjoy with my whole heart. I am alone, and feel the charm of existence in this
+                                spot, which
+                                was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed
+                                in the
+                                exquisite sense of mere tranquil existence, that I neglect my talents. I should be
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button
+                                        class="btn ezy__epreview4-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none me-4"
+                                >
+                                    <i class="far fa-thumbs-up fs-6 me-2"></i> Like (25)
+                                </button>
+                                <button
+                                        class="btn ezy__epreview4-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none"
+                                >
+                                    <i class="far fa-thumbs-down fs-6 me-2"></i> Dislike (7)
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview4-hr my-3"/>
+                        <div>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="ezy__epreview4-profile rounded-circle me-2 overflow-hidden">
+                                    <img alt="" class="img-fluid"
+                                         src="https://cdn.easyfrontend.com/pictures/users/user17.jpg"/>
+                                </div>
+                                <div class="d-flex flex-grow-1 justify-content-between">
+                                    <div>
+                                        <h5 class="fs-6 mb-1">Sophia Dunkley</h5>
+                                        <p class="ezy__epreview4-content fw-light mb-0">
+                          <span class="ezy__epreview4-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">3.9</span>
+                                        </p>
+                                    </div>
+                                    <p class="ezy__epreview4-content opacity-50 mb-0">Sep 19,2020</p>
+                                </div>
+                            </div>
+                            <p class="ezy__epreview4-content opacity-75 mb-4">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium,
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae
+                                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                                aut fugit,
+                                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                                porro quisquam
+                                est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button
+                                        class="btn ezy__epreview4-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none me-4"
+                                >
+                                    <i class="far fa-thumbs-up fs-6 me-2"></i> Like (20)
+                                </button>
+                                <button
+                                        class="btn ezy__epreview4-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none"
+                                >
+                                    <i class="far fa-thumbs-down fs-6 me-2"></i> Dislike (6)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body py-4 py-lg-5 text-center">
+                        <button class="btn ezy__epreview4-btn px-4 px-md-5">Load More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br/>
+
+<!--
+Name: Product Review 5
+-->
+<style>
+    .ezy__epreview5 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #f5f7fd;
+        --ezy-rating-color: #ffc107;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+        position: relative;
+    }
+
+    @media (min-width: 768px) {
+        .ezy__epreview5 {
+            padding: 100px 0;
+        }
+    }
+
+    /* Gray Block Style */
+    .gray .ezy__epreview5,
+    .ezy__epreview5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-card-bg: rgb(255, 255, 255);
+    }
+
+    /* Dark Gray Block Style */
+    .dark-gray .ezy__epreview5,
+    .ezy__epreview5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(11, 23, 39);
+    }
+
+    /* Dark Block Style */
+    .dark .ezy__epreview5,
+    .ezy__epreview5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(30, 39, 53);
+    }
+
+    .ezy__epreview5 a {
+        font-weight: 500;
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: none;
+    }
+
+    .ezy__epreview5 a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: underline;
+    }
+
+    .ezy__epreview5-btn,
+    .ezy__epreview5-btn-outline {
+        font-size: 14px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .ezy__epreview5-btn {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epreview5-btn-outline {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: transparent;
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epreview5-btn-outline:hover,
+    .ezy__epreview5-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9) !important;
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epreview5-btn-text {
+        color: var(--bs-body-color);
+        background-color: transparent;
+        min-width: 35px;
+        height: 35px;
+    }
+
+    .ezy__epreview5-btn-text:hover {
+        background-color: rgba(var(--ezy-secondary-color-rgb), 0.05);
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epreview5-card {
+        border: none;
+        border-radius: 5px;
+        background-color: var(--ezy-card-bg);
+    }
+
+    .ezy__epreview5-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb), 0.05);
+        opacity: 1;
+    }
+
+    .ezy__epreview5-content {
+        font-size: 14px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epreview5-profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ezy__epreview5-rating {
+        color: var(--ezy-rating-color);
+    }
+
+    .ezy__epreview5-rating-range {
+        width: 60px;
+        min-width: 60px;
+    }
+
+    .ezy__epreview5 .progress {
+        height: 5px;
+    }
+
+    .ezy__epreview5 .progress-bar {
+        background-color: rgb(var(--ezy-theme-color-rgb));
+    }
+</style>
+<section class="ezy__epreview5" id="ezy__epreview5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+                <div class="card ezy__epreview5-card mb-3">
+                    <div class="card-body p-md-4">
+                        <h4 class="fs-4">Reviewer Recommendetion</h4>
+                        <div class="d-flex flex-wrap align-items-center fs-1">91%</div>
+                        <p class="ezy__epreview5-content opacity-75 mb-4 mb-md-5">
+                            Recomded by 6 reviewers who responded, 5 would recommend this product.
+                        </p>
+
+                        <div class="d-flex flex-wrap align-items-center">
+                            <span class="fs-1">4.5</span>
+                            <span class="ezy__epreview5-rating ms-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                        </div>
+                        <p class="ezy__epreview5-content opacity-75 mb-4">Average rating based on 2345 reviews</p>
+                        <div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview5-rating-range">
+                                    <p class="ezy__epreview5-content fw-bold mb-0">
+                                        <span class="opacity-50">5</span>
+                                        <span class="ezy__epreview5-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="0"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview5-content opacity-50 mb-0">123</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview5-rating-range">
+                                    <p class="ezy__epreview5-content fw-bold mb-0">
+                                        <span class="opacity-50">4</span>
+                                        <span class="ezy__epreview5-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="90"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 90%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview5-content opacity-50 mb-0">55</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview5-rating-range">
+                                    <p class="ezy__epreview5-content fw-bold mb-0">
+                                        <span class="opacity-50">3</span>
+                                        <span class="ezy__epreview5-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="80"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 80%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview5-content opacity-50 mb-0">12</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview5-rating-range">
+                                    <p class="ezy__epreview5-content fw-bold mb-0">
+                                        <span class="opacity-50">2</span>
+                                        <span class="ezy__epreview5-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="60"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 60%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview5-content opacity-50 mb-0">4</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto ezy__epreview5-rating-range">
+                                    <p class="ezy__epreview5-content fw-bold mb-0">
+                                        <span class="opacity-50">1</span>
+                                        <span class="ezy__epreview5-rating ms-1">
+                          <i class="fas fa-star"></i>
+                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div
+                                                aria-valuemax="100"
+                                                aria-valuemin="0"
+                                                aria-valuenow="30"
+                                                class="progress-bar"
+                                                role="progressbar"
+                                                style="width: 30%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="ezy__epreview5-content opacity-50 mb-0">3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="ezy__epreview5-hr my-0"/>
+                    <div class="card-body p-md-4">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="fs-4">Customer Review</h2>
+                            <div>
+                                <button class="btn ezy__epreview5-btn-outline py-1 px-md-4">New Comment</button>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview5-hr my-3"/>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="d-flex mb-4">
+                                    <div class="ezy__epreview5-profile rounded-circle me-2 overflow-hidden">
+                                        <img alt="" class="img-fluid"
+                                             src="https://cdn.easyfrontend.com/pictures/users/user1.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-1 mt-1">Danni Wyatt</h5>
+                                        <p class="ezy__epreview5-content fw-light mb-3">
+                          <span class="ezy__epreview5-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">5.0</span>
+                                        </p>
+                                        <p class="ezy__epreview5-content opacity-50 mb-0">Comment At</p>
+                                        <p class="fw-bold mb-0">July 11,2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="ezy__epreview5-content opacity-75 mb-4">
+                                    Dummy text refers to the bits of content that are used to fill a website mock-up.
+                                    This text helps
+                                    web designers better envision how the website will look as a finished product. It is
+                                    important to
+                                    understand that dummy text has no meaning whatsoever. Its sole purpose is to fill
+                                    out blank spaces
+                                    with “word-like” content, without making any copyright infringements.
+                                </p>
+                                <div class="d-flex justify-content-end">
+                                    <button
+                                            class="btn ezy__epreview5-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none me-4"
+                                    >
+                                        <i class="far fa-thumbs-up fs-6 me-2"></i> Like (20)
+                                    </button>
+                                    <button
+                                            class="btn ezy__epreview5-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none"
+                                    >
+                                        <i class="far fa-thumbs-down fs-6 me-2"></i> Dislike (6)
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview5-hr my-3"/>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="d-flex mb-4">
+                                    <div class="ezy__epreview5-profile rounded-circle me-2 overflow-hidden">
+                                        <img alt="" class="img-fluid"
+                                             src="https://cdn.easyfrontend.com/pictures/users/user23.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-1 mt-1">John Alex</h5>
+                                        <p class="ezy__epreview5-content fw-light mb-3">
+                          <span class="ezy__epreview5-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">4.9</span>
+                                        </p>
+                                        <p class="ezy__epreview5-content opacity-50 mb-0">Comment At</p>
+                                        <p class="fw-bold mb-0">Feb 09,2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="ezy__epreview5-content opacity-75 mb-4">
+                                    Now you know what dummy text is, let’s learn about its usefulness. Some people say
+                                    that they don’t
+                                    need to use a dummy text generator to deliver a web design project to the customer.
+                                    Even though
+                                    this might be true, the effect that the final project will produce on the client
+                                    won’t be as
+                                    satisfactory as in the case of one with included filler content.
+                                </p>
+                                <div class="d-flex justify-content-end">
+                                    <button
+                                            class="btn ezy__epreview5-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none me-4"
+                                    >
+                                        <i class="far fa-thumbs-up fs-6 me-2"></i> Like (67)
+                                    </button>
+                                    <button
+                                            class="btn ezy__epreview5-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none"
+                                    >
+                                        <i class="far fa-thumbs-down fs-6 me-2"></i> Dislike (7)
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="ezy__epreview5-hr my-3"/>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="d-flex mb-4">
+                                    <div class="ezy__epreview5-profile rounded-circle me-2 overflow-hidden">
+                                        <img alt="" class="img-fluid"
+                                             src="https://cdn.easyfrontend.com/pictures/users/user15.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-1 mt-1">Sophie Ecclestone</h5>
+                                        <p class="ezy__epreview5-content fw-light mb-3">
+                          <span class="ezy__epreview5-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </span>
+                                            <span class="mx-1">4.3</span>
+                                        </p>
+                                        <p class="ezy__epreview5-content opacity-50 mb-0">Comment At</p>
+                                        <p class="fw-bold mb-0">Mar 24,2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="ezy__epreview5-content opacity-75 mb-4">
+                                    A dummy text generator gives web designers the content they need. Then, they can use
+                                    the typefaces
+                                    and layout they prefer, thus obtaining the best mock-up of their work. It would be
+                                    best to be
+                                    impossible to understand and read because people might get distracted by the text
+                                    itself and its
+                                    nonsense rather than analyzing how the typefaces integrate into the design instead.
+                                </p>
+                                <div class="d-flex justify-content-end">
+                                    <button
+                                            class="btn ezy__epreview5-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none me-4"
+                                    >
+                                        <i class="far fa-thumbs-up fs-6 me-2"></i> Like (26)
+                                    </button>
+                                    <button
+                                            class="btn ezy__epreview5-btn-text py-0 d-inline-flex justify-content-center align-items-center text-decoration-none"
+                                    >
+                                        <i class="far fa-thumbs-down fs-6 me-2"></i> Dislike (5)
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body py-4 py-lg-5 text-center">
+                        <button class="btn ezy__epreview5-btn px-4 px-md-5">Load More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br/>
+
+</body>
+</html>

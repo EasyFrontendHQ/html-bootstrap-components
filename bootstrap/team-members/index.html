@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Members(HTML-Bootstrap)</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+    Name: Our Team 1
+-->
+    <style>
+      .ezy__team1 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.17);
+
+        background: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__team1 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__team1,
+      .ezy__team1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #fff;
+        --ezy-item-shadow: 0px 4px 44px rgba(199, 227, 252, 0.17);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__team1,
+      .ezy__team1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(11, 23, 39);
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__team1,
+      .ezy__team1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(30, 39, 53);
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__team1-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__team1-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__team1-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__team1-item {
+        background-color: var(--ezy-item-bg);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: var(--ezy-item-shadow);
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__team1-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .ezy__team1-item img {
+        border-radius: 20px;
+      }
+
+      .ezy__team1-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__team1-btn {
+        padding: 7px 20px;
+        min-width: 120px;
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__team1-btn:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+    </style>
+    <section class="ezy__team1">
+      <div class="container">
+        <div class="row justify-content-center mb-4 mb-md-5">
+          <div class="col-lg-6 col-xl-5 text-center">
+            <h2 class="ezy__team1-heading mb-3">Our Experts Team</h2>
+            <p class="ezy__team1-sub-heading mb-0">
+              Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at qui.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6 col-lg-3">
+            <div class="ezy__team1-item mt-4">
+              <img src="https://cdn.easyfrontend.com/pictures/team/team_square_1.jpeg" alt="" class="img-fluid w-100" />
+              <div class="ezy__team1-content px-3 py-4 px-xl-4">
+                <h4 class="mb-2">Akshay Kumar</h4>
+                <h6>Founder / CEO</h6>
+                <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+                <button class="btn btn-outline-warning mt-4 ezy__team1-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ezy__team1-item active mt-4">
+              <img src="https://cdn.easyfrontend.com/pictures/team/team_square_2.jpeg" alt="" class="img-fluid w-100" />
+              <div class="ezy__team1-content px-3 py-4 px-xl-4">
+                <h4 class="mb-2">Raima Ray</h4>
+                <h6>Business Head</h6>
+                <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+                <button class="btn btn-outline-warning mt-4 ezy__team1-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ezy__team1-item mt-4">
+              <img src="https://cdn.easyfrontend.com/pictures/team/team_square_3.jpeg" alt="" class="img-fluid w-100" />
+              <div class="ezy__team1-content px-3 py-4 px-xl-4">
+                <h4 class="mb-2">Arjun Kapur</h4>
+                <h6>UI Design</h6>
+                <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+                <button class="btn btn-outline-warning mt-4 ezy__team1-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ezy__team1-item mt-4">
+              <img src="https://cdn.easyfrontend.com/pictures/team/team_square_4.jpeg" alt="" class="img-fluid w-100" />
+              <div class="ezy__team1-content px-3 py-4 px-xl-4">
+                <h4 class="mb-2">Alia Shen</h4>
+                <h6>Marketing Head</h6>
+                <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+                <button class="btn btn-outline-warning mt-4 ezy__team1-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Our Team 2
+-->
+    <style>
+      .ezy__team2 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.17);
+
+        background: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__team2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__team2,
+      .ezy__team2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #f6f6f6;
+        --ezy-item-shadow: 0px 4px 44px rgba(199, 227, 252, 0.17);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__team2,
+      .ezy__team2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #283646;
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__team2,
+      .ezy__team2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #162231;
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__team2-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__team2-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__team2-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__team2-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__team2-social-links a {
+        display: inline-block;
+        opacity: 0.6;
+        transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out, color 0.25s ease-in-out;
+      }
+
+      .ezy__team2-social-links a:hover {
+        transform: translateY(5px);
+        color: var(--bs-body-color);
+        opacity: 1;
+      }
+    </style>
+    <section class="ezy__team2">
+      <div class="container">
+        <div class="row justify-content-center mb-4 mb-md-5">
+          <div class="col-lg-6 col-xl-5 text-center">
+            <h2 class="ezy__team2-heading mb-3">Our Experts Team</h2>
+            <p class="ezy__team2-sub-heading mb-0">
+              Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at qui.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6 col-lg-3">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/users/user24.jpg"
+              alt=""
+              class="img-fluid rounded-circle"
+              width="230"
+            />
+            <div class="ezy__team2-content px-3 py-4 px-xl-4">
+              <h4 class="mb-2">Akshay Kumar</h4>
+              <h6>Founder / CEO</h6>
+              <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+              <div class="ezy__team2-social-links mt-4">
+                <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-behance"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/users/user2.jpg"
+              alt=""
+              class="img-fluid rounded-circle"
+              width="230"
+            />
+            <div class="ezy__team2-content px-3 py-4 px-xl-4">
+              <h4 class="mb-2">Raima Ray</h4>
+              <h6>Business Head</h6>
+              <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+              <div class="ezy__team2-social-links mt-4">
+                <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-behance"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/users/user25.jpg"
+              alt=""
+              class="img-fluid rounded-circle"
+              width="230"
+            />
+            <div class="ezy__team2-content px-3 py-4 px-xl-4">
+              <h4 class="mb-2">Arjun Kapur</h4>
+              <h6>UI Design</h6>
+              <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+              <div class="ezy__team2-social-links mt-4">
+                <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-behance"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/users/user3.jpg"
+              alt=""
+              class="img-fluid rounded-circle"
+              width="230"
+            />
+            <div class="ezy__team2-content px-3 py-4 px-xl-4">
+              <h4 class="mb-2">Alia Bhatt</h4>
+              <h6>Marketing Head</h6>
+              <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+              <div class="ezy__team2-social-links mt-4">
+                <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-behance"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Our Team 3
+-->
+    <style>
+      .ezy__team3 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.17);
+
+        background: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__team3 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__team3,
+      .ezy__team3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #f6f6f6;
+        --ezy-item-shadow: 0px 4px 44px rgba(199, 227, 252, 0.17);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__team3,
+      .ezy__team3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #283646;
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__team3,
+      .ezy__team3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #162231;
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__team3-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__team3-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__team3-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__team3-item img {
+        border-radius: 20px;
+      }
+
+      .ezy__team3-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__team3-social-links a {
+        display: inline-block;
+        opacity: 0.6;
+        transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out, color 0.25s ease-in-out;
+      }
+
+      .ezy__team3-social-links a:hover {
+        transform: translateY(5px);
+        color: var(--bs-body-color);
+        opacity: 1;
+      }
+    </style>
+    <section class="ezy__team3">
+      <div class="container">
+        <div class="row justify-content-center mb-4 mb-md-5">
+          <div class="col-lg-6 col-xl-5 text-center">
+            <h2 class="ezy__team3-heading mb-3">Our Experts Team</h2>
+            <p class="ezy__team3-sub-heading mb-0">
+              Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at qui.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex mt-5">
+            <div class="me-3">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/users/user28.jpg"
+                alt=""
+                class="img-fluid rounded"
+                width="120"
+              />
+            </div>
+            <div class="ezy__team3-content">
+              <h4 class="mb-2">Akshay Kumar</h4>
+              <h6>Founder / CEO</h6>
+              <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+              <div class="ezy__team3-social-links mt-4">
+                <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-behance"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex mt-5">
+            <div class="me-3">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/users/user8.jpg"
+                alt=""
+                class="img-fluid rounded"
+                width="120"
+              />
+            </div>
+            <div class="ezy__team3-content">
+              <h4 class="mb-2">Raima Ray</h4>
+              <h6>Business Head</h6>
+              <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+              <div class="ezy__team3-social-links mt-4">
+                <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-behance"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex mt-5">
+            <div class="me-3">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/users/user27.jpg"
+                alt=""
+                class="img-fluid rounded"
+                width="120"
+              />
+            </div>
+            <div class="ezy__team3-content">
+              <h4 class="mb-2">Arjun Kapur</h4>
+              <h6>UI Design</h6>
+              <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+              <div class="ezy__team3-social-links mt-4">
+                <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-behance"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex mt-5">
+            <div class="me-3">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/users/user15.jpg"
+                alt=""
+                class="img-fluid rounded"
+                width="120"
+              />
+            </div>
+            <div class="ezy__team3-content">
+              <h4 class="mb-2">Alia Bhatt</h4>
+              <h6>Marketing Head</h6>
+              <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+              <div class="ezy__team3-social-links mt-4">
+                <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-behance"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex mt-5">
+            <div class="me-3">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/users/user26.jpg"
+                alt=""
+                class="img-fluid rounded"
+                width="120"
+              />
+            </div>
+            <div class="ezy__team3-content">
+              <h4 class="mb-2">Carl Paxton</h4>
+              <h6>Marketing</h6>
+              <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+              <div class="ezy__team3-social-links mt-4">
+                <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-behance"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex mt-5">
+            <div class="me-3">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/users/user10.jpg"
+                alt=""
+                class="img-fluid rounded"
+                width="120"
+              />
+            </div>
+            <div class="ezy__team3-content">
+              <h4 class="mb-2">Lisa Bain</h4>
+              <h6>Marketing</h6>
+              <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+              <div class="ezy__team3-social-links mt-4">
+                <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-behance"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Our Team 4
+-->
+    <style>
+      .ezy__team4 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+
+        background: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__team4 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__team4,
+      .ezy__team4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #fff;
+        --ezy-item-shadow: 0px 4px 44px rgba(199, 227, 252, 0.17);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__team4,
+      .ezy__team4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(11, 23, 39);
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__team4,
+      .ezy__team4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(30, 39, 53);
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__team4-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__team4-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__team4-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__team4-item {
+        background-color: var(--ezy-item-bg);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: var(--ezy-item-shadow);
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__team4-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .ezy__team4-item img {
+        border-radius: 15px;
+        padding: 8px;
+      }
+
+      .ezy__team4-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__team4-social-links a {
+        display: inline-block;
+        opacity: 0.6;
+        transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out, color 0.25s ease-in-out;
+      }
+
+      .ezy__team4-social-links a:hover {
+        transform: translateY(5px);
+        color: var(--bs-body-color);
+        opacity: 1;
+      }
+    </style>
+    <section class="ezy__team4">
+      <div class="container">
+        <div class="row justify-content-center mb-4 mb-md-5">
+          <div class="col-lg-6 col-xl-5 text-center">
+            <h2 class="ezy__team4-heading mb-3">Our Experts Team</h2>
+            <p class="ezy__team4-sub-heading mb-0">
+              Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at qui.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6 col-lg-3">
+            <div class="ezy__team4-item mt-4">
+              <img src="https://cdn.easyfrontend.com/pictures/users/user18.jpg" alt="" class="img-fluid w-100" />
+              <div class="ezy__team4-content px-3 py-4 px-xl-4">
+                <h4 class="mb-1">Akshay Kumar</h4>
+                <p class="mb-3 small">Founder / CEO</p>
+                <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+                <div class="ezy__team4-social-links mt-4">
+                  <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                  <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                  <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                  <a href="#"><span class="fab fa-behance"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ezy__team4-item active mt-4">
+              <img src="https://cdn.easyfrontend.com/pictures/users/user11.jpg" alt="" class="img-fluid w-100" />
+              <div class="ezy__team4-content px-3 py-4 px-xl-4">
+                <h4 class="mb-1">Raima Ray</h4>
+                <p class="mb-3 small">Business Head</p>
+                <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+                <div class="ezy__team4-social-links mt-4">
+                  <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                  <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                  <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                  <a href="#"><span class="fab fa-behance"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ezy__team4-item mt-4">
+              <img src="https://cdn.easyfrontend.com/pictures/users/user20.jpg" alt="" class="img-fluid w-100" />
+              <div class="ezy__team4-content px-3 py-4 px-xl-4">
+                <h4 class="mb-1">Arjun Kapur</h4>
+                <p class="mb-3 small">UI Design</p>
+                <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+                <div class="ezy__team4-social-links mt-4">
+                  <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                  <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                  <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                  <a href="#"><span class="fab fa-behance"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ezy__team4-item mt-4">
+              <img src="https://cdn.easyfrontend.com/pictures/users/user16.jpg" alt="" class="img-fluid w-100" />
+              <div class="ezy__team4-content px-3 py-4 px-xl-4">
+                <h4 class="mb-1">Alia Bhatt</h4>
+                <p class="mb-3 small">Marketing Head</p>
+                <p class="opacity-50 mb-0">Subscribe Easy Tutorials Youtube Channel watch more videos</p>
+                <div class="ezy__team4-social-links mt-4">
+                  <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+                  <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+                  <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+                  <a href="#"><span class="fab fa-behance"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Our Team 5
+-->
+    <style>
+      .ezy__team5 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+        --ezy-rating-rgb: 255, 215, 0;
+
+        background: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__team5 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__team5,
+      .ezy__team5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #f6f6f6;
+        --ezy-item-shadow: 0px 4px 44px rgba(199, 227, 252, 0.17);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__team5,
+      .ezy__team5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #283646;
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__team5,
+      .ezy__team5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #162231;
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__team5-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__team5-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__team5-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__team5-item img {
+        border-radius: 15px;
+        padding: 8px;
+      }
+
+      .ezy__team5-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__team5-social-links a {
+        display: inline-block;
+        opacity: 0.6;
+        transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out, color 0.25s ease-in-out;
+      }
+
+      .ezy__team5-social-links a:hover {
+        transform: translateY(5px);
+        color: var(--bs-body-color);
+        opacity: 1;
+      }
+
+      .ezy__team5-rating span:not(.active) {
+        color: rgba(var(--ezy-rating-rgb), 0.2);
+      }
+
+      .ezy__team5-rating span.active {
+        color: rgba(var(--ezy-rating-rgb), 1);
+      }
+    </style>
+    <section class="ezy__team5">
+      <div class="container">
+        <div class="row justify-content-center mb-4 mb-md-5">
+          <div class="col-lg-6 col-xl-5 text-center">
+            <h2 class="ezy__team5-heading mb-3">Our Experts Team</h2>
+            <p class="ezy__team5-sub-heading mb-0">
+              Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at qui.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-between mt-5">
+          <div class="col-md-5">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/users/user27.jpg"
+              alt=""
+              class="img-fluid w-100 rounded-3"
+            />
+          </div>
+          <div class="col-md-6 ezy__team5-content mt-3 mt-md-0">
+            <h4 class="mb-1">Akshay Kumar</h4>
+            <p class="mb-4">Founder / CEO</p>
+
+            <p class="opacity-50 mb-0">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you.It’s easier to reach your savings goals when you have the right savings account. Take a
+              look and find the right one for youIt’s easier to reach your savings goals when you have the right savings
+              account. Take a look and find the right one for you!
+            </p>
+            <div class="ezy__team5-social-links mt-4">
+              <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+              <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+              <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-behance"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-between mt-5">
+          <div class="col-md-5 order-md-2">
+            <img src="https://cdn.easyfrontend.com/pictures/users/user4.jpg" alt="" class="img-fluid w-100 rounded-3" />
+          </div>
+          <div class="col-md-6 ezy__team5-content mt-3 mt-md-0">
+            <h4 class="mb-1">Raima Ray</h4>
+            <p class="mb-4">Business Head</p>
+
+            <p class="opacity-50 mb-0">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you.It’s easier to reach your savings goals when you have the right savings account. Take a
+              look and find the right one for youIt’s easier to reach your savings goals when you have the right savings
+              account. Take a look and find the right one for you!
+            </p>
+            <div class="ezy__team5-social-links mt-4">
+              <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+              <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+              <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-behance"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-between mt-5">
+          <div class="col-md-5">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/users/user17.jpg"
+              alt=""
+              class="img-fluid w-100 rounded-3"
+            />
+          </div>
+          <div class="col-md-6 ezy__team5-content mt-3 mt-md-0">
+            <h4 class="mb-1">Arjun Kapur</h4>
+            <p class="mb-4">UI Design</p>
+
+            <p class="opacity-50 mb-0">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you.It’s easier to reach your savings goals when you have the right savings account. Take a
+              look and find the right one for youIt’s easier to reach your savings goals when you have the right savings
+              account. Take a look and find the right one for you!
+            </p>
+            <div class="ezy__team5-social-links mt-4">
+              <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+              <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+              <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-behance"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-between mt-5">
+          <div class="col-md-5 order-md-2">
+            <img src="https://cdn.easyfrontend.com/pictures/users/user7.jpg" alt="" class="img-fluid w-100 rounded-3" />
+          </div>
+          <div class="col-md-6 ezy__team5-content mt-3 mt-md-0">
+            <h4 class="mb-1">Alia Bhatt</h4>
+            <p class="mb-4">Marketing Head</p>
+
+            <p class="opacity-50 mb-0">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you.It’s easier to reach your savings goals when you have the right savings account. Take a
+              look and find the right one for youIt’s easier to reach your savings goals when you have the right savings
+              account. Take a look and find the right one for you!
+            </p>
+            <div class="ezy__team5-social-links mt-4">
+              <a href="#" class="me-3"><span class="fab fa-facebook-f"></span></a>
+              <a href="#" class="me-3"><span class="fab fa-linkedin-in"></span></a>
+              <a href="#" class="me-3"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-behance"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

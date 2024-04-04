@@ -1,0 +1,2351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body style="background: #000">
+    <!--
+   Name:  eproductgrid 1
+-->
+    <style>
+      .ezy__epgrid1 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #fff;
+        --ezy-icon-bg: #f6f8fa;
+        --ezy-icon-color: #23262f;
+        --ezy-rating-color: #eec200;
+        --ezy-button-color: #fff;
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epgrid1 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epgrid1,
+      .ezy__epgrid1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epgrid1,
+      .ezy__epgrid1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: #162231;
+        --ezy-icon-bg: #0b1727;
+        --ezy-icon-color: #c2c2c2;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epgrid1,
+      .ezy__epgrid1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: #162231;
+        --ezy-icon-bg: #0b1727;
+        --ezy-icon-color: #c2c2c2;
+      }
+
+      .ezy__epgrid1-card {
+        border-radius: 10px;
+        background-color: var(--ezy-card-bg);
+        height: 100%;
+      }
+
+      .ezy__epgrid1-heading {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epgrid1-heading {
+          font-size: 40px;
+        }
+      }
+
+      .ezy__epgrid1-row {
+        margin-left: -8px;
+        margin-right: -8px;
+      }
+
+      .ezy__epgrid1-title {
+        font-size: 16px;
+        line-height: 21px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epgrid1-price,
+      .ezy__epgrid1-ratings {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epgrid1-price {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid1-ratings i {
+        color: var(--ezy-rating-color);
+      }
+
+      .ezy__epgrid1-ratings i:hover {
+        color: var(--ezy-rating-color) !important;
+      }
+
+      .ezy__epgrid1 i:hover {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid1-cart i {
+        color: var(--ezy-icon-color);
+        font-size: 16px;
+      }
+
+      .ezy__epgrid1-card-img {
+        min-height: 210px;
+      }
+
+      .ezy__epgrid1-fav-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 11;
+      }
+
+      .ezy__epgrid1-fav-icon i {
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 50%;
+        background-color: var(--ezy-icon-bg);
+        color: var(--ezy-icon-color);
+      }
+
+      .ezy__epgrid1-btn {
+        color: #fff;
+        font-weight: 700;
+        padding: 10px 45px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid1-btn:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__epgrid1 a {
+        text-decoration: none;
+      }
+      .ezy__epgrid1 img {
+        max-height: 200px;
+        max-width: 100%;
+        width: auto;
+      }
+    </style>
+    <section class="ezy__epgrid1">
+      <div class="container">
+        <h2 class="ezy__epgrid1-heading text-center">Our Products</h2>
+        <!-- row start -->
+        <div class="row ezy__epgrid1-row text-center justify-content-xl-center mt-5">
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid1-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid1-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid1-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/chair1.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid1-title">Full Body Massage Chair weightless Bluetooth</h5>
+                </a>
+                <h5 class="ezy__epgrid1-price my-2">$1725.00</h5>
+                <div class="ezy__epgrid1-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid1-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid1-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid1-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid1-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid1-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/perfume1.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid1-title">Original Brand 212 Perfume Vip Men Long Lasting</h5>
+                </a>
+                <h5 class="ezy__epgrid1-price my-2">$1725.00</h5>
+                <div class="ezy__epgrid1-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid1-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid1-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid1-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid1-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid1-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/ecommerce/headphone.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid1-title">Wireless Headset Bluetooth Earphones and Headphone</h5>
+                </a>
+                <h5 class="ezy__epgrid1-price my-2">$125.00</h5>
+                <div class="ezy__epgrid1-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid1-ratings"><i class="fas fa-star me-1"></i>4.1</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid1-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid1-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid1-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid1-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/bag2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid1-title">Teenage Girls and Boys Backpack Schoolbag High Quality Backpacks</h5>
+                </a>
+                <h5 class="ezy__epgrid1-price my-2">$116.00</h5>
+                <div class="ezy__epgrid1-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid1-ratings"><i class="fas fa-star me-1"></i>4.0</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid1-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid1-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid1-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid1-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/lamp1.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid1-title">Touch Rechargeable Bud Table Lamps LED Creative</h5>
+                </a>
+                <h5 class="ezy__epgrid1-price my-2">$725.00</h5>
+                <div class="ezy__epgrid1-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid1-ratings"><i class="fas fa-star me-1"></i>4.8</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid1-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid1-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid1-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid1-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/ecommerce/chair.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid1-title">Side Chair Back Chair Fabric Upholstered Seat Chairs</h5>
+                </a>
+                <h5 class="ezy__epgrid1-price my-2">$185.00</h5>
+                <div class="ezy__epgrid1-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid1-ratings"><i class="fas fa-star me-1"></i>4.1</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid1-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid1-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid1-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid1-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/shoe2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid1-title">Size 21-30 Children Basketball Shoes Girls Boys</h5>
+                </a>
+                <h5 class="ezy__epgrid1-price my-2">$1525.00</h5>
+                <div class="ezy__epgrid1-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid1-ratings"><i class="fas fa-star me-1"></i>4.2</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid1-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid1-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid1-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid1-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/sofa3.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid1-title">
+                    Solid Chair Cover Office Computer Spandex Split Seat Cover Universal
+                  </h5>
+                </a>
+                <h5 class="ezy__epgrid1-price my-2">$2225.00</h5>
+                <div class="ezy__epgrid1-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid1-ratings"><i class="fas fa-star me-1"></i>4.9</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid1-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid1-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid1-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid1-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/glass2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid1-title">Luxury Square Vintage Polarized Sunglasses For Men Women</h5>
+                </a>
+                <h5 class="ezy__epgrid1-price my-2">$2925.00</h5>
+                <div class="ezy__epgrid1-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid1-ratings"><i class="fas fa-star me-1"></i>3.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid1-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid1-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid1-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid1-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/bottle3.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid1-title">2L Water Bottle Sports Outdoor Gym Drinking Water</h5>
+                </a>
+                <h5 class="ezy__epgrid1-price my-2">$175.00</h5>
+                <div class="ezy__epgrid1-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid1-ratings"><i class="fas fa-star me-1"></i>4.5</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid1-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid1-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid1-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid1-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/sbag2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid1-title">Fashion Mom Shopping Bag Tote Bag Men Ladies Folding</h5>
+                </a>
+                <h5 class="ezy__epgrid1-price my-2">$225.00</h5>
+                <div class="ezy__epgrid1-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid1-ratings"><i class="fas fa-star me-1"></i>4.7</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid1-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid1-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid1-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid1-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/ecommerce/watch-2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid1-title">Smart Watch Ultra Series 8 NFC Access Control Unlocking</h5>
+                </a>
+                <h5 class="ezy__epgrid1-price my-2">$180.00</h5>
+                <div class="ezy__epgrid1-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid1-ratings"><i class="fas fa-star me-1"></i>4.9</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid1-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+        </div>
+        <!-- row ends -->
+        <!-- button start -->
+        <div class="text-center mt-5">
+          <a class="btn ezy__epgrid1-btn" href="#" role="">See All</a>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  eproductgrid 2
+-->
+    <style>
+      .ezy__epgrid2 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: #ffffff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-icon-color: #23262f;
+        --ezy-rating-color: #eec200;
+        --ezy-button-color: #fff;
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epgrid2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epgrid2,
+      .ezy__epgrid2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epgrid2,
+      .ezy__epgrid2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-icon-color: #c2c2c2;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epgrid2,
+      .ezy__epgrid2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-icon-color: #c2c2c2;
+      }
+
+      .ezy__epgrid2-heading {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epgrid2-heading {
+          font-size: 40px;
+        }
+      }
+
+      .ezy__epgrid2-row {
+        margin-left: -8px;
+        margin-right: -8px;
+      }
+
+      .ezy__epgrid2-row [class*="col-"] {
+        padding: 8px;
+      }
+
+      .ezy__epgrid2-card {
+        background-color: transparent;
+        height: 100%;
+      }
+
+      .ezy__epgrid2-title {
+        font-size: 16px;
+        line-height: 21px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epgrid2-price,
+      .ezy__epgrid2-ratings {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epgrid2-price {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid2-ratings i {
+        color: var(--ezy-rating-color);
+      }
+
+      .ezy__epgrid2-cart i {
+        color: var(--bs-body-color);
+        font-size: 16px;
+      }
+
+      .ezy__epgrid2-cart i:hover {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid2-btn {
+        font-weight: 700;
+        padding: 10px 45px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid2-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__epgrid2 a {
+        text-decoration: none;
+      }
+    </style>
+    <section class="ezy__epgrid2">
+      <div class="container">
+        <h2 class="ezy__epgrid2-heading text-center">Product Category</h2>
+
+        <div class="row ezy__epgrid2-row text-center justify-content-start justify-content-xl-center mt-5">
+          <!-- card start -->
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card ezy__epgrid2-card border-0 p-2">
+              <div>
+                <img src="https://cdn.easyfrontend.com/pictures/ecommerce/ep-grid2_1.jpg" alt="..." class="w-100" />
+              </div>
+              <div class="card-body text-start px-1">
+                <h5 class="ezy__epgrid2-title">Autumn Cotton Linen Dress Women Loose Plus Size</h5>
+                <h5 class="ezy__epgrid2-price my-2">$725.00</h5>
+                <div class="ezy__epgrid2-details d-flex justify-content-between align-items-center px-1">
+                  <h5 class="ezy__epgrid2-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid2-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card ezy__epgrid2-card border-0 p-2">
+              <div>
+                <img src="https://cdn.easyfrontend.com/pictures/ecommerce/ep-grid2_2.jpg" alt="..." class="w-100" />
+              </div>
+              <div class="card-body text-start px-1">
+                <h5 class="ezy__epgrid2-title">2022 Smart Watch Ultra Men Women Smartwatch</h5>
+                <h5 class="ezy__epgrid2-price my-2">$172.00</h5>
+                <div class="ezy__epgrid2-details d-flex justify-content-between align-items-center px-1">
+                  <h5 class="ezy__epgrid2-ratings"><i class="fas fa-star me-1"></i>4.9</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid2-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card ezy__epgrid2-card border-0 p-2">
+              <div>
+                <img src="https://cdn.easyfrontend.com/pictures/ecommerce/ep-grid2_3.jpg" alt="..." class="w-100" />
+              </div>
+              <div class="card-body text-start px-1">
+                <h5 class="ezy__epgrid2-title">ROSEGAL Gothic Dresses Black High Waist</h5>
+                <h5 class="ezy__epgrid2-price my-2">$1199.00</h5>
+                <div class="ezy__epgrid2-details d-flex justify-content-between align-items-center px-1">
+                  <h5 class="ezy__epgrid2-ratings"><i class="fas fa-star me-1"></i>4.2</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid2-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card ezy__epgrid2-card border-0 p-2">
+              <div>
+                <img src="https://cdn.easyfrontend.com/pictures/ecommerce/ep-grid2_4.jpg" alt="..." class="w-100" />
+              </div>
+              <div class="card-body text-start px-1">
+                <h5 class="ezy__epgrid2-title">Best YBT Women Belt Imitation Leather Pin Buckle Belt New</h5>
+                <h5 class="ezy__epgrid2-price my-2">$89.00</h5>
+                <div class="ezy__epgrid2-details d-flex justify-content-between align-items-center px-1">
+                  <h5 class="ezy__epgrid2-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid2-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- button start -->
+        <div class="text-center">
+          <div class="ezy__epgrid2-button mt-5">
+            <a class="btn btn-primary ezy__epgrid2-btn" href="#!" role="button">See All</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  eproductgrid 3
+-->
+    <style>
+      .ezy__epgrid3 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: #ffffff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #fff;
+        --ezy-icon-bg: #f6f8fa;
+        --ezy-icon-color: #23262f;
+        --ezy-rating-color: #eec200;
+        --ezy-button-color: #fff;
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epgrid3 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epgrid3,
+      .ezy__epgrid3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epgrid3,
+      .ezy__epgrid3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: #162231;
+        --ezy-icon-bg: #0b1727;
+        --ezy-icon-color: #c2c2c2;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epgrid3,
+      .ezy__epgrid3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: #162231;
+        --ezy-icon-bg: #0b1727;
+        --ezy-icon-color: #c2c2c2;
+      }
+
+      .ezy__epgrid3-card {
+        border-radius: 10px;
+        background-color: var(--ezy-card-bg);
+        height: 100%;
+      }
+
+      .ezy__epgrid3-heading {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epgrid3-heading {
+          font-size: 40px;
+        }
+      }
+
+      .ezy__epgrid3-row {
+        margin-left: -8px;
+        margin-right: -8px;
+      }
+
+      .ezy__epgrid3-title {
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epgrid3-price,
+      .ezy__epgrid3-ratings {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epgrid3-price {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid3-ratings i {
+        color: var(--ezy-rating-color);
+      }
+
+      .ezy__epgrid3-cart i {
+        font-size: 16px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epgrid3-cart i:hover {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid3-card-img {
+        min-height: 210px;
+      }
+
+      .ezy__epgrid3-fav-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
+
+      .ezy__epgrid3-fav-icon i {
+        padding: 15px;
+        border-radius: 50%;
+        background-color: var(--ezy-icon-bg);
+        color: var(--ezy-icon-color);
+      }
+
+      .ezy__epgrid3-fav-icon i:hover {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid3-btn {
+        font-weight: 700;
+        padding: 10px 45px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid3-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__epgrid3 a {
+        text-decoration: none;
+      }
+
+      .ezy__epgrid3 img {
+        max-height: 200px;
+        max-width: 100%;
+        width: auto;
+      }
+    </style>
+    <section class="ezy__epgrid3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <h2 class="ezy__epgrid3-heading">Product Category</h2>
+          </div>
+          <!-- button start -->
+          <div class="col-auto">
+            <a class="btn btn-primary ezy__epgrid3-btn" href="#!" role="button">See All</a>
+          </div>
+          <!-- button end -->
+        </div>
+        <!-- row start -->
+        <div class="row ezy__epgrid3-row text-center justify-content-xl-center mt-5">
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid3-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid3-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid3-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/sofa5.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid3-title">Side Chair Back Chair Fabric Upholstered Seat</h5>
+                </a>
+                <h5 class="ezy__epgrid3-price my-2">$1500.00</h5>
+                <div class="ezy__epgrid3-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid3-ratings"><i class="fas fa-star me-1"></i>4.3</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid3-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid3-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid3-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid3-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/lamp2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid3-title">Touch Rechargeable Bud Table Lamps LED Creative Mushroom</h5>
+                </a>
+                <h5 class="ezy__epgrid3-price my-2">$172.00</h5>
+                <div class="ezy__epgrid3-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid3-ratings"><i class="fas fa-star me-1"></i>4.9</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid3-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid3-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid3-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid3-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/chair3.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid3-title">Modern Lounge Chair with Ottoman Classic Designer Chair Genuine</h5>
+                </a>
+                <h5 class="ezy__epgrid3-price my-2">$1125.00</h5>
+                <div class="ezy__epgrid3-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid3-ratings"><i class="fas fa-star me-1"></i>4.1</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid3-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid3-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid3-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid3-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/earings2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid3-title">New Classic Copper Alloy Smooth Metal Hoop Earrings</h5>
+                </a>
+                <h5 class="ezy__epgrid3-price my-2">$15.00</h5>
+                <div class="ezy__epgrid3-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid3-ratings"><i class="fas fa-star me-1"></i>4.9</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid3-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid3-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid3-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid3-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/pant2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid3-title">EACHIN Boys Pants Boys Pants Solid Cargo Pants Teenage Boy</h5>
+                </a>
+                <h5 class="ezy__epgrid3-price my-2">$152.00</h5>
+                <div class="ezy__epgrid3-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid3-ratings"><i class="fas fa-star me-1"></i>4.3</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid3-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid3-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid3-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid3-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/perfume3.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid3-title">Men's Perfumes Sauvage Eau De Parfum Perfumes Long Lasting</h5>
+                </a>
+                <h5 class="ezy__epgrid3-price my-2">$122.00</h5>
+                <div class="ezy__epgrid3-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid3-ratings"><i class="fas fa-star me-1"></i>4.4</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid3-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid3-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid3-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid3-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/couch2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid3-title">multi-functional leather sofa small living room moder</h5>
+                </a>
+                <h5 class="ezy__epgrid3-price my-2">$125.00</h5>
+                <div class="ezy__epgrid3-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid3-ratings"><i class="fas fa-star me-1"></i>4.8</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid3-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid3-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid3-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid3-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/ecommerce/watch-2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid3-title">Smart Watch Ultra 8 NFC Access Control Unlocking</h5>
+                </a>
+                <h5 class="ezy__epgrid3-price my-2">$15.00</h5>
+                <div class="ezy__epgrid3-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid3-ratings"><i class="fas fa-star me-1"></i>4.7</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid3-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid3-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid3-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid3-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/sbag2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid3-title">Luxury Tassel Small Messenger Bag For Women Lingge Embroidery</h5>
+                </a>
+                <h5 class="ezy__epgrid3-price my-2">$1100.00</h5>
+                <div class="ezy__epgrid3-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid3-ratings"><i class="fas fa-star me-1"></i>4.0</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid3-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid3-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid3-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid3-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/cap2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid3-title">Disney Captain America Children's Hat Baby Baseball</h5>
+                </a>
+                <h5 class="ezy__epgrid3-price my-2">$152.00</h5>
+                <div class="ezy__epgrid3-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid3-ratings"><i class="fas fa-star me-1"></i>4.1</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid3-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid3-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid3-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid3-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/glass1.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid3-title">ZUEE Retro Small Rectangle Sunglasses Women Vintage Brand</h5>
+                </a>
+                <h5 class="ezy__epgrid3-price my-2">$425.00</h5>
+                <div class="ezy__epgrid3-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid3-ratings"><i class="fas fa-star me-1"></i>4.9</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid3-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid3-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid3-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid3-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/tshirt3.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body h-100 pt-0 text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid3-title">Spring Autumn Kids Thin Sweater Boys Girls Clothes Cute</h5>
+                </a>
+                <h5 class="ezy__epgrid3-price my-2">$157.00</h5>
+                <div class="ezy__epgrid3-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid3-ratings"><i class="fas fa-star me-1"></i>4.2</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid3-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+        </div>
+      </div>
+      <!-- row ends -->
+    </section>
+
+    <br />
+
+    <!--
+   Name:  eproductgrid 4
+-->
+    <style>
+      .ezy__epgrid4 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: #ffffff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-border-color: rgba(0, 0, 0, 0.125);
+        --ezy-icon-bg: #f6f8fa;
+        --ezy-icon-color: #23262f;
+        --ezy-rating-color: #eec200;
+        --ezy-button-color: #fff;
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epgrid4 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epgrid4,
+      .ezy__epgrid4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epgrid4,
+      .ezy__epgrid4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-border-color: #3a4450;
+        --ezy-icon-bg: #0b1727;
+        --ezy-icon-color: #c2c2c2;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epgrid4,
+      .ezy__epgrid4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-border-color: #3a4450;
+        --ezy-icon-bg: #0b1727;
+        --ezy-icon-color: #c2c2c2;
+      }
+
+      .ezy__epgrid4-card {
+        border-radius: 10px;
+        background-color: var(--ezy-card-bg);
+        height: 100%;
+      }
+
+      .ezy__epgrid4-heading {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epgrid4-heading {
+          font-size: 40px;
+        }
+      }
+
+      .ezy__epgrid4-row {
+        margin-left: -8px;
+        margin-right: -8px;
+      }
+
+      .ezy__epgrid4-card {
+        background-color: transparent;
+        border-color: var(--ezy-card-border-color);
+      }
+
+      .ezy__epgrid4-title {
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epgrid4-price,
+      .ezy__epgrid4-ratings {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epgrid4-price {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid4-ratings i {
+        color: var(--ezy-rating-color);
+      }
+
+      .ezy__epgrid4-cart i {
+        font-size: 17px;
+        color: var(--ezy-icon-color);
+      }
+
+      .ezy__epgrid4-cart i:hover {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid4-card-img {
+        min-height: 210px;
+      }
+
+      .ezy__epgrid4-fav-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 11;
+      }
+
+      .ezy__epgrid4-fav-icon i {
+        padding: 15px;
+        border-radius: 50%;
+        background-color: var(--ezy-icon-bg);
+        color: var(--ezy-icon-color);
+      }
+
+      .ezy__epgrid4-fav-icon i:hover {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid4-btn {
+        font-weight: 700;
+        padding: 10px 45px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid4-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__epgrid4 a {
+        text-decoration: none;
+      }
+
+      .ezy__epgrid4 img {
+        max-height: 200px;
+        max-width: 100%;
+        width: auto;
+      }
+    </style>
+    <section class="ezy__epgrid4">
+      <div class="container">
+        <h2 class="ezy__epgrid4-heading text-center">Our Products</h2>
+        <!-- row start -->
+        <div class="row ezy__epgrid4-row text-center justify-content-xl-center mt-5">
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid4-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid4-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid4-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/perfume2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-center">
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-title">Men's Perfumes Sauvage Eau De Parfum Perfumes Long Lasting</h5>
+                </a>
+                <h5 class="ezy__epgrid4-ratings">
+                  <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i
+                  ><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i>
+                </h5>
+                <h5 class="ezy__epgrid4-price my-2">$1300.00</h5>
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-cart"><i class="fas fa-shopping-cart"></i></h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid4-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid4-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid4-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/shoe1.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-center">
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-title">LAOCHRA White Shoes For Men Sneakers Leather Korean Style</h5>
+                </a>
+                <h5 class="ezy__epgrid4-ratings">
+                  <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i
+                  ><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i>
+                </h5>
+                <h5 class="ezy__epgrid4-price my-2">$1751.00</h5>
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-cart"><i class="fas fa-shopping-cart"></i></h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid4-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid4-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid4-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/sofa1.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-center">
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-title">
+                    multi-functional leather sofa small living room modern simple smart sofa combin
+                  </h5>
+                </a>
+                <h5 class="ezy__epgrid4-ratings">
+                  <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i
+                  ><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i>
+                </h5>
+                <h5 class="ezy__epgrid4-price my-2">$751.00</h5>
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-cart"><i class="fas fa-shopping-cart"></i></h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid4-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid4-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid4-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/tshirt1.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-center">
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-title">Spring Autumn Kids Thin Sweater Boy Clothes Cute Dinosaur</h5>
+                </a>
+                <h5 class="ezy__epgrid4-ratings">
+                  <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i
+                  ><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i>
+                </h5>
+                <h5 class="ezy__epgrid4-price my-2">$1225.00</h5>
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-cart"><i class="fas fa-shopping-cart"></i></h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid4-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid4-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid4-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/watch3.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-center">
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-title">
+                    - Smart Watch Ultra 8 NFC Access Control Unlocking Smartwatch Series
+                  </h5>
+                </a>
+                <h5 class="ezy__epgrid4-ratings">
+                  <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i
+                  ><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i>
+                </h5>
+                <h5 class="ezy__epgrid4-price my-2">$1524.00</h5>
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-cart"><i class="fas fa-shopping-cart"></i></h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid4-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid4-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid4-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/pant3.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-center">
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-title">
+                    Boys Pants Boys Pants Solid Cargo Pants Teenage Boy Multi-Pocket Trousers
+                  </h5>
+                </a>
+                <h5 class="ezy__epgrid4-ratings">
+                  <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i
+                  ><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i>
+                </h5>
+                <h5 class="ezy__epgrid4-price my-2">$852.00</h5>
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-cart"><i class="fas fa-shopping-cart"></i></h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid4-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid4-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid4-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/earings2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-center">
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-title">New Classic Copper Alloy Smooth Metal Hoop Earrings For Woman</h5>
+                </a>
+                <h5 class="ezy__epgrid4-ratings">
+                  <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i
+                  ><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i>
+                </h5>
+                <h5 class="ezy__epgrid4-price my-2">$458.00</h5>
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-cart"><i class="fas fa-shopping-cart"></i></h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid4-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid4-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid4-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/bag1.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-center">
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-title">Luxury Tassel Small Messenger Bag For Women Lingge Embroidery</h5>
+                </a>
+                <h5 class="ezy__epgrid4-ratings">
+                  <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i
+                  ><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i>
+                </h5>
+                <h5 class="ezy__epgrid4-price my-2">$754.00</h5>
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-cart"><i class="fas fa-shopping-cart"></i></h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid4-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid4-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid4-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/cap3.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-center">
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-title">Disney Captain America Children's Hat Baby Baseball</h5>
+                </a>
+                <h5 class="ezy__epgrid4-ratings">
+                  <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i
+                  ><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i>
+                </h5>
+                <h5 class="ezy__epgrid4-price my-2">$547.00</h5>
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-cart"><i class="fas fa-shopping-cart"></i></h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid4-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid4-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid4-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/bottle1.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-center">
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-title">touch Rechargeable Bud Table Lamps LED Creative Mushroom</h5>
+                </a>
+                <h5 class="ezy__epgrid4-ratings">
+                  <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i
+                  ><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i>
+                </h5>
+                <h5 class="ezy__epgrid4-price my-2">$879.00</h5>
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-cart"><i class="fas fa-shopping-cart"></i></h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid4-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid4-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid4-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/sofa5.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-center">
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-title">Modern Lounge Chair with Ottoman Classic Designer Chair</h5>
+                </a>
+                <h5 class="ezy__epgrid4-ratings">
+                  <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i
+                  ><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i>
+                </h5>
+                <h5 class="ezy__epgrid4-price my-2">$684.00</h5>
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-cart"><i class="fas fa-shopping-cart"></i></h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-2">
+            <div class="card ezy__epgrid4-card position-relative p-2">
+              <a href="#!">
+                <div class="ezy__epgrid4-fav-icon"><i class="fas fa-heart"></i></div>
+              </a>
+              <div class="card-body">
+                <div class="ezy__epgrid4-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/lamp5.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+              <div class="card-body h-100 pt-0 text-center">
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-title">Touch Rechargeable Bud Table Lamps LED Creative Mushroom</h5>
+                </a>
+                <h5 class="ezy__epgrid4-ratings">
+                  <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i
+                  ><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i>
+                </h5>
+                <h5 class="ezy__epgrid4-price my-2">$245.00</h5>
+                <a href="#!">
+                  <h5 class="ezy__epgrid4-cart"><i class="fas fa-shopping-cart"></i></h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+        </div>
+        <!-- button start -->
+        <div class="text-center mt-5">
+          <a class="btn btn-primary ezy__epgrid4-btn" href="#!" role="button">See All</a>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  eproductgrid 5
+-->
+    <style>
+      .ezy__epgrid5 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: #ffffff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #fff;
+        --ezy-img-bg: #edf8eb;
+        --ezy-icon-bg: #f6f8fa;
+        --ezy-icon-color: #23262f;
+        --ezy-button-color: #fff;
+        --ezy-rating-color: #eec200;
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epgrid5 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epgrid5,
+      .ezy__epgrid5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epgrid5,
+      .ezy__epgrid5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: #162231;
+        --ezy-icon-bg: #0b1727;
+        --ezy-icon-color: #c2c2c2;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epgrid5,
+      .ezy__epgrid5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: #162231;
+        --ezy-icon-bg: #0b1727;
+        --ezy-icon-color: #c2c2c2;
+      }
+
+      .ezy__epgrid5-heading {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epgrid5-heading {
+          font-size: 40px;
+        }
+      }
+
+      .ezy__epgrid5-row {
+        margin-left: -4px;
+        margin-right: -4px;
+      }
+
+      .ezy__epgrid5-card {
+        background-color: transparent;
+      }
+
+      .ezy__epgrid5-title {
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epgrid5-price,
+      .ezy__epgrid5-ratings {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epgrid5-price {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid5-ratings i {
+        color: var(--ezy-rating-color);
+      }
+
+      .ezy__epgrid5-cart i {
+        font-size: 16px;
+        color: var(--ezy-icon-color);
+      }
+
+      .ezy__epgrid5-cart i:hover {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid5-card-img {
+        background-color: var(--ezy-img-bg);
+        border-radius: 10px;
+        min-height: 210px;
+      }
+
+      .ezy__epgrid5-fav-icon {
+        position: absolute;
+        bottom: -15px;
+        right: 15px;
+        z-index: 11;
+      }
+
+      .ezy__epgrid5-fav-icon i {
+        padding: 15px;
+        border-radius: 50%;
+        background-color: var(--ezy-icon-bg);
+        color: var(--ezy-icon-color);
+      }
+
+      .ezy__epgrid5-fav-icon i:hover {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid5-btn {
+        font-weight: 700;
+        padding: 10px 45px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__epgrid5-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__epgrid5 a {
+        text-decoration: none;
+      }
+
+      .ezy__epgrid5 img {
+        max-height: 200px;
+        max-width: 100%;
+        width: auto;
+      }
+    </style>
+    <section class="ezy__epgrid5">
+      <div class="container">
+        <h2 class="ezy__epgrid5-heading text-center">Our Products</h2>
+        <!-- row start -->
+        <div class="row ezy__epgrid5-row text-center justify-content-xl-center mt-5">
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+            <div class="card ezy__epgrid5-card border-0 p-2">
+              <div class="card-body ezy__epgrid5-card-img position-relative h-100">
+                <a href="#!">
+                  <div class="ezy__epgrid5-fav-icon"><i class="fas fa-heart"></i></div>
+                </a>
+                <div class="ezy__epgrid5-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/couch3.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid5-title">Modern Lounge Chair with Ottoman Classic Designer Chair</h5>
+                </a>
+                <h5 class="ezy__epgrid5-price my-2">$864.00</h5>
+                <div class="ezy__epgrid5-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid5-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid5-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+            <div class="card ezy__epgrid5-card border-0 p-2">
+              <div class="card-body ezy__epgrid5-card-img position-relative h-100">
+                <a href="#!">
+                  <div class="ezy__epgrid5-fav-icon"><i class="fas fa-heart"></i></div>
+                </a>
+                <div class="ezy__epgrid5-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/bag3.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid5-title">Luxury Tassel Small Messenger Bag For Women Lingge Embroidery</h5>
+                </a>
+                <h5 class="ezy__epgrid5-price my-2">$390.00</h5>
+                <div class="ezy__epgrid5-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid5-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid5-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+            <div class="card ezy__epgrid5-card border-0 p-2">
+              <div class="card-body ezy__epgrid5-card-img position-relative h-100">
+                <a href="#!">
+                  <div class="ezy__epgrid5-fav-icon"><i class="fas fa-heart"></i></div>
+                </a>
+                <div class="ezy__epgrid5-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/ecommerce/headphone.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid5-title">New Classic Copper Alloy Smooth Metal Hoop Earrings For Woman</h5>
+                </a>
+                <h5 class="ezy__epgrid5-price my-2">$245.00</h5>
+                <div class="ezy__epgrid5-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid5-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid5-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+            <div class="card ezy__epgrid5-card border-0 p-2">
+              <div class="card-body ezy__epgrid5-card-img position-relative h-100">
+                <a href="#!">
+                  <div class="ezy__epgrid5-fav-icon"><i class="fas fa-heart"></i></div>
+                </a>
+                <div class="ezy__epgrid5-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/sbag1.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid5-title">Luxury Tassel Small Messenger Bag For Women Lingge Embroidery</h5>
+                </a>
+                <h5 class="ezy__epgrid5-price my-2">$145.00</h5>
+                <div class="ezy__epgrid5-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid5-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid5-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+            <div class="card ezy__epgrid5-card border-0 p-2">
+              <div class="card-body ezy__epgrid5-card-img position-relative h-100">
+                <a href="#!">
+                  <div class="ezy__epgrid5-fav-icon"><i class="fas fa-heart"></i></div>
+                </a>
+                <div class="ezy__epgrid5-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/tshirt2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid5-title">Spring Autumn Kids Thin Sweater Boys Girls Clothes Cute Dinosaur</h5>
+                </a>
+                <h5 class="ezy__epgrid5-price my-2">$2120.00</h5>
+                <div class="ezy__epgrid5-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid5-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid5-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+            <div class="card ezy__epgrid5-card border-0 p-2">
+              <div class="card-body ezy__epgrid5-card-img position-relative h-100">
+                <a href="#!">
+                  <div class="ezy__epgrid5-fav-icon"><i class="fas fa-heart"></i></div>
+                </a>
+                <div class="ezy__epgrid5-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/watch2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid5-title">Spring Autumn Kids Thin Sweater Boys Girls Clothes Cute Dinosaur</h5>
+                </a>
+                <h5 class="ezy__epgrid5-price my-2">$2540.00</h5>
+                <div class="ezy__epgrid5-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid5-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid5-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+            <div class="card ezy__epgrid5-card border-0 p-2">
+              <div class="card-body ezy__epgrid5-card-img position-relative h-100">
+                <a href="#!">
+                  <div class="ezy__epgrid5-fav-icon"><i class="fas fa-heart"></i></div>
+                </a>
+                <div class="ezy__epgrid5-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/shoe1.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid5-title">LAOCHRA White Shoes For Men Sneakers Leather Korean Style</h5>
+                </a>
+                <h5 class="ezy__epgrid5-price my-2">$1050.00</h5>
+                <div class="ezy__epgrid5-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid5-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid5-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+            <div class="card ezy__epgrid5-card border-0 p-2">
+              <div class="card-body ezy__epgrid5-card-img position-relative h-100">
+                <a href="#!">
+                  <div class="ezy__epgrid5-fav-icon"><i class="fas fa-heart"></i></div>
+                </a>
+                <div class="ezy__epgrid5-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/sofa2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid5-title">Modern Lounge Chair with Ottoman Classic Designer Chair</h5>
+                </a>
+                <h5 class="ezy__epgrid5-price my-2">$350.00</h5>
+                <div class="ezy__epgrid5-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid5-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid5-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+            <div class="card ezy__epgrid5-card border-0 p-2">
+              <div class="card-body ezy__epgrid5-card-img position-relative h-100">
+                <a href="#!">
+                  <div class="ezy__epgrid5-fav-icon"><i class="fas fa-heart"></i></div>
+                </a>
+                <div class="ezy__epgrid5-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/lamp4.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid5-title">Touch Rechargeable Bud Table Lamps LED Creative Mushroom</h5>
+                </a>
+                <h5 class="ezy__epgrid5-price my-2">$250.00</h5>
+                <div class="ezy__epgrid5-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid5-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid5-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+            <div class="card ezy__epgrid5-card border-0 p-2">
+              <div class="card-body ezy__epgrid5-card-img position-relative h-100">
+                <a href="#!">
+                  <div class="ezy__epgrid5-fav-icon"><i class="fas fa-heart"></i></div>
+                </a>
+                <div class="ezy__epgrid5-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/chair2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid5-title">Side Chair Back Chair Fabric Upholstered Seat Chairs</h5>
+                </a>
+                <h5 class="ezy__epgrid5-price my-2">$846.00</h5>
+                <div class="ezy__epgrid5-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid5-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid5-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+            <div class="card ezy__epgrid5-card border-0 p-2">
+              <div class="card-body ezy__epgrid5-card-img position-relative h-100">
+                <a href="#!">
+                  <div class="ezy__epgrid5-fav-icon"><i class="fas fa-heart"></i></div>
+                </a>
+                <div class="ezy__epgrid5-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/perfume1.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid5-title">Men's Perfumes Sauvage Eau De Parfum Perfumes</h5>
+                </a>
+                <h5 class="ezy__epgrid5-price my-2">$825.00</h5>
+                <div class="ezy__epgrid5-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid5-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid5-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div class="col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+            <div class="card ezy__epgrid5-card border-0 p-2">
+              <div class="card-body ezy__epgrid5-card-img position-relative h-100">
+                <a href="#!">
+                  <div class="ezy__epgrid5-fav-icon"><i class="fas fa-heart"></i></div>
+                </a>
+                <div class="ezy__epgrid5-card-img d-flex justify-content-center align-items-center h-100 px-4">
+                  <a href="#!">
+                    <img src="https://cdn.easyfrontend.com/pictures/products/glass2.png" alt="..." />
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body text-start">
+                <a href="#!">
+                  <h5 class="ezy__epgrid5-title">ZUEE Retro Small Rectangle Sunglasses Women Vintage</h5>
+                </a>
+                <h5 class="ezy__epgrid5-price my-2">$135.00</h5>
+                <div class="ezy__epgrid5-details d-flex justify-content-between align-items-center">
+                  <h5 class="ezy__epgrid5-ratings"><i class="fas fa-star me-1"></i>4.6</h5>
+                  <a href="#!">
+                    <h5 class="ezy__epgrid5-cart"><i class="fas fa-shopping-cart"></i></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+        </div>
+        <!-- row ends -->
+        <!-- button start -->
+        <div class="text-center mt-5">
+          <a class="btn btn-primary ezy__epgrid5-btn" href="#!" role="button">See All</a>
+        </div>
+        <!-- button end -->
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

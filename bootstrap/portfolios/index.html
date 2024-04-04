@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio(HTML-Bootstrap)</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+    Name: Portfolio 1
+ -->
+    <style>
+      .ezy__portfolio1 {
+        /* Bootstrap variables */
+        --bs-body-color: #373572;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-popup-bg-rgb: 255, 255, 255;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__portfolio1 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__portfolio1,
+      .ezy__portfolio1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 246, 246, 246;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__portfolio1,
+      .ezy__portfolio1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 30, 39, 53;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__portfolio1,
+      .ezy__portfolio1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 11, 23, 39;
+      }
+
+      .ezy__portfolio1-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__portfolio1-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__portfolio1-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__portfolio1-item {
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .ezy__portfolio1-content {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        border-radius: 12px;
+        background-color: rgba(var(--ezy-popup-bg-rgb), 0.7);
+        backdrop-filter: blur(4px) saturate(200%);
+        transform: translateY(20px);
+        opacity: 0;
+        transition: all 0.25s ease-in-out;
+      }
+
+      .ezy__portfolio1-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__portfolio1-item:hover .ezy__portfolio1-content,
+      .ezy__portfolio1-item.active .ezy__portfolio1-content {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .ezy__portfolio1-btn-filter {
+        padding: 7px 20px;
+        border-color: var(--ezy-theme-color);
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__portfolio1-btn-filter:hover,
+      .ezy__portfolio1-btn-filter.active {
+        background-color: var(--ezy-theme-color);
+        color: #fff;
+      }
+    </style>
+    <section class="ezy__portfolio1">
+      <div class="container">
+        <div class="row justify-content-center mb-4 mb-md-5">
+          <div class="col-lg-6 text-center">
+            <p class="ezy__portfolio1-sub-heading mb-2">THIS IS WHAT WE DO</p>
+            <h2 class="ezy__portfolio1-heading mb-4">My Latest Works</h2>
+          </div>
+          <div class="col-md-12 text-center mt-4">
+            <button class="btn m-1 ezy__portfolio1-btn-filter">All</button>
+            <button class="btn m-1 ezy__portfolio1-btn-filter active">Branding</button>
+            <button class="btn m-1 ezy__portfolio1-btn-filter">Code</button>
+            <button class="btn m-1 ezy__portfolio1-btn-filter">Marketing</button>
+            <button class="btn m-1 ezy__portfolio1-btn-filter">Photography</button>
+            <button class="btn m-1 ezy__portfolio1-btn-filter">Development</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio1-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_1.png"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio1-content text-center p-4">
+                <h5>Photography</h5>
+                <p class="mb-0">Cinematography</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio1-item active position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio1-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">Product Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio1-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_3.png"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio1-content text-center p-4">
+                <h5>Marketing</h5>
+                <p class="mb-0">Digital Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio1-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_4.png"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio1-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">Web Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio1-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_5.png"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio1-content text-center p-4">
+                <h5>VS Code Editor</h5>
+                <p class="mb-0">Specialist</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio1-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_6.png"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio1-content text-center p-4">
+                <h5>Management</h5>
+                <p class="mb-0">Project Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio1-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_7.png"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio1-content text-center p-4">
+                <h5>Logo Design</h5>
+                <p class="mb-0">Branding</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio1-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio1.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio1-content text-center p-4">
+                <h5>Full Stack Dev</h5>
+                <p class="mb-0">Wordpress</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio1-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio5.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio1-content text-center p-4">
+                <h5>Designing</h5>
+                <p class="mb-0">Product Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Portfolio 2
+ -->
+    <style>
+      .ezy__portfolio2 {
+        /* Bootstrap variables */
+        --bs-body-color: #373572;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-popup-bg-rgb: 2239, 244, 253;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__portfolio2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__portfolio2,
+      .ezy__portfolio2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 246, 246, 246;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__portfolio2,
+      .ezy__portfolio2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 30, 39, 53;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__portfolio2,
+      .ezy__portfolio2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 22, 34, 49;
+      }
+
+      .ezy__portfolio2-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__portfolio2-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__portfolio2-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__portfolio2-item {
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .ezy__portfolio2-img {
+        border-radius: 12px;
+        width: 100%;
+      }
+
+      .ezy__portfolio2-content {
+        background-color: rgba(var(--ezy-popup-bg-rgb), 0.7);
+        backdrop-filter: blur(4px) saturate(200%);
+        margin: -50px 16px 0 16px;
+        border-radius: 12px;
+      }
+
+      .ezy__portfolio2-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__portfolio2-btn-filter {
+        padding: 7px 20px;
+        border-color: var(--ezy-theme-color);
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__portfolio2-btn-filter:hover,
+      .ezy__portfolio2-btn-filter.active {
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__portfolio2">
+      <div class="container">
+        <div class="row justify-content-center mb-4 mb-md-5">
+          <div class="col-lg-6 text-center">
+            <p class="ezy__portfolio2-sub-heading mb-2">THIS IS WHAT WE DO</p>
+            <h2 class="ezy__portfolio2-heading mb-4">My Latest Works</h2>
+          </div>
+          <div class="col-md-12 text-center mt-4">
+            <button class="btn m-1 ezy__portfolio2-btn-filter">All</button>
+            <button class="btn m-1 ezy__portfolio2-btn-filter active">Branding</button>
+            <button class="btn m-1 ezy__portfolio2-btn-filter">Code</button>
+            <button class="btn m-1 ezy__portfolio2-btn-filter">Marketing</button>
+            <button class="btn m-1 ezy__portfolio2-btn-filter">Photography</button>
+            <button class="btn m-1 ezy__portfolio2-btn-filter">Development</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio2-item mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio7.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio2-img"
+              />
+              <div class="ezy__portfolio2-content text-center px-3 py-4">
+                <h5>Photography</h5>
+                <p class="mb-0">Cinematography</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio2-item mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio8.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio2-img"
+              />
+              <div class="ezy__portfolio2-content text-center px-3 py-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio2-item mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio9.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio2-img"
+              />
+              <div class="ezy__portfolio2-content text-center px-3 py-4">
+                <h5>Marketing</h5>
+                <p class="mb-0">Digital Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio2-item mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio10.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio2-img"
+              />
+              <div class="ezy__portfolio2-content text-center px-3 py-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">Web Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio2-item mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio11.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio2-img"
+              />
+              <div class="ezy__portfolio2-content text-center px-3 py-4">
+                <h5>VS Code Editor</h5>
+                <p class="mb-0">Specialist</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio2-item mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio17.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio2-img"
+              />
+              <div class="ezy__portfolio2-content text-center px-3 py-4">
+                <h5>Management</h5>
+                <p class="mb-0">Project Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio2-item mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio2.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio2-img"
+              />
+              <div class="ezy__portfolio2-content text-center px-3 py-4">
+                <h5>Logo Design</h5>
+                <p class="mb-0">Branding</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio2-item mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio3.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio2-img"
+              />
+              <div class="ezy__portfolio2-content text-center px-3 py-4">
+                <h5>Full Stack Dev</h5>
+                <p class="mb-0">Wordpress</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio2-item mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio4.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio2-img"
+              />
+              <div class="ezy__portfolio2-content text-center px-3 py-4">
+                <h5>Designing</h5>
+                <p class="mb-0">Product Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Portfolio 3
+ -->
+    <style>
+      .ezy__portfolio3 {
+        /* Bootstrap variables */
+        --bs-body-color: #373572;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-popup-bg-rgb: 2239, 244, 253;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__portfolio3 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__portfolio3,
+      .ezy__portfolio3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 246, 246, 246;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__portfolio3,
+      .ezy__portfolio3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 30, 39, 53;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__portfolio3,
+      .ezy__portfolio3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 22, 34, 49;
+      }
+
+      .ezy__portfolio3-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__portfolio3-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__portfolio3-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__portfolio3-item {
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .ezy__portfolio3-img {
+        border-radius: 12px;
+        max-width: 250px;
+      }
+
+      .ezy__portfolio3-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__portfolio3-btn-filter {
+        padding: 7px 20px;
+        border-color: var(--ezy-theme-color);
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__portfolio3-btn-filter:hover,
+      .ezy__portfolio3-btn-filter.active {
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__portfolio3">
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-6 text-center">
+            <h2 class="ezy__portfolio3-heading mb-2">My Latest Works</h2>
+            <p class="ezy__portfolio3-sub-heading mb-4">THIS IS WHAT WE DO</p>
+          </div>
+          <div class="col-md-12 text-center mt-4">
+            <button class="btn m-1 ezy__portfolio3-btn-filter">All</button>
+            <button class="btn m-1 ezy__portfolio3-btn-filter active">Branding</button>
+            <button class="btn m-1 ezy__portfolio3-btn-filter">Code</button>
+            <button class="btn m-1 ezy__portfolio3-btn-filter">Marketing</button>
+            <button class="btn m-1 ezy__portfolio3-btn-filter">Photography</button>
+            <button class="btn m-1 ezy__portfolio3-btn-filter">Development</button>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio3-item mt-4 mt-lg-5">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio12.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio3-img"
+              />
+              <div class="ezy__portfolio3-content mt-4">
+                <h5 class="mb-1">Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio3-item mt-4 mt-lg-5">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio13.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio3-img"
+              />
+              <div class="ezy__portfolio3-content mt-4">
+                <h5 class="mb-1">Photography</h5>
+                <p class="mb-0">Cinematography</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio3-item mt-4 mt-lg-5">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio14.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio3-img"
+              />
+              <div class="ezy__portfolio3-content mt-4">
+                <h5 class="mb-1">Marketing</h5>
+                <p class="mb-0">Digital Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio3-item mt-4 mt-lg-5">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio15.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio3-img"
+              />
+              <div class="ezy__portfolio3-content mt-4">
+                <h5 class="mb-1">Web Portal</h5>
+                <p class="mb-0">Web Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio3-item mt-4 mt-lg-5">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio16.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio3-img"
+              />
+              <div class="ezy__portfolio3-content mt-4">
+                <h5 class="mb-1">VS Code Editor</h5>
+                <p class="mb-0">Specialist</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio3-item mt-4 mt-lg-5">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio17.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio3-img"
+              />
+              <div class="ezy__portfolio3-content mt-4">
+                <h5 class="mb-1">Management</h5>
+                <p class="mb-0">Project Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio3-item mt-4 mt-lg-5">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio18.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio3-img"
+              />
+              <div class="ezy__portfolio3-content mt-4">
+                <h5 class="mb-1">Logo Design</h5>
+                <p class="mb-0">Branding</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio3-item mt-4 mt-lg-5">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio19.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio3-img"
+              />
+              <div class="ezy__portfolio3-content mt-4">
+                <h5 class="mb-1">Full Stack Dev</h5>
+                <p class="mb-0">Wordpress</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="ezy__portfolio3-item mt-4 mt-lg-5">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio20.jpg"
+                alt=""
+                class="img-fluid ezy__portfolio3-img"
+              />
+              <div class="ezy__portfolio3-content mt-4">
+                <h5 class="mb-1">Designing</h5>
+                <p class="mb-0">Product Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Portfolio 4
+ -->
+    <style>
+      .ezy__portfolio4 {
+        /* Bootstrap variables */
+        --bs-body-color: #373572;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-popup-bg-rgb: 255, 255, 255;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 0 0 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__portfolio4 {
+          padding: 0 0 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__portfolio4,
+      .ezy__portfolio4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 246, 246, 246;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__portfolio4,
+      .ezy__portfolio4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 30, 39, 53;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__portfolio4,
+      .ezy__portfolio4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 11, 23, 39;
+      }
+
+      .ezy__portfolio4-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: #ffffff;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__portfolio4-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__portfolio4-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: #ffffff;
+      }
+
+      .ezy__portfolio4-bg {
+        background: #fcc4c4;
+        background: -webkit-linear-gradient(131deg, #c7e7e1, #fcc4c4);
+        background: linear-gradient(131deg, #c7e7e1, #fcc4c4);
+        padding: 60px 0 210px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__portfolio4-bg {
+          padding: 100px 0 250px 0;
+        }
+      }
+
+      .ezy__portfolio4-items {
+        margin-top: -200px;
+      }
+
+      .ezy__portfolio4-item {
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .ezy__portfolio4-content {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        border-radius: 12px;
+        background-color: rgba(var(--ezy-popup-bg-rgb), 0.7);
+        backdrop-filter: blur(4px) saturate(200%);
+        transform: translateY(20px);
+        opacity: 0;
+        transition: all 0.25s ease-in-out;
+      }
+
+      .ezy__portfolio4-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__portfolio4-item:hover .ezy__portfolio4-content,
+      .ezy__portfolio4-item.active .ezy__portfolio4-content {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .ezy__portfolio4-btn-filter {
+        padding: 7px 20px;
+        border-color: #ffffff;
+        color: #ffffff;
+      }
+
+      .ezy__portfolio4-btn-filter:hover,
+      .ezy__portfolio4-btn-filter.active {
+        border-color: #ffffff;
+        background-color: #ffffff;
+        color: #000;
+      }
+    </style>
+    <section class="ezy__portfolio4">
+      <div class="ezy__portfolio4-bg">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start">
+              <p class="ezy__portfolio4-sub-heading mb-2">THIS IS WHAT WE DO</p>
+              <h2 class="ezy__portfolio4-heading mb-4">My Latest Works</h2>
+            </div>
+            <div class="col-lg-6 text-center text-lg-end mt-4 mt-lg-0">
+              <button class="btn btn-outline-dark m-1 ezy__portfolio4-btn-filter">All</button>
+              <button class="btn btn-outline-dark m-1 ezy__portfolio4-btn-filter active">Branding</button>
+              <button class="btn btn-outline-dark m-1 ezy__portfolio4-btn-filter">Code</button>
+              <button class="btn btn-outline-dark m-1 ezy__portfolio4-btn-filter">Marketing</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container ezy__portfolio4-items">
+        <div class="row">
+          <div class="col-md-4 mt-md-4 mt-lg-5 pt-md-4 pt-lg-5">
+            <div class="ezy__portfolio4-item active position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_4_1.png"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio4-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+            <div class="ezy__portfolio4-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio24.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio4-content text-center p-4">
+                <h5>Marketing</h5>
+                <p class="mb-0">Digital Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-md-4 mt-lg-5">
+            <div class="ezy__portfolio4-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_4_3.png"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio4-content text-center p-4">
+                <h5>Designing</h5>
+                <p class="mb-0">Product Design</p>
+              </div>
+            </div>
+            <div class="ezy__portfolio4-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio21.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio4-content text-center p-4">
+                <h5>Management</h5>
+                <p class="mb-0">Project Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ezy__portfolio4-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_4_4.png"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio4-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+            <div class="ezy__portfolio4-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio22.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio4-content text-center p-4">
+                <h5>Photography</h5>
+                <p class="mb-0">Cinematography</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Portfolio 5
+ -->
+    <style>
+      .ezy__portfolio5 {
+        /* Bootstrap variables */
+        --bs-body-color: #252d39;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-popup-bg-rgb: 255, 255, 255;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__portfolio5 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__portfolio5,
+      .ezy__portfolio5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 246, 246, 246;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__portfolio5,
+      .ezy__portfolio5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 30, 39, 53;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__portfolio5,
+      .ezy__portfolio5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-popup-bg-rgb: 11, 23, 39;
+      }
+
+      .ezy__portfolio5-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__portfolio5-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__portfolio5-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__portfolio5-item {
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__portfolio5-item:hover,
+      .ezy__portfolio5-item.active {
+        box-shadow: 0 8px 13px rgba(82, 95, 128, 0.2);
+        transform: translateY(-5px);
+      }
+
+      .ezy__portfolio5-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 12px;
+        background-color: rgba(var(--ezy-popup-bg-rgb), 0.7);
+        backdrop-filter: blur(8px);
+        transform: scale(0.9);
+        opacity: 0;
+        transition: box-shadow 0.25s ease-in-out, opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .ezy__portfolio5-content * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__portfolio5-item:hover .ezy__portfolio5-content,
+      .ezy__portfolio5-item.active .ezy__portfolio5-content {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      .ezy__portfolio5-btn-filter {
+        padding: 7px 20px;
+        border-color: var(--ezy-theme-color);
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__portfolio5-btn-filter:hover,
+      .ezy__portfolio5-btn-filter.active {
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__portfolio5">
+      <div class="container">
+        <div class="row justify-content-center mb-4 mb-md-5">
+          <div class="col-lg-6 text-center">
+            <p class="ezy__portfolio5-sub-heading mb-2">THIS IS WHAT WE DO</p>
+            <h2 class="ezy__portfolio5-heading mb-4">My Latest Works</h2>
+          </div>
+          <div class="col-md-12 text-center mt-4">
+            <button class="btn btn-sm border-0 btn-outline-dark m-1 ezy__portfolio5-btn-filter">All</button>
+            <button class="btn btn-sm border-0 btn-outline-dark m-1 ezy__portfolio5-btn-filter">Branding</button>
+            <button class="btn btn-sm border-0 btn-outline-dark m-1 ezy__portfolio5-btn-filter">Code</button>
+            <button class="btn btn-sm border-0 btn-outline-dark m-1 ezy__portfolio5-btn-filter active">
+              Marketing
+            </button>
+            <button class="btn btn-sm border-0 btn-outline-dark m-1 ezy__portfolio5-btn-filter">Photography</button>
+            <button class="btn btn-sm border-0 btn-outline-dark m-1 ezy__portfolio5-btn-filter">Development</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="ezy__portfolio5-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio19.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio5-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="ezy__portfolio5-item active position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio5-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="ezy__portfolio5-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio17.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio5-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="ezy__portfolio5-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio14.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio5-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="ezy__portfolio5-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio5.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio5-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="ezy__portfolio5-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio7.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio5-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="ezy__portfolio5-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio11.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio5-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="ezy__portfolio5-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio8.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio5-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="ezy__portfolio5-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio5-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="ezy__portfolio5-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio10.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio5-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="ezy__portfolio5-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio3.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio5-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="ezy__portfolio5-item position-relative mt-4">
+              <img
+                src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_5.png"
+                alt=""
+                class="img-fluid w-100"
+              />
+              <div class="ezy__portfolio5-content text-center p-4">
+                <h5>Web Portal Dev</h5>
+                <p class="mb-0">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

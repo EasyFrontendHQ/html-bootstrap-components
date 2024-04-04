@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body style="background: #000" class="">
+    <!--
+    Name: Footer 1
+ -->
+    <style>
+      .ezy__footer1 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        padding: 40px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__footer1 {
+          padding: 60px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__footer1,
+      .ezy__footer1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__footer1,
+      .ezy__footer1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      .dark .ezy__footer1,
+      .ezy__footer1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__footer1-nav .nav-link {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__footer1-nav .nav-link:hover {
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      .ezy__footer1-social li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      .ezy__footer1-social li a {
+        color: var(--bs-body-color);
+        width: 35px;
+        height: 35px;
+        text-decoration: none;
+      }
+
+      .ezy__footer1-social li a:hover {
+        color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__footer1">
+      <div class="container">
+        <div class="row d-flex justify-content-between align-items-center">
+          <div class="col-lg-4">
+            <p class="mb-lg-0">Copyright all rights reserved</p>
+          </div>
+          <div class="col-lg-4">
+            <ul class="ezy__footer1-nav nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end">
+            <ul class="ezy__footer1-social nav">
+              <li>
+                <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"
+                  ><i class="fab fa-pinterest-p"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Footer 2
+ -->
+    <style>
+      .ezy__footer2 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__footer2 {
+          padding: 80px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__footer2,
+      .ezy__footer2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__footer2,
+      .ezy__footer2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      .dark .ezy__footer2,
+      .ezy__footer2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__footer2-nav .nav-link {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__footer2-nav .nav-link:hover {
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      .ezy__footer2-social li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      .ezy__footer2-social li a {
+        color: var(--bs-body-color);
+        width: 35px;
+        height: 35px;
+        text-decoration: none;
+      }
+
+      .ezy__footer2-social li a:hover {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__footer2-quick-links li {
+        margin-bottom: 8px;
+      }
+
+      .ezy__footer2-quick-links li a {
+        color: var(--bs-body-color);
+        opacity: 0.7;
+        text-decoration: none;
+      }
+
+      .ezy__footer2-quick-links li a:hover {
+        color: var(--bs-body-color);
+        opacity: 1;
+      }
+    </style>
+    <section class="ezy__footer2">
+      <div class="container">
+        <div class="row text-center text-sm-start">
+          <div class="col-lg-3">
+            <h2 class="fw-bold">Easy Frontend</h2>
+          </div>
+          <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+            <h5>Quick Links</h5>
+            <ul class="nav flex-column ezy__footer2-quick-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+            <h5>Social Media</h5>
+            <ul class="nav flex-column ezy__footer2-quick-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+            <h5>Job Info</h5>
+            <ul class="nav flex-column ezy__footer2-quick-links">
+              <li><a href="#">Select</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Payment</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3 mt-4 mt-lg-0">
+            <h5>Contact Us</h5>
+            <ul class="nav flex-column ezy__footer2-quick-links">
+              <li><a href="#">Sylhet, Bangladesh</a></li>
+              <li><a href="#">contact@easyfrontend.com</a></li>
+              <li><a href="#">+880 1742-0****0</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row d-flex justify-content-between align-items-center text-center text-lg-start">
+          <div class="col-lg-4">
+            <p class="mb-0 mt-1">Copyright &copy; Easy Frontend, All rights reserved</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <ul class="ezy__footer2-nav nav justify-content-center mt-1">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end text-center text-lg-end mt-1">
+            <ul class="ezy__footer2-social nav">
+              <li>
+                <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"
+                  ><i class="fab fa-pinterest-p"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Footer 3
+ -->
+    <style>
+      .ezy__footer3 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__footer3 {
+          padding: 80px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__footer3,
+      .ezy__footer3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__footer3,
+      .ezy__footer3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      .dark .ezy__footer3,
+      .ezy__footer3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+      }
+
+      .ezy__footer3-nav .nav-link {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__footer3-nav .nav-link:hover {
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      .ezy__footer3-quick-links li {
+        margin-bottom: 8px;
+      }
+
+      .ezy__footer3-quick-links li a {
+        color: var(--bs-body-color);
+        opacity: 0.7;
+        text-decoration: none;
+      }
+
+      .ezy__footer3-quick-links li a:hover {
+        color: var(--bs-body-color);
+        opacity: 1;
+      }
+    </style>
+    <section class="ezy__footer3">
+      <div class="container">
+        <div class="row text-center text-sm-start mb-md-5">
+          <div class="col-lg-3">
+            <h2 class="fw-bold">Easy Frontend</h2>
+          </div>
+          <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+            <h5>Quick Links</h5>
+            <ul class="nav flex-column ezy__footer3-quick-links">
+              <li>
+                <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Home</a>
+              </li>
+              <li>
+                <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> About Us</a>
+              </li>
+              <li>
+                <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+            <h5>Social Media</h5>
+            <ul class="nav flex-column ezy__footer3-quick-links">
+              <li>
+                <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> LinkedIn</a>
+              </li>
+              <li>
+                <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+            <h5>Job Info</h5>
+            <ul class="nav flex-column ezy__footer3-quick-links">
+              <li>
+                <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Select</a>
+              </li>
+              <li>
+                <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Service</a>
+              </li>
+              <li>
+                <a href="#"><span class="fas fa-chevron-right me-2 small opacity-50"></span> Payment</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3 mt-4 mt-lg-0">
+            <h5>Contact Us</h5>
+            <ul class="nav flex-column ezy__footer3-quick-links">
+              <li>Sylhet, Bangladesh</li>
+              <li>
+                <a href="#"><span class="fas fa-envelope me-2 small opacity-50"></span> contact@easyfrontend.com</a>
+              </li>
+              <li>
+                <a href="#"><span class="fas fa-phone me-2 small opacity-50"></span> +880 1742-0****0</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row d-flex justify-content-between align-items-center text-center text-lg-start">
+          <div class="col-md-6">
+            <p class="mb-0 mt-1">Copyright &copy; Easy Frontend, All rights reserved</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="ezy__footer3-nav nav justify-content-center justify-content-md-end mt-1">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Footer 4
+ -->
+    <style>
+      .ezy__footer4 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        padding: 40px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__footer4 {
+          padding: 60px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__footer4,
+      .ezy__footer4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__footer4,
+      .ezy__footer4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      .dark .ezy__footer4,
+      .ezy__footer4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__footer4-nav .nav-link {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__footer4-nav .nav-link:hover {
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      .ezy__footer4-social li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      .ezy__footer4-social li a {
+        color: var(--bs-body-color);
+        width: 30px;
+        height: 30px;
+        text-decoration: none;
+      }
+
+      .ezy__footer4-social li a:hover {
+        background-color: var(--bs-body-color);
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__footer4-quick-links li {
+        margin-bottom: 8px;
+      }
+
+      .ezy__footer4-quick-links li a {
+        color: var(--bs-body-color);
+        opacity: 0.7;
+        text-decoration: none;
+      }
+
+      .ezy__footer4-quick-links li a:hover {
+        color: var(--bs-body-color);
+        opacity: 1;
+      }
+    </style>
+    <section class="ezy__footer4">
+      <div class="container">
+        <div class="row d-flex justify-content-between align-items-center text-center text-lg-start">
+          <div class="col-12 text-center">
+            <h2 class="fw-bold fa-3x mb-0">Logo</h2>
+            <ul class="ezy__footer4-nav nav justify-content-center my-4 my-lg-5">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Security</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Terms & Condition</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <p class="mb-0 mt-1">Copyright &copy; Easy Frontend, All rights reserved</p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center justify-content-lg-end text-center text-lg-end mt-1">
+            <ul class="ezy__footer4-social nav">
+              <li>
+                <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"
+                  ><i class="fab fa-pinterest-p"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Footer 5
+ -->
+    <style>
+      .ezy__footer5 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__footer5,
+      .ezy__footer5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__footer5,
+      .ezy__footer5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      .dark .ezy__footer5,
+      .ezy__footer5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__footer5-nav .nav-link {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__footer5-nav .nav-link:hover {
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      .ezy__footer5-social li {
+        list-style-type: none;
+        display: inline-block;
+      }
+
+      .ezy__footer5-social li:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      .ezy__footer5-social li a {
+        color: var(--bs-secondary);
+        text-decoration: none;
+        font-size: 25px;
+        opacity: 0.4;
+        transition: opacity 0.35s ease-in-out;
+      }
+
+      .ezy__footer5-social li a:hover {
+        color: var(--ezy-theme-color);
+        opacity: 1;
+      }
+
+      .ezy__footer5-quick-links li {
+        margin-bottom: 8px;
+      }
+
+      .ezy__footer5-quick-links li a {
+        color: var(--bs-secondary);
+        opacity: 0.7;
+        text-decoration: none;
+        transition: color 0.35s ease-in-out;
+      }
+
+      .ezy__footer5-quick-links li a:hover {
+        color: var(--bs-body-color);
+        opacity: 1;
+      }
+
+      .ezy__footer5-hr {
+        opacity: 0.1;
+      }
+
+      .ezy__footer5-article-title a {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__footer5-article-title a:hover {
+        color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__footer5">
+      <div class="container">
+        <div class="row text-center py-5">
+          <div class="col-12">
+            <img src="https://cdn.easyfrontend.com/pictures/footers/site-logo.png" height="50" alt="" />
+          </div>
+        </div>
+        <div class="row text-start mb-md-5">
+          <div class="col-sm-4 col-lg-3 mt-4 mt-lg-0">
+            <h5>Quick Links</h5>
+            <ul class="nav flex-column ezy__footer5-quick-links">
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+
+            <h5 class="mt-4">Quick Links</h5>
+            <ul class="ezy__footer5-social nav">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-lg-3 mt-4 mt-lg-0">
+            <h5>Social Media</h5>
+            <ul class="nav flex-column ezy__footer5-quick-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-lg-2 mt-4 mt-lg-0">
+            <h5>Job Info</h5>
+            <ul class="nav flex-column ezy__footer5-quick-links">
+              <li><a href="#">Select</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Payment</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+            <h5>Recent Articles</h5>
+            <ul class="nav flex-column">
+              <li class="mt-3">
+                <article class="d-flex">
+                  <div class="me-3">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/footers/article-1.png"
+                      width="70"
+                      alt=""
+                      class="rounded-3"
+                    />
+                  </div>
+                  <div>
+                    <h5 class="fs-6 fw-semi-bold mb-0 ezy__footer5-article-title">
+                      <a href="#" class="text-decoration-none">Time for a Sharp banking blog</a>
+                    </h5>
+                    <small class="text-secondary opacity-75 ezy__footer5-article-time">Dec 16, 2021 at 7:30PM</small>
+                    <p class="mb-0 mt-1 text-secondary opacity-75 ezy__footer5-article-content">
+                      Assumenda non repellendus distinctio nihil dicta sapiente
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="mt-3">
+                <article class="d-flex">
+                  <div class="me-3">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/footers/article-2.png"
+                      width="70"
+                      alt=""
+                      class="rounded-3"
+                    />
+                  </div>
+                  <div>
+                    <h5 class="fs-6 fw-semi-bold mb-0 ezy__footer5-article-title">
+                      <a href="#" class="text-decoration-none">Time for a Sharp banking blog</a>
+                    </h5>
+                    <small class="text-secondary opacity-75 ezy__footer5-article-time">Dec 16, 2021 at 7:30PM</small>
+                    <p class="mb-0 mt-1 text-secondary opacity-75 ezy__footer5-article-content">
+                      Assumenda non repellendus distinctio nihil dicta sapiente
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="mt-3">
+                <article class="d-flex">
+                  <div class="me-3">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/footers/article-3.png"
+                      width="70"
+                      alt=""
+                      class="rounded-3"
+                    />
+                  </div>
+                  <div>
+                    <h5 class="fs-6 fw-semi-bold mb-0 ezy__footer5-article-title">
+                      <a href="#" class="text-decoration-none">Time for a Sharp banking blog</a>
+                    </h5>
+                    <small class="text-secondary opacity-75 ezy__footer5-article-time">Dec 16, 2021 at 7:30PM</small>
+                    <p class="mb-0 mt-1 text-secondary opacity-75 ezy__footer5-article-content">
+                      Assumenda non repellendus distinctio nihil dicta sapiente
+                    </p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="ezy__footer5-hr" />
+        <div class="row d-flex justify-content-between align-items-center text-center text-lg-start pb-4">
+          <div class="col-md-6">
+            <p class="mb-0 mt-1 opacity-50">Copyright &copy; Easy Frontend, All rights reserved</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="ezy__footer5-nav nav justify-content-center justify-content-md-end mt-1">
+              <li class="nav-item opacity-50">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item opacity-50">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item opacity-50">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

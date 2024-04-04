@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricings(HTML-Bootstrap)</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+    Name: Pricing 1
+-->
+    <style>
+      .ezy__pricing1 {
+        /* Bootstrap variables */
+        --bs-body-color: #252d39;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #f7f7ff;
+        --ezy-item-shadow: none;
+        --ezy-item-active-bg: #262a40;
+        --ezy-item-active-color: #fff;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__pricing1 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__pricing1,
+      .ezy__pricing1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(239, 244, 253);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #fff;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__pricing1,
+      .ezy__pricing1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #243548;
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__pricing1,
+      .ezy__pricing1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #101d2c;
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__pricing1-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__pricing1-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__pricing1-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__pricing1-item {
+        background-color: var(--ezy-item-bg);
+        border-radius: 15px;
+        box-shadow: var(--ezy-item-shadow);
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__pricing1-item.active {
+        background-color: var(--ezy-item-active-bg);
+      }
+
+      .ezy__pricing1-price,
+      .ezy-pricing1-features,
+      .ezy__pricing1-note,
+      .ezy__pricing1-title {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__pricing1-item.active .ezy__pricing1-price,
+      .ezy__pricing1-item.active .ezy-pricing1-features,
+      .ezy__pricing1-item.active .ezy__pricing1-note,
+      .ezy__pricing1-item.active .ezy__pricing1-title {
+        color: var(--ezy-item-active-color);
+      }
+
+      .ezy__pricing1 .btn-outline-primary {
+        background-color: rgba(var(--bs-primary-rgb), 0.15);
+        color: rgba(var(--bs-primary-rgb), 1) !important;
+        border: none;
+      }
+
+      .ezy__pricing1-btn {
+        padding: 12px 30px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__pricing1-btn.btn-outline {
+        color: rgba(var(--ezy-theme-color-rgb), 1);
+        background-color: transparent;
+      }
+
+      .ezy__pricing1-btn:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__pricing1 .text-primary {
+        color: var(--ezy-theme-color) !important;
+      }
+    </style>
+    <section class="ezy__pricing1">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-6 col-xl-5 text-center">
+            <h2 class="ezy__pricing1-heading mb-3">Flexible Plan for you</h2>
+            <p class="ezy__pricing1-sub-heading mb-0">Choice suitable plan for you.</p>
+          </div>
+        </div>
+        <div class="text-center mb-4">
+          <button class="btn btn-primary ezy__pricing1-btn">MONTHLY</button>
+          <button class="btn btn-outline border-0 ezy__pricing1-btn">YEARLY</button>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xl-3 mt-4">
+            <div class="ezy__pricing1-item p-3 p-lg-5">
+              <h3 class="fw-bold mb-2 ezy__pricing1-title">Basic</h3>
+              <div class="ezy__pricing1-price mb-3">
+                <span class="fs-3 fw-bold">$20</span>
+                <span class="ms-2 opacity-50">/month</span>
+              </div>
+              <p class="opacity-50 mb-4 ezy__pricing1-note">
+                Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores.
+              </p>
+              <ul class="nav flex-column ezy-pricing1-features">
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Build Links</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Over 66 complex</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">24/7 Contact support</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Build Tools easily</span>
+                </li>
+                <li>
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">6TB storage</span>
+                </li>
+              </ul>
+
+              <button class="btn btn-outline w-100 mt-4 ezy__pricing1-btn">Choose plan</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mt-4">
+            <div class="ezy__pricing1-item p-3 p-lg-5">
+              <h3 class="fw-bold mb-2 ezy__pricing1-title">Standard</h3>
+              <div class="ezy__pricing1-price mb-3">
+                <span class="fs-3 fw-bold">$199</span>
+                <span class="ms-2 opacity-50">/month</span>
+              </div>
+              <p class="opacity-50 mb-4 ezy__pricing1-note">
+                It’s no secret that the digital industry is booming. From startups to brands.
+              </p>
+              <ul class="nav flex-column ezy-pricing1-features">
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Build Links</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Over 66 complex</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">24/7 Contact support</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Build Tools easily</span>
+                </li>
+                <li>
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">6TB storage</span>
+                </li>
+              </ul>
+
+              <button class="btn btn-outline w-100 mt-4 ezy__pricing1-btn">Choose plan</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mt-4">
+            <div class="ezy__pricing1-item active p-3 p-lg-5">
+              <h3 class="fw-bold mb-2 ezy__pricing1-title">Premium</h3>
+              <div class="ezy__pricing1-price mb-3">
+                <span class="fs-3 fw-bold">$399</span>
+                <span class="ms-2 opacity-50">/month</span>
+              </div>
+              <p class="opacity-50 mb-4 ezy__pricing1-note">
+                Urna molestie at eleme ntum eu facilisis sed odio Male suada fames circa hors.
+              </p>
+              <ul class="nav flex-column ezy-pricing1-features">
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Build Links</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Over 66 complex</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">24/7 Contact support</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Build Tools easily</span>
+                </li>
+                <li>
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">6TB storage</span>
+                </li>
+              </ul>
+
+              <button class="btn btn-primary w-100 mt-4 ezy__pricing1-btn">Choose plan</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mt-4">
+            <div class="ezy__pricing1-item p-3 p-lg-5">
+              <h3 class="fw-bold mb-2 ezy__pricing1-title">Lifetime</h3>
+              <div class="ezy__pricing1-price mb-3">
+                <span class="fs-3 fw-bold">$1999</span>
+                <span class="ms-2 opacity-50">/month</span>
+              </div>
+              <p class="opacity-50 mb-4 ezy__pricing1-note">
+                It’s easier to reach your savings goals when you have the right savings account.
+              </p>
+              <ul class="nav flex-column ezy-pricing1-features">
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Build Links</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Over 66 complex</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">24/7 Contact support</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Build Tools easily</span>
+                </li>
+                <li>
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">6TB storage</span>
+                </li>
+              </ul>
+
+              <button class="btn btn-outline w-100 mt-4 ezy__pricing1-btn">Choose plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Pricing 2
+-->
+    <style>
+      .ezy__pricing2 {
+        /* Bootstrap variables */
+        --bs-body-color: #252d39;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #f2f6fe;
+        --ezy-item-border-color: rgba(0, 0, 0, 0.08);
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__pricing2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__pricing2,
+      .ezy__pricing2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(239, 244, 253);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #fff;
+        --ezy-item-border-color: rgba(19, 19, 19, 0.08);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__pricing2,
+      .ezy__pricing2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #243548;
+        --ezy-item-border-color: rgba(229, 229, 229, 0.08);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__pricing2,
+      .ezy__pricing2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #101d2c;
+        --ezy-item-border-color: rgba(255, 255, 255, 0.08);
+      }
+
+      .ezy__pricing2-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__pricing2-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__pricing2-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__pricing2-item {
+        background-color: var(--ezy-item-bg);
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__pricing2-item.active {
+        background-color: var(--ezy-item-active-bg);
+      }
+
+      .ezy__pricing2-price,
+      .ezy-pricing2-features,
+      .ezy__pricing2-note,
+      .ezy__pricing2-title {
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 991px) {
+        .border-lg-end {
+          border-right: 1px solid;
+        }
+      }
+
+      .ezy__pricing2 .border-lg-end {
+        border-color: var(--ezy-item-border-color) !important;
+      }
+
+      .ezy__pricing2-item.active .ezy__pricing2-price,
+      .ezy__pricing2-item.active .ezy-pricing2-features,
+      .ezy__pricing2-item.active .ezy__pricing2-note,
+      .ezy__pricing2-item.active .ezy__pricing2-title {
+        color: var(--ezy-item-active-color);
+      }
+
+      .ezy__pricing2-btn {
+        padding: 12px 30px;
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__pricing2-btn.btn-outline {
+        color: rgba(var(--ezy-theme-color-rgb), 1);
+        background-color: transparent;
+      }
+
+      .ezy__pricing2 .btn-outline-primary:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.75);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.75);
+      }
+
+      .ezy__pricing2-btn:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__pricing2 .text-primary {
+        color: var(--ezy-theme-color) !important;
+      }
+    </style>
+    <section class="ezy__pricing2">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-6 text-center">
+            <h2 class="ezy__pricing2-heading mb-3">Choose Your Suitable Plan</h2>
+            <p class="ezy__pricing2-sub-heading mb-0">Choice suitable plan for you.</p>
+          </div>
+        </div>
+        <div class="row m-0">
+          <div class="col-lg-4 p-0 mt-3 mt-lg-0 border-lg-end">
+            <div class="ezy__pricing2-item p-3 p-lg-5">
+              <h3 class="fw-bold mb-2 ezy__pricing2-title">Basic</h3>
+              <div class="ezy__pricing2-price mb-3">
+                <span class="fs-3 fw-bold">$20</span>
+                <span class="ms-2 opacity-50">/month</span>
+              </div>
+              <p class="opacity-50 mb-4 ezy__pricing2-note">
+                It’s easier to reach your savings goals when you have the right savings.
+              </p>
+              <ul class="nav flex-column ezy-pricing2-features">
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Unlimited subscribers</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Up to 62K emails per month</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">24/7 Contact support</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">MailBluster's branding</span>
+                </li>
+                <li>
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Enterprise Agile Planning</span>
+                </li>
+              </ul>
+
+              <button class="btn btn-outline w-100 mt-4 ezy__pricing2-btn">Choose plan</button>
+            </div>
+          </div>
+          <div class="col-lg-4 p-0 mt-3 mt-lg-0 border-lg-end">
+            <div class="ezy__pricing2-item p-3 p-lg-5">
+              <h3 class="fw-bold mb-2 ezy__pricing2-title text-primary">Standard</h3>
+              <div class="ezy__pricing2-price mb-3 text-primary">
+                <span class="fs-3 fw-bold">$199</span>
+                <span class="ms-2 opacity-50">/month</span>
+              </div>
+              <p class="opacity-50 mb-4 ezy__pricing2-note">
+                Sed ut in perspiciatis unde omnis iste natus error sit tatem laudantium.
+              </p>
+              <ul class="nav flex-column ezy-pricing2-features">
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Unlimited subscribers</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Up to 62K emails per month</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">24/7 Contact support</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">MailBluster's branding</span>
+                </li>
+                <li>
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Enterprise Agile Planning</span>
+                </li>
+              </ul>
+
+              <button class="btn w-100 mt-4 ezy__pricing2-btn">Choose plan</button>
+            </div>
+          </div>
+          <div class="col-lg-4 p-0 mt-3 mt-lg-0">
+            <div class="ezy__pricing2-item p-3 p-lg-5">
+              <h3 class="fw-bold mb-2 ezy__pricing2-title">Premium</h3>
+              <div class="ezy__pricing2-price mb-3">
+                <span class="fs-3 fw-bold">$399</span>
+                <span class="ms-2 opacity-50">/month</span>
+              </div>
+              <p class="opacity-50 mb-4 ezy__pricing2-note">
+                It’s no secret that the digital industry is booming. From to global brands.
+              </p>
+              <ul class="nav flex-column ezy-pricing2-features">
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Unlimited subscribers</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Up to 62K emails per month</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">24/7 Contact support</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">MailBluster's branding</span>
+                </li>
+                <li>
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Enterprise Agile Planning</span>
+                </li>
+              </ul>
+
+              <button class="btn btn-outline w-100 mt-4 ezy__pricing2-btn">Choose plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Pricing 3
+-->
+    <style>
+      .ezy__pricing3 {
+        /* Bootstrap variables */
+        --bs-body-color: #252d39;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #f2f6fe;
+        --ezy-item-border-color: rgba(0, 0, 0, 0.08);
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__pricing3 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__pricing3,
+      .ezy__pricing3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(239, 244, 253);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #fff;
+        --ezy-item-border-color: rgba(19, 19, 19, 0.08);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__pricing3,
+      .ezy__pricing3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #243548;
+        --ezy-item-border-color: rgba(229, 229, 229, 0.08);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__pricing3,
+      .ezy__pricing3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #101d2c;
+        --ezy-item-border-color: rgba(255, 255, 255, 0.08);
+      }
+
+      .ezy__pricing3-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__pricing3-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__pricing3-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__pricing3-list [class*="col-"]:nth-of-type(1n) .ezy__pricing3-title {
+        color: var(--bs-info);
+      }
+
+      .ezy__pricing3-list [class*="col-"]:nth-of-type(2n) .ezy__pricing3-title {
+        color: var(--bs-warning);
+      }
+
+      .ezy__pricing3-list [class*="col-"]:nth-of-type(3n) .ezy__pricing3-title {
+        color: var(--bs-primary);
+      }
+
+      .ezy__pricing3-item {
+        background-color: var(--ezy-item-bg);
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__pricing3-item.active {
+        background-color: var(--ezy-item-active-bg);
+      }
+
+      .ezy__pricing3-price,
+      .ezy-pricing3-features,
+      .ezy__pricing3-note {
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 991px) {
+        .border-lg-end {
+          border-right: 1px solid;
+        }
+      }
+
+      .ezy__pricing3 .border-lg-end {
+        border-color: var(--ezy-item-border-color) !important;
+      }
+
+      .ezy__pricing3-item.active .ezy__pricing3-price,
+      .ezy__pricing3-item.active .ezy-pricing3-features,
+      .ezy__pricing3-item.active .ezy__pricing3-note {
+        color: var(--ezy-item-active-color);
+      }
+
+      .ezy__pricing3-btn {
+        padding: 12px 30px;
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__pricing3 .btn-outline {
+        color: rgba(var(--ezy-theme-color-rgb), 1);
+        background-color: transparent;
+      }
+
+      .ezy__pricing3-btn:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__pricing3 .text-primary {
+        color: var(--ezy-theme-color) !important;
+      }
+
+      .ezy__pricing3 .bg-warning {
+        background-color: var(--ezy-theme-color) !important;
+      }
+
+      .ezy__pricing3-editor-choose-badge {
+        color: #fff;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__pricing3-editor-choose-badge {
+          margin-top: -40px;
+        }
+      }
+
+      .ezy__pricing3 hr {
+        background-color: var(--ezy-item-border-color) !important;
+      }
+    </style>
+    <section class="ezy__pricing3">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-6 col-xl-5 text-center">
+            <h2 class="ezy__pricing3-heading mb-3">Let's start with us</h2>
+            <p class="ezy__pricing3-sub-heading mb-lg-5">Choice suitable plan for you.</p>
+          </div>
+        </div>
+        <div class="row m-0 ezy__pricing3-list">
+          <div class="col-lg-4 p-0 mt-3 mt-lg-0 border-lg-end">
+            <div class="ezy__pricing3-item p-3 p-lg-5">
+              <div class="text-center">
+                <h5 class="mb-2 ezy__pricing3-title">BASIC</h5>
+                <div class="ezy__pricing3-price mb-3 fs-1">
+                  <span class="fw-bold">$399</span>
+                  <span class="ms-2 opacity-50 fs-6">/month</span>
+                </div>
+                <hr />
+                <p class="opacity-50 mb-0 ezy__pricing3-note">
+                  It’s easier to reach your savings goals when you have the right savings.
+                </p>
+                <hr />
+              </div>
+              <ul class="nav flex-column ezy-pricing3-features mt-4">
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Static Application Security</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Vulnerability Management</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">24/7 Contact support</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Build Tools easily</span>
+                </li>
+                <li>
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">250GB storage</span>
+                </li>
+              </ul>
+
+              <button class="btn btn-outline w-100 mt-4 ezy__pricing3-btn">Choose plan</button>
+            </div>
+          </div>
+          <div class="col-lg-4 p-0 mt-3 mt-lg-0 border-lg-end">
+            <div class="ezy__pricing3-item p-3 p-lg-5">
+              <div class="text-center">
+                <h5 class="mb-2 ezy__pricing3-title">STANDARD</h5>
+                <div class="ezy__pricing3-price mb-3 fs-1">
+                  <span class="fw-bold">$199</span>
+                  <span class="ms-2 opacity-50 fs-6">/month</span>
+                </div>
+                <hr />
+                <p class="opacity-50 mb-0 ezy__pricing3-note">
+                  Sed ut in perspiciatis unde omnis iste natus error sit tatem laudantium.
+                </p>
+                <hr />
+              </div>
+              <ul class="nav flex-column ezy-pricing3-features mt-4">
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Static Application Security</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Vulnerability Management</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">24/7 Contact support</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Build Tools easily</span>
+                </li>
+                <li>
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">250GB storage</span>
+                </li>
+              </ul>
+
+              <button class="btn btn-outline w-100 mt-4 ezy__pricing3-btn">Choose plan</button>
+            </div>
+          </div>
+          <div class="col-lg-4 p-0 mt-3 mt-lg-0">
+            <div class="text-center bg-warning p-2 fw-bold ezy__pricing3-editor-choose-badge">EDITOR CHOOSE</div>
+            <div class="ezy__pricing3-item shadow-lg p-3 p-lg-5">
+              <div class="text-center">
+                <h5 class="mb-2 ezy__pricing3-title text-primary">PREMIUM</h5>
+                <div class="text-primary mb-3 fs-1">
+                  <span class="fw-bold">$399</span>
+                  <span class="ms-2 opacity-50 fs-6">/month</span>
+                </div>
+                <hr />
+                <p class="opacity-50 mb-0 ezy__pricing3-note">
+                  It’s no secret that the digital industry is booming. From to global brands.
+                </p>
+                <hr />
+              </div>
+              <ul class="nav flex-column ezy-pricing3-features mt-4">
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Static Application Security</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Vulnerability Management</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">24/7 Contact support</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">Build Tools easily</span>
+                </li>
+                <li>
+                  <span class="fas fa-check text-primary me-2"></span>
+                  <span class="opacity-50">250GB storage</span>
+                </li>
+              </ul>
+
+              <button class="btn w-100 mt-4 ezy__pricing3-btn">Choose plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Pricing 4
+-->
+    <style>
+      .ezy__pricing4 {
+        /* Bootstrap variables */
+        --bs-body-color: #252d39;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #f7f7ff;
+        --ezy-item-shadow: none;
+        --ezy-item-active-bg: var(--bs-warning);
+        --ezy-item-active-color: #fff;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__pricing4 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__pricing4,
+      .ezy__pricing4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(239, 244, 253);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #fff;
+        --ezy-item-border-color: rgba(19, 19, 19, 0.08);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__pricing4,
+      .ezy__pricing4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #243548;
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__pricing4,
+      .ezy__pricing4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #101d2c;
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__pricing4-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__pricing4-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__pricing4-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__pricing4-item {
+        background-color: var(--ezy-item-bg);
+        border-radius: 15px;
+        box-shadow: var(--ezy-item-shadow);
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__pricing4-item.active {
+        background-color: var(--ezy-theme-color);
+      }
+
+      .ezy__pricing4-price,
+      .ezy__pricing4-note,
+      .ezy__pricing4-title {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__pricing4-item.active .ezy__pricing4-price,
+      .ezy__pricing4-item.active .ezy__pricing4-note,
+      .ezy__pricing4-item.active .ezy__pricing4-title {
+        color: var(--ezy-item-active-color);
+      }
+
+      .ezy__pricing4-btn {
+        padding: 12px 30px;
+      }
+
+      .ezy__pricing4 .btn-primary {
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__pricing4 .btn-primary:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__pricing4 .btn-outline-primary {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.3);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.3);
+      }
+
+      .ezy__pricing4 .btn-outline-primary:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__pricing4-btn.btn-outline {
+        color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__pricing4-btn.btn-outline:hover {
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__pricing4">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-6 col-xl-5 text-center">
+            <h2 class="ezy__pricing4-heading mb-3">Flexible Plan for you</h2>
+            <p class="ezy__pricing4-sub-heading mb-0">Choice suitable plan for you.</p>
+          </div>
+        </div>
+        <div class="text-center mb-4">
+          <button class="btn btn-primary ezy__pricing4-btn">MONTHLY</button>
+          <button class="btn btn-outline border-0 ezy__pricing4-btn">YEARLY</button>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xl-3 mt-4">
+            <div class="ezy__pricing4-item p-3 p-lg-5">
+              <h3 class="fw-bold mb-2 ezy__pricing4-title">Basic</h3>
+              <p class="opacity-50 mb-4 ezy__pricing4-note">
+                More off this less hello salamander lied porpoise much circa horse taped.
+              </p>
+              <div class="ezy__pricing4-price mb-3">
+                <span class="fs-3 fw-bold">$20</span>
+                <span class="ms-2 opacity-50">/month</span>
+              </div>
+
+              <button class="btn btn-outline w-100 mt-4 ezy__pricing4-btn">Choose plan</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mt-4">
+            <div class="ezy__pricing4-item p-3 p-lg-5">
+              <h3 class="fw-bold mb-2 ezy__pricing4-title">Standard</h3>
+              <p class="opacity-50 mb-4 ezy__pricing4-note">
+                Sed ut in perspiciatis unde omnis iste natus error sit tatem doloremque.
+              </p>
+              <div class="ezy__pricing4-price mb-3">
+                <span class="fs-3 fw-bold">$199</span>
+                <span class="ms-2 opacity-50">/month</span>
+              </div>
+
+              <button class="btn btn-outline w-100 mt-4 ezy__pricing4-btn">Choose plan</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mt-4">
+            <div class="ezy__pricing4-item active shadow-lg p-3 p-lg-5">
+              <h3 class="fw-bold mb-2 ezy__pricing4-title">Premium</h3>
+              <p class="opacity-75 mb-4 ezy__pricing4-note">
+                It’s easier to reach your savings goals when you have the right savings account.
+              </p>
+              <div class="ezy__pricing4-price mb-3">
+                <span class="fs-3 fw-bold">$399</span>
+                <span class="ms-2 opacity-75">/month</span>
+              </div>
+
+              <button class="btn btn-light w-100 mt-4 ezy__pricing4-btn">Choose plan</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mt-4">
+            <div class="ezy__pricing4-item p-3 p-lg-5">
+              <h3 class="fw-bold mb-2 ezy__pricing4-title">Lifetime</h3>
+              <p class="opacity-75 mb-4 ezy__pricing4-note">
+                Urna molestie at eleme ntum eu facilisis sed odio Male suada fames.
+              </p>
+              <div class="ezy__pricing4-price mb-3">
+                <span class="fs-3 fw-bold">$1999</span>
+                <span class="ms-2 opacity-50">/month</span>
+              </div>
+
+              <button class="btn btn-outline w-100 mt-4 ezy__pricing4-btn">Choose plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Pricing 5
+-->
+    <style>
+      .ezy__pricing5 {
+        /* Bootstrap variables */
+        --bs-body-color: #252d39;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #f7f7ff;
+        --ezy-item-shadow: none;
+        --ezy-item-active-bg: var(--bs-primary);
+        --ezy-item-active-color: #fff;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__pricing5 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__pricing5,
+      .ezy__pricing5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(239, 244, 253);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #fff;
+        --ezy-item-border-color: rgba(19, 19, 19, 0.08);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__pricing5,
+      .ezy__pricing5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #243548;
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__pricing5,
+      .ezy__pricing5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #101d2c;
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__pricing5-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__pricing5-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__pricing5-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__pricing5-item {
+        background-color: var(--ezy-item-bg);
+        border-radius: 15px;
+        box-shadow: var(--ezy-item-shadow);
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__pricing5-item.active {
+        background-color: var(--ezy-theme-color);
+      }
+
+      .ezy__pricing5-price,
+      .ezy-pricing5-features,
+      .ezy__pricing5-note,
+      .ezy__pricing5-title {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__pricing5-item.active .ezy__pricing5-price,
+      .ezy__pricing5-item.active .ezy-pricing5-features,
+      .ezy__pricing5-item.active .ezy__pricing5-note,
+      .ezy__pricing5-item.active .ezy__pricing5-title {
+        color: var(--ezy-item-active-color);
+      }
+
+      .ezy__pricing5-icon {
+        width: 17px;
+        text-align: center;
+        display: inline-block;
+      }
+
+      .ezy__pricing5 .btn-outline-primary {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.15);
+        color: rgba(var(--ezy-theme-color-rgb), 1) !important;
+        border: none;
+      }
+
+      .ezy__pricing5 .btn-outline-primary:hover {
+        color: #fff !important;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.75);
+      }
+
+      .ezy__pricing5 .text-primary {
+        color: var(--ezy-theme-color) !important;
+      }
+
+      .ezy__pricing5-btn {
+        padding: 12px 30px;
+      }
+    </style>
+    <section class="ezy__pricing5">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-6 text-center">
+            <h2 class="ezy__pricing5-heading mb-3">Choose Your Subscription!</h2>
+            <p class="ezy__pricing5-sub-heading mb-0">Choice suitable plan for you.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mt-4">
+            <div class="ezy__pricing5-item p-3 p-lg-4 p-xl-5">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="fw-bold mb-0 ezy__pricing5-title">Basic</h3>
+                <div class="ezy__pricing5-price mb-0">
+                  <span class="fs-3 fw-bold">$199</span>
+                  <span class="ms-2 opacity-75">/year</span>
+                </div>
+              </div>
+              <p class="opacity-75 mb-4 ezy__pricing5-note">
+                Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores.
+              </p>
+              <ul class="nav flex-column ezy-pricing5-features">
+                <li class="mb-3">
+                  <span class="ezy__pricing5-icon me-2"><span class="fas fa-check text-primary"></span></span>
+                  <span class="opacity-75">Security Dashboards</span>
+                </li>
+                <li class="mb-3">
+                  <span class="ezy__pricing5-icon me-2"><span class="fas fa-times text-primary"></span></span>
+                  <span class="opacity-75">Multi-Level Epics</span>
+                </li>
+                <li>
+                  <span class="ezy__pricing5-icon me-2"><span class="fas fa-times text-primary"></span></span>
+                  <span class="opacity-75">24/7 Contact support</span>
+                </li>
+              </ul>
+
+              <button class="btn btn-outline-primary w-100 mt-4 ezy__pricing5-btn">Choose plan</button>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4">
+            <div class="ezy__pricing5-item active p-3 p-lg-4 p-xl-5">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="fw-bold mb-0 ezy__pricing5-title">Standard</h3>
+                <div class="ezy__pricing5-price mb-0">
+                  <span class="fs-3 fw-bold">$199</span>
+                  <span class="ms-2 opacity-75">/year</span>
+                </div>
+              </div>
+              <p class="opacity-75 mb-4 ezy__pricing5-note">
+                It’s easier to reach your savings goals when you have the right savings account.
+              </p>
+              <ul class="nav flex-column ezy-pricing5-features">
+                <li class="mb-3">
+                  <span class="ezy__pricing5-icon me-2"><span class="fas fa-check text-white"></span></span>
+                  <span class="opacity-75">Security Dashboards</span>
+                </li>
+                <li class="mb-3">
+                  <span class="ezy__pricing5-icon me-2"><span class="fas fa-check text-white"></span></span>
+                  <span class="opacity-75">Multi-Level Epics</span>
+                </li>
+                <li>
+                  <span class="ezy__pricing5-icon me-2"><span class="fas fa-times text-white"></span></span>
+                  <span class="opacity-75">24/7 Contact support</span>
+                </li>
+              </ul>
+
+              <button class="btn btn-light w-100 mt-4 ezy__pricing5-btn">Choose plan</button>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4">
+            <div class="ezy__pricing5-item p-3 p-lg-4 p-xl-5">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="fw-bold mb-0 ezy__pricing5-title">Premium</h3>
+                <div class="ezy__pricing5-price mb-0">
+                  <span class="fs-3 fw-bold">$199</span>
+                  <span class="ms-2 opacity-75">/year</span>
+                </div>
+              </div>
+              <p class="opacity-75 mb-4 ezy__pricing5-note">
+                Sed ut in perspiciatis unde omnis iste natus error sit tatem doloremque.
+              </p>
+              <ul class="nav flex-column ezy-pricing5-features">
+                <li class="mb-3">
+                  <span class="ezy__pricing5-icon me-2"><span class="fas fa-check text-primary"></span></span>
+                  <span class="opacity-75">Security Dashboards</span>
+                </li>
+                <li class="mb-3">
+                  <span class="ezy__pricing5-icon me-2"><span class="fas fa-check text-primary"></span></span>
+                  <span class="opacity-75">Multi-Level Epics</span>
+                </li>
+                <li>
+                  <span class="ezy__pricing5-icon me-2"><span class="fas fa-check text-primary"></span></span>
+                  <span class="opacity-75">24/7 Contact support</span>
+                </li>
+              </ul>
+
+              <button class="btn btn-outline-primary w-100 mt-4 ezy__pricing5-btn">Choose plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

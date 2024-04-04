@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies (HTML-Bootstrap)</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+   Name:  cookies 1
+-->
+    <style>
+      .ezy__cookies1 {
+        /* Bootstrap variables */
+        --bs-body-color: #262830;
+        --bs-body-bg: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: transparent;
+        --ezy-card-border: #dfdfdf;
+        --ezy-btn-border: rgba(0, 0, 0, 0.2);
+        --ezy-theme-color: #0d6efd;
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0 30px;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__cookies1 {
+          padding: 100px 0 50px;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__cookies1,
+      .ezy__cookies1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-card-border: #d1d1d1;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__cookies1,
+      .ezy__cookies1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-border: rgb(38, 63, 99);
+        --ezy-btn-border: rgb(91, 122, 166);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__cookies1,
+      .ezy__cookies1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #fff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-border: rgb(30, 51, 81);
+        --ezy-btn-border: rgb(91, 122, 166);
+      }
+
+      .ezy__cookies1-heading {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: var(--bs-body-color);
+      }
+
+      /* card */
+      .ezy__cookies1-card {
+        background-color: var(--ezy-card-bg);
+        border: 1px solid var(--ezy-card-border);
+      }
+
+      .ezy__cookies1-read-more {
+        color: var(--ezy-theme-color);
+        font-size: 18px;
+        line-height: 25px;
+        opacity: 0.8;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ezy__cookies1-read-more:hover {
+        color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__cookies1 .btn-primary {
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__cookies1 .btn-primary:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__cookies1-dark-btn {
+        color: var(--bs-body-color);
+        background-color: transparent !important;
+        border: 1px solid var(--ezy-btn-border) !important;
+      }
+
+      .ezy__cookies1-dark-btn:hover {
+        color: var(--bs-body-color);
+        background-color: transparent !important;
+        border: 1px solid var(--ezy-btn-border) !important;
+      }
+    </style>
+    <section class="ezy__cookies1">
+      <div class="container">
+        <div class="card ezy__cookies1-card">
+          <div class="card-body p-4 p-lg-5">
+            <div class="row justify-content-between">
+              <div class="col-12 col-lg-5">
+                <h4 class="ezy__cookies1-heading mb-3">
+                  We use third-party cookies in order to personalize your experience.
+                </h4>
+                <a class="ezy__cookies1-read-more"
+                  >Read our cookie policy <i class="fas fa-arrow-circle-right ms-2"></i
+                ></a>
+              </div>
+              <div class="col-auto d-flex align-items-center mt-4 mt-lg-0">
+                <button class="btn btn-primary px-4">Allow</button>
+                <button class="btn ezy__cookies1-dark-btn ms-2 px-4">Decline</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  cookies 2
+-->
+    <style>
+      .ezy__cookies2 {
+        /* Bootstrap variables */
+        --bs-body-color: #262830;
+        --bs-body-bg: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: transparent;
+        --ezy-card-border: #dfdfdf;
+        --ezy-btn-border: rgba(0, 0, 0, 0.2);
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0 30px;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__cookies2 {
+          padding: 100px 0 50px;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__cookies2,
+      .ezy__cookies2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-card-border: #d1d1d1;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__cookies2,
+      .ezy__cookies2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-border: rgb(38, 63, 99);
+        --ezy-btn-border: rgb(91, 122, 166);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__cookies2,
+      .ezy__cookies2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #fff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-border: rgb(30, 51, 81);
+        --ezy-btn-border: rgb(91, 122, 166);
+      }
+
+      .ezy__cookies2-heading {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: var(--bs-body-color);
+      }
+
+      /* card */
+      .ezy__cookies2-card {
+        background-color: var(--ezy-card-bg);
+        border: 1px solid var(--ezy-card-border);
+      }
+
+      .ezy__cookies2-read-more {
+        color: var(--ezy-theme-color);
+        font-size: 18px;
+        line-height: 25px;
+        opacity: 0.8;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ezy__cookies2-read-more:hover {
+        color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__cookies2 .btn-primary {
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__cookies2 .btn-primary:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__cookies2-dark-btn {
+        color: var(--bs-body-color);
+        background-color: transparent !important;
+        border: 1px solid var(--ezy-btn-border) !important;
+      }
+
+      .ezy__cookies2-dark-btn:hover {
+        color: var(--bs-body-color);
+        background-color: transparent !important;
+        border: 1px solid var(--ezy-btn-border) !important;
+      }
+    </style>
+    <section class="ezy__cookies2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="card ezy__cookies2-card">
+              <div class="card-body p-4 p-lg-5">
+                <div class="row justify-content-between">
+                  <div class="col-12">
+                    <h4 class="ezy__cookies2-heading mb-3">
+                      We use third-party cookies in order to personalize your experience.
+                    </h4>
+                    <a class="ezy__cookies2-read-more"
+                      >Read our cookie policy <i class="fas fa-arrow-circle-right ms-2"></i
+                    ></a>
+                  </div>
+                  <div class="col-auto d-flex align-items-center mt-4">
+                    <button class="btn btn-primary px-4">Allow</button>
+                    <button class="btn ezy__cookies2-dark-btn ms-2 px-4">Decline</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  cookies 3
+-->
+    <style>
+      .ezy__cookies3 {
+        /* Bootstrap variables */
+        --bs-body-color: #262830;
+        --bs-body-bg: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: transparent;
+        --ezy-line-bg: #dfdfdf;
+        --ezy-card-border: #dfdfdf;
+        --ezy-btn-border: rgba(0, 0, 0, 0.2);
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0 30px;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__cookies3 {
+          padding: 100px 0 50px;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__cookies3,
+      .ezy__cookies3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-line-bg: #d1d1d1;
+        --ezy-card-border: #d1d1d1;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__cookies3,
+      .ezy__cookies3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-line-bg: rgb(38, 63, 99);
+        --ezy-card-border: rgb(30, 51, 81);
+        --ezy-btn-border: rgb(91, 122, 166);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__cookies3,
+      .ezy__cookies3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #fff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-line-bg: rgb(30, 51, 81);
+        --ezy-card-border: rgb(30, 51, 81);
+        --ezy-btn-border: rgb(91, 122, 166);
+      }
+
+      .ezy__cookies3-heading {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: var(--bs-body-color);
+      }
+
+      /* line */
+      .ezy__cookies3-line {
+        height: 1px;
+        width: 100%;
+        background-color: var(--ezy-line-bg);
+      }
+
+      /* card */
+      .ezy__cookies3-card {
+        background-color: var(--ezy-card-bg);
+      }
+
+      .ezy__cookies3-read-more {
+        color: var(--ezy-theme-color);
+        font-size: 18px;
+        line-height: 25px;
+        opacity: 0.8;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ezy__cookies3-read-more:hover {
+        color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__cookies3 .btn-primary {
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__cookies3 .btn-primary:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__cookies3-dark-btn {
+        color: var(--bs-body-color);
+        background-color: transparent !important;
+        border: 1px solid var(--ezy-btn-border) !important;
+      }
+
+      .ezy__cookies3-dark-btn:hover {
+        color: var(--bs-body-color);
+        background-color: transparent !important;
+        border: 1px solid var(--ezy-btn-border) !important;
+      }
+    </style>
+    <section class="ezy__cookies3">
+      <div class="ezy__cookies3-line mb-2"></div>
+      <div class="container">
+        <div class="card ezy__cookies3-card border-0">
+          <div class="card-body p-4 p-lg-5">
+            <div class="row justify-content-between">
+              <div class="col-12 col-lg">
+                <h4 class="ezy__cookies3-heading mb-3">
+                  We use third-party cookies in order to personalize your experience.
+                </h4>
+                <a class="ezy__cookies3-read-more"
+                  >Read our cookie policy <i class="fas fa-arrow-circle-right ms-2"></i
+                ></a>
+              </div>
+              <div class="col-auto d-flex align-items-center mt-4 mt-lg-0">
+                <button class="btn btn-primary px-4">Allow</button>
+                <button class="btn ezy__cookies3-dark-btn ms-2 px-4">Decline</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  cookies 4
+-->
+    <style>
+      .ezy__cookies4 {
+        /* Bootstrap variables */
+        --bs-body-color: #262830;
+        --bs-body-bg: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: transparent;
+        --ezy-card-border: #dfdfdf;
+        --ezy-btn-border: rgba(0, 0, 0, 0.2);
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0 30px;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__cookies4 {
+          padding: 100px 0 50px;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__cookies4,
+      .ezy__cookies4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-card-border: #d1d1d1;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__cookies4,
+      .ezy__cookies4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-border: rgb(38, 63, 99);
+        --ezy-btn-border: rgb(91, 122, 166);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__cookies4,
+      .ezy__cookies4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #fff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-border: rgb(30, 51, 81);
+        --ezy-btn-border: rgb(91, 122, 166);
+      }
+
+      .ezy__cookies4-heading {
+        color: var(--bs-body-color);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.5;
+      }
+
+      .ezy__cookies4-sub-heading {
+        color: var(--bs-body-color);
+        font-size: 16px;
+        line-height: 1.5;
+        opacity: 0.8;
+      }
+
+      /* card */
+      .ezy__cookies4-card {
+        background-color: var(--ezy-card-bg);
+        border: 1px solid var(--ezy-card-border);
+      }
+
+      .ezy__cookies4-read-more {
+        color: var(--ezy-theme-color);
+        font-size: 18px;
+        line-height: 25px;
+        opacity: 0.8;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ezy__cookies4-read-more:hover {
+        color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__cookies4 .btn-primary {
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__cookies4 .btn-primary:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__cookies4-dark-btn {
+        color: var(--bs-body-color);
+        background-color: transparent !important;
+        border: 1px solid var(--ezy-btn-border) !important;
+      }
+
+      .ezy__cookies4-dark-btn:hover {
+        color: var(--bs-body-color);
+        background-color: transparent !important;
+        border: 1px solid var(--ezy-btn-border) !important;
+      }
+    </style>
+    <section class="ezy__cookies4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-7 col-lg-6 col-xl-4">
+            <div class="card ezy__cookies4-card">
+              <div class="card-body p-4 p-xl-5">
+                <div class="row">
+                  <div class="col-12">
+                    <div>
+                      <h4 class="ezy__cookies4-heading">Cookie Policy</h4>
+                      <p class="ezy__cookies4-sub-heading mb-3">
+                        We use third-party cookies in order to personalize your experience.
+                      </p>
+                      <a class="ezy__cookies4-read-more"
+                        >Read our cookie policy <i class="fas fa-arrow-circle-right ms-2"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <button class="btn btn-primary w-100">Allow</button>
+                    <button class="btn ezy__cookies4-dark-btn mt-3 w-100">Decline</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  cookies 5
+-->
+    <style>
+      .ezy__cookies5 {
+        /* Bootstrap variables */
+        --bs-body-color: #262830;
+        --bs-body-bg: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: transparent;
+        --ezy-card-border: #dfdfdf;
+        --ezy-btn-border: rgba(0, 0, 0, 0.2);
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0 30px;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__cookies5 {
+          padding: 100px 0 50px;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__cookies5,
+      .ezy__cookies5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: #f6f6f6;
+        --ezy-card-border: #d1d1d1;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__cookies5,
+      .ezy__cookies5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: transparent;
+        --ezy-card-border: rgb(38, 63, 99);
+        --ezy-btn-border: rgb(91, 122, 166);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__cookies5,
+      .ezy__cookies5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #fff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: transparent;
+        --ezy-card-border: rgb(30, 51, 81);
+        --ezy-btn-border: rgb(91, 122, 166);
+      }
+
+      .ezy__cookies5-heading {
+        color: var(--bs-body-color);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.5;
+      }
+
+      .ezy__cookies5-sub-heading {
+        color: var(--bs-body-color);
+        font-size: 16px;
+        line-height: 1.5;
+        opacity: 0.8;
+      }
+
+      /* card */
+      .ezy__cookies5-card {
+        background-color: var(--ezy-card-bg);
+        border-color: var(--ezy-card-border);
+      }
+
+      .ezy__cookies5-read-more {
+        color: var(--ezy-theme-color);
+        font-size: 18px;
+        line-height: 25px;
+        opacity: 0.8;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ezy__cookies5-read-more:hover {
+        color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__cookies5 .btn-primary {
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__cookies5 .btn-primary:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__cookies5-dark-btn {
+        color: var(--bs-body-color);
+        background-color: transparent !important;
+        border: 1px solid var(--ezy-btn-border) !important;
+      }
+
+      .ezy__cookies5-dark-btn:hover {
+        color: var(--bs-body-color);
+        background-color: transparent !important;
+        border: 1px solid var(--ezy-btn-border) !important;
+      }
+    </style>
+    <section class="ezy__cookies5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-7 col-xl-6">
+            <div class="card ezy__cookies5-card">
+              <div class="card-body p-4 p-xl-5">
+                <div class="row">
+                  <div class="col-12">
+                    <div>
+                      <h4 class="ezy__cookies5-heading">Cookie Policy</h4>
+                      <p class="ezy__cookies5-sub-heading mb-3">
+                        We use cookies to personalise content, to provide social media features and to analyse our
+                        traffic. We also share information about your use of our site with our social media, advertising
+                        and analytics partners.
+                      </p>
+                      <a class="ezy__cookies5-read-more"
+                        >Read our cookie policy <i class="fas fa-arrow-circle-right ms-2"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <button class="btn btn-primary w-100">Allow</button>
+                    <button class="btn ezy__cookies5-dark-btn mt-3 w-100">Decline</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

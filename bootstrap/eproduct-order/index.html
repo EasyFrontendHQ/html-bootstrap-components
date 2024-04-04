@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+    Name: Order 1
+-->
+    <style>
+      .ezy__eporder1 {
+        /* Bootstrap variables */
+        --bs-body-bg: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: rgb(250, 250, 250);
+        --ezy-header-bg: #e9ebf2;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+        position: relative;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__eporder1 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__eporder1,
+      .ezy__eporder1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: #fff;
+        --ezy-header-bg: #e9ebf2;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__eporder1,
+      .ezy__eporder1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(38, 47, 62);
+        --ezy-header-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__eporder1,
+      .ezy__eporder1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(16, 30, 48);
+        --ezy-header-bg: rgb(30, 39, 53);
+      }
+
+      .ezy__eporder1-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__eporder1-heading {
+          font-size: 25px;
+        }
+      }
+
+      .ezy__eporder1-sub-heading {
+        font-size: 16px;
+        line-height: 25px;
+        opacity: 0.8;
+      }
+
+      .ezy__eporder1 .card {
+        background-color: var(--ezy-card-bg);
+        max-width: 450px;
+      }
+
+      .ezy__eporder1 .card-header,
+      .ezy__eporder1 .card-footer {
+        background-color: var(--ezy-header-bg);
+      }
+
+      .ezy__eporder1 h6 {
+        opacity: 0.6;
+      }
+
+      /* check btn */
+      .ezy__eporder1-check {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid var(--ezy-theme-color);
+        color: var(--ezy-theme-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* close btn */
+      .ezy__eporder1-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid var(--bs-body-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .ezy__eporder1-close:hover {
+        opacity: 0.75;
+      }
+
+      /* btn */
+      .ezy__eporder1-btn {
+        color: #fff;
+        font-size: 15px;
+        padding: 12px 25px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__eporder1-btn:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+    </style>
+    <section class="ezy__eporder1">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="card border-0 px-0">
+            <div class="card-header border-0 position-relative p-4">
+              <div class="ezy__eporder1-close"><i class="fas fa-times"></i></div>
+              <h5>Course Cloud Certificate</h5>
+              <h6>TOTAL BILLED: $54</h6>
+            </div>
+            <div class="card-body text-center py-5 px-3">
+              <div class="ezy__eporder1-check">
+                <i class="fas fa-check"></i>
+              </div>
+              <h1 class="ezy__eporder1-heading my-3">Your Certificate Order is Successful</h1>
+              <p class="ezy__eporder1-sub-heading px-5">
+                In purus donec ac in nulla lobortis. Lectus massa erat odio turpis nulla sed.
+              </p>
+              <button class="btn ezy__eporder1-btn my-2">Back to Courses</button>
+            </div>
+            <div class="card-footer text-center border-0 p-3">
+              <div class="d-flex align-items-center justify-content-center">
+                <i class="fas fa-lock me-2"></i>
+                <b>Secured with SSL</b>
+              </div>
+              <b>Have a question? 0123 4567 891</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Order 2
+-->
+    <style>
+      .ezy__eporder2 {
+        /* Bootstrap variables */
+        --bs-body-bg: #fff;
+        --bs-body-color: #000;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-svg-color: #fff;
+        --ezy-card-bg: #f6f6f6;
+        --ezy-border-color: rgba(73, 73, 73, 0.3);
+
+        background-color: var(--bs-body-bg);
+        padding: 0;
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__eporder2,
+      .ezy__eporder2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: #fff;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__eporder2,
+      .ezy__eporder2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-svg-color: rgb(30, 39, 53);
+        --ezy-card-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__eporder2,
+      .ezy__eporder2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-svg-color: rgb(11, 23, 39);
+        --ezy-card-bg: rgb(30, 39, 53);
+      }
+
+      /* progress bar */
+      .ezy__eporder2-progress::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 0;
+        left: 0;
+        border-top: 2px dashed var(--ezy-border-color);
+      }
+
+      .ezy__eporder2-progress span {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-color: var(--ezy-card-bg);
+        border: 1px solid var(--ezy-border-color);
+        color: var(--bs-body-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 17px;
+        z-index: 2;
+        cursor: pointer;
+      }
+
+      .ezy__eporder2-progress span.active {
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+        border: 1px solid var(--ezy-theme-color);
+      }
+
+      /* courses */
+      .ezy__eporder2 .card {
+        background-color: transparent;
+        border: 1px solid var(--ezy-border-color);
+      }
+
+      .ezy__eporder2 a {
+        text-decoration: none;
+      }
+
+      .ezy__eporder2-title {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__eporder2-title:hover {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__eporder2-price {
+        color: var(--ezy-theme-color);
+        font-size: 20px;
+      }
+
+      /* cart details */
+      .ezy__eporder2-details {
+        background-color: var(--ezy-card-bg);
+      }
+
+      .ezy__eporder2 hr {
+        color: rgba(var(--ezy-theme-color-rgb), 0.75);
+      }
+
+      .ezy__eporder2-details p {
+        font-weight: 500;
+      }
+
+      /* coupon */
+      .ezy__eporder2 .form-control {
+        min-height: 44px;
+        line-height: 36px;
+        border-color: transparent;
+        background: rgba(163, 190, 241, 0.14);
+        color: var(--bs-body-color);
+      }
+
+      .ezy__eporder2 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      /* btn */
+      .ezy__eporder2-btn {
+        padding: 12px 25px;
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__eporder2-btn:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+    </style>
+    <section class="ezy__eporder2">
+      <div class="container py-5">
+        <div class="row justify-content-between">
+          <!-- progress bar -->
+          <div class="col-12">
+            <div class="ezy__eporder2-progress d-flex justify-content-between position-relative mb-5">
+              <span class="ezy__eporder2-cart active">1</span>
+              <span class="ezy__eporder2-bill">2</span>
+              <span class="ezy__eporder2-completed">3</span>
+            </div>
+          </div>
+
+          <!-- courses -->
+          <div class="col-12 col-md-6">
+            <div class="card mt-4">
+              <div class="card-body row">
+                <!-- image -->
+                <div class="col-12 col-md-5">
+                  <a href="#">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/ecommerce/mac.jpg"
+                      alt="..."
+                      class="rounded img-fluid"
+                    />
+                  </a>
+                </div>
+                <!-- details -->
+                <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                  <!-- title -->
+                  <a href="#">
+                    <h5 class="ezy__eporder2-title">Certificate in British Sign Language (BSL) Level 1 & 2</h5>
+                  </a>
+                  <p class="ezy__eporder2-price mb-0">$ 15.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="card mt-4">
+              <div class="card-body row">
+                <!-- image -->
+                <div class="col-12 col-md-5">
+                  <a href="#">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/ecommerce/tab.jpg"
+                      alt="..."
+                      class="rounded img-fluid"
+                    />
+                  </a>
+                </div>
+                <!-- details -->
+                <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                  <!-- title -->
+                  <a href="#">
+                    <h5 class="ezy__eporder2-title">How to Improve Your Personal Skills (PDF)</h5>
+                  </a>
+                  <p class="ezy__eporder2-price mb-0">$ 15.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- details -->
+          <div class="col-12 col-md-5">
+            <div class="ezy__eporder2-details p-4 p-lg-5 mt-4 rounded">
+              <h4 class="mb-5">Your Order</h4>
+              <div class="row">
+                <div class="col-8">
+                  <h6 class="mb-0">Product</h6>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">Price</p>
+                </div>
+
+                <hr class="my-4" />
+
+                <div class="col-8">
+                  <h6 class="mb-0">Certificate in British Sign Language (BSL) Level 1 & 2</h6>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">£15.00</p>
+                </div>
+
+                <hr class="my-4" />
+
+                <div class="col-8">
+                  <h6 class="mb-0">How to Improve Your Personal Skills (PDF)</h6>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">£20.00</p>
+                </div>
+
+                <hr class="my-4" />
+
+                <div class="col-8">
+                  <h6 class="mb-0">Subtotal</h6>
+                </div>
+                <div class="col-4">
+                  <p class="mb-0">£35.00</p>
+                </div>
+
+                <hr class="my-4" />
+
+                <div class="col-8">
+                  <h6>Total</h6>
+                </div>
+                <div class="col-4">
+                  <p>£35.00</p>
+                </div>
+
+                <form action="" class="mt-5">
+                  <div class="input-group">
+                    <input class="form-control" type="search" placeholder="Enter coupon" aria-label="Search" />
+                    <button class="btn ezy__eporder2-btn" type="submit">Apply</button>
+                  </div>
+                </form>
+                <div class="mt-4">
+                  <button type="submit" class="btn ezy__eporder2-btn w-100">Proceed To Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Order 3
+-->
+    <style>
+      .ezy__eporder3 {
+        /* Bootstrap variables */
+        --bs-body-bg: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: rgb(246, 246, 246);
+        --ezy-svg-color: #fff;
+        --ezy-border-color: rgba(73, 73, 73, 0.3);
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__eporder3,
+      .ezy__eporder3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: #fff;
+        --ezy-svg-color: #f6f6f6;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__eporder3,
+      .ezy__eporder3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-svg-color: rgb(30, 39, 53);
+        --ezy-card-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__eporder3,
+      .ezy__eporder3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-svg-color: rgb(11, 23, 39);
+        --ezy-card-bg: rgb(30, 39, 53);
+      }
+
+      /* progress bar */
+      .ezy__eporder3-progress::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 0;
+        left: 0;
+        border-top: 2px dashed var(--ezy-border-color);
+      }
+
+      .ezy__eporder3-progress span {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-color: var(--ezy-card-bg);
+        border: 1px solid var(--ezy-border-color);
+        color: var(--bs-body-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 17px;
+        z-index: 2;
+        cursor: pointer;
+      }
+
+      .ezy__eporder3-progress span.active {
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+        border: 1px solid var(--ezy-theme-color);
+      }
+
+      /* wrapper */
+      .ezy__eporder3-wrapper {
+        background-color: var(--ezy-card-bg);
+      }
+
+      /* form */
+
+      .ezy__eporder3 .form-control {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__eporder3 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      .ezy__eporder3 form label {
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .ezy__eporder3 form label span {
+        color: var(--ezy-theme-color);
+      }
+
+      /* payment */
+      .ezy__eporder3-card {
+        background-color: var(--bs-body-bg);
+      }
+
+      .ezy__eporder3-payment {
+        background-color: var(--ezy-card-bg);
+      }
+
+      .ezy__eporder3 .form-check-input:checked {
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      /* btn */
+      .ezy__eporder3-btn {
+        color: #fff;
+        font-size: 15px;
+        padding: 12px 25px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__eporder3-btn:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__eporder3 hr {
+        color: rgba(var(--ezy-theme-color-rgb), 0.75);
+      }
+    </style>
+    <section class="ezy__eporder3">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <!-- progress bar -->
+          <div class="col-12">
+            <div class="ezy__eporder3-progress d-flex justify-content-between position-relative mb-5">
+              <span class="ezy__eporder3-cart active">1</span>
+              <span class="ezy__eporder3-bill active">2</span>
+              <span class="ezy__eporder3-completed">3</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="ezy__eporder3-wrapper row justify-content-between p-4 p-lg-5 mt-4">
+              <!-- form -->
+              <div class="col-12 col-lg-5">
+                <form action="">
+                  <h4>Your Billing Details</h4>
+                  <div class="form-group mt-4">
+                    <label for="name22" class="form-label">Full Name <span>*</span></label>
+                    <input type="text" class="form-control" id="name22" placeholder="Jon Doe" required />
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="email2" class="form-label">Email <span>*</span></label>
+                    <input type="email" class="form-control" id="email2" placeholder="example@gmail.com" required />
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="country" class="form-label">Country</label>
+                    <input type="text" class="form-control" id="country" placeholder="Bangladesh" required />
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="address" class="form-label">Sreet Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="11 Zia Uddin Road" required />
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="post" class="form-label">Post Code <span>*</span></label>
+                    <input type="number" class="form-control" id="post" placeholder="****" required />
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="phone" class="form-label">Phone <span>*</span></label>
+                    <input type="number" class="form-control" id="phone" placeholder="+88016******78" required />
+                  </div>
+                </form>
+              </div>
+
+              <!-- payment -->
+              <div class="col-12 col-lg-6">
+                <div class="ezy__eporder3-card card border-0 mt-4 mt-lg-0">
+                  <div class="p-3 px-lg-5 pt-lg-5 card-body">
+                    <h4 class="mb-5">Your Order</h4>
+                    <div class="row">
+                      <div class="col-8">
+                        <h6 class="mb-0">Product</h6>
+                      </div>
+                      <div class="col-4">
+                        <h6 class="mb-0">Subtotal</h6>
+                      </div>
+                    </div>
+                    <hr class="my-4" />
+                    <div class="row">
+                      <div class="col-8">
+                        <h6 class="mb-0">How to Improve Your Personal Skills (PDF)</h6>
+                      </div>
+                      <div class="col-4">
+                        <p class="mb-0">£20.00</p>
+                      </div>
+                    </div>
+                    <hr class="my-4" />
+                    <div class="row">
+                      <div class="col-8">
+                        <h6 class="mb-0">Total</h6>
+                      </div>
+                      <div class="col-4">
+                        <h6 class="mb-0">£35.00</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body pt-0 p-3 p-lg-5">
+                    <form class="ezy__eporder3-payment p-4">
+                      <h6>Paypal</h6>
+                      <div class="form-check d-flex align-items-center mt-3 mb-4">
+                        <input
+                          class="form-check-input me-3"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault122"
+                        />
+                        <svg width="50" height="34" viewBox="0 0 50 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="paypal-color-large">
+                            <rect
+                              id="card_bg"
+                              x="1"
+                              y="1"
+                              width="48"
+                              height="32"
+                              rx="4"
+                              fill="white"
+                              stroke="#BCBDBD"
+                            />
+                            <g id="paypal">
+                              <path
+                                id="Path"
+                                d="M21.3385 26.3202L21.6885 24.1202H20.9085H17.2285L19.7885 7.86018C19.7953 7.8098 19.8202 7.76361 19.8585 7.73018C19.8987 7.69911 19.9477 7.6816 19.9985 7.68018H26.2085C28.2785 7.68018 29.6985 8.11018 30.4485 8.96018C30.7804 9.3167 31.0116 9.75498 31.1185 10.2302C31.2351 10.8077 31.2351 11.4027 31.1185 11.9802V12.4802L31.4685 12.6802C31.735 12.813 31.9754 12.9925 32.1785 13.2102C32.4842 13.5792 32.6815 14.0257 32.7485 14.5002C32.8234 15.1204 32.7964 15.7487 32.6685 16.3602C32.5366 17.103 32.2761 17.817 31.8985 18.4702C31.5934 18.9938 31.1811 19.4471 30.6885 19.8002C30.1928 20.1382 29.6408 20.3854 29.0585 20.5302C28.4048 20.6951 27.7327 20.7757 27.0585 20.7702H26.5685C26.2251 20.7702 25.8925 20.8905 25.6285 21.1102C25.3631 21.3338 25.1888 21.6468 25.1385 21.9902V22.1902L24.5285 26.0702V26.2202C24.5358 26.2464 24.5358 26.274 24.5285 26.3002H24.4685L21.3385 26.3202Z"
+                                fill="#253D80"
+                              />
+                              <path
+                                id="Path_2"
+                                d="M31.8002 12.0801L31.7402 12.4501C30.9202 16.6501 28.1102 18.1101 24.5302 18.1101H22.7102C22.2724 18.1095 21.8991 18.4276 21.8302 18.8601L20.9002 24.7801L20.6302 26.4601C20.61 26.5946 20.649 26.7313 20.7372 26.8349C20.8254 26.9384 20.9542 26.9987 21.0902 27.0001H24.3302C24.7144 26.9997 25.0411 26.7197 25.1002 26.3401V26.1801L25.7102 22.3101V22.1001C25.7648 21.722 26.0883 21.4411 26.4702 21.4401H27.0002C30.1302 21.4401 32.5902 20.1701 33.3002 16.4401C33.6844 15.1652 33.4474 13.784 32.6602 12.7101C32.4105 12.4539 32.1198 12.241 31.8002 12.0801V12.0801Z"
+                                fill="#189BD7"
+                              />
+                              <path
+                                id="Path_3"
+                                d="M30.9384 11.7398L30.5584 11.6398L30.1384 11.5598C29.6089 11.4807 29.0738 11.4439 28.5384 11.4498H23.6584C23.5444 11.4467 23.4313 11.4707 23.3284 11.5198C23.0966 11.6284 22.9349 11.8464 22.8984 12.0998L21.8984 18.6698V18.8598C21.9673 18.4274 22.3405 18.1093 22.7784 18.1098H24.5984C28.1784 18.1098 30.9884 16.6498 31.8084 12.4498L31.8684 12.0798C31.653 11.9685 31.429 11.8749 31.1984 11.7998L30.9384 11.7398Z"
+                                fill="#242E65"
+                              />
+                              <path
+                                id="Path_4"
+                                d="M22.8994 12.1C22.9359 11.8466 23.0975 11.6286 23.3294 11.52C23.4323 11.4709 23.5454 11.4469 23.6594 11.45H28.5394C29.0748 11.444 29.6098 11.4808 30.1394 11.56L30.5594 11.64L30.9394 11.74L31.1294 11.8C31.3599 11.8751 31.584 11.9687 31.7994 12.08C32.1245 10.8306 31.8265 9.50118 30.9994 8.51C29.9994 7.45 28.3594 7 26.2194 7H19.9994C19.5615 6.99947 19.1883 7.31756 19.1194 7.75L16.5294 24.16C16.5062 24.3148 16.5513 24.472 16.653 24.5909C16.7547 24.7098 16.9029 24.7788 17.0594 24.78H20.8994L21.8994 18.67L22.8994 12.1Z"
+                                fill="#253D80"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <h6>Debit or Credit Card</h6>
+                      <div class="form-check d-flex align-items-center mt-3 mb-4">
+                        <input
+                          class="form-check-input me-3"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault233"
+                          checked
+                        />
+                        <img
+                          src="https://cdn.easyfrontend.com/pictures/Debit%20or%20Credit.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+
+                      <div class="form-check my-5">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          I have read and agree to the website terms and conditions *
+                        </label>
+                      </div>
+                      <button class="btn ezy__eporder3-btn w-100">Pay Now</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Order 4
+-->
+    <style>
+      .ezy__eporder4 {
+        /* Bootstrap variables */
+        --bs-body-bg: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: rgb(246, 246, 246);
+        --ezy-border-color: rgba(73, 73, 73, 0.3);
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__eporder4,
+      .ezy__eporder4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: #fff;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__eporder4,
+      .ezy__eporder4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__eporder4,
+      .ezy__eporder4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+      }
+
+      /* progress bar */
+      .ezy__eporder4-progress::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 0;
+        left: 0;
+        border-top: 2px dashed var(--ezy-theme-color);
+      }
+
+      .ezy__eporder4-progress span {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-color: var(--ezy-card-bg);
+        border: 1px solid var(--ezy-border-color);
+        color: var(--bs-body-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 17px;
+        z-index: 2;
+        cursor: pointer;
+      }
+
+      .ezy__eporder4-progress span.active {
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+        border: 1px solid var(--ezy-theme-color);
+      }
+
+      .ezy__eporder4 .card {
+        background-color: var(--ezy-card-bg);
+      }
+
+      .ezy__eporder4 h6 {
+        opacity: 0.6;
+      }
+
+      /* btn */
+      .ezy__eporder4-btn {
+        color: #fff;
+        padding: 12px 25px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__eporder4-btn:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      /* check btn */
+      .ezy__eporder4-check {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid var(--ezy-theme-color);
+        color: var(--ezy-theme-color);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <section class="ezy__eporder4">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <!-- progress bar -->
+          <div class="col-12">
+            <div class="ezy__eporder4-progress d-flex justify-content-between position-relative mb-5">
+              <span class="ezy__eporder4-cart active">1</span>
+              <span class="ezy__eporder4-bill active">2</span>
+              <span class="ezy__eporder4-completed active">3</span>
+            </div>
+          </div>
+          <div class="card border-0 py-5 mt-4">
+            <div class="card-body text-center py-md-5">
+              <div class="ezy__eporder4-check">
+                <i class="fas fa-check"></i>
+              </div>
+              <h1 class="ezy__eporder4-heading my-3">Your Order is Successful</h1>
+              <p class="ezy__eporder4-sub-heading">
+                In purus donec ac in nulla lobortis. Lectus massa erat odio turpis nulla sed.
+              </p>
+              <button class="btn ezy__eporder4-btn mt-4">Back To Courses</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Order 5
+-->
+    <style>
+      .ezy__eporder5 {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-border-color: rgba(178, 178, 178, 1);
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+        position: relative;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__eporder5 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__eporder5,
+      .ezy__eporder5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-border-color: rgba(178, 178, 178, 1);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__eporder5,
+      .ezy__eporder5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-border-color: rgba(87, 87, 87, 0.7);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__eporder5,
+      .ezy__eporder5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-border-color: rgba(87, 87, 87, 0.7);
+      }
+
+      .ezy__eporder5-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__eporder5-heading {
+          font-size: 45px;
+        }
+      }
+
+      .ezy__eporder5-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        opacity: 0.8;
+      }
+
+      /* sidebar images */
+      .ezy__eporder5-images {
+        border: 1px dashed var(--ezy-border-color);
+      }
+
+      .ezy__eporder5 hr {
+        color: var(--ezy-border-color);
+      }
+
+      /* form */
+      .ezy__eporder5 h3 {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__eporder5-btn {
+        padding: 12px 30px;
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__eporder5-btn:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__eporder5-star {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__eporder5 .form-check-input:checked[type="checkbox"] {
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+        padding: 2px !important;
+      }
+
+      .ezy__eporder5 p {
+        font-size: 14px;
+      }
+
+      .ezy__eporder5 h6 {
+        font-size: 22px;
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__eporder5 .form-control {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background: rgba(163, 190, 241, 0.14);
+        color: var(--bs-body-color);
+      }
+
+      .ezy__eporder5 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+    </style>
+    <section class="ezy__eporder5">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-12 col-lg-8">
+            <h1 class="ezy__eporder5-heading">Order Your Certificate</h1>
+            <p class="ezy__eporder5-sub-heading">
+              In purus donec ac in nulla lobortis. Lectus massa erat odio turpis nulla sed.
+            </p>
+            <hr class="mt-4" />
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 col-lg-8">
+            <form class="row">
+              <h3 class="">Course Details</h3>
+
+              <!-- coupon -->
+              <div class="col-4 mt-5">
+                <h5 class="mb-0">Coupon</h5>
+              </div>
+              <div class="col-8 mt-5">
+                <div class="input-group pe-2">
+                  <input class="form-control" type="search" placeholder="Code" aria-label="Search" />
+                  <button class="btn ezy__eporder5-btn" type="submit">Apply</button>
+                </div>
+              </div>
+
+              <!-- certificate type -->
+              <div class="col-4 mt-5">
+                <h5 class="mb-0">Certificate type <span class="ezy__eporder5-star">*</span></h5>
+              </div>
+              <div class="col-8 mt-5">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexCheckDefault"
+                    id="flexCheckDefault1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault1"> Hardcopy Original Certificate </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexCheckDefault"
+                    id="flexCheckDefault2"
+                    value="option2"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckDefault2"> PDF Certificate </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexCheckDefault"
+                    id="flexCheckDefault3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault3"> Hardcopy Original Certificate </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexCheckDefault"
+                    id="flexCheckDefault4"
+                    value="option4"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault4"> PDF Certificate </label>
+                </div>
+                <p class="mt-3">Hardcopy certificate £39, pdf £24 and both at discounted price £49.</p>
+              </div>
+
+              <!-- Transcript type -->
+              <div class="col-4 mt-5">
+                <h5 class="mb-0">Transcript type</h5>
+              </div>
+              <div class="col-8 mt-5">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexCheckDefault"
+                    id="flexCheckDefault5"
+                    value="option5"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault5"> Hardcopy Original Certificate </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexCheckDefault"
+                    id="flexCheckDefault6"
+                    value="option6"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckDefault6"> PDF Certificate </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexCheckDefault"
+                    id="flexCheckDefault7"
+                    value="option7"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault7"> Hardcopy Original Certificate </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexCheckDefault"
+                    id="flexCheckDefault8"
+                    value="option8"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault8"> PDF Certificate </label>
+                </div>
+                <p class="mt-3">Hardcopy certificate £39, pdf £24 and both at discounted price £49.</p>
+              </div>
+
+              <!-- shipping -->
+              <div class="col-4 mt-5">
+                <h5 class="mb-0">Shipping <span class="ezy__eporder5-star">*</span></h5>
+              </div>
+              <div class="col-8 mt-5">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexCheckDefault"
+                    id="flexCheckDefault9"
+                    value="option9"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault9"> Hardcopy Original Certificate </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexCheckDefault"
+                    id="flexCheckDefault10"
+                    value="option10"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckDefault10"> PDF Certificate </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="flexCheckDefault"
+                    id="flexCheckDefault11"
+                    value="option11"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault11"> Hardcopy Original Certificate </label>
+                </div>
+              </div>
+
+              <!-- quantity -->
+              <div class="col-4 mt-5">
+                <h5 class="mb-0">How many certificate(s) <span class="ezy__eporder5-star">*</span></h5>
+              </div>
+              <div class="col-8 mt-5">
+                <div class="input-group pe-2">
+                  <input class="form-control w-75" type="search" placeholder="Search Questions" aria-label="Search" />
+                </div>
+              </div>
+
+              <!-- quantity -->
+              <div class="col-4 mt-5">
+                <h5 class="mb-0">How many Transcript(s) <span class="ezy__eporder5-star">*</span></h5>
+              </div>
+              <div class="col-8 mt-5">
+                <div class="input-group pe-2">
+                  <input class="form-control w-75" type="search" placeholder="Search Questions" aria-label="Search" />
+                </div>
+              </div>
+
+              <!-- fee -->
+              <div class="col-4 mt-5">
+                <h5 class="mb-0">Certification Fee</h5>
+              </div>
+              <div class="col-8 mt-5">
+                <h6>£ 54.00</h6>
+                <p>Total need to pay today</p>
+              </div>
+
+              <!-- course name -->
+              <div class="col-4 mt-5">
+                <h5 class="mb-0">Course(s) Name <span class="ezy__eporder5-star">*</span></h5>
+              </div>
+              <div class="col-8 mt-5">
+                <div class="form-group me-4">
+                  <textarea name="message" class="form-control" rows="3"></textarea>
+                </div>
+              </div>
+
+              <div class="col-4 mt-5">
+                <h5 class="mb-0"></h5>
+              </div>
+              <div class="col-8 mt-5">
+                <button type="submit" class="btn ezy__eporder5-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- sidebar images -->
+          <div class="col-12 col-lg-4">
+            <div class="ezy__eporder5-images p-4 text-center">
+              <img src="https://cdn.easyfrontend.com/pictures/certificate/certificate-1.png" alt="" class="img-fluid" />
+              <img
+                src="https://cdn.easyfrontend.com/pictures/certificate/certificate-2.png"
+                alt=""
+                class="img-fluid mt-5"
+              />
+              <img
+                src="https://cdn.easyfrontend.com/pictures/certificate/certificate-3.png"
+                alt=""
+                class="img-fluid mt-5"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

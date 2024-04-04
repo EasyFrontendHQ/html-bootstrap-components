@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In Forms(HTML-Bootstrap)</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+    Name: Sign In 1
+-->
+    <style>
+      .ezy__signin1 {
+        /* Bootstrap variables */
+        --bs-body-color: #333b7b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #ffffff;
+        --ezy-form-card-shadow: 0 16px 24px rgba(197, 206, 222, 0.25);
+
+        background-color: var(--bs-body-bg);
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__signin1,
+      .ezy__signin1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #ffffff;
+        --ezy-form-card-shadow: 0 16px 24px rgba(209, 223, 247, 0.25);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__signin1,
+      .ezy__signin1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #253140;
+        --ezy-form-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__signin1,
+      .ezy__signin1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+        --ezy-form-card-shadow: none;
+      }
+
+      .ezy__signin1-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin1-form-card {
+        background-color: var(--ezy-form-card-bg);
+        border: none;
+        box-shadow: var(--ezy-form-card-shadow);
+        border-radius: 15px;
+      }
+
+      .ezy__signin1-form-card * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin1 .form-control {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin1 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      .ezy__signin1-btn-submit {
+        padding: 12px 30px;
+        background-color: #333b7b;
+        color: #ffffff;
+      }
+
+      .ezy__signin1-btn-submit:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signin1-btn {
+        padding: 12px 30px;
+      }
+
+      .ezy__signin1-btn,
+      .ezy__signin1-btn * {
+        color: #ffffff;
+      }
+
+      .ezy__signin1-btn:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signin1-or-separator {
+        position: relative;
+      }
+
+      .ezy__signin1-or-separator hr {
+        border-color: var(--bs-body-color);
+        opacity: 0.15;
+      }
+
+      .ezy__signin1-or-separator span {
+        background-color: var(--ezy-form-card-bg);
+        color: var(--bs-body-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__signin1 d-flex align-items-center">
+      <div class="container">
+        <div class="row py-4 justify-content-center">
+          <div class="col-lg-5">
+            <div class="card ezy__signin1-form-card">
+              <div class="card-body p-md-5">
+                <h2 class="ezy__signin1-heading mb-4 mb-md-5">Log In</h2>
+
+                <form>
+                  <div class="form-group mb-4 mt-2">
+                    <label for="email1" class="mb-2">Email Address</label>
+                    <input type="text" class="form-control" id="email1" placeholder="Enter Email Address" />
+                  </div>
+                  <div class="form-group mb-2 mt-2">
+                    <label for="password1" class="mb-2">Password</label>
+                    <input type="password" class="form-control" id="password1" placeholder="Enter Password" />
+                  </div>
+                  <div class="form-group mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="remember-me1" checked />
+                      <label class="form-check-label" for="remember-me1"> Remember me </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn ezy__signin1-btn-submit w-100">Log In</button>
+                  <button class="btn w-100">Forget your password?</button>
+
+                  <div class="position-relative ezy__signin1-or-separator">
+                    <hr class="my-4 my-md-5" />
+                    <span class="px-2">Or</span>
+                  </div>
+
+                  <button class="btn btn-primary ezy__signin1-btn w-100 d-flex align-items-center mb-3">
+                    <span class="fab fa-facebook text-white fs-4"></span>
+                    <span class="w-100 text-center text-white">Continue with Facebook</span>
+                  </button>
+                  <button class="btn btn-danger ezy__signin1-btn w-100 d-flex align-items-center">
+                    <span class="fab fa-google text-white fs-4"></span>
+                    <span class="w-100 text-center text-white">Continue with Google</span>
+                  </button>
+
+                  <div class="text-center mt-4 mt-md-5">
+                    <p class="mb-0 opacity-50 lh-1">Don't have an account?</p>
+                    <a href="#" class="btn btn-link py-0 text-dark text-decoration-none">Create account</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Sign In 2
+-->
+    <style>
+      .ezy__signin2 {
+        /* Bootstrap variables */
+        --bs-body-color: #333b7b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #ffffff;
+        --ezy-form-card-shadow: none;
+
+        background-color: var(--bs-body-bg);
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__signin2,
+      .ezy__signin2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #ffffff;
+        --ezy-form-card-shadow: 0 16px 24px rgba(209, 223, 247, 0.25);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__signin2,
+      .ezy__signin2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #253140;
+        --ezy-form-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__signin2,
+      .ezy__signin2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+        --ezy-form-card-shadow: none;
+      }
+
+      .ezy__signin2 .container {
+        min-height: 100vh;
+      }
+
+      .ezy__signin2-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin2-bg-holder {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 150px;
+        width: 100%;
+        float: right;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__signin2-bg-holder {
+          width: 50vw;
+        }
+      }
+
+      .ezy__signin2-form-card {
+        background-color: transparent;
+        border: none;
+        box-shadow: var(--ezy-form-card-shadow);
+        /*border-radius: 15px;*/
+      }
+
+      .ezy__signin2-form-card * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin2 .form-control {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin2 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      .ezy__signin2-btn-submit {
+        padding: 12px 30px;
+        background-color: #333b7b;
+        color: #ffffff;
+      }
+
+      .ezy__signin2-btn-submit:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signin2-btn {
+        padding: 12px 30px;
+      }
+
+      .ezy__signin2-btn,
+      .ezy__signin2-btn * {
+        color: #ffffff;
+      }
+
+      .ezy__signin2-btn:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signin2-or-separator {
+        position: relative;
+      }
+
+      .ezy__signin2-or-separator hr {
+        border-color: var(--bs-body-color);
+        opacity: 0.15;
+      }
+
+      .ezy__signin2-or-separator span {
+        background-color: var(--ezy-form-card-bg);
+        color: var(--bs-body-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__signin2 d-flex">
+      <div class="container">
+        <div class="row justify-content-between h-100">
+          <div class="col-lg-5">
+            <div
+              class="ezy__signin2-bg-holder d-none d-lg-block h-100"
+              style="background-image: url(https://cdn.easyfrontend.com/pictures/sign-in-up/sign4.jpg)"
+            ></div>
+          </div>
+          <div class="col-lg-5 py-5">
+            <div class="row align-items-center h-100">
+              <div class="col-12">
+                <div class="card ezy__signin2-form-card">
+                  <div class="card-body p-0">
+                    <h2 class="ezy__signin2-heading mb-4 mb-md-5">Log In</h2>
+
+                    <form>
+                      <div class="form-group mb-4 mt-2">
+                        <label for="email2" class="mb-2">Email Address</label>
+                        <input type="text" class="form-control" id="email2" placeholder="Enter Email Address" />
+                      </div>
+                      <div class="form-group mb-2 mt-2">
+                        <label for="password2" class="mb-2">Password</label>
+                        <input type="password" class="form-control" id="password2" placeholder="Enter Password" />
+                      </div>
+                      <div class="form-group mb-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="remember-me2" checked />
+                          <label class="form-check-label" for="remember-me2"> Remember me </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn ezy__signin2-btn-submit w-100">Log In</button>
+                      <button class="btn w-100">Forget your password?</button>
+
+                      <div class="position-relative ezy__signin2-or-separator">
+                        <hr class="my-4 my-md-5" />
+                        <span class="px-2">Or</span>
+                      </div>
+
+                      <button class="btn btn-primary ezy__signin2-btn w-100 d-flex align-items-center mb-3">
+                        <span class="fab fa-facebook text-white fs-4"></span>
+                        <span class="w-100 text-center text-white">Continue with Facebook</span>
+                      </button>
+                      <button class="btn btn-danger ezy__signin2-btn w-100 d-flex align-items-center">
+                        <span class="fab fa-google text-white fs-4"></span>
+                        <span class="w-100 text-center text-white">Continue with Google</span>
+                      </button>
+
+                      <div class="text-center mt-4 mt-md-5">
+                        <p class="mb-0 opacity-50 lh-1">Don't have an account?</p>
+                        <a href="#" class="btn btn-link py-0 text-dark text-decoration-none">Create account</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Sign In 3
+-->
+    <style>
+      .ezy__signin3 {
+        /* Bootstrap variables */
+        --bs-body-color: #333b7b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #ffffff;
+        --ezy-form-card-shadow: 0 16px 24px rgba(197, 206, 222, 0.25);
+
+        background-color: var(--bs-body-bg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__signin3,
+      .ezy__signin3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #f6f6f6;
+        --ezy-form-card-shadow: 0 16px 24px rgba(209, 223, 247, 0.25);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__signin3,
+      .ezy__signin3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #253140;
+        --ezy-form-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__signin3,
+      .ezy__signin3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+        --ezy-form-card-shadow: none;
+      }
+
+      .ezy__signin3-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin3-form-card {
+        background-color: var(--ezy-form-card-bg);
+        border: none;
+        box-shadow: var(--ezy-form-card-shadow);
+        border-radius: 15px;
+      }
+
+      .ezy__signin3-form-card * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin3 .form-control {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin3 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      .ezy__signin3-btn-submit {
+        padding: 12px 30px;
+        background-color: #333b7b;
+        color: #ffffff;
+      }
+
+      .ezy__signin3-btn-submit:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signin3-btn {
+        padding: 12px 30px;
+      }
+
+      .ezy__signin3-btn,
+      .ezy__signin3-btn * {
+        color: #ffffff;
+      }
+
+      .ezy__signin3-btn:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signin3-or-separator {
+        position: relative;
+      }
+
+      .ezy__signin3-or-separator hr {
+        border-color: var(--bs-body-color);
+        opacity: 0.15;
+      }
+
+      .ezy__signin3-or-separator span {
+        background-color: var(--ezy-form-card-bg);
+        color: var(--bs-body-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        opacity: 0.8;
+      }
+    </style>
+    <section
+      class="ezy__signin3 d-flex align-items-center"
+      style="background-image: url(https://cdn.easyfrontend.com/pictures/sign-in-up/sign-in-up-1.png)"
+    >
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-5">
+            <div class="card ezy__signin3-form-card">
+              <div class="card-body p-md-5">
+                <h2 class="ezy__signin3-heading mb-4 mb-md-5">Log In</h2>
+
+                <form>
+                  <div class="form-group mb-4 mt-2">
+                    <label for="email3" class="mb-2">Email Address</label>
+                    <input type="text" class="form-control" id="email3" placeholder="Enter Email Address" />
+                  </div>
+                  <div class="form-group mb-2 mt-2">
+                    <label for="password3" class="mb-2">Password</label>
+                    <input type="password" class="form-control" id="password3" placeholder="Enter Password" />
+                  </div>
+                  <div class="form-group mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="remember-me3" checked />
+                      <label class="form-check-label" for="remember-me3"> Remember me </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn ezy__signin3-btn-submit w-100">Log In</button>
+                  <button class="btn w-100">Forget your password?</button>
+
+                  <div class="position-relative ezy__signin3-or-separator">
+                    <hr class="my-4 my-md-5" />
+                    <span class="px-2">Or</span>
+                  </div>
+
+                  <button class="btn btn-primary ezy__signin3-btn w-100 d-flex align-items-center mb-3">
+                    <span class="fab fa-facebook text-white fs-4"></span>
+                    <span class="w-100 text-center text-white">Continue with Facebook</span>
+                  </button>
+                  <button class="btn btn-danger ezy__signin3-btn w-100 d-flex align-items-center">
+                    <span class="fab fa-google text-white fs-4"></span>
+                    <span class="w-100 text-center text-white">Continue with Google</span>
+                  </button>
+
+                  <div class="text-center mt-4 mt-md-5">
+                    <p class="mb-0 opacity-50 lh-1">Don't have an account?</p>
+                    <a href="#" class="btn btn-link py-0 text-dark text-decoration-none">Create account</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Sign In 4
+-->
+    <style>
+      .ezy__signin4 {
+        /* Bootstrap variables */
+        --bs-body-color: #333b7b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #e7f6ff;
+        --ezy-form-card-shadow: none;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__signin4,
+      .ezy__signin4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #dbf0fd;
+        --ezy-form-card-shadow: 0 16px 24px rgba(209, 223, 247, 0.25);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__signin4,
+      .ezy__signin4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #253140;
+        --ezy-form-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__signin4,
+      .ezy__signin4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+        --ezy-form-card-shadow: none;
+      }
+
+      .ezy__signin4 .container {
+        min-height: 100vh;
+      }
+
+      .ezy__signin4-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin4-bg-holder {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 150px;
+        width: 100%;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__signin4-bg-holder {
+          width: 50vw;
+        }
+      }
+
+      .ezy__signin4-form-card {
+        background-color: var(--ezy-form-card-bg);
+        border: none;
+        box-shadow: var(--ezy-form-card-shadow);
+        border-radius: 15px;
+      }
+
+      .ezy__signin4-form-card * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin4 .form-control {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin4 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      .ezy__signin4-btn-submit {
+        padding: 12px 30px;
+        background-color: #333b7b;
+        color: #ffffff;
+      }
+
+      .ezy__signin4-btn-submit:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signin4-btn {
+        padding: 12px 30px;
+      }
+
+      .ezy__signin4-btn,
+      .ezy__signin4-btn * {
+        color: #ffffff;
+      }
+
+      .ezy__signin4-btn:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signin4-or-separator {
+        position: relative;
+      }
+
+      .ezy__signin4-or-separator hr {
+        border-color: var(--bs-body-color);
+        opacity: 0.15;
+      }
+
+      .ezy__signin4-or-separator span {
+        background-color: var(--ezy-form-card-bg);
+        color: var(--bs-body-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__signin4 d-flex">
+      <div class="container">
+        <div class="row justify-content-between h-100">
+          <div class="col-lg-6 py-5">
+            <div class="row align-items-center h-100 px-lg-5">
+              <div class="col-12">
+                <div class="card ezy__signin4-form-card">
+                  <div class="card-body p-md-5">
+                    <h2 class="ezy__signin4-heading mb-3">Welcome to Easy Frontend</h2>
+                    <p class="mb-4 mb-md-5">
+                      <span class="opacity-50 me-2">Don't have an account?</span>
+                      <a href="#" class="btn btn-link p-0 text-dark text-decoration-none">Create account</a>
+                    </p>
+
+                    <form>
+                      <div class="form-group mb-4 mt-2">
+                        <label for="email4" class="mb-2">Email Address</label>
+                        <input type="text" class="form-control" id="email4" placeholder="Enter Email Address" />
+                      </div>
+                      <div class="form-group mb-2 mt-2">
+                        <label for="password4" class="mb-2">Password</label>
+                        <input type="password" class="form-control" id="password4" placeholder="Enter Password" />
+                      </div>
+                      <div class="form-group mb-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="remember-me4" checked />
+                          <label class="form-check-label" for="remember-me4"> Remember me </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn ezy__signin4-btn-submit w-100">
+                        Log In
+                        <span class="fas fa-arrow-right ms-2 text-white"></span>
+                      </button>
+                      <button class="btn w-100">Forget your password?</button>
+
+                      <div class="position-relative ezy__signin4-or-separator">
+                        <hr class="my-4 my-md-5" />
+                        <span class="px-2">Or</span>
+                      </div>
+
+                      <button class="btn btn-primary ezy__signin4-btn w-100 d-flex align-items-center mb-3">
+                        <span class="fab fa-facebook text-white fs-4"></span>
+                        <span class="w-100 text-center text-white">Continue with Facebook</span>
+                      </button>
+                      <button class="btn btn-danger ezy__signin4-btn w-100 d-flex align-items-center">
+                        <span class="fab fa-google text-white fs-4"></span>
+                        <span class="w-100 text-center text-white">Continue with Google</span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="ezy__signin4-bg-holder d-none d-lg-block h-100"
+              style="background-image: url(https://cdn.easyfrontend.com/pictures/sign-in-up/sign3.jpg)"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Sign In 5
+-->
+    <style>
+      .ezy__signin5 {
+        /* Bootstrap variables */
+        --bs-body-color: #333b7b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #e7f6ff;
+        --ezy-form-card-shadow: none;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__signin5,
+      .ezy__signin5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #dbf0fd;
+        --ezy-form-card-shadow: 0 16px 24px rgba(209, 223, 247, 0.25);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__signin5,
+      .ezy__signin5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #253140;
+        --ezy-form-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__signin5,
+      .ezy__signin5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+        --ezy-form-card-shadow: none;
+      }
+
+      .ezy__signin5 .container {
+        min-height: 100vh;
+      }
+
+      .ezy__signin5-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin5-form-card {
+        background-color: var(--ezy-form-card-bg);
+        border: none;
+        box-shadow: var(--ezy-form-card-shadow);
+        border-radius: 15px;
+      }
+
+      .ezy__signin5-form-card * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin5 .form-control {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signin5 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      .ezy__signin5-btn-submit {
+        padding: 12px 30px;
+        background-color: #333b7b;
+        color: #ffffff;
+      }
+
+      .ezy__signin5-btn-submit:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signin5-btn {
+        padding: 12px 30px;
+      }
+
+      .ezy__signin5-btn,
+      .ezy__signin5-btn * {
+        color: #ffffff;
+      }
+
+      .ezy__signin5-btn:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signin5-or-separator {
+        position: relative;
+      }
+
+      .ezy__signin5-or-separator hr {
+        border-color: var(--bs-body-color);
+        opacity: 0.15;
+      }
+
+      .ezy__signin5-or-separator span {
+        background-color: var(--ezy-form-card-bg);
+        color: var(--bs-body-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__signin5 d-flex">
+      <div class="container">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-lg-10 py-5">
+            <div class="card ezy__signin5-form-card">
+              <div class="card-body p-md-5">
+                <div class="row mb-4 mb-md-5">
+                  <div class="col-md-6">
+                    <h2 class="ezy__signin5-heading mb-3">Welcome to Easy Frontend</h2>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="mb-0 text-md-end">
+                      <span class="opacity-50 me-2">Don't have an account?</span>
+                      <a href="#" class="btn btn-link p-0 text-dark text-decoration-none">Create account</a>
+                    </p>
+                  </div>
+                </div>
+                <form>
+                  <div class="row justify-content-between">
+                    <div class="col-md-6 col-lg-5">
+                      <div class="form-group mb-4 mt-2">
+                        <label for="email" class="mb-2">Email Address</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter Email Address" />
+                      </div>
+                      <div class="form-group mb-2 mt-2">
+                        <label for="password" class="mb-2">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter Password" />
+                      </div>
+                      <div class="form-group mb-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="remember-me" checked />
+                          <label class="form-check-label" for="remember-me"> Remember me </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                      <button type="submit" class="btn ezy__signin5-btn-submit w-100">
+                        Log In
+                        <span class="fas fa-arrow-right ms-2 text-white"></span>
+                      </button>
+                      <button class="btn w-100">Forget your password?</button>
+
+                      <div class="position-relative ezy__signin5-or-separator">
+                        <hr class="my-4 my-md-5" />
+                        <span class="px-2">Or</span>
+                      </div>
+
+                      <button class="btn btn-primary ezy__signin5-btn w-100 d-flex align-items-center mb-3">
+                        <span class="fab fa-facebook text-white fs-4"></span>
+                        <span class="w-100 text-center text-white">Continue with Facebook</span>
+                      </button>
+                      <button class="btn btn-danger ezy__signin5-btn w-100 d-flex align-items-center">
+                        <span class="fab fa-google text-white fs-4"></span>
+                        <span class="w-100 text-center text-white">Continue with Google</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body style="background: #000" class="">
+    <!--
+    Name: FAQ 1
+-->
+    <style>
+      .ezy__faq1 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__faq1 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__faq1,
+      .ezy__faq1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #f6f6f6;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__faq1,
+      .ezy__faq1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(11, 23, 39);
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__faq1,
+      .ezy__faq1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(30, 39, 53);
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__faq1-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__faq1-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__faq1-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__faq1-item {
+        background-color: var(--ezy-item-bg);
+        border-radius: 15px;
+        box-shadow: var(--ezy-item-shadow);
+      }
+
+      .ezy__faq1-item * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__faq1-btn-collapse [class*="fa-"] {
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__faq1-btn-collapse:focus {
+        box-shadow: none;
+      }
+
+      .ezy__faq1-btn-collapse.active [class*="fa-"],
+      .ezy__faq1-btn-collapse[aria-expanded="true"] [class*="fa-"] {
+        transform: rotate(-180deg);
+      }
+    </style>
+    <section class="ezy__faq1">
+      <div class="container">
+        <div class="row justify-content-center mb-md-4">
+          <div class="col-lg-8 col-xl-7 text-center">
+            <h2 class="ezy__faq1-heading mb-3">Frequently Asked Questions</h2>
+            <p class="ezy__faq1-sub-heading mb-0">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ezy__faq1-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq1-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq1-collapse-1"
+                role="button"
+                aria-expanded="true"
+                aria-controls="ezy-faq1-collapse-1"
+              >
+                <span>What is Easy Frontend?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse show" id="ezy-faq1-collapse-1">
+                <div class="ezy__faq1-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind. When it comes to booking a holiday, we know everyone likes something
+                    different.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq1-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq1-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq1-collapse-2"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq1-collapse-2"
+              >
+                <span>Who is Easy Frontend for?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse" id="ezy-faq1-collapse-2">
+                <div class="ezy__faq1-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq1-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq1-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq1-collapse-3"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq1-collapse-3"
+              >
+                <span>How does Easy Frontend work?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse" id="ezy-faq1-collapse-3">
+                <div class="ezy__faq1-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ezy__faq1-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq1-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq1-collapse-4"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq1-collapse-4"
+              >
+                <span>How often does your team upload resources?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse" id="ezy-faq1-collapse-4">
+                <div class="ezy__faq1-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq1-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq1-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq1-collapse-5"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq1-collapse-5"
+              >
+                <span>Can I get a refund if I cancel my subscription?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse" id="ezy-faq1-collapse-5">
+                <div class="ezy__faq1-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq1-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq1-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq1-collapse-6"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq1-collapse-6"
+              >
+                <span>Can I use Easy Frontend designs in my portfolio?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse" id="ezy-faq1-collapse-6">
+                <div class="ezy__faq1-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq1-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq1-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq1-collapse-7"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq1-collapse-7"
+              >
+                <span>Can I buy Easy Frontend extended license?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse" id="ezy-faq1-collapse-7">
+                <div class="ezy__faq1-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: FAQ 2
+-->
+    <style>
+      .ezy__faq2 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #f9f9fa;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__faq2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__faq2,
+      .ezy__faq2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #eeeeee;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__faq2,
+      .ezy__faq2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__faq2,
+      .ezy__faq2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(30, 39, 53);
+      }
+
+      .ezy__faq2-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__faq2-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__faq2-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__faq2-item {
+        background-color: var(--ezy-item-bg);
+        border-radius: 10px;
+      }
+
+      .ezy__faq2-item * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__faq2-btn-collapse [class*="fa-"] {
+        display: none;
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__faq2-btn-collapse:focus {
+        box-shadow: none;
+      }
+
+      .ezy__faq2-btn-collapse .fa-minus {
+        animation: 0.5s ease 0s 1 normal none running ezy__faq2-spin-inverse;
+      }
+
+      .ezy__faq2-btn-collapse[aria-expanded="true"] .fa-minus {
+        display: block;
+      }
+
+      .ezy__faq2-btn-collapse .fa-plus {
+        animation: 0.5s ease 0s 1 normal none running ezy__faq2-spin;
+      }
+
+      .ezy__faq2-btn-collapse[aria-expanded="false"] .fa-plus {
+        display: block;
+      }
+
+      @keyframes ezy__faq2-spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(90deg);
+        }
+      }
+
+      @keyframes ezy__faq2-spin-inverse {
+        0% {
+          transform: rotate(180deg);
+        }
+
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+    <section class="ezy__faq2">
+      <div class="container">
+        <div class="row justify-content-center mb-md-4">
+          <div class="col-lg-8 col-xl-7 text-center">
+            <h2 class="ezy__faq2-heading mb-3">Frequently Asked Questions</h2>
+            <p class="ezy__faq2-sub-heading mb-0">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ezy__faq2-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq2-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq2-collapse-1"
+                role="button"
+                aria-expanded="true"
+                aria-controls="ezy-faq2-collapse-1"
+              >
+                <span>What is Easy Frontend?</span>
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse show" id="ezy-faq2-collapse-1">
+                <div class="ezy__faq2-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind. When it comes to booking a holiday, we know everyone likes something
+                    different.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq2-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq2-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq2-collapse-2"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq2-collapse-2"
+              >
+                <span>Who is Easy Frontend for?</span>
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse" id="ezy-faq2-collapse-2">
+                <div class="ezy__faq2-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq2-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq2-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq2-collapse-3"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq2-collapse-3"
+              >
+                <span>How does Easy Frontend work?</span>
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse" id="ezy-faq2-collapse-3">
+                <div class="ezy__faq2-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ezy__faq2-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq2-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq2-collapse-4"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq2-collapse-4"
+              >
+                <span>How often does your team upload resources?</span>
+
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse" id="ezy-faq2-collapse-4">
+                <div class="ezy__faq2-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq2-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq2-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq2-collapse-5"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq2-collapse-5"
+              >
+                <span>Can I get a refund if I cancel my subscription?</span>
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse" id="ezy-faq2-collapse-5">
+                <div class="ezy__faq2-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq2-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq2-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq2-collapse-6"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq2-collapse-6"
+              >
+                <span>Can I use Easy Frontend designs in my portfolio?</span>
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse" id="ezy-faq2-collapse-6">
+                <div class="ezy__faq2-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq2-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq2-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq2-collapse-7"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq2-collapse-7"
+              >
+                <span>Can I buy Easy Frontend extended license?</span>
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse" id="ezy-faq2-collapse-7">
+                <div class="ezy__faq2-content px-3 px-lg-4 pb-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: FAQ 3
+-->
+    <style>
+      .ezy__faq3 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__faq3 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__faq3,
+      .ezy__faq3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__faq3,
+      .ezy__faq3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(11, 23, 39);
+        --ezy-item-shadow: 0px 4px 44px rgba(0, 0, 0, 0.47);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__faq3,
+      .ezy__faq3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(30, 39, 53);
+        --ezy-item-shadow: 0px 4px 44px rgba(0, 0, 0, 0.47);
+      }
+
+      .ezy__faq3-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__faq3-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__faq3-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__faq3-item {
+        background-color: transparent;
+        border-radius: 10px;
+      }
+
+      .ezy__faq3-item * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__faq3-btn-collapse {
+        border: none;
+      }
+
+      .ezy__faq3-btn-collapse [class*="fa-"] {
+        display: none;
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__faq3-btn-collapse:focus {
+        box-shadow: none;
+      }
+
+      .ezy__faq3-btn-collapse .fa-minus {
+        animation: 0.5s ease 0s 1 normal none running ezy__faq3-spin-inverse;
+      }
+
+      .ezy__faq3-btn-collapse[aria-expanded="true"] .fa-minus {
+        display: block;
+      }
+
+      .ezy__faq3-btn-collapse .fa-plus {
+        animation: 0.5s ease 0s 1 normal none running ezy__faq3-spin;
+      }
+
+      .ezy__faq3-btn-collapse[aria-expanded="false"] .fa-plus {
+        display: block;
+      }
+
+      .ezy__faq3 .collapsing,
+      .ezy__faq3 .collapse {
+        background-color: var(--ezy-item-bg);
+        box-shadow: var(--ezy-item-shadow);
+        border-radius: 15px;
+      }
+
+      @keyframes ezy__faq3-spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(90deg);
+        }
+      }
+
+      @keyframes ezy__faq3-spin-inverse {
+        0% {
+          transform: rotate(180deg);
+        }
+
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+    <section class="ezy__faq3">
+      <div class="container">
+        <div class="row justify-content-center mb-md-4">
+          <div class="col-lg-8 col-xl-7 text-center">
+            <h2 class="ezy__faq3-heading mb-3">Frequently Asked Questions</h2>
+            <p class="ezy__faq3-sub-heading mb-0">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ezy__faq3-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq3-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq3-collapse-1"
+                role="button"
+                aria-expanded="true"
+                aria-controls="ezy-faq3-collapse-1"
+              >
+                <span>What is Easy Frontend?</span>
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse show" id="ezy-faq3-collapse-1">
+                <div class="ezy__faq3-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq3-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq3-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq3-collapse-2"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq3-collapse-2"
+              >
+                <span>Who is Easy Frontend for?</span>
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse" id="ezy-faq3-collapse-2">
+                <div class="ezy__faq3-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq3-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq3-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq3-collapse-3"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq3-collapse-3"
+              >
+                <span>How does Easy Frontend work?</span>
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse" id="ezy-faq3-collapse-3">
+                <div class="ezy__faq3-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ezy__faq3-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq3-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq3-collapse-4"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq3-collapse-4"
+              >
+                <span>How often does your team upload resources?</span>
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse" id="ezy-faq3-collapse-4">
+                <div class="ezy__faq3-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq3-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq3-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq3-collapse-5"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq3-collapse-5"
+              >
+                <span>Can I get a refund if I cancel my subscription?</span>
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse" id="ezy-faq3-collapse-5">
+                <div class="ezy__faq3-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq3-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq3-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq3-collapse-6"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq3-collapse-6"
+              >
+                <span>Can I use Easy Frontend designs in my portfolio?</span>
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse" id="ezy-faq3-collapse-6">
+                <div class="ezy__faq3-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq3-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq3-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq3-collapse-7"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq3-collapse-7"
+              >
+                <span>Can I buy Easy Frontend extended license?</span>
+                <span class="fas fa-minus"></span>
+                <span class="fas fa-plus"></span>
+              </a>
+              <div class="collapse" id="ezy-faq3-collapse-7">
+                <div class="ezy__faq3-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: FAQ 4
+-->
+    <style>
+      .ezy__faq4 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__faq4 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__faq4,
+      .ezy__faq4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__faq4,
+      .ezy__faq4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(11, 23, 39);
+        --ezy-item-shadow: 0px 4px 44px rgba(0, 0, 0, 0.27);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__faq4,
+      .ezy__faq4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(30, 39, 53);
+        --ezy-item-shadow: 0px 4px 44px rgba(0, 0, 0, 0.261);
+      }
+
+      .ezy__faq4-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__faq4-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__faq4-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__faq4-item {
+        background-color: transparent;
+        border-radius: 10px;
+      }
+
+      .ezy__faq4-item * {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__faq4-btn-collapse [class*="fa-"] {
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .ezy__faq4-btn-collapse:focus {
+        box-shadow: none;
+      }
+
+      .ezy__faq4-btn-collapse.active [class*="fa-"],
+      .ezy__faq4-btn-collapse[aria-expanded="true"] [class*="fa-"] {
+        transform: rotate(-180deg);
+      }
+
+      .ezy__faq4 .collapsing,
+      .ezy__faq4 .collapse {
+        background-color: var(--ezy-item-bg);
+        box-shadow: var(--ezy-item-shadow);
+        border-radius: 15px;
+      }
+    </style>
+    <section class="ezy__faq4">
+      <div class="container">
+        <div class="row justify-content-center mb-md-4">
+          <div class="col-lg-8 col-xl-7 text-center">
+            <h2 class="ezy__faq4-heading mb-3">Frequently Asked Questions</h2>
+            <p class="ezy__faq4-sub-heading mb-0">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you!
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="ezy__faq4-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq4-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq4-collapse-1"
+                role="button"
+                aria-expanded="true"
+                aria-controls="ezy-faq4-collapse-1"
+              >
+                <span>What is Easy Frontend?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse show" id="ezy-faq4-collapse-1">
+                <div class="ezy__faq4-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind. When it comes to booking a holiday, we know everyone likes something
+                    different - so we've designed our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq4-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq4-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq4-collapse-2"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq4-collapse-2"
+              >
+                <span>Who is Easy Frontend for?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse" id="ezy-faq4-collapse-2">
+                <div class="ezy__faq4-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq4-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq4-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq4-collapse-3"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq4-collapse-3"
+              >
+                <span>How does Easy Frontend work?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse" id="ezy-faq4-collapse-3">
+                <div class="ezy__faq4-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq4-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq4-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq4-collapse-4"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq4-collapse-4"
+              >
+                <span>How often does your team upload resources?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse" id="ezy-faq4-collapse-4">
+                <div class="ezy__faq4-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq4-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq4-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq4-collapse-5"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq4-collapse-5"
+              >
+                <span>Can I get a refund if I cancel my subscription?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse" id="ezy-faq4-collapse-5">
+                <div class="ezy__faq4-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq4-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq4-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq4-collapse-6"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq4-collapse-6"
+              >
+                <span>Can I use Easy Frontend designs in my portfolio?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse" id="ezy-faq4-collapse-6">
+                <div class="ezy__faq4-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="ezy__faq4-item mt-4">
+              <a
+                class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__faq4-btn-collapse"
+                data-bs-toggle="collapse"
+                href="#ezy-faq4-collapse-7"
+                role="button"
+                aria-expanded="false"
+                aria-controls="ezy-faq4-collapse-7"
+              >
+                <span>Can I buy Easy Frontend extended license?</span>
+                <span class="fas fa-chevron-down"></span>
+              </a>
+              <div class="collapse" id="ezy-faq4-collapse-7">
+                <div class="ezy__faq4-content p-3 p-lg-4">
+                  <p class="opacity-50 mb-0">
+                    When it comes to booking a holiday, we know everyone likes something different - so we've designed
+                    our getaways with you in mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: FAQ 5
+-->
+    <style>
+      .ezy__faq5 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #f9f9fa;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__faq5 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__faq5,
+      .ezy__faq5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #fff;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__faq5,
+      .ezy__faq5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__faq5,
+      .ezy__faq5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(30, 39, 53);
+      }
+
+      .ezy__faq5-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__faq5-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__faq5-sub-heading {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__faq5-item {
+        background-color: var(--ezy-item-bg);
+        border-radius: 10px;
+      }
+
+      .ezy__faq5-item * {
+        color: var(--bs-body-color);
+      }
+    </style>
+    <section class="ezy__faq5">
+      <div class="container">
+        <div class="row justify-content-center mb-md-4">
+          <div class="col-lg-8 col-xl-7 text-center">
+            <h2 class="ezy__faq5-heading mb-3">Frequently Asked Questions</h2>
+            <p class="ezy__faq5-sub-heading mb-0">
+              It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+              right one for you!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ezy__faq5-item mt-4">
+              <h5
+                class="p-3 p-lg-4 mb-0 w-100 text-start d-flex justify-content-between align-items-center ezy__faq5-btn-collapse"
+              >
+                <span>What is Easy Frontend?</span>
+              </h5>
+              <div class="ezy__faq5-content px-3 px-lg-4 pb-lg-4">
+                <p class="opacity-50 mb-0">
+                  When it comes to booking a holiday, we know everyone likes something different - so we've designed our
+                  getaways with you in mind.
+                </p>
+              </div>
+            </div>
+            <div class="ezy__faq5-item mt-4">
+              <h5
+                class="p-3 p-lg-4 mb-0 w-100 text-start d-flex justify-content-between align-items-center ezy__faq5-btn-collapse"
+              >
+                <span>Who is Easy Frontend for?</span>
+              </h5>
+              <div class="ezy__faq5-content px-3 px-lg-4 pb-lg-4">
+                <p class="opacity-50 mb-0">
+                  When it comes to booking a holiday, we know everyone likes something different - so we've designed our
+                  getaways with you in mind.
+                </p>
+              </div>
+            </div>
+            <div class="ezy__faq5-item mt-4">
+              <h5
+                class="p-3 p-lg-4 mb-0 w-100 text-start d-flex justify-content-between align-items-center ezy__faq5-btn-collapse"
+              >
+                <span>How does Easy Frontend work?</span>
+              </h5>
+              <div class="ezy__faq5-content px-3 px-lg-4 pb-lg-4">
+                <p class="opacity-50 mb-0">
+                  When it comes to booking a holiday, we know everyone likes something different - so we've designed our
+                  getaways with you in mind.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ezy__faq5-item mt-4">
+              <h5
+                class="p-3 p-lg-4 mb-0 w-100 text-start d-flex justify-content-between align-items-center ezy__faq5-btn-collapse"
+              >
+                <span>How often does your team upload resources?</span>
+              </h5>
+              <div class="ezy__faq5-content px-3 px-lg-4 pb-lg-4">
+                <p class="opacity-50 mb-0">
+                  When it comes to booking a holiday, we know everyone likes something different - so we've designed our
+                  getaways with you in mind.
+                </p>
+              </div>
+            </div>
+            <div class="ezy__faq5-item mt-4">
+              <h5
+                class="p-3 p-lg-4 mb-0 w-100 text-start d-flex justify-content-between align-items-center ezy__faq5-btn-collapse"
+              >
+                <span>Can I get a refund if I cancel my subscription?</span>
+              </h5>
+              <div class="ezy__faq5-content px-3 px-lg-4 pb-lg-4">
+                <p class="opacity-50 mb-0">
+                  When it comes to booking a holiday, we know everyone likes something different - so we've designed our
+                  getaways with you in mind.
+                </p>
+              </div>
+            </div>
+            <div class="ezy__faq5-item mt-4">
+              <h5
+                class="p-3 p-lg-4 mb-0 w-100 text-start d-flex justify-content-between align-items-center ezy__faq5-btn-collapse"
+              >
+                <span>Can I use Easy Frontend designs in my portfolio?</span>
+              </h5>
+              <div class="ezy__faq5-content px-3 px-lg-4 pb-lg-4">
+                <p class="opacity-50 mb-0">
+                  When it comes to booking a holiday, we know everyone likes something different - so we've designed our
+                  getaways with you in mind.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

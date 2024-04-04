@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+  <body>
+    <!--
+    Name: travel 1
+ -->
+    <style>
+      .ezy__travel1 {
+        /* Bootstrap variables */
+        --bs-body-color: #15191e;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-body-color-invert: rgb(246, 246, 246);
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        position: relative;
+        padding: 60px 0;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__travel1 {
+          padding: 100px 0;
+        }
+      }
+
+      .ezy__travel1-heading {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.2;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__travel1-heading {
+          font-size: 80px;
+        }
+      }
+
+      .ezy__travel1-sub-heading {
+        font-size: 18px;
+        line-height: 32px;
+        opacity: 0.7;
+      }
+
+      /* arrows */
+      .ezy__travel1-arrows {
+        position: absolute;
+        bottom: -65px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @media (min-width: 991px) {
+        .ezy__travel1-arrows {
+          position: absolute;
+          top: 50%;
+          left: 0%;
+          right: 0;
+          transform: translateY(-50%);
+        }
+      }
+      .ezy__travel1-arrow-left,
+      .ezy__travel1-arrow-right {
+        position: relative;
+        font-size: 24px;
+        border: 1px solid #fff;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .ezy__travel1-arrow-left:hover,
+      .ezy__travel1-arrow-right:hover {
+        color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+      @media (min-width: 991px) {
+        .ezy__travel1-arrow-left,
+        .ezy__travel1-arrow-right {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      /* search bar */
+      .ezy__travel1-search-bar {
+        margin-top: 100px;
+      }
+      @media (min-width: 768px) {
+        .ezy__travel1-search-bar {
+          margin-top: 200px;
+        }
+      }
+
+      .ezy__travel1-search-bar .card {
+        border-radius: 5px;
+      }
+
+      .ezy__travel1-search-bar form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+      .ezy__travel1-search-bar form div:last-child {
+        grid-column-end: span 2;
+      }
+      @media (min-width: 991px) {
+        .ezy__travel1-search-bar form {
+          grid-template-columns: repeat(7, 1fr);
+        }
+        .ezy__travel1-search-bar form div {
+          grid-column-end: span 1 !important;
+        }
+      }
+
+      .ezy__travel1-refresh-icon {
+        cursor: pointer;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__travel1-search-bar .form-control,
+      .ezy__travel1-search-bar .form-select {
+        min-height: 40px;
+        line-height: 36px;
+        border: 1px solid #eaeaea;
+        background-color: transparent;
+        color: #3b3b3b;
+        border-radius: 5px;
+      }
+      .ezy__travel1-search-bar .form-control::placeholder,
+      .ezy__travel1-search-bar .form-select::placeholder {
+        color: #3b3b3b;
+      }
+
+      .ezy__travel1-search-bar .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+        color: #3a3a3a;
+      }
+
+      .ezy__travel1-search-btn {
+        padding: 5px 30px;
+        background-color: var(--ezy-theme-color);
+        color: #ffffff;
+        border-radius: 5px;
+        height: 48px;
+        font-size: 15px;
+        line-height: 1;
+        font-weight: 400;
+      }
+
+      .ezy__travel1-search-btn:hover {
+        color: #ffffff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+    </style>
+    <section
+      class="ezy__travel1"
+      style="background-image: url(https://cdn.easyfrontend.com/pictures/hero/header35-img.png)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div id="ezy__travel1-controls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 col-xl-8 text-center">
+                      <h2 class="ezy__travel1-heading mb-4">Your Journey Begins</h2>
+                      <div class="row justify-content-center">
+                        <div class="col-12 col-lg-11 col-xl-9">
+                          <p class="ezy__travel1-sub-heading">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere ipsum molestie sem
+                            volutpat, non imperdiet leo porttitor. Nullam tortor nibh, dictum vitae porttitor eu,
+                            pharetra nec tellus.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 col-xl-8 text-center">
+                      <h2 class="ezy__travel1-heading mb-4">Your Journey Begins</h2>
+                      <div class="row justify-content-center">
+                        <div class="col-12 col-lg-11 col-xl-9">
+                          <p class="ezy__travel1-sub-heading">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere ipsum molestie sem
+                            volutpat, non imperdiet leo porttitor. Nullam tortor nibh, dictum vitae porttitor eu,
+                            pharetra nec tellus.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 col-xl-8 text-center">
+                      <h2 class="ezy__travel1-heading mb-4">Your Journey Begins</h2>
+                      <div class="row justify-content-center">
+                        <div class="col-12 col-lg-11 col-xl-9">
+                          <p class="ezy__travel1-sub-heading">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere ipsum molestie sem
+                            volutpat, non imperdiet leo porttitor. Nullam tortor nibh, dictum vitae porttitor eu,
+                            pharetra nec tellus.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ezy__travel1-arrows d-flex align-items-center">
+                <button
+                  class="carousel-control-prev ezy__travel1-arrow-left me-4"
+                  type="button"
+                  data-bs-target="#ezy__travel1-controls"
+                  data-bs-slide="prev"
+                >
+                  <i class="fas fa-arrow-left"></i>
+                </button>
+                <button
+                  class="carousel-control-next ezy__travel1-arrow-right"
+                  type="button"
+                  data-bs-target="#ezy__travel1-controls"
+                  data-bs-slide="next"
+                >
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- search bar -->
+        <div class="row ezy__travel1-search-bar">
+          <div class="col-12">
+            <div class="card border-0 p-4">
+              <form action="">
+                <!-- from -->
+                <div class="form-group d-flex align-items-center">
+                  <input type="text" class="form-control" id="from" placeholder="From" />
+                  <i class="ezy__travel1-refresh-icon fas fa-sync ms-2"></i>
+                </div>
+                <!-- to -->
+                <div class="form-group">
+                  <input type="text" class="form-control" id="to" placeholder="To" />
+                </div>
+                <!-- depart -->
+                <div class="form-group">
+                  <input type="date" class="form-control" id="depart" placeholder="depart" />
+                </div>
+                <!--  way -->
+                <div class="form-group">
+                  <div class="input-group">
+                    <select type="inputWay" class="form-select">
+                      <option selected>One Way</option>
+                      <option>Multiple Way</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- passengers -->
+                <div class="form-group">
+                  <select type="passengers" class="form-select">
+                    <option selected>1 Passenger</option>
+                    <option>2 Passengers</option>
+                    <option>3 Passengers</option>
+                    <option>4 Passengers</option>
+                    <option>5 Passengers</option>
+                  </select>
+                </div>
+
+                <!-- type -->
+                <div class="form-group">
+                  <select type="type" class="form-select">
+                    <option selected>Business</option>
+                    <option>Economy</option>
+                    <option>1st Class</option>
+                  </select>
+                </div>
+                <!-- button -->
+                <div>
+                  <button class="btn ezy__travel1-search-btn w-100">Search</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: travel 2
+ -->
+    <style>
+      .ezy__travel2 {
+        /* Bootstrap variables */
+        --bs-body-color: #414058;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-body-color-invert: rgb(246, 246, 246);
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        padding: 60px 0;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__travel2 {
+          padding: 100px 0;
+        }
+      }
+
+      .ezy__travel2-heading {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 1.2;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__travel2-heading {
+          font-size: 70px;
+        }
+      }
+
+      .ezy__travel2-sub-heading {
+        font-size: 18px;
+        line-height: 30px;
+        opacity: 0.8;
+      }
+
+      .ezy__travel2-card {
+        color: #414058;
+      }
+      .ezy__travel2-card .form-check-input {
+        border: 2px solid #e5e5e5;
+        cursor: pointer;
+      }
+      .ezy__travel2-card .form-check-label {
+        font-weight: 400;
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      .ezy__travel2-card .form-check-input:checked {
+        /* background-image: none; */
+        background-color: var(--ezy-theme-color);
+      }
+
+      .ezy__travel2 .form-control,
+      .ezy__travel2 .form-select {
+        min-height: 54px;
+        line-height: 40px;
+        border: 0;
+        background-color: rgba(237, 242, 246, 0.63);
+        border-radius: 5px;
+        color: #92909e;
+      }
+      .ezy__travel2 .form-control::placeholder,
+      .ezy__travel2 .form-select::placeholder {
+        color: #92909e;
+      }
+
+      .ezy__travel2 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+        color: #000;
+      }
+
+      .ezy__travel2 .form-control:focus .ezy__travel2-icon {
+        color: #000 !important;
+      }
+
+      .ezy__travel2-input-item {
+        border-radius: 5px !important;
+      }
+      .ezy__travel2-icon {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        font-size: 22px;
+      }
+      .ezy__travel2-hr {
+        min-height: 54px;
+        width: 3px;
+        background-color: #dadbe1;
+        margin: 0;
+        opacity: 1;
+      }
+
+      .ezy__travel2-submit-btn {
+        padding: 5px 30px;
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+        height: 40px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        border-radius: 5px;
+      }
+      .ezy__travel2-submit-btn:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+    </style>
+    <section
+      class="ezy__travel2"
+      style="background-image: url(https://cdn.easyfrontend.com/pictures/hero/header35-img.png)"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-lg-7">
+            <h2 class="ezy__travel2-heading mb-4">Your Journey Begins</h2>
+            <div class="row">
+              <div class="col-12 col-lg-10">
+                <p class="ezy__travel2-sub-heading">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. posuere Nulla posuere ipsum molestie sem
+                  volutpat, non imperdiet leo porttitor. Nullam tortor nibh, dictum vitae porttitor eu, pharetra nec
+                  tellus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 mt-5 mt-lg-0">
+            <div class="card ezy__travel2-card rounded-0 border-0">
+              <div class="card-body p-4 p-lg-5">
+                <form action="">
+                  <h5 class="fs-3 mb-3">Let's Find Your Flight</h5>
+                  <div class="pb-1">
+                    <div class="form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="ezy__travel2-radios"
+                        id="ezy__travel2-radios1"
+                        value="option1"
+                        checked
+                      />
+                      <label class="form-check-label ms-1" for="ezy__travel2-radios1">Return</label>
+                    </div>
+                    <div class="form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="ezy__travel2-radios"
+                        id="ezy__travel2-radios2"
+                        value="option2"
+                      />
+                      <label class="form-check-label ms-1" for="ezy__travel2-radios2">One-Way</label>
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <div class="form-group mb-3">
+                      <div class="input-group position-relative">
+                        <input type="text" class="form-control ps-5" placeholder="From" />
+                        <i class="fas fa-plane ezy__travel2-icon"></i>
+
+                        <hr class="ezy__travel2-hr" />
+
+                        <input type="date" class="form-control" placeholder="Departure Date" />
+                      </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                      <div class="input-group position-relative">
+                        <input type="text" class="form-control ps-5" placeholder="From" />
+                        <i class="fas fa-plane ezy__travel2-icon"></i>
+
+                        <hr class="ezy__travel2-hr" />
+
+                        <input type="date" class="form-control" placeholder="Return Date" />
+                      </div>
+                    </div>
+                    <div class="form-group mb-3">
+                      <div class="input-group position-relative">
+                        <input
+                          type="text"
+                          class="form-control ps-5 ezy__travel2-input-item"
+                          placeholder="Passenger(1 Adult)"
+                        />
+                        <i class="fas fa-user ezy__travel2-icon"></i>
+                      </div>
+                    </div>
+                    <div class="form-group mb-3">
+                      <div class="input-group position-relative">
+                        <input
+                          type="text"
+                          class="form-control ps-5 ezy__travel2-input-item"
+                          placeholder="Promotion Code"
+                        />
+                        <i class="fas fa-ticket-alt ezy__travel2-icon"></i>
+                      </div>
+                    </div>
+                    <div class="text-center mt-lg-5">
+                      <button class="btn ezy__travel2-submit-btn">Let's Go</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  travel 3
+-->
+    <style>
+      .ezy__travel3 {
+        /* Bootstrap variables */
+        --bs-body-color: #121315;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #fff;
+        --ezy-card-shadow: 0px 6px 44px rgba(173, 174, 197, 0.2);
+        --ezy-rating-rgb: 255, 215, 0;
+        --ezy-body-color-invert: #f6f6f6;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__travel3 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__travel3,
+      .ezy__travel3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #fff;
+        --ezy-body-color-invert: #ffffff;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__travel3,
+      .ezy__travel3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(64, 65, 86);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(64, 65, 86);
+        --ezy-body-color-invert: rgb(64, 65, 86);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__travel3,
+      .ezy__travel3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(46, 47, 65);
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: rgb(64, 65, 86);
+        --ezy-body-color-invert: rgb(46, 47, 65);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+      }
+
+      .ezy__travel3-heading {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__travel3-heading {
+          font-size: 55px;
+        }
+      }
+
+      .ezy__travel3-sub-heading {
+        font-size: 18px !important;
+        line-height: 28px;
+        opacity: 0.6 !important;
+      }
+
+      .ezy__travel3-item {
+        background-color: var(--ezy-item-bg);
+        box-shadow: var(--ezy-card-shadow);
+      }
+
+      .ezy__travel3-price {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: #414257;
+        color: #ffffff;
+      }
+
+      .ezy__travel3 p {
+        font-size: 14px;
+        opacity: 0.45;
+      }
+    </style>
+    <section class="ezy__travel3">
+      <div class="container">
+        <div class="row justify-content-center mb-4 mb-md-5">
+          <div class="col-lg-6 text-center">
+            <h2 class="ezy__travel3-heading mb-4">Popular Destination</h2>
+            <p class="ezy__travel3-sub-heading mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere ipsum molestie sem volutpat, non
+              imperdiet leo porttitor. Nullam tortor nibh, dictum vitae porttitor eu, pharetra nec tellus.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- item -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card ezy__travel3-item border-0 rounded-0 mt-4">
+              <div class="position-relative">
+                <img src="https://cdn.easyfrontend.com/pictures/search1_1.png" alt="" class="img-fluid w-100" />
+                <div class="ezy__travel3-price px-3 py-2">
+                  <h6 class="mb-0 fw-normal">From $325</h6>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="mb-1">Toledo</h5>
+                <p class="mb-0">United State</p>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card ezy__travel3-item border-0 rounded-0 mt-4">
+              <div class="position-relative">
+                <img src="https://cdn.easyfrontend.com/pictures/search1_2.png" alt="" class="img-fluid w-100" />
+                <div class="ezy__travel3-price px-3 py-2">
+                  <h6 class="mb-0 fw-normal">From $325</h6>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="mb-1">Noonu Atoll</h5>
+                <p class="mb-0">United State</p>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card ezy__travel3-item border-0 rounded-0 mt-4">
+              <div class="position-relative">
+                <img src="https://cdn.easyfrontend.com/pictures/search1_3.png" alt="" class="img-fluid w-100" />
+                <div class="ezy__travel3-price px-3 py-2">
+                  <h6 class="mb-0 fw-normal">From $325</h6>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="mb-1">Toledo</h5>
+                <p class="mb-0">United State</p>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card ezy__travel3-item border-0 rounded-0 mt-4">
+              <div class="position-relative">
+                <img src="https://cdn.easyfrontend.com/pictures/search1_4.png" alt="" class="img-fluid w-100" />
+                <div class="ezy__travel3-price px-3 py-2">
+                  <h6 class="mb-0 fw-normal">From $325</h6>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="mb-1">Kaafu Atoll</h5>
+                <p class="mb-0">United State</p>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card ezy__travel3-item border-0 rounded-0 mt-4">
+              <div class="position-relative">
+                <img src="https://cdn.easyfrontend.com/pictures/search1_5.png" alt="" class="img-fluid w-100" />
+                <div class="ezy__travel3-price px-3 py-2">
+                  <h6 class="mb-0 fw-normal">From $325</h6>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="mb-1">Barcelona</h5>
+                <p class="mb-0">Spain</p>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card ezy__travel3-item border-0 rounded-0 mt-4">
+              <div class="position-relative">
+                <img src="https://cdn.easyfrontend.com/pictures/search1_6.png" alt="" class="img-fluid w-100" />
+                <div class="ezy__travel3-price px-3 py-2">
+                  <h6 class="mb-0 fw-normal">From $325</h6>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="mb-1">Hiroshima</h5>
+                <p class="mb-0">Japan</p>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card ezy__travel3-item border-0 rounded-0 mt-4">
+              <div class="position-relative">
+                <img src="https://cdn.easyfrontend.com/pictures/search1_7.png" alt="" class="img-fluid w-100" />
+                <div class="ezy__travel3-price px-3 py-2">
+                  <h6 class="mb-0 fw-normal">From $325</h6>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="mb-1">Tibidabo</h5>
+                <p class="mb-0">Barcelona</p>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card ezy__travel3-item border-0 rounded-0 mt-4">
+              <div class="position-relative">
+                <img src="https://cdn.easyfrontend.com/pictures/search1_8.png" alt="" class="img-fluid w-100" />
+                <div class="ezy__travel3-price px-3 py-2">
+                  <h6 class="mb-0 fw-normal">From $325</h6>
+                </div>
+              </div>
+              <div class="card-body p-4">
+                <h5 class="mb-1">Brussels</h5>
+                <p class="mb-0">Belgium</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!-- travel 4 -->
+    <style>
+      .ezy__travel4 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-body-color-invert: rgb(246, 246, 246);
+        --ezy-body-color-invert-rgb: 246, 246, 246;
+        --ezy-border-color: #e1e6ea;
+        --ezy-header-bg: rgb(64, 65, 86);
+        --ezy-bg-color-light: #edf2f6;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color) !important;
+        padding: 60px 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__travel4 {
+          padding: 80px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__travel4,
+      .ezy__travel4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-body-color-invert: rgb(255, 255, 255);
+        --ezy-body-color-invert-rgb: 255, 255, 255;
+        --ezy-header-bg: rgb(46, 47, 65);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__travel4,
+      .ezy__travel4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(64, 65, 86);
+
+        /* Easy Frontend variables */
+        --ezy-body-color-invert: rgb(46, 47, 65);
+        --ezy-body-color-invert-rgb: 46, 47, 65;
+        --ezy-border-color: rgba(255, 255, 255, 0.11);
+        --ezy-header-bg: rgb(40, 40, 54);
+        --ezy-bg-color-light: rgba(237, 242, 246, 0.071);
+      }
+
+      .dark .ezy__travel4,
+      .ezy__travel4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(64, 65, 86);
+
+        /* Easy Frontend variables */
+        --ezy-body-color-invert: rgb(64, 65, 86);
+        --ezy-body-color-invert-rgb: 64, 65, 86;
+        --ezy-border-color: rgba(255, 255, 255, 0.11);
+        --ezy-header-bg: rgb(40, 40, 54);
+        --ezy-bg-color-light: rgba(237, 242, 246, 0.071);
+      }
+
+      .ezy__travel4-card {
+        background-color: rgba(var(--ezy-body-color-invert-rgb), 1);
+      }
+      .ezy__travel4-header {
+        background-color: var(--ezy-header-bg);
+        color: #ffffff;
+      }
+
+      .ezy__travel4-plane-icon {
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        width: 65px;
+        height: 65px;
+        font-size: 24px;
+      }
+      .ezy__travel4-header h3 {
+        font-size: 28px;
+        line-height: 1;
+        font-weight: 500;
+      }
+
+      .ezy__travel4-filters {
+        background-color: var(--ezy-body-color-invert);
+        border: 1px solid var(--ezy-border-color);
+      }
+      .ezy__travel4-filters .ezy__travel4-header {
+        border-radius: 4px 4px 0 0;
+      }
+
+      .ezy__travel4-content .form-range {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__travel4-accordion {
+        border-bottom: 1px dashed var(--ezy-border-color);
+      }
+      .ezy__travel4-accordion a,
+      .ezy__travel4-accordion a:hover {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__travel4-depart-option {
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 500;
+        background-color: var(--ezy-bg-color-light);
+        height: 40px;
+        padding: 5px 20px;
+        border-radius: 0 !important;
+        color: var(--bs-body-color);
+      }
+      .ezy__travel4-depart-option:hover {
+        background-color: var(--ezy-header-bg);
+        color: #fff;
+      }
+
+      .ezy__travel4-content label {
+        font-weight: 400;
+        opacity: 0.8;
+        font-size: 16px;
+        line-height: 1;
+      }
+
+      .ezy__travel4-btn {
+        height: 46px;
+        padding: 8px 25px;
+        color: #ffffff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__travel4-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: #ffffff;
+      }
+      .ezy__travel4 .form-select,
+      .ezy__travel4 .form-select option {
+        background-color: var(--ezy-body-color-invert);
+        color: var(--bs-body-color);
+        border: 1px solid var(--ezy-border-color);
+      }
+
+      .ezy__travel4-card {
+        background-color: rgba(var(--ezy-body-color-invert-rgb), 0.6);
+        border: 1px solid var(--ezy-border-color);
+        border-radius: 10px;
+      }
+
+      .ezy__travel4-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 5px 10px 10px 5px;
+        grid-gap: 20px;
+      }
+      @media (min-width: 568px) {
+        .ezy__travel4-details {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      @media (min-width: 991px) {
+        .ezy__travel4-details {
+          border-radius: 5px 10px 10px 5px;
+        }
+        .ezy__travel4-price {
+          border-radius: 10px 5px 5px 10px;
+        }
+      }
+
+      .ezy__travel4-divider {
+        position: relative;
+        color: var(--bs-body-color);
+        overflow: visible;
+        opacity: 0.5;
+      }
+      .ezy__travel4-divider::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        background-color: var(--bs-body-color);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+      .ezy__travel4-divider::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        background-color: var(--bs-body-color);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+
+      .ezy__travel4-btn-collapse:focus {
+        box-shadow: none !important;
+      }
+      .ezy__travel4-btn-collapse {
+        color: var(--bs-body-color) !important;
+      }
+    </style>
+    <section class="ezy__travel4">
+      <div class="container">
+        <!-- header portion -->
+        <div class="row">
+          <div class="col-12">
+            <div class="row ezy__travel4-header p-4 p-lg-5 rounded-3 border-0">
+              <div class="col-sm-8 d-flex">
+                <div
+                  class="ezy__travel4-plane-icon d-flex align-items-center justify-content-center rounded-circle me-4"
+                >
+                  <i class="fas fa-paper-plane"></i>
+                </div>
+                <div>
+                  <h3>Los Angeles-Istanbul</h3>
+                  <p class="mb-0 opacity-75 fw-normal">JUN 04,SAT | 2TRAVELLERS</p>
+                </div>
+              </div>
+              <div class="col-sm-4 d-flex align-items-center justify-content-center justify-content-sm-end">
+                <button class="btn ezy__travel4-btn fw-bold mt-4 mt-sm-0">Change</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- body portion -->
+        <div class="row mt-5">
+          <!-- filter -->
+          <div class="col-lg-3 ps-md-0">
+            <div class="ezy__travel4-filters h-100 rounded pb-4">
+              <div class="ezy__travel4-header p-3 text-center">
+                <h3 class="mb-0">FILTERS</h3>
+              </div>
+
+              <form action="">
+                <!-- price range -->
+                <div class="ezy__travel4-accordion">
+                  <a
+                    class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__travel4-btn-collapse"
+                    data-bs-toggle="collapse"
+                    href="#ezy__travel4-collapse-1"
+                    role="button"
+                    aria-expanded="true"
+                    aria-controls="ezy__travel4-collapse-1"
+                  >
+                    <h5 class="mb-0">Price Range</h5>
+                    <span class="fas fa-chevron-down"></span>
+                  </a>
+                  <div class="collapse show" id="ezy__travel4-collapse-1">
+                    <div class="ezy__travel4-content px-3 px-lg-4 pb-lg-4 mt-3">
+                      <div>
+                        <label for="ezy__travel4-1-range1" class="form-label fw-bold mb-2 opacity-75"
+                          >Min Price($200)</label
+                        >
+                        <input type="range" class="form-range" id="ezy__travel4-1-range1" />
+                      </div>
+                      <div>
+                        <label for="ezy__travel4-2-range1" class="form-label fw-bold mb-2 opacity-75"
+                          >Max Price($2000)</label
+                        >
+                        <input type="range" class="form-range" id="ezy__travel4-2-range1" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- depart time -->
+                <div class="ezy__travel4-accordion">
+                  <a
+                    class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__travel4-btn-collapse"
+                    data-bs-toggle="collapse"
+                    href="#ezy__travel4-collapse-2"
+                    role="button"
+                    aria-expanded="true"
+                    aria-controls="ezy__travel4-collapse-2"
+                  >
+                    <h5 class="mb-0">Depart Time</h5>
+                    <span class="fas fa-chevron-down"></span>
+                  </a>
+                  <div class="collapse show" id="ezy__travel4-collapse-2">
+                    <div class="ezy__travel4-content px-3 px-lg-4 pb-lg-4 mt-4">
+                      <button class="btn w-100 ezy__travel4-depart-option">
+                        <i class="fas fa-cloud-sun me-3"></i>Before 6 am
+                      </button>
+                      <button class="btn w-100 ezy__travel4-depart-option mt-2">
+                        <i class="fas fa-cloud-moon me-3"></i>Before 6 am
+                      </button>
+                      <button class="btn w-100 ezy__travel4-depart-option mt-2">
+                        <i class="fas fa-cloud me-3"></i>Before 6 am
+                      </button>
+                      <button class="btn w-100 ezy__travel4-depart-option mt-2">
+                        <i class="fas fa-sun me-3"></i>Before 6 am
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- stops -->
+                <div class="ezy__travel4-accordion">
+                  <a
+                    class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__travel4-btn-collapse"
+                    data-bs-toggle="collapse"
+                    href="#ezy__travel4-collapse-3"
+                    role="button"
+                    aria-expanded="true"
+                    aria-controls="ezy__travel4-collapse-3"
+                  >
+                    <h5 class="mb-0">Stops</h5>
+                    <span class="fas fa-chevron-down"></span>
+                  </a>
+                  <div class="collapse show" id="ezy__travel4-collapse-3">
+                    <div class="ezy__travel4-content px-3 px-lg-4 pb-lg-4 mt-4">
+                      <div class="row">
+                        <div class="col-4">
+                          <button class="btn w-100 ezy__travel4-depart-option">0</button>
+                        </div>
+                        <div class="col-4">
+                          <button class="btn w-100 ezy__travel4-depart-option">1</button>
+                        </div>
+                        <div class="col-4">
+                          <button class="btn w-100 ezy__travel4-depart-option">2+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- airlines -->
+                <div class="ezy__travel4-accordion">
+                  <a
+                    class="btn p-3 p-lg-4 w-100 text-start d-flex justify-content-between align-items-center ezy__travel4-btn-collapse"
+                    data-bs-toggle="collapse"
+                    href="#ezy__travel4-collapse-4"
+                    role="button"
+                    aria-expanded="true"
+                    aria-controls="ezy__travel4-collapse-4"
+                  >
+                    <h5 class="mb-0">Airlines</h5>
+                    <span class="fas fa-chevron-down"></span>
+                  </a>
+                  <div class="collapse show" id="ezy__travel4-collapse-4">
+                    <div class="ezy__travel4-content px-3 px-lg-4 pb-lg-4 mt-2">
+                      <div>
+                        <div class="form-check">
+                          <input class="form-check-input me-3" type="checkbox" value="" id="flexCheckDefault" />
+                          <label class="form-check-label" for="flexCheckDefault"> Aeroflot </label>
+                        </div>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input me-3" type="checkbox" value="" id="flexCheckChecked1" checked />
+                          <label class="form-check-label" for="flexCheckChecked1"> Aeroflot </label>
+                        </div>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input me-3" type="checkbox" value="" id="flexCheckChecked2" />
+                          <label class="form-check-label" for="flexCheckChecked2"> Aeroflot </label>
+                        </div>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input me-3" type="checkbox" value="" id="flexCheckChecked3" />
+                          <label class="form-check-label" for="flexCheckChecked3"> Aeroflot </label>
+                        </div>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input me-3" type="checkbox" value="" id="flexCheckChecked4" />
+                          <label class="form-check-label" for="flexCheckChecked4"> Aeroflot </label>
+                        </div>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input me-3" type="checkbox" value="" id="flexCheckChecked5" />
+                          <label class="form-check-label" for="flexCheckChecked5"> Aeroflot </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="px-4 mt-4">
+                  <button class="btn w-100 ezy__travel4-btn">Reset All Filters</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- results -->
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="row justify-content-between">
+              <div class="col-12 col-sm-6">
+                <h4 class="mb-0">565 Results</h4>
+              </div>
+              <div class="col-12 col-sm-4 text-end">
+                <form action="" class="d-flex align-items-center">
+                  <h5 class="fw-normal mb-0 me-3 text-nowrap">Sort By:</h5>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Price per Adult</option>
+                    <option value="1">Price per Child</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+
+            <div>
+              <!-- item -->
+              <div class="row mt-4">
+                <div class="col-12 col-lg-10 pe-lg-0">
+                  <div class="ezy__travel4-card ezy__travel4-details align-items-center h-100 p-2">
+                    <!-- airlines name -->
+                    <div>
+                      <div class="d-flex align-items-center">
+                        <div class="me-2">
+                          <img
+                            src="https://cdn.easyfrontend.com/pictures/airlines_logo1.png"
+                            alt=""
+                            class="img-fluid"
+                            width="47"
+                          />
+                        </div>
+                        <div>
+                          <h4 class="mb-0 fs-6 opacity-75">
+                            American Airlines <br />
+                            BA- 3271
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mt-3">
+                        <div class="me-2">
+                          <img
+                            src="https://cdn.easyfrontend.com/pictures/airlines_logo1.png"
+                            alt=""
+                            class="img-fluid"
+                            width="47"
+                          />
+                        </div>
+                        <div>
+                          <h4 class="mb-0 fs-6 opacity-75">
+                            American Airlines <br />
+                            BA- 3271
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- time -->
+                    <div class="text-center">
+                      <h4 class="fs-2">9:45 PM</h4>
+                      <p class="mb-1 mt-2 opacity-50">Jun 04, SUN</p>
+                      <p class="mb-0 opacity-100 fw-bold fs-6">Istambul IST</p>
+                    </div>
+                    <!-- stops -->
+                    <div class="text-center">
+                      <p class="mb-0 opacity-50">31h 10m</p>
+                      <hr class="ezy__travel4-divider my-2" />
+                      <p class="mb-0 opacity-50">2 Stops</p>
+                    </div>
+
+                    <!-- time -->
+                    <div class="text-center">
+                      <h4 class="fs-2">9:45 PM</h4>
+                      <p class="mb-1 mt-2 opacity-50">Jun 04, SUN</p>
+                      <p class="mb-0 opacity-100 fw-bold fs-6">Istambul IST</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-2 ps-lg-0">
+                  <div
+                    class="ezy__travel4-card ezy__travel4-price p-2 p-lg-4 text-center h-100 d-flex flex-column align-items-center justify-content-center ms-0"
+                  >
+                    <h2 class="fw-bold">$600</h2>
+                    <button class="btn ezy__travel4-btn fw-bold">Book</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="row mt-4">
+                <div class="col-12 col-lg-10 pe-lg-0">
+                  <div class="ezy__travel4-card ezy__travel4-details align-items-center h-100 p-2">
+                    <!-- airlines name -->
+                    <div>
+                      <div class="d-flex align-items-center">
+                        <div class="me-2">
+                          <img
+                            src="https://cdn.easyfrontend.com/pictures/airlines_logo1.png"
+                            alt=""
+                            class="img-fluid"
+                            width="47"
+                          />
+                        </div>
+                        <div>
+                          <h4 class="mb-0 fs-6 opacity-75">
+                            American Airlines <br />
+                            BA- 3271
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mt-3">
+                        <div class="me-2">
+                          <img
+                            src="https://cdn.easyfrontend.com/pictures/airlines_logo1.png"
+                            alt=""
+                            class="img-fluid"
+                            width="47"
+                          />
+                        </div>
+                        <div>
+                          <h4 class="mb-0 fs-6 opacity-75">
+                            American Airlines <br />
+                            BA- 3271
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- time -->
+                    <div class="text-center">
+                      <h4 class="fs-2">9:45 PM</h4>
+                      <p class="mb-1 mt-2 opacity-50">Jun 04, SUN</p>
+                      <p class="mb-0 opacity-100 fw-bold fs-6">Istambul IST</p>
+                    </div>
+                    <!-- stops -->
+                    <div class="text-center">
+                      <p class="mb-0 opacity-50">31h 10m</p>
+                      <hr class="ezy__travel4-divider my-2" />
+                      <p class="mb-0 opacity-50">2 Stops</p>
+                    </div>
+
+                    <!-- time -->
+                    <div class="text-center">
+                      <h4 class="fs-2">9:45 PM</h4>
+                      <p class="mb-1 mt-2 opacity-50">Jun 04, SUN</p>
+                      <p class="mb-0 opacity-100 fw-bold fs-6">Istambul IST</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-2 ps-lg-0">
+                  <div
+                    class="ezy__travel4-card ezy__travel4-price p-2 p-lg-4 text-center h-100 d-flex flex-column align-items-center justify-content-center ms-0"
+                  >
+                    <h2 class="fw-bold">$600</h2>
+                    <button class="btn ezy__travel4-btn fw-bold">Book</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="row mt-4">
+                <div class="col-12 col-lg-10 pe-lg-0">
+                  <div class="ezy__travel4-card ezy__travel4-details align-items-center h-100 p-2">
+                    <!-- airlines name -->
+                    <div>
+                      <div class="d-flex align-items-center">
+                        <div class="me-2">
+                          <img
+                            src="https://cdn.easyfrontend.com/pictures/airlines_logo1.png"
+                            alt=""
+                            class="img-fluid"
+                            width="47"
+                          />
+                        </div>
+                        <div>
+                          <h4 class="mb-0 fs-6 opacity-75">
+                            American Airlines <br />
+                            BA- 3271
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mt-3">
+                        <div class="me-2">
+                          <img
+                            src="https://cdn.easyfrontend.com/pictures/airlines_logo1.png"
+                            alt=""
+                            class="img-fluid"
+                            width="47"
+                          />
+                        </div>
+                        <div>
+                          <h4 class="mb-0 fs-6 opacity-75">
+                            American Airlines <br />
+                            BA- 3271
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- time -->
+                    <div class="text-center">
+                      <h4 class="fs-2">9:45 PM</h4>
+                      <p class="mb-1 mt-2 opacity-50">Jun 04, SUN</p>
+                      <p class="mb-0 opacity-100 fw-bold fs-6">Istambul IST</p>
+                    </div>
+                    <!-- stops -->
+                    <div class="text-center">
+                      <p class="mb-0 opacity-50">31h 10m</p>
+                      <hr class="ezy__travel4-divider my-2" />
+                      <p class="mb-0 opacity-50">2 Stops</p>
+                    </div>
+
+                    <!-- time -->
+                    <div class="text-center">
+                      <h4 class="fs-2">9:45 PM</h4>
+                      <p class="mb-1 mt-2 opacity-50">Jun 04, SUN</p>
+                      <p class="mb-0 opacity-100 fw-bold fs-6">Istambul IST</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-2 ps-lg-0">
+                  <div
+                    class="ezy__travel4-card ezy__travel4-price p-2 p-lg-4 text-center h-100 d-flex flex-column align-items-center justify-content-center ms-0"
+                  >
+                    <h2 class="fw-bold">$600</h2>
+                    <button class="btn ezy__travel4-btn fw-bold">Book</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="row mt-4">
+                <div class="col-12 col-lg-10 pe-lg-0">
+                  <div class="ezy__travel4-card ezy__travel4-details align-items-center h-100 p-2">
+                    <!-- airlines name -->
+                    <div>
+                      <div class="d-flex align-items-center">
+                        <div class="me-2">
+                          <img
+                            src="https://cdn.easyfrontend.com/pictures/airlines_logo1.png"
+                            alt=""
+                            class="img-fluid"
+                            width="47"
+                          />
+                        </div>
+                        <div>
+                          <h4 class="mb-0 fs-6 opacity-75">
+                            American Airlines <br />
+                            BA- 3271
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mt-3">
+                        <div class="me-2">
+                          <img
+                            src="https://cdn.easyfrontend.com/pictures/airlines_logo1.png"
+                            alt=""
+                            class="img-fluid"
+                            width="47"
+                          />
+                        </div>
+                        <div>
+                          <h4 class="mb-0 fs-6 opacity-75">
+                            American Airlines <br />
+                            BA- 3271
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- time -->
+                    <div class="text-center">
+                      <h4 class="fs-2">9:45 PM</h4>
+                      <p class="mb-1 mt-2 opacity-50">Jun 04, SUN</p>
+                      <p class="mb-0 opacity-100 fw-bold fs-6">Istambul IST</p>
+                    </div>
+                    <!-- stops -->
+                    <div class="text-center">
+                      <p class="mb-0 opacity-50">31h 10m</p>
+                      <hr class="ezy__travel4-divider my-2" />
+                      <p class="mb-0 opacity-50">2 Stops</p>
+                    </div>
+
+                    <!-- time -->
+                    <div class="text-center">
+                      <h4 class="fs-2">9:45 PM</h4>
+                      <p class="mb-1 mt-2 opacity-50">Jun 04, SUN</p>
+                      <p class="mb-0 opacity-100 fw-bold fs-6">Istambul IST</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-2 ps-lg-0">
+                  <div
+                    class="ezy__travel4-card ezy__travel4-price p-2 p-lg-4 text-center h-100 d-flex flex-column align-items-center justify-content-center ms-0"
+                  >
+                    <h2 class="fw-bold">$600</h2>
+                    <button class="btn ezy__travel4-btn fw-bold">Book</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="row mt-4">
+                <div class="col-12 col-lg-10 pe-lg-0">
+                  <div class="ezy__travel4-card ezy__travel4-details align-items-center h-100 p-2">
+                    <!-- airlines name -->
+                    <div>
+                      <div class="d-flex align-items-center">
+                        <div class="me-2">
+                          <img
+                            src="https://cdn.easyfrontend.com/pictures/airlines_logo1.png"
+                            alt=""
+                            class="img-fluid"
+                            width="47"
+                          />
+                        </div>
+                        <div>
+                          <h4 class="mb-0 fs-6 opacity-75">
+                            American Airlines <br />
+                            BA- 3271
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mt-3">
+                        <div class="me-2">
+                          <img
+                            src="https://cdn.easyfrontend.com/pictures/airlines_logo1.png"
+                            alt=""
+                            class="img-fluid"
+                            width="47"
+                          />
+                        </div>
+                        <div>
+                          <h4 class="mb-0 fs-6 opacity-75">
+                            American Airlines <br />
+                            BA- 3271
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- time -->
+                    <div class="text-center">
+                      <h4 class="fs-2">9:45 PM</h4>
+                      <p class="mb-1 mt-2 opacity-50">Jun 04, SUN</p>
+                      <p class="mb-0 opacity-100 fw-bold fs-6">Istambul IST</p>
+                    </div>
+                    <!-- stops -->
+                    <div class="text-center">
+                      <p class="mb-0 opacity-50">31h 10m</p>
+                      <hr class="ezy__travel4-divider my-2" />
+                      <p class="mb-0 opacity-50">2 Stops</p>
+                    </div>
+
+                    <!-- time -->
+                    <div class="text-center">
+                      <h4 class="fs-2">9:45 PM</h4>
+                      <p class="mb-1 mt-2 opacity-50">Jun 04, SUN</p>
+                      <p class="mb-0 opacity-100 fw-bold fs-6">Istambul IST</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-2 ps-lg-0">
+                  <div
+                    class="ezy__travel4-card ezy__travel4-price p-2 p-lg-4 text-center h-100 d-flex flex-column align-items-center justify-content-center ms-0"
+                  >
+                    <h2 class="fw-bold">$600</h2>
+                    <button class="btn ezy__travel4-btn fw-bold">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!-- travel 5 -->
+
+    <style>
+      .ezy__travel5 {
+        /* Bootstrap variables */
+        --bs-body-color: #484848;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-body-color-invert: rgb(64, 65, 86);
+        --ezy-border-color: rgb(187, 191, 200);
+        --ezy-card-shadow: 0px 6px 44px rgba(173, 174, 197, 0.2);
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        padding: 60px 0;
+      }
+      @media (min-width: 768px) {
+        .ezy__travel5 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__travel5,
+      .ezy__travel5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-body-color-invert: rgb(46, 47, 65);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__travel5,
+      .ezy__travel5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(64, 65, 86);
+
+        /* Easy Frontend variables */
+        --ezy-body-color-invert: rgb(46, 47, 65);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-border-color: rgba(255, 255, 255, 0.43);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__travel5,
+      .ezy__travel5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(46, 47, 65);
+
+        /* Easy Frontend variables */
+        --ezy-body-color-invert: rgb(64, 65, 86);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-border-color: rgba(255, 255, 255, 0.43);
+      }
+
+      .ezy__travel5-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 1;
+        color: #fff;
+      }
+      @media (min-width: 768px) {
+        .ezy__travel5-heading {
+          font-size: 32px;
+        }
+      }
+
+      .ezy__travel5-header {
+        background-color: var(--ezy-body-color-invert);
+      }
+      .ezy__travel5-card {
+        background-color: var(--bs-body-bg);
+        box-shadow: var(--ezy-card-shadow);
+      }
+
+      .ezy__travel5 .form-control {
+        min-height: 42px;
+        line-height: 36px;
+        border-color: var(--ezy-border-color);
+        background: transparent;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__travel5 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      .ezy__travel5 .form-check-input:checked {
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__travel5 label {
+        opacity: 0.8;
+      }
+      .ezy__travel5 .form-group label {
+        font-size: 18px;
+        font-weight: 500;
+        opacity: 0.8;
+      }
+      .ezy__travel5 label a {
+        text-decoration: none;
+        color: var(--ezy-theme-color);
+        opacity: 1;
+        font-weight: 500;
+      }
+
+      .ezy__travel5-btn-submit {
+        padding: 5px 25px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+        color: #fff;
+        height: 45px;
+        font-size: 18px;
+        line-height: 1;
+        border-radius: 5px;
+      }
+      .ezy__travel5-btn-submit:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: #fff;
+      }
+      .ezy__travel5-review {
+        color: var(--bs-body-color);
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+      .ezy__travel5-review:hover {
+        color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__travel5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ezy__travel5-header p-4 rounded-3 text-center">
+              <h2 class="ezy__travel5-heading mb-0">Where should We Send Your Confirmation?</h2>
+            </div>
+          </div>
+        </div>
+
+        <form>
+          <div class="card ezy__travel5-card mt-5 p-4 px-lg-5 border-0 rounded-3">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="form-group mb-4 mb-lg-0">
+                  <label class="mb-2" for="email">Email address</label>
+                  <input type="text" class="form-control ps-4" id="email" placeholder="Enter your Email Address" />
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="form-group mb-4 mb-lg-0">
+                  <label class="mb-2" for="number">Phone Number</label>
+                  <input type="number" class="form-control ps-4" id="number" placeholder="Enter your Phone Number" />
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="h-100 d-flex flex-column justify-content-end">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="ezy__travel5-check2"
+                      id="ezy__travel5-check22"
+                      value="option1"
+                      checked
+                    />
+                    <label class="form-check-label" for="ezy__travel5-check22">
+                      I Accept the <a href="#!">Rules</a> of this Trip
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="ezy__travel5-check2"
+                      id="ezy__travel5-check2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="ezy__travel5-check2">Send Me the Best Deals by Email</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <button type="submit" class="btn ezy__travel5-btn-submit">Buy Now</button>
+                </div>
+                <div>
+                  <a href="#!" class="ezy__travel5-review pe-lg-4">Review And Book Your Trip</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

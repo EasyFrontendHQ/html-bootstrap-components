@@ -1,0 +1,2520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+        appendHeadInfo('bootstrap');
+    </script>
+</head>
+
+<body>
+
+<!--
+Name: Product Checkout 1
+-->
+<style>
+    .ezy__epcheckout1 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #F5F7FD;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 50px 0;
+        position: relative;
+    }
+
+    /* Gray Block Style */
+    .gray .ezy__epcheckout1,
+    .ezy__epcheckout1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-card-bg: rgb(255, 255, 255);
+    }
+
+    /* Dark Gray Block Style */
+    .dark-gray .ezy__epcheckout1,
+    .ezy__epcheckout1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(11, 23, 39);
+    }
+
+    /* Dark Block Style */
+    .dark .ezy__epcheckout1,
+    .ezy__epcheckout1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(30, 39, 53);
+    }
+
+    .ezy__epcheckout1 a {
+        font-weight: 500;
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: none;
+    }
+
+    .ezy__epcheckout1 a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: underline;
+    }
+
+    .ezy__epcheckout1-heading a {
+        font-size: 15px;
+        line-height: 19px;
+        font-weight: normal;
+        color: var(--bs-body-color);
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .ezy__epcheckout1-heading a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout1-price {
+        font-size: 17px;
+        color: var(--bs-body-color);
+        font-weight: 700;
+    }
+
+    .ezy__epcheckout1-old-price {
+        font-size: 14px;
+        color: var(--bs-body-color);
+        opacity: .5;
+        text-decoration: line-through;
+    }
+
+    .ezy__epcheckout1-mark {
+        padding: 2px 5px;
+        border-radius: 3px;
+        background: rgba(255, 71, 71, .1);;
+        color: rgb(255, 71, 71);
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .ezy__epcheckout1-title {
+        font-size: 15px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epcheckout1-image {
+        min-width: 50px;
+        width: 50px;
+        height: auto;
+        background-color: rgb(var(--ezy-secondary-color-rgb), .05);
+        border: 1px solid rgba(var(--ezy-secondary-color-rgb), .05);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+        .ezy__epcheckout1-image {
+            min-width: 120px;
+            width: 120px;
+        }
+    }
+
+    .ezy__epcheckout1-qty {
+        width: 100px;
+    }
+
+    .ezy__epcheckout1-qty .btn {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(var(--bs-body-color));
+        border-radius: 50% !important;
+        background-color: rgb(var(--ezy-secondary-color-rgb), .04);
+        border-color: transparent;
+        padding: 0;
+    }
+
+    .ezy__epcheckout1-qty .btn:hover {
+        background-color: rgba(var(--ezy-secondary-color-rgb), .08);
+    }
+
+    .ezy__epcheckout1-qty .form-control {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        background-color: transparent;
+        color: var(--bs-body-color);
+        border: none;
+        padding: 0;
+    }
+
+    .ezy__epcheckout1-btn,
+    .ezy__epcheckout1-btn-outline {
+        font-size: 14px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .ezy__epcheckout1-btn {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epcheckout1-btn-outline {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: transparent;
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout1-btn-outline:hover,
+    .ezy__epcheckout1-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), .9) !important;
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epcheckout1-btn-text {
+        color: var(--bs-body-color);
+        background-color: transparent;
+        min-width: 35px;
+        height: 35px;
+    }
+
+    .ezy__epcheckout1-btn-text:hover {
+        background-color: rgba(var(--ezy-secondary-color-rgb), .05);
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout1-card {
+        background-color: var(--ezy-card-bg);
+        border: none;
+        border-radius: 10px;
+    }
+
+    .ezy__epcheckout1-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb), .05);
+        opacity: 1;
+    }
+
+    .ezy__epcheckout1-content {
+        font-size: 13px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epcheckout1-theme-color {
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout1-promo-code .form-control {
+        border-color: rgb(var(--ezy-secondary-color-rgb), .1);
+        background-color: rgb(var(--ezy-secondary-color-rgb), .03);
+        color: rgb(var(--bs-body-color));
+        font-size: 14px;
+        height: 38px;
+    }
+</style>
+<section class="ezy__epcheckout1" id="ezy__epcheckout1">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card ezy__epcheckout1-card mb-3">
+                    <div class="card-body p-md-4">
+                        <h5 class="fs-6 fw-bold mb-3">Shipping Information</h5>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="ezy__epcheckout1-content">
+                                    <b>Santush Deb Nath, +880 1742031080</b> <br>
+                                    <span class="opacity-75">Iron Man Fitness Club, Zindabazar, Sylhet</span> <br>
+                                    <span class="opacity-75">Sylhet, Sylhet Sadar, Bangladesh, 3100</span>
+                                </p>
+                            </div>
+                            <div class="col-auto text-end ezy__epcheckout1-content">
+                                <a class="d-inline-block mb-1" href="#!"><i class="fas fa-plus me-1 fs-5"></i>Add
+                                    New
+                                    Address</a><br>
+                                <a href="#!">Select Other Addresses</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ezy__epcheckout1-card mb-3">
+                    <div class="card-body px-md-4">
+                        <h5 class="fs-6 fw-bold mb-3">Payment Methods</h5>
+                        <div class="row">
+                            <div class="col">
+                                <p class="ezy__epcheckout1-content mb-sm-0"><i
+                                        class="fab fa-cc-mastercard me-3"></i>
+                                    <span>544407******0943</span></p>
+                            </div>
+                            <div class="col-auto text-end ezy__epcheckout1-content">
+                                <a href="#!">Change</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ezy__epcheckout1-card mb-3">
+                    <div class="card-body px-md-4">
+                        <h5 class="fs-6 fw-bold mb-0">Order Review</h5>
+
+                        <div class="mt-4">
+                            <p class="ezy__epcheckout1-content mb-0">Seller: NIDIN Factory Online Store</p>
+                            <hr class="ezy__epcheckout1-hr">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <div class="ezy__epcheckout1-image">
+                                        <a href="#!">
+                                            <img alt=""
+                                                 class="img-fluid"
+                                                 src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio3.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="ezy__epcheckout1-heading mb-1">
+                                                <a href="#!">
+                                                    Forsining 3d Logo Design Hollow Engraving Black Gold Case
+                                                    Leather
+                                                    Skeleton Mechanical Watches Men Luxury Brand Heren Horloge
+                                                </a>
+                                            </div>
+                                            <p class="ezy__epcheckout1-content mb-2">
+                                                <span class="me-3"><b>Color</b>: Black</span>
+                                                <span><b>Ships From</b>: China</span>
+                                            </p>
+                                            <div class="mb-2">
+                                                <span class="ezy__epcheckout1-price me-2">BDT 6,638.89</span>
+                                            </div>
+                                            <p class="ezy__epcheckout1-content mb-2">
+                                                <a href="#!">Shipping: US $44.07</a> via BrandName Premium Shipping
+                                                Estimated Delivery Time:53-53 Days
+                                            </p>
+                                            <div>
+                                                <a class="ezy__epcheckout1-content d-inline-block mb-1" href="#!"><i
+                                                        class="fas fa-plus me-1 fs-5"></i> Leave message</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-auto mt-3 mt-md-0">
+                                            <div class="input-group ezy__epcheckout1-qty align-items-center">
+                                                <button class="btn" type="button">-</button>
+                                                <input aria-describedby="button-addon1"
+                                                       aria-label="Example text with button addon" class="form-control"
+                                                       placeholder=""
+                                                       type="text"
+                                                       value="2">
+                                                <button class="btn" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="ezy__epcheckout1-hr">
+                            <div class="row justify-content-end">
+                                <div class="col-sm-10 col-md-6 col-lg-5">
+                                    <div class="ezy__epcheckout1-content d-flex justify-content-between align-items-center mb-1">
+                                        <span class="opacity-50">Subtotal</span>
+                                        <span class="opacity-50">BDT 6,638.89</span>
+                                    </div>
+                                    <div class="ezy__epcheckout1-content d-flex justify-content-between align-items-center mb-1">
+											<span class="opacity-75"><i
+                                                    class="fas fa-file-invoice-dollar me-2 ezy__epcheckout1-theme-color"></i>Store
+												Coupons</span>
+                                        <span>
+												<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+											</span>
+                                    </div>
+                                    <div class="ezy__epcheckout1-content d-flex justify-content-between align-items-center mb-1">
+                                        <span class="opacity-50">Shipping</span>
+                                        <span class="opacity-50">BDT 0.00</span>
+                                    </div>
+                                    <div class="ezy__epcheckout1-content d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold">Total</span>
+                                        <span class="fw-bold">BDT 6,638.89</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="ezy__epcheckout1-content mb-0">Seller: NIDIN Factory Online Store</p>
+                            <hr class="ezy__epcheckout1-hr">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <div class="ezy__epcheckout1-image">
+                                        <a href="#!">
+                                            <img alt=""
+                                                 class="img-fluid"
+                                                 src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio19.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="ezy__epcheckout1-heading mb-1">
+                                                <a href="#!">
+                                                    Factory Direct Sales Stainless Steel Heat Resistant Custom
+                                                    Compression Spring Manufacturer Spring Steel
+                                                </a>
+                                            </div>
+                                            <p class="ezy__epcheckout1-content mb-2">
+                                                <span class="me-3"><b>Color</b>: Yellow</span>
+                                                <span><b>Ships From</b>: Japan</span>
+                                            </p>
+                                            <div class="mb-2">
+                                                <span class="ezy__epcheckout1-price me-2">BDT 2,341.21</span>
+                                            </div>
+                                            <p class="ezy__epcheckout1-content mb-2">
+                                                <a href="#!">Shipping: US $44.07</a> via BrandName Premium Shipping
+                                                Estimated Delivery Time:53-53 Days
+                                            </p>
+                                            <div>
+                                                <a class="ezy__epcheckout1-content d-inline-block mb-1" href="#!"><i
+                                                        class="fas fa-plus me-1 fs-5"></i> Leave message</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-auto mt-3 mt-md-0">
+                                            <div class="input-group ezy__epcheckout1-qty align-items-center">
+                                                <button class="btn" type="button">-</button>
+                                                <input aria-describedby="button-addon1"
+                                                       aria-label="Example text with button addon" class="form-control"
+                                                       placeholder=""
+                                                       type="text"
+                                                       value="2">
+                                                <button class="btn" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="ezy__epcheckout1-hr">
+                            <div class="row justify-content-end">
+                                <div class="col-sm-10 col-md-6 col-lg-5">
+                                    <div class="ezy__epcheckout1-content d-flex justify-content-between align-items-center mb-1">
+                                        <span class="opacity-50">Subtotal</span>
+                                        <span class="opacity-50">BDT 6,638.89</span>
+                                    </div>
+                                    <div class="ezy__epcheckout1-content d-flex justify-content-between align-items-center mb-1">
+											<span class="opacity-75"><i
+                                                    class="fas fa-file-invoice-dollar me-2 ezy__epcheckout1-theme-color"></i>Store
+												Coupons</span>
+                                        <span>
+												<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+											</span>
+                                    </div>
+                                    <div class="ezy__epcheckout1-content d-flex justify-content-between align-items-center mb-1">
+                                        <span class="opacity-50">Shipping</span>
+                                        <span class="opacity-50">BDT 0.00</span>
+                                    </div>
+                                    <div class="ezy__epcheckout1-content d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold">Total</span>
+                                        <span class="fw-bold">BDT 6,638.89</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card ezy__epcheckout1-card">
+                    <div class="card-body p-md-4">
+                        <h5 class="fs-4 fw-bold mb-4">Order Summary</h5>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span><i class="fas fa-file-invoice-dollar me-2 ezy__epcheckout1-theme-color"></i>Store Coupons</span>
+                            <span>
+									<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+								</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+								<span><i class="fas fa-file-invoice-dollar me-2 ezy__epcheckout1-theme-color"></i>BusinessName
+									Coupon</span>
+                            <span>
+									<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+								</span>
+                        </div>
+
+                        <div class="mt-3">
+                            <p class="ezy__epcheckout1-content mb-1">Promo Code</p>
+                            <div class="input-group ezy__epcheckout1-promo-code">
+                                <input aria-describedby="button-addon2" aria-label="Recipient's username"
+                                       class="form-control me-2 rounded-3"
+                                       placeholder="Recipient's username" type="text">
+                                <button class="btn ezy__epcheckout1-btn-outline h-auto rounded-3" id="button-addon22"
+                                        type="button">Apply
+                                </button>
+                            </div>
+                        </div>
+
+                        <hr class="ezy__epcheckout1-hr mb-3 mt-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">Total</span>
+                            <span class="fs-4 fw-bold">US $1231.00</span>
+                        </div>
+                        <p class="ezy__epcheckout1-content text-end opacity-50 mb-0">Approximately BDT 94,856.76</p>
+
+                        <button class="btn ezy__epcheckout1-btn w-100 mt-4 fs-6">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<!--
+Name: Product Checkout 2
+-->
+<style>
+    .ezy__epcheckout2 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #F5F7FD;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 50px 0;
+        position: relative;
+    }
+
+    /* Gray Block Style */
+    .gray .ezy__epcheckout2,
+    .ezy__epcheckout2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-card-bg: rgb(255, 255, 255);
+    }
+
+    /* Dark Gray Block Style */
+    .dark-gray .ezy__epcheckout2,
+    .ezy__epcheckout2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(11, 23, 39);
+    }
+
+    /* Dark Block Style */
+    .dark .ezy__epcheckout2,
+    .ezy__epcheckout2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(30, 39, 53);
+    }
+
+    .ezy__epcheckout2 a {
+        font-weight: 500;
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: none;
+    }
+
+    .ezy__epcheckout2 a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: underline;
+    }
+
+    .ezy__epcheckout2-heading a {
+        font-size: 15px;
+        line-height: 19px;
+        font-weight: normal;
+        color: var(--bs-body-color);
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .ezy__epcheckout2-heading a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout2-price {
+        font-size: 17px;
+        color: var(--bs-body-color);
+        font-weight: 700;
+    }
+
+    .ezy__epcheckout2-old-price {
+        font-size: 14px;
+        color: var(--bs-body-color);
+        opacity: .5;
+        text-decoration: line-through;
+    }
+
+    .ezy__epcheckout2-mark {
+        padding: 2px 5px;
+        border-radius: 3px;
+        background: rgba(255, 71, 71, .1);;
+        color: rgb(255, 71, 71);
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .ezy__epcheckout2-title {
+        font-size: 15px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epcheckout2-image {
+        min-width: 50px;
+        width: 50px;
+        height: auto;
+        background-color: rgb(var(--ezy-secondary-color-rgb), .05);
+        border: 1px solid rgba(var(--ezy-secondary-color-rgb), .05);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+        .ezy__epcheckout2-image {
+            min-width: 120px;
+            width: 120px;
+        }
+    }
+
+    .ezy__epcheckout2-qty {
+        width: 100px;
+    }
+
+    .ezy__epcheckout2-qty .btn {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(var(--bs-body-color));
+        border-radius: 50% !important;
+        background-color: rgb(var(--ezy-secondary-color-rgb), .04);
+        border-color: transparent;
+        padding: 0;
+    }
+
+    .ezy__epcheckout2-qty .btn:hover {
+        background-color: rgba(var(--ezy-secondary-color-rgb), .08);
+    }
+
+    .ezy__epcheckout2-qty .form-control {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        background-color: transparent;
+        color: var(--bs-body-color);
+        border: none;
+        padding: 0;
+    }
+
+    .ezy__epcheckout2-btn,
+    .ezy__epcheckout2-btn-outline {
+        font-size: 14px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .ezy__epcheckout2-btn {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epcheckout2-btn-outline {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: transparent;
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout2-btn-outline:hover,
+    .ezy__epcheckout2-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), .9) !important;
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epcheckout2-btn-text {
+        color: var(--bs-body-color);
+        background-color: transparent;
+        min-width: 35px;
+        height: 35px;
+    }
+
+    .ezy__epcheckout2-btn-text:hover {
+        background-color: rgba(var(--ezy-secondary-color-rgb), .05);
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout2-card {
+        background-color: var(--ezy-card-bg);
+        border: none;
+        border-radius: 10px;
+    }
+
+    .ezy__epcheckout2-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb), .05);
+        opacity: 1;
+    }
+
+    .ezy__epcheckout2-content {
+        font-size: 13px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epcheckout2-theme-color {
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout2-promo-code .form-control {
+        border-color: rgb(var(--ezy-secondary-color-rgb), .1);
+        background-color: rgb(var(--ezy-secondary-color-rgb), .03);
+        color: rgb(var(--bs-body-color));
+        font-size: 14px;
+        height: 38px;
+    }
+</style>
+<section class="ezy__epcheckout2" id="ezy__epcheckout2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card ezy__epcheckout2-card mb-3">
+                    <div class="card-body p-md-4">
+                        <h5 class="fs-6 fw-bold mb-3">Shipping Information</h5>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="ezy__epcheckout2-content">
+                                    <b>Santush Deb Nath, +880 1742031080</b> <br>
+                                    <span class="opacity-75">Iron Man Fitness Club, Zindabazar, Sylhet</span> <br>
+                                    <span class="opacity-75">Sylhet, Sylhet Sadar, Bangladesh, 3100</span>
+                                </p>
+                            </div>
+                            <div class="col-auto text-end ezy__epcheckout2-content">
+                                <a class="d-inline-block mb-1" href="#!"><i class="fas fa-plus me-1 fs-5"></i>Add
+                                    New
+                                    Address</a><br>
+                                <a href="#!">Select Other Addresses</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ezy__epcheckout2-card mb-3">
+                    <div class="card-body px-md-4">
+                        <h5 class="fs-6 fw-bold mb-3">Payment Methods</h5>
+                        <div class="row">
+                            <div class="col">
+                                <p class="ezy__epcheckout2-content mb-sm-0"><i
+                                        class="fab fa-cc-mastercard me-3"></i>
+                                    <span>544407******0943</span></p>
+                            </div>
+                            <div class="col-auto text-end ezy__epcheckout2-content">
+                                <a href="#!">Change</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ezy__epcheckout2-card mb-3">
+                    <div class="card-body px-md-4">
+                        <h5 class="fs-6 fw-bold mb-0">Order Review</h5>
+
+                        <div class="mt-4">
+                            <p class="ezy__epcheckout2-content mb-0">Seller: NIDIN Factory Online Store</p>
+                            <hr class="ezy__epcheckout2-hr">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <div class="ezy__epcheckout2-image">
+                                        <a href="#!">
+                                            <img alt=""
+                                                 class="img-fluid"
+                                                 src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio17.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-12 col-xl-6 col-xxl-7">
+                                            <div class="ezy__epcheckout2-heading mb-1">
+                                                <a href="#!">
+                                                    Iron Handle 60 90 Sheets Clothes Pet Dog Cat Hair Adhesive
+                                                    Sticky Lint. Storage Welded Nesting Metal Foldable Logistics
+                                                    Steel Wire Mesh
+                                                </a>
+                                            </div>
+                                            <p class="ezy__epcheckout2-content mb-2">
+                                                <span class="me-3"><b>Color</b>: Green</span>
+                                                <span><b>Ships From</b>: Korea</span>
+                                            </p>
+                                            <div>
+                                                <a class="ezy__epcheckout2-content d-inline-block mb-1" href="#!"><i
+                                                        class="fas fa-plus me-1 fs-5"></i> Leave message</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-xl-3 mt-3 mt-xl-0">
+                                            <div class="mb-3">
+                                                <span class="ezy__epcheckout2-price me-2">BDT 3,112.12</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-xl-3 col-xxl-2 mt-3 mt-xl-0">
+                                            <div class="input-group ezy__epcheckout2-qty align-items-center">
+                                                <button class="btn" type="button">-</button>
+                                                <input aria-describedby="button-addon1"
+                                                       aria-label="Example text with button addon" class="form-control"
+                                                       placeholder=""
+                                                       type="text"
+                                                       value="2">
+                                                <button class="btn" type="button">+</button>
+                                            </div>
+                                            <div class="mt-3 text-center">
+                                                <button
+                                                        class="btn ezy__epcheckout2-btn-text ezy__epcheckout2-theme-color py-0 d-inline-flex justify-content-center align-items-center text-decoration-none">
+                                                    <i class="fas fa-trash-alt fs-6 me-2"></i> Remove
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="ezy__epcheckout2-hr">
+                            <div class="row justify-content-end">
+                                <div class="col-sm-10 col-md-6 col-lg-5">
+                                    <div class="ezy__epcheckout2-content d-flex justify-content-between align-items-center mb-1">
+                                        <span class="opacity-50">Subtotal</span>
+                                        <span class="opacity-50">BDT 6,638.89</span>
+                                    </div>
+                                    <div class="ezy__epcheckout2-content d-flex justify-content-between align-items-center mb-1">
+											<span class="opacity-75"><i
+                                                    class="fas fa-file-invoice-dollar me-2 ezy__epcheckout2-theme-color"></i>Store
+												Coupons</span>
+                                        <span>
+												<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+											</span>
+                                    </div>
+                                    <div class="ezy__epcheckout2-content d-flex justify-content-between align-items-center mb-1">
+                                        <span class="opacity-50">Shipping</span>
+                                        <span class="opacity-50">BDT 0.00</span>
+                                    </div>
+                                    <div class="ezy__epcheckout2-content d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold">Total</span>
+                                        <span class="fw-bold">BDT 6,638.89</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="ezy__epcheckout2-content mb-0">Seller: NIDIN Factory Online Store</p>
+                            <hr class="ezy__epcheckout2-hr">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <div class="ezy__epcheckout2-image">
+                                        <a href="#!">
+                                            <img alt=""
+                                                 class="img-fluid"
+                                                 src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio15.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-12 col-xl-6 col-xxl-7">
+                                            <div class="ezy__epcheckout2-heading mb-1">
+                                                <a href="#!">
+                                                    Forsining 3d Logo Design Hollow Engraving Black Gold Case
+                                                    Leather
+                                                    Skeleton Mechanical Watches Men Luxury Brand Heren Horloge
+                                                </a>
+                                            </div>
+                                            <p class="ezy__epcheckout2-content mb-2">
+                                                <span class="me-3"><b>Color</b>: Black</span>
+                                                <span><b>Ships From</b>: China</span>
+                                            </p>
+                                            <div>
+                                                <a class="ezy__epcheckout2-content d-inline-block mb-1" href="#!"><i
+                                                        class="fas fa-plus me-1 fs-5"></i> Leave message</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-xl-3 mt-3 mt-xl-0">
+                                            <div class="mb-3">
+                                                <span class="ezy__epcheckout2-price me-2">BDT 6,638.89</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-xl-3 col-xxl-2 mt-3 mt-xl-0">
+                                            <div class="input-group ezy__epcheckout2-qty align-items-center">
+                                                <button class="btn" type="button">-</button>
+                                                <input aria-describedby="button-addon1"
+                                                       aria-label="Example text with button addon" class="form-control"
+                                                       placeholder=""
+                                                       type="text"
+                                                       value="2">
+                                                <button class="btn" type="button">+</button>
+                                            </div>
+                                            <div class="mt-3 text-center">
+                                                <button
+                                                        class="btn ezy__epcheckout2-btn-text ezy__epcheckout2-theme-color py-0 d-inline-flex justify-content-center align-items-center text-decoration-none">
+                                                    <i class="fas fa-trash-alt fs-6 me-2"></i> Remove
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="ezy__epcheckout2-hr">
+                            <div class="row justify-content-end">
+                                <div class="col-sm-10 col-md-6 col-lg-5">
+                                    <div class="ezy__epcheckout2-content d-flex justify-content-between align-items-center mb-1">
+                                        <span class="opacity-50">Subtotal</span>
+                                        <span class="opacity-50">BDT 6,638.89</span>
+                                    </div>
+                                    <div class="ezy__epcheckout2-content d-flex justify-content-between align-items-center mb-1">
+											<span class="opacity-75"><i
+                                                    class="fas fa-file-invoice-dollar me-2 ezy__epcheckout2-theme-color"></i>Store
+												Coupons</span>
+                                        <span>
+												<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+											</span>
+                                    </div>
+                                    <div class="ezy__epcheckout2-content d-flex justify-content-between align-items-center mb-1">
+                                        <span class="opacity-50">Shipping</span>
+                                        <span class="opacity-50">BDT 0.00</span>
+                                    </div>
+                                    <div class="ezy__epcheckout2-content d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold">Total</span>
+                                        <span class="fw-bold">BDT 6,638.89</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card ezy__epcheckout2-card">
+                    <div class="card-body p-md-4">
+                        <h5 class="fs-4 fw-bold mb-4">Order Summary</h5>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span><i class="fas fa-file-invoice-dollar me-2 ezy__epcheckout2-theme-color"></i>Store Coupons</span>
+                            <span>
+									<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+								</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+								<span><i class="fas fa-file-invoice-dollar me-2 ezy__epcheckout2-theme-color"></i>BusinessName
+									Coupon</span>
+                            <span>
+									<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+								</span>
+                        </div>
+
+                        <div class="mt-3">
+                            <p class="ezy__epcheckout2-content mb-1">Promo Code</p>
+                            <div class="input-group ezy__epcheckout2-promo-code">
+                                <input aria-describedby="button-addon2" aria-label="Recipient's username"
+                                       class="form-control me-2 rounded-3"
+                                       placeholder="Recipient's username" type="text">
+                                <button class="btn ezy__epcheckout2-btn-outline h-auto rounded-3" id="button-addon223"
+                                        type="button">Apply
+                                </button>
+                            </div>
+                        </div>
+
+                        <hr class="ezy__epcheckout2-hr mb-3 mt-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">Total</span>
+                            <span class="fs-4 fw-bold">US $1231.21</span>
+                        </div>
+                        <p class="ezy__epcheckout2-content text-end opacity-50 mb-0">Approximately BDT 94,856.76</p>
+
+                        <button class="btn ezy__epcheckout2-btn w-100 mt-4 fs-6">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<!--
+Name: Product Checkout 3
+-->
+<style>
+    .ezy__epcheckout3 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #F5F7FD;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 50px 0;
+        position: relative;
+    }
+
+    /* Gray Block Style */
+    .gray .ezy__epcheckout3,
+    .ezy__epcheckout3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-card-bg: rgb(255, 255, 255);
+    }
+
+    /* Dark Gray Block Style */
+    .dark-gray .ezy__epcheckout3,
+    .ezy__epcheckout3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(11, 23, 39);
+    }
+
+    /* Dark Block Style */
+    .dark .ezy__epcheckout3,
+    .ezy__epcheckout3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(30, 39, 53);
+    }
+
+    .ezy__epcheckout3 a {
+        font-weight: 500;
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: none;
+    }
+
+    .ezy__epcheckout3 a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: underline;
+    }
+
+    .ezy__epcheckout3-heading a {
+        font-size: 15px;
+        line-height: 19px;
+        font-weight: normal;
+        color: var(--bs-body-color);
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .ezy__epcheckout3-heading a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout3-price {
+        font-size: 17px;
+        color: var(--bs-body-color);
+        font-weight: 700;
+    }
+
+    .ezy__epcheckout3-old-price {
+        font-size: 14px;
+        color: var(--bs-body-color);
+        opacity: .5;
+        text-decoration: line-through;
+    }
+
+    .ezy__epcheckout3-mark {
+        padding: 2px 5px;
+        border-radius: 3px;
+        background: rgba(255, 71, 71, .1);;
+        color: rgb(255, 71, 71);
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .ezy__epcheckout3-title {
+        font-size: 15px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epcheckout3-image {
+        min-width: 50px;
+        width: 50px;
+        height: auto;
+        background-color: rgb(var(--ezy-secondary-color-rgb), .05);
+        border: 1px solid rgba(var(--ezy-secondary-color-rgb), .05);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+        .ezy__epcheckout3-image {
+            min-width: 120px;
+            width: 120px;
+        }
+    }
+
+    .ezy__epcheckout3-qty {
+        width: 100px;
+    }
+
+    .ezy__epcheckout3-qty .btn {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(var(--bs-body-color));
+        border-radius: 50% !important;
+        background-color: rgb(var(--ezy-secondary-color-rgb), .04);
+        border-color: transparent;
+        padding: 0;
+    }
+
+    .ezy__epcheckout3-qty .btn:hover {
+        background-color: rgba(var(--ezy-secondary-color-rgb), .08);
+    }
+
+    .ezy__epcheckout3-qty .form-control {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        background-color: transparent;
+        color: var(--bs-body-color);
+        border: none;
+        padding: 0;
+    }
+
+    .ezy__epcheckout3-btn,
+    .ezy__epcheckout3-btn-outline {
+        font-size: 14px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .ezy__epcheckout3-btn {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epcheckout3-btn-outline {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: transparent;
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout3-btn-outline:hover,
+    .ezy__epcheckout3-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), .9) !important;
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epcheckout3-btn-text {
+        color: var(--bs-body-color);
+        background-color: transparent;
+        min-width: 35px;
+        height: 35px;
+    }
+
+    .ezy__epcheckout3-btn-text:hover {
+        background-color: rgba(var(--ezy-secondary-color-rgb), .05);
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout3-card {
+        background-color: var(--ezy-card-bg);
+        border: none;
+        border-radius: 10px;
+    }
+
+    .ezy__epcheckout3-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb), .05);
+        opacity: 1;
+    }
+
+    .ezy__epcheckout3-content {
+        font-size: 13px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epcheckout3-theme-color {
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout3-promo-code .form-control {
+        border-color: rgb(var(--ezy-secondary-color-rgb), .1);
+        background-color: rgb(var(--ezy-secondary-color-rgb), .03);
+        color: rgb(var(--bs-body-color));
+        font-size: 14px;
+        height: 38px;
+    }
+</style>
+<section class="ezy__epcheckout3" id="ezy__epcheckout3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <div class="row">
+                    <div class="col-lg-6 mb-3">
+                        <div class="card ezy__epcheckout3-card h-100">
+                            <div class="card-body p-md-4">
+                                <h5 class="fs-6 fw-bold mb-3">Shipping Information</h5>
+
+                                <p class="ezy__epcheckout3-content">
+                                    <b>Santush Deb Nath, +880 1742031080</b> <br>
+                                    <span class="opacity-75">Iron Man Fitness Club, Zindabazar, Sylhet</span> <br>
+                                    <span class="opacity-75">Sylhet, Sylhet Sadar, Bangladesh, 3100</span>
+                                </p>
+                                <div class="ezy__epcheckout3-content">
+                                    <a class="d-inline-block mb-1" href="#!"><i class="fas fa-plus me-1 fs-5"></i>Add
+                                        New
+                                        Address</a><br>
+                                    <a href="#!">Select Other Addresses</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <div class="card ezy__epcheckout3-card h-100">
+                            <div class="card-body px-md-4">
+                                <h5 class="fs-6 fw-bold mb-3">Payment Methods</h5>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="ezy__epcheckout3-content mb-sm-0"><i
+                                                class="fab fa-cc-mastercard me-3"></i>
+                                            <span>544407******0943</span></p>
+                                    </div>
+                                    <div class="col-auto text-end ezy__epcheckout3-content">
+                                        <a href="#!">Change</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card ezy__epcheckout3-card mb-3">
+                    <div class="card-body px-md-4">
+                        <h5 class="fs-6 fw-bold mb-0">Order Review</h5>
+                    </div>
+                </div>
+                <div class="card ezy__epcheckout3-card mb-3">
+                    <div class="card-body px-md-4">
+                        <p class="ezy__epcheckout3-content mb-0">Seller: NIDIN Factory Online Store</p>
+                        <hr class="ezy__epcheckout3-hr">
+                        <div class="d-flex">
+                            <div class="me-3">
+                                <div class="ezy__epcheckout3-image">
+                                    <a href="#!">
+                                        <img alt="" class="img-fluid"
+                                             src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio8.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-12 col-xl-6 col-xxl-7">
+                                        <div class="ezy__epcheckout3-heading mb-1">
+                                            <a href="#!">
+                                                Chair Living Room Chairs For Bedroom Dining Desk Chairs Kitchen Bathroom
+                                                Silla стулья для
+                                                кухни 가구 Dinning Chair Chaise
+                                            </a>
+                                        </div>
+                                        <p class="ezy__epcheckout3-content mb-2">
+                                            <span class="me-3"><b>Color</b>: Black</span>
+                                            <span><b>Ships From</b>: China</span>
+                                        </p>
+                                        <div>
+                                            <a class="ezy__epcheckout3-content d-inline-block mb-1" href="#!"><i
+                                                    class="fas fa-plus me-1 fs-5"></i> Leave message</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-xl-3 mt-3 mt-xl-0">
+                                        <div class="mb-3">
+                                            <span class="ezy__epcheckout3-price me-2">BDT 6,638.89</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-xl-3 col-xxl-2 mt-3 mt-xl-0">
+                                        <div class="input-group ezy__epcheckout3-qty align-items-center">
+                                            <button class="btn" type="button">-</button>
+                                            <input aria-describedby="button-addon1"
+                                                   aria-label="Example text with button addon" class="form-control"
+                                                   placeholder=""
+                                                   type="text"
+                                                   value="2">
+                                            <button class="btn" type="button">+</button>
+                                        </div>
+                                        <div class="mt-3 text-center">
+                                            <button
+                                                    class="btn ezy__epcheckout3-btn-text ezy__epcheckout3-theme-color py-0 d-inline-flex justify-content-center align-items-center text-decoration-none">
+                                                <i class="fas fa-trash-alt fs-6 me-2"></i> Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="ezy__epcheckout3-hr">
+                        <div class="row justify-content-end">
+                            <div class="col-sm-10 col-md-6 col-lg-5">
+                                <div class="ezy__epcheckout3-content d-flex justify-content-between align-items-center mb-1">
+                                    <span class="opacity-50">Subtotal</span>
+                                    <span class="opacity-50">BDT 6,638.89</span>
+                                </div>
+                                <div class="ezy__epcheckout3-content d-flex justify-content-between align-items-center mb-1">
+									<span class="opacity-75"><i
+                                            class="fas fa-file-invoice-dollar me-2 ezy__epcheckout3-theme-color"></i>Store Coupons</span>
+                                    <span>
+										<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+									</span>
+                                </div>
+                                <div class="ezy__epcheckout3-content d-flex justify-content-between align-items-center mb-1">
+                                    <span class="opacity-50">Shipping</span>
+                                    <span class="opacity-50">BDT 0.00</span>
+                                </div>
+                                <div class="ezy__epcheckout3-content d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">Total</span>
+                                    <span class="fw-bold">BDT 6,638.89</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ezy__epcheckout3-card mb-3">
+                    <div class="card-body px-md-4">
+                        <p class="ezy__epcheckout3-content mb-0">Seller: NIDIN Factory Online Store</p>
+                        <hr class="ezy__epcheckout3-hr">
+                        <div class="d-flex">
+                            <div class="me-3">
+                                <div class="ezy__epcheckout3-image">
+                                    <a href="#!">
+                                        <img alt="" class="img-fluid"
+                                             src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio2.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-12 col-xl-6 col-xxl-7">
+                                        <div class="ezy__epcheckout3-heading mb-1">
+                                            <a href="#!">
+                                                Lks01 Men'S Suits Casual Collar Blazers Youthful Handsome Trend Slim Fit
+                                                Printed Blazers Plus Size Men'S Jackets
+                                            </a>
+                                        </div>
+                                        <p class="ezy__epcheckout3-content mb-2">
+                                            <span class="me-3"><b>Color</b>: Black</span>
+                                            <span><b>Ships From</b>: China</span>
+                                        </p>
+                                        <div>
+                                            <a class="ezy__epcheckout3-content d-inline-block mb-1" href="#!"><i
+                                                    class="fas fa-plus me-1 fs-5"></i> Leave message</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-xl-3 mt-3 mt-xl-0">
+                                        <div class="mb-3">
+                                            <span class="ezy__epcheckout3-price me-2">BDT 2132.43</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-xl-3 col-xxl-2 mt-3 mt-xl-0">
+                                        <div class="input-group ezy__epcheckout3-qty align-items-center">
+                                            <button class="btn" type="button">-</button>
+                                            <input aria-describedby="button-addon1"
+                                                   aria-label="Example text with button addon" class="form-control"
+                                                   placeholder=""
+                                                   type="text"
+                                                   value="2">
+                                            <button class="btn" type="button">+</button>
+                                        </div>
+                                        <div class="mt-3 text-center">
+                                            <button
+                                                    class="btn ezy__epcheckout3-btn-text ezy__epcheckout3-theme-color py-0 d-inline-flex justify-content-center align-items-center text-decoration-none">
+                                                <i class="fas fa-trash-alt fs-6 me-2"></i> Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="ezy__epcheckout3-hr">
+                        <div class="row justify-content-end">
+                            <div class="col-sm-10 col-md-6 col-lg-5">
+                                <div class="ezy__epcheckout3-content d-flex justify-content-between align-items-center mb-1">
+                                    <span class="opacity-50">Subtotal</span>
+                                    <span class="opacity-50">BDT 6,638.89</span>
+                                </div>
+                                <div class="ezy__epcheckout3-content d-flex justify-content-between align-items-center mb-1">
+									<span class="opacity-75"><i
+                                            class="fas fa-file-invoice-dollar me-2 ezy__epcheckout3-theme-color"></i>Store Coupons</span>
+                                    <span>
+										<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+									</span>
+                                </div>
+                                <div class="ezy__epcheckout3-content d-flex justify-content-between align-items-center mb-1">
+                                    <span class="opacity-50">Shipping</span>
+                                    <span class="opacity-50">BDT 0.00</span>
+                                </div>
+                                <div class="ezy__epcheckout3-content d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">Total</span>
+                                    <span class="fw-bold">BDT 23,341.21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card ezy__epcheckout3-card">
+                    <div class="card-body p-md-4">
+                        <h5 class="fs-4 fw-bold mb-4">Order Summary</h5>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span><i class="fas fa-file-invoice-dollar me-2 ezy__epcheckout3-theme-color"></i>Store Coupons</span>
+                            <span>
+									<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+								</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+								<span><i class="fas fa-file-invoice-dollar me-2 ezy__epcheckout3-theme-color"></i>BusinessName
+									Coupon</span>
+                            <span>
+									<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+								</span>
+                        </div>
+
+                        <div class="mt-3">
+                            <p class="ezy__epcheckout3-content mb-1">Promo Code</p>
+                            <div class="input-group ezy__epcheckout3-promo-code">
+                                <input aria-describedby="button-addon2" aria-label="Recipient's username"
+                                       class="form-control me-2 rounded-3"
+                                       placeholder="Recipient's username" type="text">
+                                <button class="btn ezy__epcheckout3-btn-outline h-auto rounded-3" id="button-addon224"
+                                        type="button">Apply
+                                </button>
+                            </div>
+                        </div>
+
+                        <hr class="ezy__epcheckout3-hr mb-3 mt-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">Total</span>
+                            <span class="fs-4 fw-bold">US $0.00</span>
+                        </div>
+                        <p class="ezy__epcheckout3-content text-end opacity-50 mb-0">Approximately BDT 94,856.76</p>
+
+                        <button class="btn ezy__epcheckout3-btn w-100 mt-4 fs-6">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<!--
+Name: Product Checkout 4
+-->
+<style>
+    .ezy__epcheckout4 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #F5F7FD;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 50px 0;
+        position: relative;
+    }
+
+    /* Gray Block Style */
+    .gray .ezy__epcheckout4,
+    .ezy__epcheckout4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 0, 0, 0;
+        --ezy-card-bg: rgb(255, 255, 255);
+    }
+
+    /* Dark Gray Block Style */
+    .dark-gray .ezy__epcheckout4,
+    .ezy__epcheckout4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(11, 23, 39);
+    }
+
+    /* Dark Block Style */
+    .dark .ezy__epcheckout4,
+    .ezy__epcheckout4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 255, 255, 255;
+        --ezy-card-bg: rgb(30, 39, 53);
+    }
+
+    .ezy__epcheckout4 a {
+        font-weight: 500;
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: none;
+    }
+
+    .ezy__epcheckout4 a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: underline;
+    }
+
+    .ezy__epcheckout4-heading a {
+        font-size: 15px;
+        line-height: 19px;
+        font-weight: normal;
+        color: var(--bs-body-color);
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .ezy__epcheckout4-heading a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout4-price {
+        font-size: 17px;
+        color: var(--bs-body-color);
+        font-weight: 700;
+    }
+
+    .ezy__epcheckout4-old-price {
+        font-size: 14px;
+        color: var(--bs-body-color);
+        opacity: .5;
+        text-decoration: line-through;
+    }
+
+    .ezy__epcheckout4-mark {
+        padding: 2px 5px;
+        border-radius: 3px;
+        background: rgba(255, 71, 71, .1);;
+        color: rgb(255, 71, 71);
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .ezy__epcheckout4-title {
+        font-size: 15px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epcheckout4-image {
+        min-width: 50px;
+        width: 50px;
+        height: auto;
+        background-color: rgb(var(--ezy-secondary-color-rgb), .05);
+        border: 1px solid rgba(var(--ezy-secondary-color-rgb), .05);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+        .ezy__epcheckout4-image {
+            min-width: 120px;
+            width: 120px;
+        }
+    }
+
+    .ezy__epcheckout4-qty {
+        width: 100px;
+    }
+
+    .ezy__epcheckout4-qty .btn {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(var(--bs-body-color));
+        border-radius: 50% !important;
+        background-color: rgb(var(--ezy-secondary-color-rgb), .04);
+        border-color: transparent;
+        padding: 0;
+    }
+
+    .ezy__epcheckout4-qty .btn:hover {
+        background-color: rgba(var(--ezy-secondary-color-rgb), .08);
+    }
+
+    .ezy__epcheckout4-qty .form-control {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        background-color: transparent;
+        color: var(--bs-body-color);
+        border: none;
+        padding: 0;
+    }
+
+    .ezy__epcheckout4-btn,
+    .ezy__epcheckout4-btn-outline {
+        font-size: 14px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .ezy__epcheckout4-btn {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epcheckout4-btn-outline {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: transparent;
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout4-btn-outline:hover,
+    .ezy__epcheckout4-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), .9) !important;
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epcheckout4-btn-text {
+        color: var(--bs-body-color);
+        background-color: transparent;
+        min-width: 35px;
+        height: 35px;
+    }
+
+    .ezy__epcheckout4-btn-text:hover {
+        background-color: rgba(var(--ezy-secondary-color-rgb), .05);
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout4-card {
+        background-color: var(--ezy-card-bg);
+        border: none;
+        border-radius: 10px;
+    }
+
+    .ezy__epcheckout4-delivery-card {
+        border-color: rgb(var(--ezy-secondary-color-rgb), .1);
+        background-color: rgb(var(--ezy-secondary-color-rgb), .03);
+    }
+
+    .ezy__epcheckout4-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb), .05);
+        opacity: 1;
+    }
+
+    .ezy__epcheckout4-content {
+        font-size: 13px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epcheckout4-theme-color {
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout4-promo-code .form-control {
+        border-color: rgb(var(--ezy-secondary-color-rgb), .1);
+        background-color: rgb(var(--ezy-secondary-color-rgb), .03);
+        color: rgb(var(--bs-body-color));
+        font-size: 14px;
+        height: 38px;
+    }
+</style>
+<section class="ezy__epcheckout4" id="ezy__epcheckout4">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card ezy__epcheckout4-card mb-3">
+                    <div class="card-body px-md-4">
+                        <h5 class="fs-6 fw-bold mb-0">Order Review</h5>
+                    </div>
+                </div>
+                <div class="card ezy__epcheckout4-card mb-3">
+                    <div class="card-body px-md-4">
+                        <p class="ezy__epcheckout4-content mb-0">Seller: NIDIN Factory Online Store</p>
+                        <hr class="ezy__epcheckout4-hr">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="ezy__epcheckout4-delivery-card d-flex rounded-3 mb-3 p-3">
+                                    <div class="me-2">
+                                        <i class="far fa-check-circle"></i>
+                                    </div>
+                                    <div>
+                                        <p class="fw-bold mb-2">BDT 55</p>
+                                        <p class="ezy__epcheckout4-content opacity-75 mb-0">Home Delivery</p>
+                                        <p class="ezy__epcheckout4-content opacity-75 mb-0">Estimated Delivery Time:
+                                            53-53 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="me-3">
+                                <div class="ezy__epcheckout4-image">
+                                    <a href="#!">
+                                        <img alt=""
+                                             class="img-fluid"
+                                             src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-12 col-xl-6 col-xxl-7">
+                                        <div class="ezy__epcheckout4-heading mb-1">
+                                            <a href="#!">
+                                                Forsining 3d Logo Design Hollow Engraving Black Gold Case Leather
+                                                Skeleton Mechanical Watches Men Luxury Brand Heren Horloge
+                                            </a>
+                                        </div>
+                                        <p class="ezy__epcheckout4-content mb-2">
+                                            <span class="me-3"><b>Color</b>: Black</span>
+                                            <span><b>Ships From</b>: China</span>
+                                        </p>
+                                        <div>
+                                            <a class="ezy__epcheckout4-content d-inline-block mb-1" href="#!"><i
+                                                    class="fas fa-plus me-1 fs-5"></i> Leave message</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-xl-3 mt-3 mt-xl-0">
+                                        <div class="mb-3">
+                                            <span class="ezy__epcheckout4-price me-2">BDT 6,638.89</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-xl-3 col-xxl-2 mt-3 mt-xl-0">
+                                        <div class="input-group ezy__epcheckout4-qty align-items-center">
+                                            <button class="btn" type="button">-</button>
+                                            <input aria-describedby="button-addon1"
+                                                   aria-label="Example text with button addon" class="form-control"
+                                                   placeholder=""
+                                                   type="text"
+                                                   value="2">
+                                            <button class="btn" type="button">+</button>
+                                        </div>
+                                        <div class="mt-3 text-center">
+                                            <button
+                                                    class="btn ezy__epcheckout4-btn-text ezy__epcheckout4-theme-color py-0 d-inline-flex justify-content-center align-items-center text-decoration-none">
+                                                <i class="fas fa-trash-alt fs-6 me-2"></i> Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ezy__epcheckout4-card mb-3">
+                    <div class="card-body px-md-4">
+                        <p class="ezy__epcheckout4-content mb-0">Seller: NIDIN Factory Online Store</p>
+                        <hr class="ezy__epcheckout4-hr">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="ezy__epcheckout4-delivery-card d-flex rounded-3 mb-3 p-3">
+                                    <div class="me-2">
+                                        <i class="far fa-check-circle"></i>
+                                    </div>
+                                    <div>
+                                        <p class="fw-bold mb-2">BDT 55</p>
+                                        <p class="ezy__epcheckout4-content mb-0 opacity-75">Home Delivery</p>
+                                        <p class="ezy__epcheckout4-content mb-0 opacity-75">Estimated Delivery Time:
+                                            53-53 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="me-3">
+                                <div class="ezy__epcheckout4-image">
+                                    <a href="#!">
+                                        <img alt=""
+                                             class="img-fluid"
+                                             src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio20.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-12 col-xl-6 col-xxl-7">
+                                        <div class="ezy__epcheckout4-heading mb-1">
+                                            <a href="#!">
+                                                Wholesale Hexagon Pine Solid Wood Brand Women Watch Display Box Custom
+                                                Logo Wooden Watch Luxury Box
+                                            </a>
+                                        </div>
+                                        <p class="ezy__epcheckout4-content mb-2">
+                                            <span class="me-3"><b>Color</b>: Black</span>
+                                            <span><b>Ships From</b>: China</span>
+                                        </p>
+                                        <div>
+                                            <a class="ezy__epcheckout4-content d-inline-block mb-1" href="#!"><i
+                                                    class="fas fa-plus me-1 fs-5"></i> Leave message</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-xl-3 mt-3 mt-xl-0">
+                                        <div class="mb-3">
+                                            <span class="ezy__epcheckout4-price me-2">BDT 6,638.89</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-xl-3 col-xxl-2 mt-3 mt-xl-0">
+                                        <div class="input-group ezy__epcheckout4-qty align-items-center">
+                                            <button class="btn" type="button">-</button>
+                                            <input aria-describedby="button-addon1"
+                                                   aria-label="Example text with button addon" class="form-control"
+                                                   placeholder=""
+                                                   type="text"
+                                                   value="2">
+                                            <button class="btn" type="button">+</button>
+                                        </div>
+                                        <div class="mt-3 text-center">
+                                            <button
+                                                    class="btn ezy__epcheckout4-btn-text ezy__epcheckout4-theme-color py-0 d-inline-flex justify-content-center align-items-center text-decoration-none">
+                                                <i class="fas fa-trash-alt fs-6 me-2"></i> Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card ezy__epcheckout4-card">
+                    <div class="card-body p-md-4">
+
+
+                        <h5 class="fs-5 fw-bold mb-3">Shipping & Billing</h5>
+                        <div class="ezy__epcheckout4-content d-flex mb-3">
+                            <div>
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="flex-grow-1 px-2">
+                                <p class="mb-0">Provati-73, East Pirmoholla, Amborkhana, Sylhet</p>
+                            </div>
+                            <div>
+                                <a class="fw-bold" href="#!">Edit</a>
+                            </div>
+                        </div>
+                        <div class="ezy__epcheckout4-content d-flex mb-3">
+                            <div>
+                                <i class="fas fa-file-invoice-dollar"></i>
+                            </div>
+                            <div class="flex-grow-1 px-2">
+                                <p class="mb-0">Bill to the same address</p>
+                            </div>
+                            <div>
+                                <a class="fw-bold" href="#!">Edit</a>
+                            </div>
+                        </div>
+                        <div class="ezy__epcheckout4-content d-flex mb-3">
+                            <div>
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="flex-grow-1 px-2">
+                                <p class="mb-0">1742***080</p>
+                            </div>
+                            <div>
+                                <a class="fw-bold" href="#!">Edit</a>
+                            </div>
+                        </div>
+                        <div class="ezy__epcheckout4-content d-flex mb-3">
+                            <div>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="flex-grow-1 px-2">
+                                <p class="mb-0">xyz@gmail.com</p>
+                            </div>
+                            <div>
+                                <a class="fw-bold" href="#!">Edit</a>
+                            </div>
+                        </div>
+
+                        <h5 class="fs-5 fw-bold mt-4 mb-3">Order Summary</h5>
+                        <div class="ezy__epcheckout4-content d-flex justify-content-between align-items-center mb-2">
+                            <span>Subtotal (2 Items)</span>
+                            <span>
+										BDT 6,638.89
+									</span>
+                        </div>
+                        <div class="ezy__epcheckout4-content d-flex justify-content-between align-items-center mb-2">
+                            <span>Shipping Fee</span>
+                            <span>
+										BDT 110.00
+									</span>
+                        </div>
+
+                        <div class="mt-4">
+                            <p class="ezy__epcheckout4-content mb-1">Promo Code</p>
+                            <div class="input-group ezy__epcheckout4-promo-code">
+                                <input aria-describedby="button-addon2" aria-label="Recipient's username"
+                                       class="form-control me-2 rounded-3"
+                                       placeholder="Recipient's username" type="text">
+                                <button class="btn ezy__epcheckout4-btn-outline h-auto rounded-3"
+                                        id="button-addon226"
+                                        type="button">Apply
+                                </button>
+                            </div>
+                        </div>
+
+                        <hr class="ezy__epcheckout4-hr mb-3 mt-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">Total</span>
+                            <span class="fs-4 fw-bold">US $0.00</span>
+                        </div>
+                        <p class="ezy__epcheckout4-content text-end opacity-50 mb-0">VAT included, where
+                            applicable</p>
+
+                        <button class="btn ezy__epcheckout4-btn w-100 mt-4 fs-6">Proceed to Pay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<!--
+Name: Product Checkout 5
+-->
+<style>
+    .ezy__epcheckout5 {
+        /* Bootstrap variables */
+        --bs-body-color: #23262f;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-secondary-color-rgb: 235, 235, 235;
+        --ezy-button-color: #fff;
+        --ezy-card-bg: #F5F7FD;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 50px 0;
+        position: relative;
+    }
+
+    /* Gray Block Style */
+    .gray .ezy__epcheckout5,
+    .ezy__epcheckout5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 230, 232, 236;
+        --ezy-card-bg: rgb(255, 255, 255);
+    }
+
+    /* Dark Gray Block Style */
+    .dark-gray .ezy__epcheckout5,
+    .ezy__epcheckout5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 38, 63, 99;
+        --ezy-card-bg: rgb(11, 23, 39);
+    }
+
+    /* Dark Block Style */
+    .dark .ezy__epcheckout5,
+    .ezy__epcheckout5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-secondary-color-rgb: 38, 63, 99;
+        --ezy-card-bg: rgb(30, 39, 53);
+    }
+
+    .ezy__epcheckout5 a {
+        font-weight: 500;
+        color: rgb(var(--ezy-theme-color-rgb));
+        text-decoration: none;
+    }
+
+    .ezy__epcheckout5-heading a {
+        font-size: 16px;
+        line-height: 18px;
+        color: var(--bs-body-color);
+        text-decoration: none;
+    }
+
+    .ezy__epcheckout5-heading a:hover {
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    @media (min-width: 768px) {
+        .ezy__epcheckout5-heading a {
+            font-size: 17px;
+            line-height: 19px;
+        }
+    }
+
+    .ezy__epcheckout5-price {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout5-title {
+        font-size: 15px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epcheckout5-image {
+        min-width: 50px;
+        width: 50px;
+        height: auto;
+        background-color: rgb(var(--ezy-secondary-color-rgb));
+        border: 1px solid rgba(var(--ezy-secondary-color-rgb), 1);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+        .ezy__epcheckout5-image {
+            min-width: 120px;
+            width: 120px;
+        }
+    }
+
+    .ezy__epcheckout5-qty {
+        width: 144px;
+    }
+
+    .ezy__epcheckout5-qty .btn {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout5-qty .btn:hover {
+        background-color: rgb(var(--ezy-secondary-color-rgb));
+    }
+
+    .ezy__epcheckout5-qty .btn:first-child {
+        border-radius: 50rem 0 0 50rem !important;
+    }
+
+    .ezy__epcheckout5-qty .btn:last-child {
+        border-radius: 0 50rem 50rem 0 !important;
+    }
+
+    .ezy__epcheckout5-qty .form-control {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        background-color: transparent;
+        color: var(--bs-body-color);
+        padding: 0;
+    }
+
+    .ezy__epcheckout5-qty .btn,
+    .ezy__epcheckout5-qty .form-control {
+        border-color: rgb(var(--ezy-secondary-color-rgb));
+        height: 36px;
+    }
+
+    .ezy__epcheckout5-btn,
+    .ezy__epcheckout5-btn-outline {
+        font-size: 14px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .ezy__epcheckout5-btn {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: rgb(var(--ezy-theme-color-rgb));
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epcheckout5-btn-outline {
+        border-color: rgb(var(--ezy-theme-color-rgb));
+        background-color: transparent;
+        color: rgb(var(--ezy-theme-color-rgb));
+    }
+
+    .ezy__epcheckout5-btn-outline:hover,
+    .ezy__epcheckout5-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), .9) !important;
+        color: var(--ezy-button-color);
+    }
+
+    .ezy__epcheckout5-del {
+        width: 38px;
+        height: 38px;
+        background-color: transparent;
+        color: var(--ezy-theme-color);
+    }
+
+    .ezy__epcheckout5-del:hover {
+        background-color: rgba(var(--ezy-secondary-color-rgb), .5);
+        color: var(--ezy-theme-color);
+    }
+
+    .ezy__epcheckout5-card {
+        background-color: var(--ezy-card-bg);
+        border: none;
+        border-radius: 10px;
+    }
+
+    .ezy__epcheckout5-hr {
+        background-color: rgb(var(--ezy-secondary-color-rgb));
+        opacity: 1;
+    }
+
+    .ezy__epcheckout5-promo-code .form-control {
+        border-color: rgb(var(--ezy-secondary-color-rgb), 1);
+        background-color: rgb(var(--ezy-secondary-color-rgb), .3);
+        color: rgb(var(--bs-body-color));
+        font-size: 14px;
+        height: 38px;
+    }
+
+    .ezy__epcheckout5-content {
+        font-size: 14px;
+        color: var(--bs-body-color);
+    }
+
+    .ezy__epcheckout5-theme-color {
+        color: rgba(var(--ezy-theme-color-rgb), 1);
+    }
+
+    .ezy__epcheckout5-card a,
+    .ezy__epcheckout5-content a {
+        color: var(--ezy-theme-color);
+    }
+
+    .ezy__epcheckout5-card a:hover,
+    .ezy__epcheckout5-content a:hover {
+        color: var(--ezy-theme-color);
+
+    }
+</style>
+<section class="ezy__epcheckout5" id="ezy__epcheckout5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card ezy__epcheckout5-card mb-3">
+                    <div class="card-body px-md-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="ezy__epcheckout5-content mb-0">Package 1 of 9</p>
+                            </div>
+                            <div class="col-lg-6 text-lg-end">
+                                <p class="ezy__epcheckout5-content mb-0">Shipped by <b>Md. Alamgir Chy.</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="ezy__epcheckout5-hr my-0">
+                    <div class="card-body d-flex align-items-start p-md-4">
+                        <div class="ezy__epcheckout5-image me-3 me-md-4">
+                            <a href="#!">
+                                <img alt="" class="img-fluid"
+                                     src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio16.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="ezy__epcheckout5-heading mb-2">
+                                <a href="#!">
+                                    PD-04 Carbon Fiber Insole Poron Plantar Fasciitis Arch Support Flat Feet Orthopedic
+                                    Insoles Custom Orthotics
+                                </a>
+                            </div>
+                            <p class="ezy__epcheckout5-content mb-3">
+                                <span class="me-3"><b>Color</b>: Black</span>
+                                <span><b>Ships From</b>: China</span>
+                            </p>
+                            <div>
+                                <h3 class="ezy__epcheckout5-price mb-0">Rs. 27,351</h3>
+                                <div class="input-group ezy__epcheckout5-qty mt-3">
+                                    <button class="btn px-3 py-0 d-inline-flex justify-content-center" type="button">-
+                                    </button>
+                                    <input aria-describedby="button-addon1" aria-label="Example text with button addon"
+                                           class="form-control" placeholder=""
+                                           type="text" value="2">
+                                    <button class="btn px-3 py-0 d-inline-flex justify-content-center" type="button">+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn ezy__epcheckout5-del d-inline-flex align-items-center rounded-circle"><i
+                                    class="fas fa-trash-alt fs-6"></i></button>
+                        </div>
+                    </div>
+                    <hr class="ezy__epcheckout5-hr my-0">
+                    <div class="card-body p-md-4">
+                        <div class="row justify-content-end">
+                            <div class="col-sm-10 col-md-6 col-lg-5">
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center mb-1">
+                                    <span class="opacity-75">Subtotal</span>
+                                    <span class="opacity-75">BDT 5,673.23</span>
+                                </div>
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center mb-1">
+									<span><i class="fas fa-file-invoice-dollar me-2 ezy__epcheckout5-theme-color"></i>Store
+										Coupons</span>
+                                    <span class="fw-bold">
+										<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+									</span>
+                                </div>
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center mb-1">
+                                    <span class="opacity-75">Shipping</span>
+                                    <span class="opacity-75">BDT 0.00</span>
+                                </div>
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">Total</span>
+                                    <span class="fw-bold">BDT 6,638.89</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ezy__epcheckout5-card mb-3">
+                    <div class="card-body px-md-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="ezy__epcheckout5-content mb-0">Package 2 of 4</p>
+                            </div>
+                            <div class="col-lg-6 text-lg-end">
+                                <p class="ezy__epcheckout5-content mb-0">Shipped by <b>Md. Parves Hossain</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="ezy__epcheckout5-hr my-0">
+                    <div class="card-body d-flex align-items-start p-md-4">
+                        <div class="ezy__epcheckout5-image me-3 me-md-4">
+                            <a href="#!">
+                                <img alt="" class="img-fluid"
+                                     src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio12.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="ezy__epcheckout5-heading mb-2">
+                                <a href="#!">
+                                    Factory Direct Queendom Certipur-Us Luxury Comfortable Sell Top Spring Bed 'Matress'
+                                    Hotel Mattress Springs
+                                </a>
+                            </div>
+                            <p class="ezy__epcheckout5-content mb-3">
+                                <span class="me-3"><b>Color</b>: Gray</span>
+                                <span><b>Ships From</b>: Russia</span>
+                            </p>
+                            <div>
+                                <h3 class="ezy__epcheckout5-price mb-0">Rs. 27,351</h3>
+
+                                <div class="input-group ezy__epcheckout5-qty mt-3">
+                                    <button class="btn px-3 py-0 d-inline-flex justify-content-center" type="button">-
+                                    </button>
+                                    <input aria-describedby="button-addon1" aria-label="Example text with button addon"
+                                           class="form-control" placeholder=""
+                                           type="text" value="2">
+                                    <button class="btn px-3 py-0 d-inline-flex justify-content-center" type="button">+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn ezy__epcheckout5-del d-inline-flex align-items-center rounded-circle"><i
+                                    class="fas fa-trash-alt fs-6"></i></button>
+                        </div>
+                    </div>
+                    <hr class="ezy__epcheckout5-hr my-0">
+                    <div class="card-body p-md-4">
+                        <div class="row justify-content-end">
+                            <div class="col-sm-10 col-md-6 col-lg-5">
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center mb-1">
+                                    <span class="opacity-75">Subtotal</span>
+                                    <span class="opacity-75">BDT 7,493.26</span>
+                                </div>
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center mb-1">
+									<span><i class="fas fa-file-invoice-dollar me-2 ezy__epcheckout5-theme-color"></i>Store
+										Coupons</span>
+                                    <span class="fw-bold">
+										<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+									</span>
+                                </div>
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center mb-1">
+                                    <span class="opacity-75">Shipping</span>
+                                    <span class="opacity-75">BDT 0.00</span>
+                                </div>
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">Total</span>
+                                    <span class="fw-bold">BDT 6,638.89</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ezy__epcheckout5-card mb-3">
+                    <div class="card-body px-md-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="ezy__epcheckout5-content mb-0">Package 3 of 4</p>
+                            </div>
+                            <div class="col-lg-6 text-lg-end">
+                                <p class="ezy__epcheckout5-content mb-0">Shipped by <b>Md. Shadat Rahman</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="ezy__epcheckout5-hr my-0">
+                    <div class="card-body d-flex align-items-start p-md-4">
+                        <div class="ezy__epcheckout5-image me-3 me-md-4">
+                            <a href="#!">
+                                <img alt="" class="img-fluid"
+                                     src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio3.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="ezy__epcheckout5-heading mb-2">
+                                <a href="#!">
+                                    Forsining 3d Logo Design Hollow Engraving Black Gold Case Leather Skeleton
+                                    Mechanical Watches Men Luxury Brand Heren Horloge
+                                </a>
+                            </div>
+                            <p class="ezy__epcheckout5-content mb-3">
+                                <span class="me-3"><b>Color</b>: Black</span>
+                                <span><b>Ships From</b>: China</span>
+                            </p>
+                            <div>
+                                <h3 class="ezy__epcheckout5-price mb-0">Rs. 27,351</h3>
+
+                                <div class="input-group ezy__epcheckout5-qty mt-3">
+                                    <button class="btn px-3 py-0 d-inline-flex justify-content-center" type="button">-
+                                    </button>
+                                    <input aria-describedby="button-addon1" aria-label="Example text with button addon"
+                                           class="form-control" placeholder=""
+                                           type="text" value="2">
+                                    <button class="btn px-3 py-0 d-inline-flex justify-content-center" type="button">+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn ezy__epcheckout5-del d-inline-flex align-items-center rounded-circle"><i
+                                    class="fas fa-trash-alt fs-6"></i></button>
+                        </div>
+                    </div>
+                    <hr class="ezy__epcheckout5-hr my-0">
+                    <div class="card-body p-md-4">
+                        <div class="row justify-content-end">
+                            <div class="col-sm-10 col-md-6 col-lg-5">
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center mb-1">
+                                    <span class="opacity-75">Subtotal</span>
+                                    <span class="opacity-75">BDT 6,638.89</span>
+                                </div>
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center mb-1">
+									<span><i class="fas fa-file-invoice-dollar me-2 ezy__epcheckout5-theme-color"></i>Store
+										Coupons</span>
+                                    <span class="fw-bold">
+										<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+									</span>
+                                </div>
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center mb-1">
+                                    <span class="opacity-75">Shipping</span>
+                                    <span class="opacity-75">BDT 0.00</span>
+                                </div>
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">Total</span>
+                                    <span class="fw-bold">BDT 6,638.89</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ezy__epcheckout5-card mb-3">
+                    <div class="card-body px-md-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="ezy__epcheckout5-content mb-0">Package 4 of 4</p>
+                            </div>
+                            <div class="col-lg-6 text-lg-end">
+                                <p class="ezy__epcheckout5-content mb-0">Shipped by <b>Md. Firoz Ansari</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="ezy__epcheckout5-hr my-0">
+                    <div class="card-body d-flex align-items-start p-md-4">
+                        <div class="ezy__epcheckout5-image me-3 me-md-4">
+                            <a href="#!">
+                                <img alt="" class="img-fluid"
+                                     src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio8.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="ezy__epcheckout5-heading mb-2">
+                                <a href="#!">
+                                    ABUK Home Appliance Surge Protector Voltage Brownout Plug Outlet Power Strip Surge
+                                    Protector With Pass Button
+                                </a>
+                            </div>
+                            <p class="ezy__epcheckout5-content mb-3">
+                                <span class="me-3"><b>Color</b>: Black</span>
+                                <span><b>Ships From</b>: China</span>
+                            </p>
+                            <div>
+                                <h3 class="ezy__epcheckout5-price mb-0">Rs. 27,351</h3>
+
+                                <div class="input-group ezy__epcheckout5-qty mt-3">
+                                    <button class="btn px-3 py-0 d-inline-flex justify-content-center" type="button">-
+                                    </button>
+                                    <input aria-describedby="button-addon1" aria-label="Example text with button addon"
+                                           class="form-control" placeholder=""
+                                           type="text" value="2">
+                                    <button class="btn px-3 py-0 d-inline-flex justify-content-center" type="button">+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn ezy__epcheckout5-del d-inline-flex align-items-center rounded-circle"><i
+                                    class="fas fa-trash-alt fs-6"></i></button>
+                        </div>
+                    </div>
+                    <hr class="ezy__epcheckout5-hr my-0">
+                    <div class="card-body p-md-4">
+                        <div class="row justify-content-end">
+                            <div class="col-sm-10 col-md-6 col-lg-5">
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center mb-1">
+                                    <span class="opacity-75">Subtotal</span>
+                                    <span class="opacity-75">BDT 6,638.89</span>
+                                </div>
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center mb-1">
+									<span><i class="fas fa-file-invoice-dollar me-2 ezy__epcheckout5-theme-color"></i>Store
+										Coupons</span>
+                                    <span class="fw-bold">
+										<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+									</span>
+                                </div>
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center mb-1">
+                                    <span class="opacity-75">Shipping</span>
+                                    <span class="opacity-75">BDT 0.00</span>
+                                </div>
+                                <div class="ezy__epcheckout5-content d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">Total</span>
+                                    <span class="fw-bold">BDT 6,638.89</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card ezy__epcheckout5-card">
+                    <div class="card-body p-md-4">
+                        <h5 class="fs-4 fw-bold mb-4">Order Summary</h5>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span><i class="fas fa-file-invoice-dollar me-2 ezy__epcheckout5-theme-color"></i>Store Coupons</span>
+                            <span>
+								<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+							</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+							<span><i class="fas fa-file-invoice-dollar me-2 ezy__epcheckout5-theme-color"></i>BusinessName
+								Coupon</span>
+                            <span>
+								<a href="#!">View <i class="fas fa-chevron-down ms-1"></i></a>
+							</span>
+                        </div>
+
+                        <div class="mt-3">
+                            <p class="ezy__epcheckout5-content mb-1">Promo Code
+                            </p>
+                            <div class="input-group ezy__epcheckout5-promo-code">
+                                <input aria-describedby="button-addon2" aria-label="Recipient's username"
+                                       class="form-control me-2 rounded-3"
+                                       placeholder="Recipient's username" type="text">
+                                <button class="btn ezy__epcheckout5-btn-outline h-auto rounded-3" id="button-addon2"
+                                        type="button">Apply
+                                </button>
+                            </div>
+                        </div>
+
+                        <hr class="ezy__epcheckout5-hr mb-3 mt-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">Total</span>
+                            <span class="fs-4 fw-bold">US $0.00</span>
+                        </div>
+                        <p class="ezy__epcheckout5-content text-end opacity-50 mb-0">Approximately BDT 94,856.76</p>
+
+                        <button class="btn ezy__epcheckout5-btn w-100 mt-4 fs-6">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+</body>
+</html>

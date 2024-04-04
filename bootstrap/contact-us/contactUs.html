@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us (HTML-Bootstrap)</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body class="" style="background: #000">
+    <!--
+    Name: contact 1
+-->
+    <style>
+      .ezy__contact1 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-shape-color: #363449;
+
+        background-color: var(--bs-body-bg);
+        padding: 40px 0;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__contact1,
+      .ezy__contact1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-shape-color: #3f3c53;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__contact1,
+      .ezy__contact1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-shape-color: #243141;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__contact1,
+      .ezy__contact1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-shape-color: #162231;
+      }
+
+      @media (min-width: 992px) {
+        .ezy__contact1 {
+          padding: 60px 0;
+        }
+      }
+
+      .ezy__contact1-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__contact1-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__contact1-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-bg);
+      }
+
+      .ezy__contact1-shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: var(--ezy-shape-color);
+        border-radius: 150px 50px 5px 30px;
+        transform: rotate(180deg);
+      }
+
+      @media (min-width: 991px) {
+        .ezy__contact1-shape {
+          left: -20%;
+        }
+      }
+
+      .ezy__contact1-banner {
+        border-radius: 0 100px 5px 100px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .ezy__contact1 .form-control {
+        min-height: 48px;
+        line-height: 48px;
+        border-color: transparent;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 10px;
+        color: #fff;
+      }
+
+      .ezy__contact1 .form-control:focus {
+        border-color: #86b7fe;
+        box-shadow: none;
+      }
+
+      .ezy__contact1-btn {
+        padding: 12px 30px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+        /* border-radius: 20px 5px 10px 0; */
+        color: #ffffff;
+        min-width: 120px;
+      }
+
+      .ezy__contact1-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: #ffffff;
+      }
+    </style>
+    <section class="ezy__contact1">
+      <div class="container position-relative">
+        <div class="row py-5 align-items-center">
+          <div class="col-lg-6 mb-3 mb-lg-0">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/contact/contact_1.png"
+              alt=""
+              class="img-fluid ezy__contact1-banner mx-auto"
+            />
+          </div>
+          <div class="col-lg-6 position-relative">
+            <div class="ezy__contact1-shape"></div>
+            <div class="row position-relative">
+              <div class="col-md-10 mx-auto">
+                <div class="ezy__contact1-content rounded text-white my-5 py-4">
+                  <div class="mb-5">
+                    <h2 class="ezy__contact1-heading mb-3 mt-0">Contact Us</h2>
+                    <p class="ezy__contact1-sub-heading mb-0 text-white">
+                      We list your menu online, help you process orders.
+                    </p>
+                  </div>
+                  <form class="pe-md-4">
+                    <div class="form-group mb-3">
+                      <input type="text" class="form-control" placeholder="Enter Name" />
+                    </div>
+                    <div class="form-group mb-3">
+                      <input type="email" class="form-control" placeholder="Enter Email" />
+                    </div>
+                    <div class="form-group mb-3">
+                      <textarea name="message" class="form-control" placeholder="Enter Message" rows="4"></textarea>
+                    </div>
+                    <div class="text-end">
+                      <button type="submit" class="btn ezy__contact1-btn mb-3">Send</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: contact 2
+-->
+    <style>
+      .ezy__contact2 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #ffffff;
+        --ezy-form-card-shadow: 0 16px 24px rgba(197, 206, 222, 0.25);
+
+        background-color: var(--bs-body-bg);
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__contact2,
+      .ezy__contact2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #f6f6f6;
+        --ezy-form-card-shadow: 0 16px 24px rgba(197, 206, 222, 0.25);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__contact2,
+      .ezy__contact2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #1c2734;
+        --ezy-form-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__contact2,
+      .ezy__contact2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+        --ezy-form-card-shadow: none;
+      }
+
+      .ezy__contact2-bg-holder {
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 60px 0;
+      }
+
+      .ezy__contact2-title {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__contact2-title {
+          font-size: 40px;
+          line-height: 40px;
+        }
+      }
+
+      .ezy__contact2-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__contact2-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__contact2-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__contact2-form-card {
+        background-color: var(--ezy-form-card-bg);
+        border: none;
+        margin-bottom: -342px !important;
+        box-shadow: var(--ezy-form-card-shadow);
+        border-radius: 15px;
+      }
+
+      .ezy__contact2-blank-card {
+        height: 342px;
+      }
+
+      .ezy__contact2 .form-control {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__contact2 .form-control:focus {
+        border-color: #86b7fe;
+        box-shadow: none;
+      }
+
+      .ezy__contact2-btn {
+        padding: 12px 30px;
+        color: #ffffff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__contact2-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: #ffffff;
+      }
+    </style>
+    <section class="ezy__contact2">
+      <div
+        class="ezy__contact2-bg-holder"
+        style="background-image: url('https://cdn.easyfrontend.com/pictures/contact/contact_2_1.png')"
+      >
+        <div class="container">
+          <div class="row py-4 justify-content-between">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <h2 class="ezy__contact2-title mb-3 mt-0 text-white">How can we help you?</h2>
+              <p class="ezy__contact2-sub-heading mb-0 text-white">
+                It’s easier to reach your savings goals when you have the right savings account. Take a look and find
+                the right one for you!
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <div class="card ezy__contact2-form-card">
+                <div class="card-body p-md-5">
+                  <h2 class="ezy__contact2-heading mb-3">Contact Us</h2>
+                  <p class="ezy__contact2-sub-heading mb-5">We list your menu online, help you process orders.</p>
+
+                  <form>
+                    <div class="form-group mb-3 mt-2">
+                      <input type="text" class="form-control" placeholder="Enter Name" />
+                    </div>
+                    <div class="form-group mb-3 mt-2">
+                      <input type="email" class="form-control" placeholder="Enter Email" />
+                    </div>
+                    <div class="form-group mb-3">
+                      <textarea name="message" class="form-control" placeholder="Enter Message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn ezy__contact2-btn w-100">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ezy__contact2-blank-card"></div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: contact 3
+-->
+    <style>
+      .ezy__contact3 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #ffffff;
+        --ezy-form-card-shadow: 0 16px 24px rgba(197, 206, 222, 0.25);
+
+        background-color: var(--bs-body-bg);
+
+        padding: 70px 0;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__contact3,
+      .ezy__contact3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* easy frontend variables */
+        --ezy-form-card-bg: #f6f6f6;
+        --ezy-form-card-shadow: 0 16px 24px rgba(197, 206, 222, 0.25);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__contact3,
+      .ezy__contact3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #233245;
+        --ezy-form-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__contact3,
+      .ezy__contact3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+        --ezy-form-card-shadow: none;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__contact3 {
+          padding: 100px 0;
+        }
+      }
+
+      .ezy__contact3-bg-holder {
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 150px;
+      }
+
+      .ezy__contact3-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__contact3-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__contact3-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__contact3-form-card {
+        background-color: var(--ezy-form-card-bg);
+        border: none;
+        box-shadow: var(--ezy-form-card-shadow);
+        border-radius: 15px;
+      }
+
+      .ezy__contact3-bg-holder {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+      }
+
+      .ezy__contact3 .form-control {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__contact3 .form-control:focus {
+        border-color: #86b7fe;
+        box-shadow: none;
+      }
+
+      .ezy__contact3-btn {
+        padding: 12px 30px;
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__contact3-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: #ffffff;
+      }
+    </style>
+    <section class="ezy__contact3">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-lg-7 order-lg-2 mb-3 mb-lg-0">
+            <div
+              class="ezy__contact3-bg-holder h-100"
+              style="background-image: url(https://cdn.easyfrontend.com/pictures/contact/contact_3.png)"
+            ></div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card ezy__contact3-form-card">
+              <div class="card-body p-md-5">
+                <h2 class="ezy__contact3-heading mb-3">Contact Us</h2>
+                <p class="ezy__contact3-sub-heading mb-5">We list your menu online, help you process orders.</p>
+
+                <form>
+                  <div class="form-group mb-3 mt-2">
+                    <input type="text" class="form-control" placeholder="Enter Name" />
+                  </div>
+                  <div class="form-group mb-3 mt-2">
+                    <input type="email" class="form-control" placeholder="Enter Email" />
+                  </div>
+                  <div class="form-group mb-3">
+                    <textarea name="message" class="form-control" placeholder="Enter Message" rows="3"></textarea>
+                  </div>
+                  <div class="text-end">
+                    <button type="submit" class="btn ezy__contact3-btn">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: contact 4
+-->
+    <style>
+      .ezy__contact4 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #ffffff;
+        --ezy-form-card-shadow: 0 16px 24px rgba(197, 206, 222, 0.25);
+
+        background-color: var(--bs-body-bg);
+
+        padding: 70px 0;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__contact4,
+      .ezy__contact4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+        --ezy-form-card-bg: #f6f6f6;
+        --ezy-form-card-shadow: 0 16px 24px rgba(197, 206, 222, 0.25);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__contact4,
+      .ezy__contact4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #1f2c3c;
+        --ezy-form-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__contact4,
+      .ezy__contact4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+        --ezy-form-card-shadow: none;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__contact4 {
+          padding: 100px 0;
+        }
+      }
+
+      .ezy__contact4-bg-holder {
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 150px;
+      }
+
+      .ezy__contact4-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__contact4-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__contact4-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__contact4-form-card {
+        background-color: var(--ezy-form-card-bg);
+        border: none;
+        box-shadow: var(--ezy-form-card-shadow);
+        border-radius: 15px;
+      }
+
+      .ezy__contact4-bg-holder {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+      }
+
+      .ezy__contact4 .form-control {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__contact4 .form-control:focus {
+        border-color: #86b7fe;
+        box-shadow: none;
+      }
+
+      .ezy__contact4-btn {
+        padding: 12px 30px;
+        color: #ffffff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__contact4-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: #ffffff;
+      }
+    </style>
+    <section class="ezy__contact4">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-lg-7 mb-3 mb-lg-0">
+            <div
+              class="ezy__contact4-bg-holder h-100"
+              style="background-image: url(https://cdn.easyfrontend.com/pictures/contact/contact_4.png)"
+            ></div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card ezy__contact4-form-card">
+              <div class="card-body p-md-5">
+                <h2 class="ezy__contact4-heading mb-3">Contact Us</h2>
+                <p class="ezy__contact4-sub-heading mb-5">We list your menu online, help you process orders.</p>
+
+                <form>
+                  <div class="form-group mb-3 mt-2">
+                    <input type="text" class="form-control" placeholder="Enter Name" />
+                  </div>
+                  <div class="form-group mb-3 mt-2">
+                    <input type="email" class="form-control" placeholder="Enter Email" />
+                  </div>
+                  <div class="form-group mb-3">
+                    <textarea name="message" class="form-control" placeholder="Enter Message" rows="3"></textarea>
+                  </div>
+                  <div>
+                    <button type="submit" class="btn btn-primary ezy__contact4-btn">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

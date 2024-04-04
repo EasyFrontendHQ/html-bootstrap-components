@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!-- epother 1 -->
+    <style>
+      .ezy__epother1 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+        padding: 60px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epother1 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epother1,
+      .ezy__epother1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-body-color-invert: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epother1,
+      .ezy__epother1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-body-color-invert: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epother1,
+      .ezy__epother1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-body-color-invert: rgb(11, 23, 39);
+      }
+
+      .ezy__epother1-item {
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .ezy__epother1-cards [class*="col-"]:nth-of-type(1n) .ezy__epother1-item {
+        background-color: rgb(15, 115, 187);
+      }
+
+      .ezy__epother1-cards [class*="col-"]:nth-of-type(2n) .ezy__epother1-item {
+        background-color: rgb(245, 145, 12);
+      }
+
+      .ezy__epother1-cards [class*="col-"]:nth-of-type(3n) .ezy__epother1-item {
+        background-color: rgb(202, 51, 138);
+      }
+
+      .ezy__epother1-item-shape {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 200px;
+        height: 200px;
+        clip-path: polygon(100% 40%, 10% 100%, 100% 100%);
+        z-index: -1;
+      }
+      .ezy__epother1-cards [class*="col-"]:nth-of-type(1n) .ezy__epother1-item-shape {
+        background-color: rgb(41, 130, 194);
+      }
+
+      .ezy__epother1-cards [class*="col-"]:nth-of-type(2n) .ezy__epother1-item-shape {
+        background-color: rgb(249, 155, 31);
+      }
+
+      .ezy__epother1-cards [class*="col-"]:nth-of-type(3n) .ezy__epother1-item-shape {
+        background-color: rgb(216, 68, 153);
+      }
+
+      .ezy__epother1-line-one {
+        position: absolute;
+        right: 30px;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.35);
+        z-index: 1;
+      }
+      .ezy__epother1-line-two {
+        position: absolute;
+        left: 0;
+        top: 30px;
+        height: 1px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.35);
+        z-index: 1;
+      }
+      .ezy__epother1-item-content p {
+        line-height: 1.8;
+      }
+
+      .ezy__epother1-cards [class*="col-"]:nth-of-type(1n) .ezy__epother1-btn {
+        color: rgb(41, 130, 194);
+      }
+
+      .ezy__epother1-cards [class*="col-"]:nth-of-type(2n) .ezy__epother1-btn {
+        color: rgb(249, 155, 31);
+      }
+
+      .ezy__epother1-cards [class*="col-"]:nth-of-type(3n) .ezy__epother1-btn {
+        color: rgb(216, 68, 153);
+      }
+      .ezy__epother1-btn {
+        padding: 8px 30px;
+        background-color: #fff;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+    </style>
+    <section class="ezy__epother1">
+      <div class="container">
+        <div class="row ezy__epother1-cards">
+          <div class="col-12 col-lg-4 mt-5">
+            <div class="ezy__epother1-item position-relative p-5 pb-4">
+              <div class="ezy__epother1-item-shape"></div>
+              <div class="ezy__epother1-line-one"></div>
+              <div class="ezy__epother1-line-two"></div>
+              <div class="ezy__epother1-item-content">
+                <h3 class="fw-bold mb-0">Magic Toys</h3>
+                <p class="mt-3 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna.
+                </p>
+                <button class="btn ezy__epother1-btn mb-3">Shop Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 mt-5">
+            <div class="ezy__epother1-item position-relative p-5 pb-4">
+              <div class="ezy__epother1-item-shape"></div>
+              <div class="ezy__epother1-line-one"></div>
+              <div class="ezy__epother1-line-two"></div>
+              <div class="ezy__epother1-item-content">
+                <h3 class="fw-bold mb-0">Magic Toys</h3>
+                <p class="mt-3 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna.
+                </p>
+                <button class="btn ezy__epother1-btn mb-3">Shop Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 mt-5">
+            <div class="ezy__epother1-item position-relative p-5 pb-4">
+              <div class="ezy__epother1-item-shape"></div>
+              <div class="ezy__epother1-line-one"></div>
+              <div class="ezy__epother1-line-two"></div>
+              <div class="ezy__epother1-item-content">
+                <h3 class="fw-bold mb-0">Magic Toys</h3>
+                <p class="mt-3 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna.
+                </p>
+                <button class="btn ezy__epother1-btn mb-3">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!-- epother 2 -->
+    <style>
+      .ezy__epother2 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+        padding: 60px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epother2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epother2,
+      .ezy__epother2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epother2,
+      .ezy__epother2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epother2,
+      .ezy__epother2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__epother2-card {
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+      }
+
+      .ezy__epother2-heading {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.2;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epother2-heading {
+          font-size: 46px;
+        }
+      }
+      .ezy__epother2-sub-heading {
+        font-size: 17px;
+        line-height: 1.7;
+        opacity: 0.8;
+      }
+
+      .ezy__epother2-btn {
+        padding: 12px 35px;
+        line-height: 1;
+        font-weight: bold;
+        background-color: #fff;
+        color: #98bcb6;
+        border-radius: 8px;
+      }
+      .ezy__epother2-btn:hover {
+        color: #98bcb6;
+      }
+    </style>
+    <section class="ezy__epother2">
+      <div class="container">
+        <div
+          class="ezy__epother2-card"
+          style="background-image: url(https://cdn.easyfrontend.com/pictures/subscription1-bg.png)"
+        >
+          <div class="row p-5">
+            <div class="col-12 col-lg-8">
+              <div class="p-3 p-md-4 p-lg-5">
+                <h2 class="ezy__epother2-heading mb-0">Get 50% off On all products</h2>
+                <div class="row">
+                  <div class="col-12 col-lg-10">
+                    <p class="ezy__epother2-sub-heading my-4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+                <button class="btn ezy__epother2-btn mt-2">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!-- epother 3 -->
+    <style>
+      .ezy__epother3 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-color: 255, 37, 86;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+        padding: 60px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epother3 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epother3,
+      .ezy__epother3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epother3,
+      .ezy__epother3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epother3,
+      .ezy__epother3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__epother3-heading {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.2;
+        color: rgba(var(--ezy-item-color), 1);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epother3-heading {
+          font-size: 40px;
+        }
+      }
+
+      .ezy__epother3-sub-heading {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 1;
+      }
+
+      .ezy__epother3-item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 400px;
+        border-radius: 15px;
+      }
+      .ezy__epother3-btn {
+        background-color: #fff;
+        color: rgba(var(--ezy-item-color), 1);
+        padding: 13px 35px;
+        line-height: 1;
+        border-radius: 10px;
+      }
+      .ezy__epother3-btn:hover {
+        color: rgba(var(--ezy-item-color), 0.9);
+      }
+
+      .ezy__epother3-card {
+        color: #ffc107;
+        border-radius: 10px;
+        background-color: #fff;
+      }
+      .ezy__epother3-fill-btn {
+        background-color: rgba(var(--ezy-item-color), 1);
+        color: #fff;
+        padding: 13px 35px;
+        line-height: 1;
+        border-radius: 10px;
+      }
+      .ezy__epother3-fill-btn:hover {
+        background-color: rgba(var(--ezy-item-color), 0.9);
+        color: #fff;
+      }
+    </style>
+    <section class="ezy__epother3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div
+              class="ezy__epother3-item d-flex flex-column align-items-center justify-content-end"
+              style="background-image: url(https://cdn.easyfrontend.com/pictures/discount1-bg.png)"
+            >
+              <h1 class="ezy__epother3-heading mb-0">Accesssories</h1>
+              <p class="ezy__epother3-sub-heading mt-2 mb-4">Up to 60% off</p>
+              <button class="btn ezy__epother3-btn fw-bold mb-5">Shop Now</button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mt-5 mt-md-0">
+            <div
+              class="ezy__epother3-item d-flex align-items-center p-4 p-md-5"
+              style="background-image: url(https://cdn.easyfrontend.com/pictures/discount2-bg.png)"
+            >
+              <div class="row">
+                <div class="col-12 text-center">
+                  <div class="ezy__epother3-card p-4">
+                    <h2 class="mb-0 fw-bold">
+                      Spring into <br />
+                      Action
+                    </h2>
+                  </div>
+                  <button class="btn ezy__epother3-fill-btn fw-bold mt-4">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!-- epother 4 -->
+    <style>
+      .ezy__epother4 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+        padding: 60px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epother4 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epother4,
+      .ezy__epother4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epother4,
+      .ezy__epother4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epother4,
+      .ezy__epother4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__epother4-heading {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.2;
+        color: rgba(var(--ezy-item-color), 1);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epother4-heading {
+          font-size: 40px;
+        }
+      }
+
+      .ezy__epother4-sub-heading {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+
+      .ezy__epother4-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        opacity: 0;
+        transition: 0.5s;
+        z-index: 1;
+      }
+      .ezy__epother4-img:hover .ezy__epother4-overlay {
+        opacity: 1;
+      }
+      .ezy__epother4-overlay-content {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+      }
+
+      .ezy__epother4-overlay-content .btn {
+        color: #fff !important;
+      }
+
+      .ezy__epother4-img {
+        border-radius: 10px;
+        overflow: hidden;
+      }
+    </style>
+    <section class="ezy__epother4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div>
+              <h1 class="ezy__epother4-heading">#mychildrensplace</h1>
+              <div class="row mb-4">
+                <div class="col-12 col-lg-10">
+                  <p class="ezy__epother4-sub-heading mt-2 mb-0">
+                    Show us how you’re celebrating every big & small occasion, in style!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- item -->
+          <div class="col-12 col-sm-6 col-lg-2 mt-4">
+            <div class="ezy__epother4-img position-relative w-100">
+              <img src="https://cdn.easyfrontend.com/pictures/child-1.png" alt="" class="w-100" />
+              <div class="ezy__epother4-overlay">
+                <div class="ezy__epother4-overlay-content d-flex align-items-center">
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-12 col-sm-6 col-lg-2 mt-4">
+            <div class="ezy__epother4-img position-relative w-100">
+              <img src="https://cdn.easyfrontend.com/pictures/child-2.png" alt="" class="w-100" />
+              <div class="ezy__epother4-overlay">
+                <div class="ezy__epother4-overlay-content d-flex align-items-center">
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-12 col-sm-6 col-lg-2 mt-4">
+            <div class="ezy__epother4-img position-relative w-100">
+              <img src="https://cdn.easyfrontend.com/pictures/child-3.png" alt="" class="w-100" />
+              <div class="ezy__epother4-overlay">
+                <div class="ezy__epother4-overlay-content d-flex align-items-center">
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-12 col-sm-6 col-lg-2 mt-4">
+            <div class="ezy__epother4-img position-relative w-100">
+              <img src="https://cdn.easyfrontend.com/pictures/child-4.png" alt="" class="w-100" />
+              <div class="ezy__epother4-overlay">
+                <div class="ezy__epother4-overlay-content d-flex align-items-center">
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-12 col-sm-6 col-lg-2 mt-4">
+            <div class="ezy__epother4-img position-relative w-100">
+              <img src="https://cdn.easyfrontend.com/pictures/child-5.png" alt="" class="w-100" />
+              <div class="ezy__epother4-overlay">
+                <div class="ezy__epother4-overlay-content d-flex align-items-center">
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="col-12 col-sm-6 col-lg-2 mt-4">
+            <div class="ezy__epother4-img position-relative w-100">
+              <img src="https://cdn.easyfrontend.com/pictures/child-2.png" alt="" class="w-100" />
+              <div class="ezy__epother4-overlay">
+                <div class="ezy__epother4-overlay-content d-flex align-items-center">
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                  <button class="btn ezy__epother4-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name: ep other 5
+-->
+    <style>
+      .ezy__epother5 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 992px) {
+        .ezy__epother5 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epother5,
+      .ezy__epother5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epother5,
+      .ezy__epother5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epother5,
+      .ezy__epother5.dark {
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__epother5-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epother5-heading {
+          font-size: 45px;
+        }
+      }
+
+      .ezy__epother5-sub-heading {
+        font-size: 18px !important;
+        line-height: 1.5;
+      }
+
+      .ezy__epother5 .card {
+        background-color: transparent;
+      }
+
+      .ezy__epother5 p {
+        font-size: 17px;
+        opacity: 0.7;
+      }
+    </style>
+    <section class="ezy__epother5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 text-center">
+            <h1 class="ezy__epother5-heading">Know about our product</h1>
+            <p class="ezy__epother5-sub-heading my-4 mx-lg-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec consequat lorem. Maecenas elementum
+              at diam consequat bibendum uisque nec consequat lorem.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="card border-0 mt-5">
+              <div class="card-body py-3">
+                <div class="text-center mt-lg-3">
+                  <img
+                    src="https://cdn.easyfrontend.com/pictures/ecommerce/feature1_1.png"
+                    alt=""
+                    class="img-fluid rounded"
+                  />
+                </div>
+                <p class="mt-3 mx-lg-3">
+                  Series overview Introduction to colors The colortbl package The xcolor package The colortab package.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card border-0 mt-5">
+              <div class="card-body py-3">
+                <div class="text-center mt-lg-3">
+                  <img
+                    src="https://cdn.easyfrontend.com/pictures/ecommerce/feature1_2.png"
+                    alt=""
+                    class="img-fluid rounded"
+                  />
+                </div>
+                <p class="mt-3 mx-lg-3">
+                  Series overview Introduction to colors The colortbl package The xcolor package The colortab package.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

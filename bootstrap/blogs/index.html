@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs(HTML-Bootstrap)</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body style="background: #000">
+    <!--
+    Name: Blog 1
+ -->
+    <style>
+      .ezy__blog1 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* easy frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0 25px 41px rgba(89, 88, 109, 0.15);
+
+        background-color: var(--bs-body-bg);
+        padding: 70px 0;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__blog2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__blog1,
+      .ezy__blog1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* easy frontend variables */
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0px 8px 44px rgba(182, 198, 222, 0.48);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__blog1,
+      .ezy__blog1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(241, 241, 241);
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(11, 23, 39);
+        --ezy-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__blog1,
+      .ezy__blog1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(255, 255, 255);
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: none;
+      }
+
+      /* heading and sub-heading */
+      .ezy__blog1-heading {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__blog1-sub-heading {
+        color: var(--bs-body-color);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        opacity: 0.8;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__blog1-heading {
+          font-size: 45px;
+        }
+      }
+
+      .ezy__blog1-post {
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+      }
+
+      .ezy__blog1-calendar {
+        background-color: var(--ezy-card-bg);
+        color: var(--bs-body-color);
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 24px;
+        border-radius: 0 0 10px 0;
+      }
+
+      .ezy__blog1-title {
+        font-weight: 500;
+        margin-top: 0 !important;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__blog1-description {
+        color: var(--bs-body-color);
+        opacity: 0.6;
+      }
+
+      .ezy__blog1-btn {
+        padding: 12px 30px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__blog1-btn:hover {
+        color: #ffffff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__blog1-btn-read-more {
+        padding: 7px 20px;
+        color: var(--bs-body-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__blog1-btn-read-more:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: #ffffff;
+      }
+
+      .ezy__blog1-author a {
+        color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__blog1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="px-lg-5">
+              <h2 class="ezy__blog1-heading mb-3">A Guide to Latest in Fashion</h2>
+              <p class="ezy__blog1-sub-heading mb-5">
+                Vitae bibendum egestas magna sit elit non. Netus volutpat dignissim pharetra felis. Orci commodo mauris
+                adipiscing semper amet.
+              </p>
+              <a href="#!" class="btn btn-primary ezy__blog1-btn">All Posts</a>
+            </div>
+          </div>
+          <div class="col-lg-7 mt-4 mt-md-0">
+            <div class="row">
+              <div class="col-12 col-md-6 mb-3">
+                <article class="ezy__blog1-post h-100">
+                  <div class="position-relative">
+                    <img
+                      src="https://cdn.easyfrontend.com/pictures/blog/blog_13_2.jpg"
+                      alt=""
+                      class="img-fluid w-100"
+                    />
+                    <div class="position-absolute top-0 start-0 px-4 py-3 fw-bold ezy__blog1-calendar">
+                      26<br />Oct<br />2016
+                    </div>
+                  </div>
+                  <div class="p-3 p-md-4">
+                    <p class="ezy__blog1-author">By <a href="" class="text-decoration-none">Abraham Leo</a></p>
+                    <h4 class="mt-3 ezy__blog1-title fs-4 mb-3">How I’m Styling Everyday Black Outfits</h4>
+                    <p class="ezy__blog1-description mb-4">
+                      It’s no secret that the digital industry is booming. From exciting startups.
+                    </p>
+                    <a href="" class="btn ezy__blog1-btn-read-more">Read More</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <article class="ezy__blog1-post h-100">
+                  <div class="w-100 position-relative mx-auto">
+                    <img src="https://cdn.easyfrontend.com/pictures/blog/blog_3.jpg" alt="" class="img-fluid w-100" />
+                    <div class="position-absolute top-0 start-0 px-4 py-3 fw-bold ezy__blog1-calendar">
+                      26<br />Oct<br />2016
+                    </div>
+                  </div>
+                  <div class="p-3 p-md-4">
+                    <p class="ezy__blog1-author">By <a href="" class="text-decoration-none">Mahws Georgia</a></p>
+                    <h4 class="mt-3 ezy__blog1-title fs-4 mb-3">Not Your Regular Home Decoration Trends</h4>
+                    <p class="ezy__blog1-description mb-4">
+                      Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores.
+                    </p>
+                    <a href="" class="btn ezy__blog1-btn-read-more">Read More</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Blog 2
+ -->
+    <style>
+      .ezy__blog2 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: #fff;
+
+        /* easy frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0 25px 41px rgba(89, 88, 109, 0.15);
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__blog2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__blog2,
+      .ezy__blog2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* easy frontend variables */
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0px 8px 44px rgba(182, 198, 222, 0.48);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__blog2,
+      .ezy__blog2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(241, 241, 241);
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(11, 23, 39);
+        --ezy-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__blog2,
+      .ezy__blog2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(255, 255, 255);
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: none;
+      }
+
+      /* heading and sub-heading */
+      .ezy__blog2-heading {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__blog2-sub-heading {
+        color: var(--bs-body-color);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        opacity: 0.8;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__blog2-heading {
+          font-size: 45px;
+        }
+      }
+
+      .ezy__blog2-post {
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+      }
+
+      .ezy__blog2-title {
+        font-weight: 500;
+        margin-top: 0 !important;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__blog2-description {
+        color: var(--bs-body-color);
+        opacity: 0.6;
+      }
+
+      .ezy__blog2-btn {
+        padding: 12px 30px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__blog2-btn:hover {
+        color: #ffffff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__blog2-btn-read-more {
+        padding: 7px 20px;
+        color: var(--bs-body-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__blog2-btn-read-more:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: #ffffff;
+      }
+
+      .ezy__blog2-author a {
+        color: var(--ezy-theme-color);
+        opacity: 0.7;
+      }
+    </style>
+    <section class="ezy__blog2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="ezy__blog2-heading mb-3 mt-0">HOME TOUR: SUMMER DECORATION</h2>
+            <p class="ezy__blog2-sub-heading px-lg-5 mb-4">
+              Banking crises have developed many times throughout history when one or more risks have emerged for a
+              banking sector as a whole.
+            </p>
+            <a href="" class="btn ezy__blog2-btn">All Posts</a>
+          </div>
+        </div>
+        <div class="row mt-3 mt-md-5">
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <article class="ezy__blog2-post rounded overflow-hidden h-100">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_1.jpg" alt="" class="img-fluid w-100" />
+              <div class="p-3 p-md-4">
+                <h4 class="ezy__blog2-title fs-4 mb-2">Not Your Regular Home Decoration?</h4>
+                <p class="ezy__blog2-author">
+                  <span class="me-2">By <a href="" class="text-decoration-none">John Leo</a></span>
+                  <span>At <span>21 Jun, 2022</span></span>
+                </p>
+                <p class="ezy__blog2-description mt-3 mb-4">
+                  Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores.
+                </p>
+                <a href="" class="btn ezy__blog2-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <article class="ezy__blog2-post rounded overflow-hidden h-100">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_2.jpg" alt="" class="img-fluid w-100" />
+              <div class="p-3 p-md-4">
+                <h4 class="ezy__blog2-title fs-4 mb-2">Long lasting fall scent for women sale offer</h4>
+                <p class="ezy__blog2-author">
+                  <span class="me-2">By <a href="" class="text-decoration-none">Abraham Frin</a></span>
+                  <span>At <span>21 Jun, 2022</span></span>
+                </p>
+                <p class="ezy__blog2-description mt-3 mb-4">
+                  It’s no secret that the digital industry is booming. From exciting startups to global brands.
+                </p>
+                <a href="" class="btn ezy__blog2-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <article class="ezy__blog2-post rounded overflow-hidden h-100">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_3.jpg" alt="" class="img-fluid w-100" />
+              <div class="p-3 p-md-4">
+                <h4 class="ezy__blog2-title fs-4 mb-2">How I’m Styling Everyday Black Outfits</h4>
+                <p class="ezy__blog2-author">
+                  <span class="me-2">By <a href="" class="text-decoration-none">Finn Alen</a></span>
+                  <span>At <span>21 Jun, 2022</span></span>
+                </p>
+                <p class="ezy__blog2-description mt-3 mb-4">
+                  Viverra tellus in hac habitasse platea dictumst. Sollicitudin tempor id eu nisl.
+                </p>
+                <a href="" class="btn ezy__blog2-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <article class="ezy__blog2-post rounded overflow-hidden h-100">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_4.jpg" alt="" class="img-fluid w-100" />
+              <div class="p-3 p-md-4">
+                <h4 class="ezy__blog2-title fs-4 mb-2">Fashion Essentials All Men Should Know</h4>
+                <p class="ezy__blog2-author">
+                  <span class="me-2">By <a href="" class="text-decoration-none">Warner Mac</a></span>
+                  <span>At <span>21 Jun, 2022</span></span>
+                </p>
+                <p class="ezy__blog2-description mt-3 mb-4">
+                  Sed ut in perspiciatis unde omnis iste natus error sit tatem doloremque laudantium.
+                </p>
+                <a href="" class="btn ezy__blog2-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <article class="ezy__blog2-post rounded overflow-hidden h-100">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_13_3.jpg" alt="" class="img-fluid w-100" />
+              <div class="p-3 p-md-4">
+                <h4 class="ezy__blog2-title fs-4 mb-2">Dolor sit amet, adiplscing eliyt sed</h4>
+                <p class="ezy__blog2-author">
+                  <span class="me-2">By <a href="" class="text-decoration-none">Maxy Paulo</a></span>
+                  <span>At <span>21 Jun, 2022</span></span>
+                </p>
+                <p class="ezy__blog2-description mt-3 mb-4">
+                  More off this less hello salamander lied porpoise much over tightly circa horse taped.
+                </p>
+                <a href="" class="btn ezy__blog2-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <article class="ezy__blog2-post rounded overflow-hidden h-100">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_13_1.jpg" alt="" class="img-fluid w-100" />
+              <div class="p-3 p-md-4">
+                <h4 class="ezy__blog2-title fs-4 mb-2">Not Your Regular Home Decoration?</h4>
+                <p class="ezy__blog2-author">
+                  <span class="me-2">By <a href="" class="text-decoration-none">Sarah Taylor</a></span>
+                  <span>At <span>21 Jun, 2022</span></span>
+                </p>
+                <p class="ezy__blog2-description mt-3 mb-4">
+                  Urna molestie at eleme ntum eu facilisis sed odio Male suada fames .
+                </p>
+                <a href="" class="btn ezy__blog2-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Blog 3
+ -->
+    <style>
+      .ezy__blog3 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: #fff;
+
+        /* easy frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0 25px 41px rgba(89, 88, 109, 0.15);
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__blog3 {
+          /* Bootstrap variables */
+          --bs-body-color: #000;
+          --bs-body-bg: rgb(255, 255, 255);
+
+          /* Easy Frontend variables */
+          --ezy-theme-color: rgb(13, 110, 253);
+          --ezy-theme-color-rgb: 13, 110, 253;
+          --ezy-card-bg: #ffffff;
+
+          background-color: var(--bs-body-bg);
+          padding: 70px 0;
+          color: var(--bs-body-color);
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__blog3,
+      .ezy__blog3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* easy frontend variables */
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0px 8px 44px rgba(182, 198, 222, 0.48);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__blog3,
+      .ezy__blog3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(241, 241, 241);
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(11, 23, 39);
+        --ezy-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__blog3,
+      .ezy__blog3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(255, 255, 255);
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: none;
+      }
+
+      /* heading and sub-heading */
+      .ezy__blog3-heading {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__blog3-sub-heading {
+        color: var(--bs-body-color);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        opacity: 0.8;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__blog3-heading {
+          font-size: 45px;
+        }
+      }
+
+      .ezy__blog3-post {
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+      }
+
+      .ezy__blog3-calendar {
+        background-color: var(--ezy-card-bg);
+        color: var(--bs-body-color);
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 24px;
+        border-radius: 0 0 10px 0;
+      }
+
+      .ezy__blog3-author {
+        color: var(--bs-body-color) !important;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0;
+      }
+
+      .ezy__blog3-title {
+        font-weight: 500;
+        margin-top: 0 !important;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__blog3-description {
+        color: var(--bs-body-color);
+        opacity: 0.6;
+      }
+
+      .ezy__blog3-btn {
+        padding: 12px 30px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__blog3-btn:hover {
+        color: #ffffff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__blog3-btn-read-more {
+        padding: 7px 20px;
+        color: var(--bs-body-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__blog3-btn-read-more:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: #ffffff;
+      }
+
+      .ezy__blog3-author a {
+        color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__blog3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="ezy__blog3-heading mb-3 mt-0">The Body Type Of Models Is Far From Reality.</h2>
+            <p class="ezy__blog3-sub-heading px-lg-5 mb-4">
+              Sed ut in perspiciatis unde omnis iste natus error sit on i tatem accusantium doloremque laudantium, totam
+              rem aperiam, eaque ipsa quae.
+            </p>
+            <a href="" class="btn ezy__blog3-btn">All Posts</a>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <article class="ezy__blog3-post h-100">
+              <div class="position-relative">
+                <img src="https://cdn.easyfrontend.com/pictures/blog/blog_3.jpg" alt="" class="img-fluid w-100" />
+                <div class="position-absolute top-0 start-0 px-4 py-3 fw-bold ezy__blog3-calendar">
+                  26<br />Oct<br />2016
+                </div>
+              </div>
+              <div class="p-3 p-md-4">
+                <p class="ezy__blog3-author">By <a href="" class="text-decoration-none">Alex Hales</a></p>
+                <h4 class="mt-3 ezy__blog3-title fs-4">Not Your Regular Home Decoration?</h4>
+                <p class="ezy__blog3-description mt-3 mb-4">
+                  Urna molestie at eleme ntum eu facilisis sed odio Male suada fames.
+                </p>
+                <a href="" class="btn ezy__blog3-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <article class="ezy__blog3-post h-100">
+              <div class="position-relative">
+                <img src="https://cdn.easyfrontend.com/pictures/blog/blog_9.jpg" alt="" class="img-fluid w-100" />
+                <div class="position-absolute top-0 start-0 px-4 py-3 fw-bold ezy__blog3-calendar">
+                  26<br />Oct<br />2016
+                </div>
+              </div>
+              <div class="p-3 p-md-4">
+                <p class="ezy__blog3-author">By <a href="" class="text-decoration-none">Mitwa Dadkan</a></p>
+                <h4 class="mt-3 ezy__blog3-title fs-4">How I’m Styling Everyday Black Outfits</h4>
+                <p class="ezy__blog3-description mt-3 mb-4">
+                  t’s no secret that the digital industry is booming. From exciting startups to global brands.
+                </p>
+                <a href="" class="btn ezy__blog3-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <article class="ezy__blog3-post h-100">
+              <div class="position-relative">
+                <img src="https://cdn.easyfrontend.com/pictures/blog/blog_14_1.jpg" alt="" class="img-fluid w-100" />
+                <div class="position-absolute top-0 start-0 px-4 py-3 fw-bold ezy__blog3-calendar">
+                  26<br />Oct<br />2016
+                </div>
+              </div>
+              <div class="p-3 p-md-4">
+                <p class="ezy__blog3-author">By <a href="" class="text-decoration-none">Mahws Georgia</a></p>
+                <h4 class="mt-3 ezy__blog3-title fs-4">Fashion Essentials All Men Should Know</h4>
+                <p class="ezy__blog3-description mt-3 mb-4">
+                  More off this less hello salamander lied porpoise much over tightly circa horse taped.
+                </p>
+                <a href="" class="btn ezy__blog3-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Blog 4
+ -->
+    <style>
+      .ezy__blog4 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: #fff;
+
+        /* easy frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0 25px 41px rgba(89, 88, 109, 0.15);
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__blog4 {
+          padding: 100px 0;
+        }
+
+        /* Gray Block Style */
+        .gray .ezy__blog4,
+        .ezy__blog4.gray {
+          /* Bootstrap variables */
+          --bs-body-bg: rgb(246, 246, 246);
+
+          /* easy frontend variables */
+          --ezy-card-bg: #fff;
+          --ezy-card-shadow: 0px 8px 44px rgba(182, 198, 222, 0.48);
+        }
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__blog4,
+      .ezy__blog4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(241, 241, 241);
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(11, 23, 39);
+        --ezy-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__blog4,
+      .ezy__blog4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(255, 255, 255);
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: none;
+      }
+
+      /* heading and sub-heading */
+      .ezy__blog4-heading {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__blog4-sub-heading {
+        color: var(--bs-body-color);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        opacity: 0.8;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__blog4-heading {
+          font-size: 45px;
+        }
+      }
+
+      .ezy__blog4-post {
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__blog4-featured-post .ezy__blog4-author {
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        .ezy__blog4-featured-post .ezy__blog4-title {
+          font-size: 40px;
+          line-height: 50px;
+        }
+
+        .ezy__blog4-featured-post .ezy__blog4-description {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+
+      .ezy__blog4-title {
+        font-weight: 500;
+        margin-top: 0 !important;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__blog4-description {
+        color: var(--bs-body-color);
+        opacity: 0.6;
+      }
+
+      .ezy__blog4-btn {
+        padding: 12px 30px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__blog4-btn:hover {
+        color: #ffffff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__blog4-btn-read-more {
+        padding: 7px 20px;
+        color: var(--bs-body-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__blog4-btn-read-more:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: #ffffff;
+      }
+
+      .ezy__blog4-author {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__blog4-author a {
+        color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__blog4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="ezy__blog4-heading mb-3 mt-0">Heal the world with banking blog.</h2>
+            <p class="ezy__blog4-sub-heading px-lg-5 mb-4">
+              Banking crises have developed many times throughout history when one or more risks have emerged.
+            </p>
+            <a href="" class="btn btn-warning ezy__blog4-btn">All Posts</a>
+          </div>
+        </div>
+
+        <div class="row align-items-center mt-5">
+          <div class="col-12 mb-4">
+            <article class="ezy__blog4-featured-post">
+              <div class="row align-items-center">
+                <div class="col-lg-7">
+                  <img src="https://cdn.easyfrontend.com/pictures/blog/blog_4.jpg" alt="" class="img-fluid rounded-3" />
+                </div>
+                <div class="col-lg-5">
+                  <div class="mt-4 mt-lg-0 ps-lg-4">
+                    <h4 class="ezy__blog4-title mb-2">
+                      Interview - What it's like to work remorely in big-sized product development?
+                    </h4>
+                    <p class="ezy__blog4-description mt-3 mb-4">
+                      This is a factor in the economy of a nation, and the administration takes the major choices.This
+                      is a factor in the economy of a nation, and the administration takes the major choices.Banking
+                      crises have developed many times throughout history when one or more risks have emerged for a
+                      banking sector as a whole.
+                    </p>
+                    <div class="ezy__blog4-author d-flex align-items-center">
+                      <div class="me-2">
+                        <img
+                          src="https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_3.jpeg"
+                          alt=""
+                          class="img-fluid rounded-circle border"
+                          width="47"
+                        />
+                      </div>
+                      <div>
+                        <p class="mb-0">By<b> Alan Bell</b></p>
+                        <p class="mb-0 small opacity-75">August 10th, 2020</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="ezy__blog4-post rounded overflow-hidden mt-4 h-100">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_14_3.jpg" alt="" class="img-fluid w-100" />
+              <div class="p-3 p-lg-4">
+                <h4 class="ezy__blog4-title fs-4 mb-1">Not Your Regular Home Decoration?</h4>
+                <p class="ezy__blog4-author">
+                  <span class="me-2">By <a href="" class="text-decoration-none">Maisha Adiba</a></span>
+                  <span><i class="far fa-clock me-1"></i> <span>21 Jun, 2022</span></span>
+                </p>
+                <p class="ezy__blog4-description mt-3 mb-4">
+                  Urna molestie at eleme ntum eu facilisis sed odio Male suada fames.
+                </p>
+                <a href="" class="btn ezy__blog4-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="ezy__blog4-post rounded overflow-hidden mt-4 h-100">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_14_1.jpg" alt="" class="img-fluid w-100" />
+              <div class="p-3 p-lg-4">
+                <h4 class="ezy__blog4-title fs-4 mb-1">How I’m Styling Everyday Black Outfits</h4>
+                <p class="ezy__blog4-author">
+                  <span class="me-2">By <a href="" class="text-decoration-none">Alex Hales</a></span>
+                  <span><i class="far fa-clock me-1"></i> <span>21 Jun, 2022</span></span>
+                </p>
+                <p class="ezy__blog4-description mt-3 mb-4">
+                  It’s no secret that the digital industry is booming. From exciting startups to global brands.
+                </p>
+                <a href="" class="btn ezy__blog4-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="ezy__blog4-post rounded overflow-hidden mt-4 h-100">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_13_3.jpg" alt="" class="img-fluid w-100" />
+              <div class="p-3 p-lg-4">
+                <h4 class="ezy__blog4-title fs-4 mb-1">Fashion Essentials All Men Should Know</h4>
+                <p class="ezy__blog4-author">
+                  <span class="me-2">By <a href="" class="text-decoration-none">John Stokes</a></span>
+                  <span><i class="far fa-clock me-1"></i> <span>11 Mar, 2022</span></span>
+                </p>
+                <p class="ezy__blog4-description mt-3 mb-4">
+                  More off this less hello salamander lied porpoise much over tightly circa horse taped.
+                </p>
+                <a href="" class="btn ezy__blog4-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Blog 5
+ -->
+    <style>
+      .ezy__blog5 {
+        /* Bootstrap variables */
+        --bs-body-color: #15181d;
+        --bs-body-bg: #fff;
+
+        /* easy frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0 25px 41px rgba(89, 88, 109, 0.15);
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__blog5 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__blog5,
+      .ezy__blog5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* easy frontend variables */
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0px 8px 44px rgba(182, 198, 222, 0.48);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__blog5,
+      .ezy__blog5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(241, 241, 241);
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(11, 23, 39);
+        --ezy-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__blog5,
+      .ezy__blog5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(255, 255, 255);
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: none;
+      }
+
+      /* heading and sub-heading */
+      .ezy__blog5-heading {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__blog5-sub-heading {
+        color: var(--bs-body-color);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        opacity: 0.8;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__blog5-heading {
+          font-size: 45px;
+        }
+      }
+
+      .ezy__blog5-post {
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__blog5-featured-post .ezy__blog5-author {
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        .ezy__blog5-featured-post .ezy__blog5-title {
+          font-size: 40px;
+          line-height: 50px;
+        }
+
+        .ezy__blog5-featured-post .ezy__blog5-description {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+
+      .ezy__blog5-title {
+        font-weight: 500;
+        margin-top: 0 !important;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__blog5-description {
+        color: var(--bs-body-color);
+        opacity: 0.6;
+      }
+
+      .ezy__blog5-btn {
+        padding: 12px 30px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__blog5-btn:hover {
+        color: #ffffff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__blog5-btn-read-more {
+        padding: 7px 20px;
+        color: var(--bs-body-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__blog5-btn-read-more:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: #ffffff;
+      }
+
+      .ezy__blog5-author {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__blog5-author a {
+        color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__blog5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="ezy__blog5-heading mb-3 mt-0">Pros & Cons of Being a Model</h2>
+            <p class="ezy__blog5-sub-heading px-lg-5 mb-4">
+              It’s no secret that the digital industry is booming. From exciting startups to global brands, companies
+              are reaching out to digital agencies,
+            </p>
+            <a href="" class="btn btn-warning ezy__blog5-btn">All Posts</a>
+          </div>
+        </div>
+
+        <div class="row align-items-center mt-5">
+          <div class="col-12 mb-4">
+            <article class="ezy__blog5-featured-post">
+              <div class="row align-items-center">
+                <div class="col-lg-7 order-lg-2">
+                  <img src="https://cdn.easyfrontend.com/pictures/blog/blog_7.jpg" alt="" class="img-fluid rounded-3" />
+                </div>
+                <div class="col-lg-5">
+                  <div class="mt-4 mt-lg-0 pe-lg-4">
+                    <h4 class="ezy__blog5-title mb-2">
+                      Tellus in metus vulp utate eu scele risque scele viverra mauris in al?
+                    </h4>
+                    <p class="ezy__blog5-description mt-3 mb-4">
+                      This is a factor in the economy of a nation, and the administration takes the major choices.This
+                      is a factor in the economy of a nation, and the administration takes the major choices.Banking
+                      crises have developed many times throughout history when one or more risks have emerged for a
+                      banking sector as a whole.
+                    </p>
+                    <div class="ezy__blog5-author d-flex align-items-center">
+                      <div class="me-2">
+                        <img
+                          src="https://cdn.easyfrontend.com/pictures/users/user18.jpg"
+                          alt=""
+                          class="img-fluid rounded-circle border"
+                          width="47"
+                          height="47"
+                        />
+                      </div>
+                      <div>
+                        <p class="mb-0">By<b> Alan Bell</b></p>
+                        <p class="mb-0 small opacity-50">August 10th, 2020</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="ezy__blog5-post rounded overflow-hidden mt-4">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_2.jpg" alt="" class="img-fluid w-100" />
+              <div class="p-3 p-lg-4">
+                <h4 class="ezy__blog5-title fs-4 mb-1">Long lasting fall scent for women sale offer</h4>
+                <p class="ezy__blog5-author">
+                  <span class="me-2">By <a href="" class="text-decoration-none">Mahws Georgia</a></span>
+                  <span><i class="far fa-clock me-1"></i> <span>13 Jan, 2022</span></span>
+                </p>
+                <p class="ezy__blog5-description mt-3 mb-4">
+                  Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores.
+                </p>
+                <a href="" class="btn ezy__blog5-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="ezy__blog5-post rounded overflow-hidden mt-4">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_3.jpg" alt="" class="img-fluid w-100" />
+              <div class="p-3 p-lg-4">
+                <h4 class="ezy__blog5-title fs-4 mb-1">Fashion Essentials All Men Should Know</h4>
+                <p class="ezy__blog5-author">
+                  <span class="me-2">By <a href="" class="text-decoration-none">Mary Gold</a></span>
+                  <span><i class="far fa-clock me-1"></i> <span>27 Oct, 2022</span></span>
+                </p>
+                <p class="ezy__blog5-description mt-3 mb-4">
+                  Sed ut in perspiciatis unde omnis iste natus error sit tatem doloremque laudantium.
+                </p>
+                <a href="" class="btn ezy__blog5-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="ezy__blog5-post rounded overflow-hidden mt-4">
+              <img src="https://cdn.easyfrontend.com/pictures/blog/blog_9.jpg" alt="" class="img-fluid w-100" />
+              <div class="p-3 p-lg-4">
+                <h4 class="ezy__blog5-title fs-4 mb-1">Dolor sit amet, adiplscing eliyt sed</h4>
+                <p class="ezy__blog5-author">
+                  <span class="me-2">By <a href="" class="text-decoration-none">Hardik Finn</a></span>
+                  <span class="d-inline-flex align-items-center"
+                    ><i class="far fa-clock me-1"></i> <span>11 Mar, 2022</span></span
+                  >
+                </p>
+                <p class="ezy__blog5-description mt-3 mb-4">
+                  Viverra tellus in hac habitasse platea dictumst. Sollicitudin tempor id eu nisl.
+                </p>
+                <a href="" class="btn ezy__blog5-btn-read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

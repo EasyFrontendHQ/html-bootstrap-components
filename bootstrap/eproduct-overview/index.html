@@ -1,0 +1,2535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+    Name: Product Overview 1
+-->
+    <style>
+.ezy__epoverview1 {
+  /* Bootstrap variables */
+  --bs-body-color: #23262f;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-secondary-color-rgb: 237, 237, 237;
+  --ezy-button-color: #fff;
+  --ezy-shape-color: #f5f7fd;
+
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  overflow: hidden;
+  padding: 60px 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .ezy__epoverview1 {
+    padding: 100px 0;
+  }
+}
+
+/* Gray Block Style */
+.gray .ezy__epoverview1,
+.ezy__epoverview1.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 225, 221, 221;
+  --ezy-shape-color: rgb(255, 255, 255);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__epoverview1,
+.ezy__epoverview1.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+  --ezy-shape-color: rgb(11, 23, 39);
+}
+
+/* Dark Block Style */
+.dark .ezy__epoverview1,
+.ezy__epoverview1.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+  --ezy-shape-color: rgb(30, 39, 53);
+}
+
+.ezy__epoverview1-heading {
+  font-size: 24px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__epoverview1-heading {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+.ezy__epoverview1-price {
+  font-size: 24px;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview1-title {
+  font-size: 15px;
+  color: var(--bs-body-color);
+}
+
+.ezy__epoverview1-review {
+  font-weight: 500;
+  color: rgb(var(--ezy-theme-color-rgb));
+  text-decoration: none;
+}
+
+.ezy__epoverview1-review:hover {
+  color: rgb(var(--ezy-theme-color-rgb));
+  text-decoration: underline;
+}
+
+.ezy__epoverview1-qty {
+  width: 180px;
+}
+
+.ezy__epoverview1-qty .btn {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview1-qty .btn:hover {
+  background-color: rgb(var(--ezy-secondary-color-rgb));
+}
+
+.ezy__epoverview1-qty .btn:first-child {
+  border-radius: 50rem 0 0 50rem !important;
+}
+
+.ezy__epoverview1-qty .btn:last-child {
+  border-radius: 0 50rem 50rem 0 !important;
+}
+
+.ezy__epoverview1-qty .form-control {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  color: var(--bs-body-color);
+}
+
+.ezy__epoverview1-qty .btn,
+.ezy__epoverview1-qty .form-control {
+  border-color: rgb(var(--ezy-secondary-color-rgb));
+  height: 48px;
+}
+
+.ezy__epoverview1-radios .btn {
+  border-color: rgb(var(--ezy-secondary-color-rgb));
+  background-color: rgba(var(--ezy-secondary-color-rgb), 0.7);
+  color: var(--bs-body-color);
+  font-size: 13px;
+  padding: 3px 17px;
+}
+
+.ezy__epoverview1-radios .btn:hover {
+  background-color: rgba(var(--ezy-secondary-color-rgb), 1);
+}
+
+.ezy__epoverview1-radios .btn-check:checked + .btn {
+  background-color: rgb(var(--ezy-secondary-color-rgb));
+  color: var(--bs-body-color);
+  border-color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview1-radios .btn-check:disabled + .btn {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.ezy__epoverview1-btn {
+  font-size: 14px;
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: rgb(var(--ezy-theme-color-rgb));
+  color: var(--ezy-button-color);
+  height: 42px;
+  min-width: 42px;
+}
+
+.ezy__epoverview1-btn:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+  color: var(--ezy-button-color);
+}
+
+.ezy__epoverview1-share {
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview1-share:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview1-content {
+  color: var(--bs-body-color);
+  opacity: 0.7;
+}
+
+.ezy__epoverview1-gallery li {
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ezy-shape-color);
+  border: 1px solid rgb(var(--ezy-secondary-color-rgb));
+  border-radius: 8px;
+  margin-right: 10px;
+  padding: 8px;
+}
+
+.ezy__epoverview1-shape {
+  background-color: var(--ezy-shape-color);
+  border-radius: 8px;
+  position: absolute;
+  right: 40%;
+  bottom: 50px;
+  width: 5000px;
+  height: 5000px;
+}
+    </style>
+<section class="ezy__epoverview1" id="ezy__epoverview1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 position-relative">
+        <div class="ezy__epoverview1-shape"></div>
+
+        <div class="position-relative">
+          <div class="text-center mb-3 p-md-4">
+            <img src="https://cdn.easyfrontend.com/pictures/products/sofa3.png" alt="" class="img-fluid" />
+          </div>
+
+          <ul class="nav ezy__epoverview1-gallery">
+            <a href="#!">
+              <li>
+                <img src="https://cdn.easyfrontend.com/pictures/products/sofa3.png" alt="" class="img-fluid" />
+              </li>
+            </a>
+            <a href="#!">
+              <li>
+                <img src="https://cdn.easyfrontend.com/pictures/products/sofa2.png" alt="" class="img-fluid" />
+              </li>
+            </a>
+            <a href="#!">
+              <li>
+                <img src="https://cdn.easyfrontend.com/pictures/products/sofa5.png" alt="" class="img-fluid" />
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div class="mb-4 mb-lg-5">
+          <h1 class="ezy__epoverview1-heading mb-3">Large Lazy Inflatable Flocking Sofa</h1>
+          <p class="ezy__epoverview1-content fw-light mb-4">
+            5.0 out of (1256) <a href="#!" class="ezy__epoverview1-review ms-1">Reviews</a>
+          </p>
+          <h3 class="ezy__epoverview1-price mb-0">Rs. 7,230</h3>
+        </div>
+
+        <form action="#!">
+          <div class="mb-4">
+            <h5 class="ezy__epoverview1-title mb-2">Color</h5>
+            <div
+              class="btn-group ezy__epoverview1-radios d-block mb-2"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview1-color"
+                id="ezy__epoverview1-color1"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn rounded-pill me-2 mt-1" for="ezy__epoverview1-color1">Multi</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview1-color"
+                id="ezy__epoverview1-color2"
+                autocomplete="off"
+              />
+              <label class="btn rounded-pill me-2 mt-1" for="ezy__epoverview1-color2">Red</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview1-color"
+                id="ezy__epoverview1-color3"
+                autocomplete="off"
+              />
+              <label class="btn rounded-pill me-2 mt-1" for="ezy__epoverview1-color3">Blue</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview1-color"
+                id="ezy__epoverview1-color4"
+                autocomplete="off"
+              />
+              <label class="btn rounded-pill me-2 mt-1" for="ezy__epoverview1-color4">Green</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview1-color"
+                id="ezy__epoverview1-color5"
+                autocomplete="off"
+              />
+              <label class="btn rounded-pill me-2 mt-1" for="ezy__epoverview1-color5">Black</label>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h5 class="ezy__epoverview1-title mb-0">Size: <span class="opacity-50">Extra Extra Small</span></h5>
+            <div
+              class="btn-group ezy__epoverview1-radios d-block mb-2"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview1-size"
+                id="ezy__epoverview1-size1"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview1-size1">
+                XXS
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview1-size"
+                id="ezy__epoverview1-size2"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview1-size2">
+                XS
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview1-size"
+                id="ezy__epoverview1-size3"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview1-size3">
+                S
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview1-size"
+                id="ezy__epoverview1-size4"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview1-size4">
+                M
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview1-size"
+                id="ezy__epoverview1-size5"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview1-size5">
+                L
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview1-size"
+                id="ezy__epoverview1-size6"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview1-size6">
+                XL
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview1-size"
+                id="ezy__epoverview1-size7"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview1-size7">
+                XXL
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview1-size"
+                id="ezy__epoverview1-size8"
+                autocomplete="off"
+                disabled
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview1-size8">
+                XXXL
+              </label>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h5 class="ezy__epoverview1-title mb-2">QTY</h5>
+            <div class="input-group ezy__epoverview1-qty d-inline-flex mb-2">
+              <button class="btn px-4" type="button">-</button>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value="2"
+                aria-label="Example text with button addon"
+                aria-describedby="button-addon1"
+              />
+              <button class="btn px-4" type="button">+</button>
+            </div>
+          </div>
+
+          <div>
+            <button class="btn ezy__epoverview1-btn text-uppercase d-inline-flex align-items-center px-4 me-1">
+              Add To Cart
+            </button>
+            <button
+              class="btn ezy__epoverview1-btn fs-5 d-inline-flex align-items-center justify-content-center p-0 me-1"
+            >
+              <i class="far fa-heart"></i>
+            </button>
+            <button
+              class="btn btn-link ezy__epoverview1-share d-inline-flex align-items-center text-decoration-none"
+            >
+              <i class="fas fa-share-alt me-2 fs-5"></i> Share
+            </button>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-12 col-lg-10 col-xl-8">
+              <p class="ezy__epoverview1-content mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec consequat lorem. Maecenas
+                elementum at diam consequat bibendum.
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <br />
+
+    <!--
+    Name: Product Overview 2
+-->
+    <style>
+.ezy__epoverview2 {
+  /* Bootstrap variables */
+  --bs-body-color: #23262f;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-secondary-color-rgb: 237, 237, 237;
+  --ezy-button-color: #fff;
+  --ezy-rating-color: #ffc107;
+  --ezy-product-color: rgba(var(--ezy-secondary-color-rgb), 0.5);
+
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  overflow: hidden;
+  padding: 60px 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .ezy__epoverview2 {
+    padding: 100px 0;
+  }
+}
+
+/* Gray Block Style */
+.gray .ezy__epoverview2,
+.ezy__epoverview2.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 225, 221, 221;
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__epoverview2,
+.ezy__epoverview2.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+/* Dark Block Style */
+.dark .ezy__epoverview2,
+.ezy__epoverview2.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+.ezy__epoverview2-heading {
+  font-size: 24px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__epoverview2-heading {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+.ezy__epoverview2-price {
+  font-size: 24px;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview2-title {
+  font-size: 15px;
+  color: var(--bs-body-color);
+}
+
+.ezy__epoverview2-review {
+  font-weight: 500;
+  color: rgb(var(--ezy-theme-color-rgb));
+  text-decoration: none;
+}
+
+.ezy__epoverview2-review:hover {
+  color: rgb(var(--ezy-theme-color-rgb));
+  text-decoration: underline;
+}
+
+.ezy__epoverview2 .fa-star {
+  color: var(--ezy-rating-color);
+}
+
+.ezy__epoverview2-qty {
+  width: 180px;
+}
+
+.ezy__epoverview2-qty .btn {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview2-qty .btn:hover {
+  background-color: rgb(var(--ezy-secondary-color-rgb));
+}
+
+.ezy__epoverview2-qty .btn:first-child {
+  border-radius: 50rem 0 0 50rem !important;
+}
+
+.ezy__epoverview2-qty .btn:last-child {
+  border-radius: 0 50rem 50rem 0 !important;
+}
+
+.ezy__epoverview2-qty .form-control {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  color: var(--bs-body-color);
+}
+
+.ezy__epoverview2-qty .btn,
+.ezy__epoverview2-qty .form-control {
+  border-color: rgb(var(--ezy-secondary-color-rgb));
+  height: 48px;
+}
+
+.ezy__epoverview2-radios .btn {
+  border-width: 2px;
+  border-color: var(--bs-body-bg) !important;
+  background-color: rgba(var(--ezy-secondary-color-rgb), 0.5);
+  background-color: var(--ezy-product-color);
+  color: var(--bs-body-color);
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50rem !important;
+  outline: 1px solid transparent;
+  padding: 0;
+}
+
+.ezy__epoverview2-radios .btn:hover {
+  background-color: var(--ezy-product-color);
+  outline-color: var(--ezy-product-color);
+}
+
+.ezy__epoverview2-radios .btn-check:checked + .btn {
+  background-color: var(--ezy-product-color);
+  outline-color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview2-radios .btn-check:disabled + .btn {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.ezy__epoverview2-btn,
+.ezy__epoverview2-btn-outline {
+  font-size: 14px;
+  height: 42px;
+  min-width: 42px;
+}
+
+.ezy__epoverview2-btn {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: rgb(var(--ezy-theme-color-rgb));
+  color: var(--ezy-button-color);
+}
+
+.ezy__epoverview2-btn-outline {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: transparent;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview2-btn-outline:hover,
+.ezy__epoverview2-btn:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.9) !important;
+  color: var(--ezy-button-color);
+}
+
+.ezy__epoverview2-fav,
+.ezy__epoverview2-share {
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview2-fav:hover,
+.ezy__epoverview2-share:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview2-content {
+  color: var(--bs-body-color);
+  opacity: 0.7;
+}
+
+.ezy__epoverview2 .rounded-3 {
+  border-radius: 12px !important;
+}
+.ezy__epoverview2-banner {
+  max-height: 400px;
+  width: auto;
+  object-fit: cover;
+}
+.ezy__epoverview2-gallery img {
+  max-height: 120px;
+  width: 100% !important;
+  object-fit: cover;
+}
+    </style>
+<section class="ezy__epoverview2" id="ezy__epoverview2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="me-lg-4">
+          <div class="text-center rounded-3 overflow-hidden m-2">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/products/women-bag1.jpg"
+              alt=""
+              class="ezy__epoverview2-banner img-fluid w-100"
+            />
+          </div>
+
+          <ul class="nav d-flex flex-nowrap ezy__epoverview2-gallery">
+            <a href="#!" class="rounded-3 overflow-hidden m-2">
+              <li>
+                <img src="https://cdn.easyfrontend.com/pictures/products/women-bag1.jpg" alt="" class="img-fluid" />
+              </li>
+            </a>
+            <a href="#!" class="rounded-3 overflow-hidden m-2">
+              <li>
+                <img src="https://cdn.easyfrontend.com/pictures/products/women-bag2.jpg" alt="" class="img-fluid" />
+              </li>
+            </a>
+            <a href="#!" class="rounded-3 overflow-hidden m-2">
+              <li>
+                <img src="https://cdn.easyfrontend.com/pictures/products/women-bag3.jpg" alt="" class="img-fluid" />
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4">
+        <div class="mb-4 mb-lg-5">
+          <h1 class="ezy__epoverview2-heading mb-3">Stitching Women Summer Shoulder Crossbody Bag</h1>
+          <p class="ezy__epoverview2-content mb-4">
+            <span>4.0</span> <i class="fas fa-star mx-2"></i>
+            <a href="#!" class="ezy__epoverview2-review ms-1">13 Reviews</a> <span class="ms-2">104 Order</span>
+          </p>
+          <h3 class="ezy__epoverview2-price mb-0">Rs. 990</h3>
+        </div>
+
+        <form action="#!">
+          <div class="mb-4">
+            <h5 class="ezy__epoverview2-title mb-2">Color</h5>
+            <div
+              class="btn-group ezy__epoverview2-radios d-block mb-2"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview2-color"
+                id="ezy__epoverview2-color1"
+                autocomplete="off"
+                checked
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #ffc107"
+                for="ezy__epoverview2-color1"
+              ></label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview2-color"
+                id="ezy__epoverview2-color2"
+                autocomplete="off"
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #3aa9f3"
+                for="ezy__epoverview2-color2"
+              ></label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview2-color"
+                id="ezy__epoverview2-color3"
+                autocomplete="off"
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #ff7171"
+                for="ezy__epoverview2-color3"
+              ></label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview2-color"
+                id="ezy__epoverview2-color4"
+                autocomplete="off"
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #161d25"
+                for="ezy__epoverview2-color4"
+              ></label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview2-color"
+                id="ezy__epoverview2-color5"
+                autocomplete="off"
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #ff0000"
+                for="ezy__epoverview2-color5"
+              ></label>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h5 class="ezy__epoverview2-title mb-0">Size: <span class="opacity-50">Extra Extra Small</span></h5>
+            <div
+              class="btn-group ezy__epoverview2-radios d-block mb-2"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview2-size"
+                id="ezy__epoverview2-size1"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview2-size1">
+                XXS
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview2-size"
+                id="ezy__epoverview2-size2"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview2-size2">
+                XS
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview2-size"
+                id="ezy__epoverview2-size3"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview2-size3">
+                S
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview2-size"
+                id="ezy__epoverview2-size4"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview2-size4">
+                M
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview2-size"
+                id="ezy__epoverview2-size5"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview2-size5">
+                L
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview2-size"
+                id="ezy__epoverview2-size6"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview2-size6">
+                XL
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview2-size"
+                id="ezy__epoverview2-size7"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview2-size7">
+                XXL
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview2-size"
+                id="ezy__epoverview2-size8"
+                autocomplete="off"
+                disabled
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview2-size8">
+                XXXL
+              </label>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h5 class="ezy__epoverview2-title mb-2">QTY</h5>
+            <div class="input-group ezy__epoverview2-qty d-inline-flex mb-2">
+              <button class="btn px-4" type="button">-</button>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value="2"
+                aria-label="Example text with button addon"
+                aria-describedby="button-addon1"
+              />
+              <button class="btn px-4" type="button">+</button>
+            </div>
+          </div>
+
+          <div>
+            <button
+              class="btn ezy__epoverview2-btn text-uppercase d-inline-flex align-items-center px-3 px-sm-5 me-1"
+            >
+              Buy Now
+            </button>
+            <button
+              class="btn ezy__epoverview2-btn-outline text-uppercase bg-transparent d-inline-flex align-items-center px-3 px-sm-4 me-1"
+            >
+              Add To Cart
+            </button>
+            <button class="btn btn-link ezy__epoverview2-fav d-inline-flex align-items-center text-decoration-none">
+              <i class="far fa-heart fs-5"></i>
+            </button>
+            <button
+              class="btn btn-link ezy__epoverview2-share d-inline-flex align-items-center text-decoration-none"
+            >
+              <i class="fas fa-share-alt fs-5"></i>
+            </button>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-12 col-lg-10 col-xl-8">
+              <p class="ezy__epoverview2-content mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec consequat lorem. Maecenas
+                elementum at diam consequat bibendum.
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <br />
+
+    <!--
+    Name: Product Overview 3
+-->
+    <style>
+.ezy__epoverview3 {
+  /* Bootstrap variables */
+  --bs-body-color: #23262f;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-secondary-color-rgb: 237, 237, 237;
+  --ezy-button-color: #fff;
+  --ezy-rating-color: #ffc107;
+  --ezy-product-color: rgba(var(--ezy-secondary-color-rgb), 0.5);
+
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  overflow: hidden;
+  padding: 60px 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .ezy__epoverview3 {
+    padding: 100px 0;
+  }
+}
+
+/* Gray Block Style */
+.gray .ezy__epoverview3,
+.ezy__epoverview3.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 225, 221, 221;
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__epoverview3,
+.ezy__epoverview3.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+/* Dark Block Style */
+.dark .ezy__epoverview3,
+.ezy__epoverview3.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+}
+
+.ezy__epoverview3-heading {
+  font-size: 24px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__epoverview3-heading {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+.ezy__epoverview3-price {
+  font-size: 24px;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview3-title {
+  font-size: 15px;
+  color: var(--bs-body-color);
+}
+
+.ezy__epoverview3-review {
+  font-weight: 500;
+  color: rgb(var(--ezy-theme-color-rgb));
+  text-decoration: none;
+}
+
+.ezy__epoverview3-review:hover {
+  color: rgb(var(--ezy-theme-color-rgb));
+  text-decoration: underline;
+}
+
+.ezy__epoverview3 .fa-star {
+  color: var(--ezy-rating-color);
+}
+
+.ezy__epoverview3-qty {
+  width: 95px;
+}
+
+.ezy__epoverview3-qty .btn {
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(var(--ezy-secondary-color-rgb));
+  color: rgb(var(--ezy-theme-color-rgb));
+  padding: 0;
+  border-radius: 0 !important;
+  border: none;
+  width: 30px;
+  height: 100%;
+}
+
+.ezy__epoverview3-qty .btn:hover {
+  background-color: rgb(var(--ezy-theme-color-rgb));
+  color: var(--ezy-button-color);
+}
+
+.ezy__epoverview3-qty .form-control {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(var(--ezy-secondary-color-rgb));
+  color: var(--bs-body-color);
+}
+
+.ezy__epoverview3-qty .input-group-text,
+.ezy__epoverview3-qty .form-control {
+  border-color: rgb(var(--ezy-secondary-color-rgb));
+  height: 48px;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+.ezy__epoverview3-radios .btn {
+  border-width: 2px;
+  border-color: var(--bs-body-bg) !important;
+  background-color: rgba(var(--ezy-secondary-color-rgb), 0.5);
+  background-color: var(--ezy-product-color);
+  color: var(--bs-body-color);
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50rem !important;
+  outline: 1px solid transparent;
+  padding: 0;
+}
+
+.ezy__epoverview3-radios .btn:hover {
+  background-color: var(--ezy-product-color);
+  outline-color: var(--ezy-product-color);
+}
+
+.ezy__epoverview3-radios .btn-check:checked + .btn {
+  background-color: var(--ezy-product-color);
+  outline-color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview3-radios .btn-check:disabled + .btn {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.ezy__epoverview3-btn,
+.ezy__epoverview3-btn-outline {
+  font-size: 14px;
+  height: 42px;
+  min-width: 42px;
+}
+
+.ezy__epoverview3-btn {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: rgb(var(--ezy-theme-color-rgb));
+  color: var(--ezy-button-color);
+}
+
+.ezy__epoverview3-btn-outline {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: transparent;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview3-btn-outline:hover,
+.ezy__epoverview3-btn:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.9) !important;
+  color: var(--ezy-button-color);
+}
+
+.ezy__epoverview3-fav,
+.ezy__epoverview3-share {
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview3-fav:hover,
+.ezy__epoverview3-share:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview3-content {
+  color: var(--bs-body-color);
+  opacity: 0.7;
+}
+
+.ezy__epoverview3 .rounded-3 {
+  border-radius: 12px !important;
+}
+.ezy__epoverview3-banner {
+  max-height: 400px;
+  width: auto;
+  object-fit: cover;
+}
+    </style>
+<section class="ezy__epoverview3" id="ezy__epoverview3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="me-lg-4">
+          <div class="text-center rounded-3 overflow-hidden m-2">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/ecommerce/product29.jpg"
+              alt=""
+              class="ezy__epoverview3-banner img-fluid w-100"
+            />
+          </div>
+
+          <ul class="nav d-flex flex-nowrap">
+            <a href="#!" class="rounded-3 overflow-hidden m-2">
+              <li>
+                <img src="https://cdn.easyfrontend.com/pictures/ecommerce/product29.jpg" alt="" class="img-fluid" />
+              </li>
+            </a>
+            <a href="#!" class="rounded-3 overflow-hidden m-2">
+              <li>
+                <img src="https://cdn.easyfrontend.com/pictures/ecommerce/product30.jpg" alt="" class="img-fluid" />
+              </li>
+            </a>
+            <a href="#!" class="rounded-3 overflow-hidden m-2">
+              <li>
+                <img src="https://cdn.easyfrontend.com/pictures/ecommerce/product31.jpg" alt="" class="img-fluid" />
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4">
+        <div class="mb-4 mb-lg-5">
+          <h1 class="ezy__epoverview3-heading mb-3">Never Fade White Gold Color Rings</h1>
+          <p class="ezy__epoverview3-content mb-4">
+            <span>4.0</span> <i class="fas fa-star mx-2"></i>
+            <a href="#!" class="ezy__epoverview3-review ms-1">47 Reviews</a> <span class="ms-2">153 Order</span>
+          </p>
+          <h3 class="ezy__epoverview3-price mb-0">Rs. 635</h3>
+        </div>
+
+        <form action="#!">
+          <div class="mb-4">
+            <h5 class="ezy__epoverview3-title mb-2">Color</h5>
+            <div
+              class="btn-group ezy__epoverview3-radios d-block mb-2"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview3-color"
+                id="ezy__epoverview3-color1"
+                autocomplete="off"
+                checked
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #ffc107"
+                for="ezy__epoverview3-color1"
+              ></label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview3-color"
+                id="ezy__epoverview3-color2"
+                autocomplete="off"
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #3aa9f3"
+                for="ezy__epoverview3-color2"
+              ></label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview3-color"
+                id="ezy__epoverview3-color3"
+                autocomplete="off"
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #ff7171"
+                for="ezy__epoverview3-color3"
+              ></label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview3-color"
+                id="ezy__epoverview3-color4"
+                autocomplete="off"
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #161d25"
+                for="ezy__epoverview3-color4"
+              ></label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview3-color"
+                id="ezy__epoverview3-color5"
+                autocomplete="off"
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #ff0000"
+                for="ezy__epoverview3-color5"
+              ></label>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h5 class="ezy__epoverview3-title mb-0">Size: <span class="opacity-50">Extra Extra Small</span></h5>
+            <div
+              class="btn-group ezy__epoverview3-radios d-block mb-2"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview3-size"
+                id="ezy__epoverview3-size1"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview3-size1">
+                XXS
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview3-size"
+                id="ezy__epoverview3-size2"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview3-size2">
+                XS
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview3-size"
+                id="ezy__epoverview3-size3"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview3-size3">
+                S
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview3-size"
+                id="ezy__epoverview3-size4"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview3-size4">
+                M
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview3-size"
+                id="ezy__epoverview3-size5"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview3-size5">
+                L
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview3-size"
+                id="ezy__epoverview3-size6"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview3-size6">
+                XL
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview3-size"
+                id="ezy__epoverview3-size7"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview3-size7">
+                XXL
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview3-size"
+                id="ezy__epoverview3-size8"
+                autocomplete="off"
+                disabled
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview3-size8">
+                XXXL
+              </label>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h5 class="ezy__epoverview3-title mb-2">QTY</h5>
+            <div class="input-group ezy__epoverview3-qty d-inline-flex mb-2">
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value="2"
+                aria-label="Example text with button addon"
+                aria-describedby="button-addon1"
+              />
+              <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                <button class="btn" type="button">-</button>
+                <button class="btn" type="button">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col d-flex">
+              <button
+                class="btn ezy__epoverview3-btn text-uppercase d-inline-flex justify-content-center align-items-center px-3 px-sm-5 me-2 me-lg-3 w-100"
+              >
+                Buy Now
+              </button>
+              <button
+                class="btn ezy__epoverview3-btn-outline text-uppercase bg-transparent d-inline-flex justify-content-center align-items-center px-3 px-sm-4 w-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <div class="col-sm-auto">
+              <button
+                class="btn btn-link ezy__epoverview3-fav d-inline-flex align-items-center text-decoration-none"
+              >
+                <i class="far fa-heart fs-5"></i>
+              </button>
+              <button
+                class="btn btn-link ezy__epoverview3-share d-inline-flex align-items-center text-decoration-none"
+              >
+                <i class="fas fa-share-alt fs-5"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-12 col-lg-10 col-xl-8">
+              <p class="ezy__epoverview3-content mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec consequat lorem. Maecenas
+                elementum at diam consequat bibendum.
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <br />
+
+    <!--
+    Name: Product Overview 4
+-->
+    <style>
+.ezy__epoverview4 {
+  /* Bootstrap variables */
+  --bs-body-color: #23262f;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-secondary-color-rgb: 0, 0, 0;
+  --ezy-button-color: #fff;
+  --ezy-rating-color: #ffc107;
+  --ezy-card-bg: #f8f8f8;
+  --ezy-product-color: rgba(var(--ezy-secondary-color-rgb), 0.1);
+
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  overflow: hidden;
+  padding: 60px 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .ezy__epoverview4 {
+    padding: 100px 0;
+  }
+}
+
+/* Gray Block Style */
+.gray .ezy__epoverview4,
+.ezy__epoverview4.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 0, 0, 0;
+  --ezy-card-bg: rgb(255, 255, 255);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__epoverview4,
+.ezy__epoverview4.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 255, 255, 255;
+  --ezy-card-bg: rgb(11, 23, 39);
+}
+
+/* Dark Block Style */
+.dark .ezy__epoverview4,
+.ezy__epoverview4.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 255, 255, 255;
+  --ezy-card-bg: rgb(30, 39, 53);
+}
+
+.ezy__epoverview4-heading {
+  font-size: 24px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__epoverview4-heading {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+.ezy__epoverview4-card {
+  background-color: var(--ezy-card-bg);
+  border-radius: 15px;
+}
+
+.ezy__epoverview4-gallery li {
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid rgb(var(--ezy-secondary-color-rgb), 0.1);
+  border-radius: 8px;
+  margin-right: 10px;
+  padding: 8px;
+}
+
+.ezy__epoverview4-price {
+  font-size: 24px;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview4-title {
+  font-size: 15px;
+  color: var(--bs-body-color);
+}
+
+.ezy__epoverview4-review {
+  font-weight: 500;
+  color: rgb(var(--ezy-theme-color-rgb));
+  text-decoration: none;
+}
+
+.ezy__epoverview4-review:hover {
+  color: rgb(var(--ezy-theme-color-rgb));
+  text-decoration: underline;
+}
+
+.ezy__epoverview4 .fa-star {
+  color: var(--ezy-rating-color);
+}
+
+.ezy__epoverview4-qty {
+  width: 95px;
+}
+
+.ezy__epoverview4-qty .btn {
+  font-size: 15px;
+  font-weight: bold;
+  background-color: transparent;
+  color: rgb(var(--ezy-theme-color-rgb));
+  padding: 0;
+  border-radius: 0 !important;
+  border: none;
+  width: 30px;
+  height: 100%;
+}
+
+.ezy__epoverview4-qty .btn:hover {
+  background-color: rgb(var(--ezy-theme-color-rgb));
+  color: var(--ezy-button-color);
+}
+
+.ezy__epoverview4-qty .form-control {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  color: var(--bs-body-color);
+}
+
+.ezy__epoverview4-qty .input-group-text,
+.ezy__epoverview4-qty .form-control {
+  border-color: rgb(var(--ezy-secondary-color-rgb));
+  height: 48px;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+.ezy__epoverview4-radios .btn {
+  border-width: 2px;
+  border-color: var(--bs-body-bg) !important;
+  background-color: rgba(var(--ezy-secondary-color-rgb), 0.5);
+  background-color: var(--ezy-product-color);
+  color: var(--bs-body-color);
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50rem !important;
+  outline: 1px solid transparent;
+  padding: 0;
+}
+
+.ezy__epoverview4-radios .btn:hover {
+  background-color: var(--ezy-product-color);
+  outline-color: var(--ezy-product-color);
+}
+
+.ezy__epoverview4-radios .btn-check:checked + .btn {
+  background-color: var(--ezy-product-color);
+  outline-color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview4-radios .btn-check:disabled + .btn {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.ezy__epoverview4-btn,
+.ezy__epoverview4-btn-outline {
+  font-size: 14px;
+  height: 42px;
+  min-width: 42px;
+}
+
+.ezy__epoverview4-btn {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: rgb(var(--ezy-theme-color-rgb));
+  color: var(--ezy-button-color);
+}
+
+.ezy__epoverview4-btn-outline {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: transparent;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview4-btn-outline:hover,
+.ezy__epoverview4-btn:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.9) !important;
+  color: var(--ezy-button-color);
+}
+
+.ezy__epoverview4-fav,
+.ezy__epoverview4-share {
+  color: rgb(var(--ezy-theme-color-rgb));
+  height: 42px;
+}
+
+.ezy__epoverview4-fav:hover,
+.ezy__epoverview4-share:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview4-content {
+  color: var(--bs-body-color);
+  opacity: 0.7;
+}
+
+.ezy__epoverview4 .rounded-3 {
+  border-radius: 12px !important;
+}
+    </style>
+<section class="ezy__epoverview4" id="ezy__epoverview4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="ezy__epoverview4-card p-3 p-sm-4 p-lg-5 me-lg-4">
+          <div class="text-center mb-3 p-md-4">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/ecommerce/headphone2.png"
+              alt=""
+              class="img-fluid w-100"
+            />
+          </div>
+
+          <ul class="nav ezy__epoverview4-gallery">
+            <a href="#!">
+              <li>
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/ecommerce/headphone2-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </li>
+            </a>
+            <a href="#!">
+              <li>
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/ecommerce/headphone2-2.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </li>
+            </a>
+            <a href="#!">
+              <li>
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/ecommerce/headphone2-3.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4">
+        <div class="mb-4 pb-lg-2">
+          <h1 class="ezy__epoverview4-heading mb-3">Beats Headphone 2019</h1>
+          <p class="ezy__epoverview4-content mb-4">
+            <span>4.7</span> <i class="fas fa-star mx-2"></i>
+            <a href="#!" class="ezy__epoverview4-review ms-1">3 Reviews</a> <span class="ms-2">87 Order</span>
+          </p>
+          <div class="row my-4">
+            <div class="col-12 col-lg-10 col-xl-8">
+              <p class="ezy__epoverview4-content mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec consequat lorem. Maecenas
+                elementum at diam consequat bibendum.
+              </p>
+            </div>
+          </div>
+          <h3 class="ezy__epoverview4-price fw-bold mb-0">Rs. 354</h3>
+        </div>
+
+        <form action="#!">
+          <div class="mb-4">
+            <h5 class="ezy__epoverview4-title mb-2">Color</h5>
+            <div
+              class="btn-group ezy__epoverview4-radios d-block mb-2"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview4-color"
+                id="ezy__epoverview4-color1"
+                autocomplete="off"
+                checked
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #ffc107"
+                for="ezy__epoverview4-color1"
+              ></label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview4-color"
+                id="ezy__epoverview4-color2"
+                autocomplete="off"
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #3aa9f3"
+                for="ezy__epoverview4-color2"
+              ></label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview4-color"
+                id="ezy__epoverview4-color3"
+                autocomplete="off"
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #ff7171"
+                for="ezy__epoverview4-color3"
+              ></label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview4-color"
+                id="ezy__epoverview4-color4"
+                autocomplete="off"
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #161d25"
+                for="ezy__epoverview4-color4"
+              ></label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview4-color"
+                id="ezy__epoverview4-color5"
+                autocomplete="off"
+              />
+              <label
+                class="btn me-1 mt-1"
+                style="--ezy-product-color: #ff0000"
+                for="ezy__epoverview4-color5"
+              ></label>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h5 class="ezy__epoverview4-title mb-0">Size: <span class="opacity-50">Extra Extra Small</span></h5>
+            <div
+              class="btn-group ezy__epoverview4-radios d-block mb-2"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview4-size"
+                id="ezy__epoverview4-size1"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview4-size1">
+                XXS
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview4-size"
+                id="ezy__epoverview4-size2"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview4-size2">
+                XS
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview4-size"
+                id="ezy__epoverview4-size3"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview4-size3">
+                S
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview4-size"
+                id="ezy__epoverview4-size4"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview4-size4">
+                M
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview4-size"
+                id="ezy__epoverview4-size5"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview4-size5">
+                L
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview4-size"
+                id="ezy__epoverview4-size6"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview4-size6">
+                XL
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview4-size"
+                id="ezy__epoverview4-size7"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview4-size7">
+                XXL
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview4-size"
+                id="ezy__epoverview4-size8"
+                autocomplete="off"
+                disabled
+              />
+              <label class="btn me-2 mt-2 rounded-pill overflow-hidden px-3 py-1" for="ezy__epoverview4-size8">
+                XXXL
+              </label>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h5 class="ezy__epoverview4-title mb-2">QTY</h5>
+            <div class="input-group ezy__epoverview4-qty d-inline-flex mb-2">
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value="1"
+                aria-label="Example text with button addon"
+                aria-describedby="button-addon1"
+              />
+              <div class="input-group-text d-flex flex-column bg-transparent p-0">
+                <button class="btn" type="button">-</button>
+                <button class="btn" type="button">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-md-10 d-flex">
+              <button
+                class="btn ezy__epoverview4-btn text-uppercase d-inline-flex justify-content-center align-items-center px-3 px-sm-5 me-2 me-lg-3 w-100"
+              >
+                Buy Now
+              </button>
+              <button
+                class="btn ezy__epoverview4-btn-outline text-uppercase bg-transparent d-inline-flex justify-content-center align-items-center px-3 px-sm-4 w-100"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <div class="col-12 mt-3">
+              <button
+                class="btn btn-link ezy__epoverview4-fav d-inline-flex align-items-center text-decoration-none"
+              >
+                <i class="far fa-heart fs-5 me-1"></i> Add to wishlist
+              </button>
+              <button
+                class="btn btn-link ezy__epoverview4-share d-inline-flex align-items-center text-decoration-none"
+              >
+                <i class="fas fa-share-alt fs-5 me-1"></i> Share
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <br />
+
+    <!--
+    Name: Product Overview 5
+-->
+    <style>
+.ezy__epoverview5 {
+  /* Bootstrap variables */
+  --bs-body-color: #23262f;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-secondary-color-rgb: 237, 237, 237;
+  --ezy-button-color: #fff;
+  --ezy-shape-color: #f5f7fd;
+  --ezy-rating-color: #ff4747;
+
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  font-size: 14px;
+  overflow: hidden;
+  padding: 60px 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .ezy__epoverview5 {
+    padding: 100px 0;
+  }
+}
+
+/* Gray Block Style */
+.gray .ezy__epoverview5,
+.ezy__epoverview5.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 225, 221, 221;
+  --ezy-shape-color: rgb(255, 255, 255);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__epoverview5,
+.ezy__epoverview5.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+  --ezy-shape-color: rgb(11, 23, 39);
+}
+
+/* Dark Block Style */
+.dark .ezy__epoverview5,
+.ezy__epoverview5.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-secondary-color-rgb: 38, 63, 99;
+  --ezy-shape-color: rgb(30, 39, 53);
+}
+
+.ezy__epoverview5-heading {
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--bs-body-color);
+}
+
+.ezy__epoverview5-price {
+  font-size: 24px;
+  color: rgb(var(--ezy-theme-color-rgb));
+  font-weight: 700;
+}
+
+.ezy__epoverview5-old-price {
+  font-size: 14px;
+  color: var(--bs-body-color);
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.ezy__epoverview5-mark {
+  padding: 2px 5px;
+  border-radius: 3px;
+  background: #fff1f1;
+  color: #ff4747;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ezy__epoverview5-title {
+  font-size: 14px;
+  color: var(--bs-body-color);
+  font-weight: 400;
+}
+
+.ezy__epoverview5-rating {
+  color: var(--ezy-rating-color);
+}
+
+.ezy__epoverview5 a {
+  font-weight: 500;
+  color: rgb(var(--ezy-theme-color-rgb));
+  text-decoration: none;
+}
+
+.ezy__epoverview5 a:hover {
+  color: rgb(var(--ezy-theme-color-rgb));
+  text-decoration: underline;
+}
+
+.ezy__epoverview5-qty {
+  width: 120px;
+}
+
+.ezy__epoverview5-qty .btn {
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(var(--ezy-theme-color-rgb));
+  border-radius: 50% !important;
+  border-color: rgb(var(--ezy-secondary-color-rgb));
+  padding: 0;
+}
+
+.ezy__epoverview5-qty .btn:hover {
+  background-color: rgb(var(--ezy-secondary-color-rgb));
+}
+
+.ezy__epoverview5-qty .form-control {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  color: var(--bs-body-color);
+  border: none;
+  padding: 0;
+}
+
+.ezy__epoverview5-radios .btn {
+  border-width: 3px;
+  background-color: rgb(var(--ezy-secondary-color-rgb), 0.5);
+  border-color: var(--bs-body-bg) !important;
+  color: var(--bs-body-color);
+  outline: 1px solid transparent;
+  padding: 0;
+}
+
+.ezy__epoverview5-radios .btn:hover {
+  outline-color: rgba(var(--ezy-theme-color-rgb), 1);
+}
+
+.ezy__epoverview5-radios .btn-check:checked + .btn {
+  outline-color: rgba(var(--ezy-theme-color-rgb), 1);
+}
+
+.ezy__epoverview5-radios .btn-check:disabled + .btn {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.ezy__epoverview5-btn,
+.ezy__epoverview5-btn-outline {
+  font-size: 14px;
+  height: 42px;
+  min-width: 42px;
+}
+
+.ezy__epoverview5-btn {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: rgb(var(--ezy-theme-color-rgb));
+  color: var(--ezy-button-color);
+}
+
+.ezy__epoverview5-btn-outline {
+  border-color: rgb(var(--ezy-theme-color-rgb));
+  background-color: transparent;
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview5-btn-outline:hover,
+.ezy__epoverview5-btn:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.9) !important;
+  color: var(--ezy-button-color);
+}
+
+.ezy__epoverview5-fav,
+.ezy__epoverview5-share {
+  color: rgb(var(--ezy-theme-color-rgb));
+  height: 42px;
+}
+
+.ezy__epoverview5-fav:hover,
+.ezy__epoverview5-share:hover {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+  color: rgb(var(--ezy-theme-color-rgb));
+}
+
+.ezy__epoverview5-content {
+  font-size: 14px;
+  color: var(--bs-body-color);
+}
+
+.ezy__epoverview5-hr {
+  background-color: var(--bs-body-color);
+  opacity: 0.1;
+}
+
+.ezy__epoverview5-gallery li {
+  width: 80px;
+  height: 80px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ezy-shape-color);
+  border: 1px solid rgb(var(--ezy-secondary-color-rgb));
+  margin-right: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.ezy__epoverview5-coupon {
+  background-color: var(--ezy-coupon-color);
+  color: #fff !important;
+  padding: 2px 10px;
+  font-size: 12px;
+  height: 22px;
+  border-left: 2px dashed var(--bs-body-bg);
+  border-right: 2px dashed var(--bs-body-bg);
+  text-decoration: none !important;
+}
+    </style>
+<section class="ezy__epoverview5" id="ezy__epoverview5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 position-relative">
+        <div class="me-lg-4">
+          <div class="text-center p-1 mb-2">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/ecommerce/sofa1.webp"
+              alt=""
+              class="img-fluid rounded-3"
+            />
+          </div>
+
+          <ul class="nav ezy__epoverview5-gallery">
+            <a href="#!">
+              <li>
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/ecommerce/sofa1.webp"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </li>
+            </a>
+            <a href="#!">
+              <li>
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/ecommerce/sofa1-1.webp"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </li>
+            </a>
+            <a href="#!">
+              <li>
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/ecommerce/sofa1-2.webp"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <div>
+          <h1 class="ezy__epoverview5-heading mb-3">
+            Living Room Sofa Furniture Chair Nordic Modern Minimalist Dressing Luxury Chair Plush Light Bedroom
+            Lounge Fashion
+          </h1>
+          <p class="ezy__epoverview5-content fw-light mb-4">
+            <span class="ezy__epoverview5-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="mx-1">5.0</span>
+            <a href="#!" class="ezy__epoverview5-review me-1">10 Reviews</a>
+            <span>19 orders</span>
+          </p>
+          <hr class="ezy__epoverview5-hr" />
+          <div class="mb-0 d-flex flex-wrap align-items-center">
+            <span class="ezy__epoverview5-price me-2">BDT 6,638.89</span>
+            <span class="ezy__epoverview5-old-price me-2">BDT 24,589.27</span>
+            <span class="ezy__epoverview5-mark">-73%</span>
+          </div>
+          <div class="mt-2">
+            <p class="ezy__epoverview5-content mb-1">Instant discount: BDT 1,723.92 off per BDT 86,196.20</p>
+            <a
+              href="#!"
+              class="ezy__epoverview5-coupon d-inline-block me-1 mt-1"
+              style="--ezy-coupon-color: #ff4747"
+              >BDT 172.71 Coupons For You</a
+            >
+            <a href="#!" class="ezy__epoverview5-coupon d-inline-block me-1 mt-1" style="--ezy-coupon-color: #f90"
+              >BDT 172.71 off on BDT 17,184.43</a
+            >
+            <a href="#!" class="d-inline-block me-1 mt-1">Get coupons</a>
+          </div>
+        </div>
+        <hr class="ezy__epoverview5-hr mb-4" />
+        <form action="#!">
+          <div class="mb-4">
+            <h5 class="ezy__epoverview5-title mb-0">Color: <span class="opacity-50">Black leg stool2</span></h5>
+            <div
+              class="btn-group ezy__epoverview5-radios d-block mb-2"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview5-color"
+                id="ezy__epoverview5-color1"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn me-2 mt-2 rounded-3 overflow-hidden" for="ezy__epoverview5-color1">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/ecommerce/sofa1.webp"
+                  alt=""
+                  width="50"
+                  class="img-fluid"
+                />
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview5-color"
+                id="ezy__epoverview5-color2"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-3 overflow-hidden" for="ezy__epoverview5-color2">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/ecommerce/sofa1-1.webp"
+                  alt=""
+                  width="50"
+                  class="img-fluid"
+                />
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview5-color"
+                id="ezy__epoverview5-color3"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-3 overflow-hidden" for="ezy__epoverview5-color3">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/ecommerce/sofa1-2.webp"
+                  alt=""
+                  width="50"
+                  class="img-fluid"
+                />
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview5-color"
+                id="ezy__epoverview5-color4"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-3 overflow-hidden" for="ezy__epoverview5-color4">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/ecommerce/sofa1-1.webp"
+                  alt=""
+                  width="50"
+                  class="img-fluid"
+                />
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview5-color"
+                id="ezy__epoverview5-color5"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-3 overflow-hidden" for="ezy__epoverview5-color5">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/ecommerce/sofa1-2.webp"
+                  alt=""
+                  width="50"
+                  class="img-fluid"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h5 class="ezy__epoverview5-title mb-0">Size: <span class="opacity-50">Extra Extra Small</span></h5>
+            <div
+              class="btn-group ezy__epoverview5-radios d-block mb-2"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview5-size"
+                id="ezy__epoverview5-size1"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn me-2 mt-2 rounded-3 overflow-hidden px-3 py-1" for="ezy__epoverview5-size1">
+                XXS
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview5-size"
+                id="ezy__epoverview5-size2"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-3 overflow-hidden px-3 py-1" for="ezy__epoverview5-size2">
+                XS
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview5-size"
+                id="ezy__epoverview5-size3"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-3 overflow-hidden px-3 py-1" for="ezy__epoverview5-size3">
+                S
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview5-size"
+                id="ezy__epoverview5-size4"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-3 overflow-hidden px-3 py-1" for="ezy__epoverview5-size4">
+                M
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview5-size"
+                id="ezy__epoverview5-size5"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-3 overflow-hidden px-3 py-1" for="ezy__epoverview5-size5">
+                L
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview5-size"
+                id="ezy__epoverview5-size6"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-3 overflow-hidden px-3 py-1" for="ezy__epoverview5-size6">
+                XL
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview5-size"
+                id="ezy__epoverview5-size7"
+                autocomplete="off"
+              />
+              <label class="btn me-2 mt-2 rounded-3 overflow-hidden px-3 py-1" for="ezy__epoverview5-size7">
+                XXL
+              </label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="ezy__epoverview5-size"
+                id="ezy__epoverview5-size8"
+                autocomplete="off"
+                disabled
+              />
+              <label class="btn me-2 mt-2 rounded-3 overflow-hidden px-3 py-1" for="ezy__epoverview5-size8">
+                XXXL
+              </label>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <h5 class="ezy__epoverview5-title mb-2">Quantity:</h5>
+            <div class="input-group ezy__epoverview5-qty d-inline-flex align-items-center mb-2">
+              <button class="btn" type="button">-</button>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                value="2"
+                aria-label="Example text with button addon"
+                aria-describedby="button-addon1"
+              />
+              <button class="btn" type="button">+</button>
+            </div>
+          </div>
+
+          <p class="ezy__epoverview5-content">
+            <span class="opacity-75">Ships to</span> <i class="fas fa-map-marker-alt mx-1"></i>
+            <a href="#!">Bangladesh</a>
+          </p>
+          <p class="ezy__epoverview5-content">
+            <b>Shipping: BDT 5,159.65</b> <br />
+            <span class="opacity-75">From China to Bangladesh via EMS</span> <br />
+            <span class="opacity-75">Estimated delivery: 7-15 days</span>
+          </p>
+
+          <div>
+            <button
+              class="btn ezy__epoverview5-btn text-uppercase d-inline-flex align-items-center px-3 px-sm-5 me-1"
+            >
+              Buy Now
+            </button>
+            <button
+              class="btn ezy__epoverview5-btn-outline text-uppercase bg-transparent d-inline-flex align-items-center px-3 px-sm-4 me-1"
+            >
+              Add To Cart
+            </button>
+            <button class="btn btn-link ezy__epoverview5-fav d-inline-flex align-items-center text-decoration-none">
+              <i class="far fa-heart fs-5"></i>
+            </button>
+            <button
+              class="btn btn-link ezy__epoverview5-share d-inline-flex align-items-center text-decoration-none"
+            >
+              <i class="fas fa-share-alt fs-5"></i>
+            </button>
+          </div>
+
+          <div class="mt-4 d-flex align-items-center">
+            <i class="far fa-check-circle fs-3 opacity-75"></i>
+            <div class="ezy__epoverview5-content ms-2">
+              <b>75-Day Buyer Protection</b><br />
+              <span class="opacity-75">Money back guarantee</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <br />
+
+  </body>
+</html>

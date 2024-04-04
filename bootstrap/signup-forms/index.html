@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Forms(HTML-Bootstrap)</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+    Name: Sign Up 1
+-->
+    <style>
+      .ezy__signup1 {
+        /* Bootstrap variables */
+        --bs-body-color: #333b7b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #ffffff;
+        --ezy-form-card-shadow: 0 16px 24px rgba(197, 206, 222, 0.25);
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__signup1,
+      .ezy__signup1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #fff;
+        --ezy-form-card-shadow: 0 16px 24px rgba(221, 234, 255, 0.25);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__signup1,
+      .ezy__signup1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #253140;
+        --ezy-form-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__signup1,
+      .ezy__signup1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+        --ezy-form-card-shadow: none;
+      }
+
+      .ezy__signup1-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup1-form-card {
+        background-color: var(--ezy-form-card-bg);
+        border: none;
+        box-shadow: var(--ezy-form-card-shadow);
+        border-radius: 15px;
+      }
+
+      .ezy__signup1-form-card *:not(button, button *) {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup1 .form-control,
+      .ezy__signup1 .form-select {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background-color: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup1 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      .ezy__signup1-btn-submit {
+        padding: 12px 30px;
+        background-color: #333b7b;
+        color: #ffffff;
+      }
+
+      .ezy__signup1-btn-submit:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signup1-btn {
+        padding: 12px 30px;
+      }
+
+      .ezy__signup1-btn,
+      .ezy__signup1-btn * {
+        color: #ffffff;
+      }
+
+      .ezy__signup1-btn:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signup1-or-separator {
+        position: relative;
+      }
+
+      .ezy__signup1-or-separator hr {
+        border-color: var(--bs-body-color);
+        opacity: 0.15;
+      }
+
+      .ezy__signup1-or-separator span {
+        background-color: var(--ezy-form-card-bg);
+        color: var(--bs-body-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__signup1 d-flex align-items-center">
+      <div class="container">
+        <div class="row py-4 justify-content-center">
+          <div class="col-lg-6">
+            <div class="card ezy__signup1-form-card">
+              <div class="card-body p-md-5">
+                <h2 class="ezy__signup1-heading mb-4 mb-md-5">Sign Up</h2>
+
+                <form>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group mb-4">
+                        <label for="first-name" class="mb-2">First Name</label>
+                        <input type="text" class="form-control" id="first-name" placeholder="Your First Name" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mb-4">
+                        <label for="last-name" class="mb-2">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" placeholder="Your Last Name" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group mb-4">
+                        <label for="email" class="mb-2">Birth date</label>
+                        <div class="input-group">
+                          <select type="day" class="form-select">
+                            <option value="">Day</option>
+                          </select>
+                          <select type="month" class="form-select">
+                            <option value="">Month</option>
+                          </select>
+                          <select type="month" class="form-select">
+                            <option value="">Year</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group mb-4">
+                        <label for="email" class="mb-2">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email Address" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mb-4">
+                        <label for="password" class="mb-2">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter Password" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mb-4">
+                        <label for="confirm-password" class="mb-2">Confirm Password</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="confirm-password"
+                          placeholder="Confirm Password"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="agree" />
+                      <label class="form-check-label" for="agree">
+                        I accept to the <a href="#">terms & condition</a>, <a href="#">privacy policy</a>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn ezy__signup1-btn-submit w-100">Sign Up</button>
+
+                  <div class="position-relative ezy__signup1-or-separator">
+                    <hr class="my-4 my-md-5" />
+                    <span class="px-2">Or</span>
+                  </div>
+
+                  <button class="btn btn-primary ezy__signup1-btn w-100 d-flex align-items-center mb-3">
+                    <span class="fab fa-facebook text-white fs-4"></span>
+                    <span class="w-100 text-center text-white">Continue with Facebook</span>
+                  </button>
+                  <button class="btn btn-danger ezy__signup1-btn w-100 d-flex align-items-center">
+                    <span class="fab fa-google text-white fs-4"></span>
+                    <span class="w-100 text-center text-white">Continue with Google</span>
+                  </button>
+
+                  <div class="text-center mt-4 mt-md-5">
+                    <p class="mb-0 me-2 opacity-50 lh-1">Already have an account?</p>
+                    <a href="#" class="btn btn-link py-0 text-dark text-decoration-none">Sign In</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Sign Up 2
+-->
+    <style>
+      .ezy__signup2 {
+        /* Bootstrap variables */
+        --bs-body-color: #333b7b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #ffffff;
+        --ezy-form-card-shadow: none;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__signup2,
+      .ezy__signup2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #f6f6f6;
+        --ezy-form-card-shadow: 0 16px 24px rgba(221, 234, 255, 0.25);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__signup2,
+      .ezy__signup2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #253140;
+        --ezy-form-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__signup2,
+      .ezy__signup2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+        --ezy-form-card-shadow: none;
+      }
+
+      .ezy__signup2 .container {
+        min-height: 100vh;
+      }
+
+      .ezy__signup2-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup2-bg-holder {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 150px;
+        width: 100%;
+        float: right;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__signup2-bg-holder {
+          width: 50vw;
+        }
+      }
+
+      .ezy__signup2-form-card {
+        background-color: transparent;
+        border: none;
+        box-shadow: var(--ezy-form-card-shadow);
+        /*border-radius: 15px;*/
+      }
+
+      .ezy__signup2-form-card *:not(button, button *) {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup2 .form-control,
+      .ezy__signup2 .form-select {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background-color: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup2 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      .ezy__signup2-btn-submit {
+        padding: 12px 30px;
+        background-color: #333b7b;
+        color: #ffffff;
+      }
+
+      .ezy__signup2-btn-submit:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signup2-btn {
+        padding: 12px 30px;
+      }
+
+      .ezy__signup2-btn,
+      .ezy__signup2-btn * {
+        color: #ffffff;
+      }
+
+      .ezy__signup2-btn:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signup2-or-separator {
+        position: relative;
+      }
+
+      .ezy__signup2-or-separator hr {
+        border-color: var(--bs-body-color);
+        opacity: 0.15;
+      }
+
+      .ezy__signup2-or-separator span {
+        background-color: var(--ezy-form-card-bg);
+        color: var(--bs-body-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__signup2 d-flex">
+      <div class="container">
+        <div class="row justify-content-between h-100">
+          <div class="col-lg-6">
+            <div
+              class="ezy__signup2-bg-holder d-none d-lg-block h-100"
+              style="background-image: url(https://cdn.easyfrontend.com/pictures/sign-in-up/sign2.jpg)"
+            ></div>
+          </div>
+          <div class="col-lg-5 py-5">
+            <div class="row align-items-center h-100">
+              <div class="col-12">
+                <div class="card ezy__signup2-form-card">
+                  <div class="card-body p-0">
+                    <h2 class="ezy__signup2-heading mb-4 mb-md-5">Sign Up</h2>
+
+                    <form>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form-group mb-4">
+                            <label for="first-name" class="mb-2">First Name</label>
+                            <input type="text" class="form-control" id="first-name" placeholder="Your First Name" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group mb-4">
+                            <label for="last-name" class="mb-2">Last Name</label>
+                            <input type="text" class="form-control" id="last-name" placeholder="Your Last Name" />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group mb-4">
+                            <label for="email" class="mb-2">Birth date</label>
+                            <div class="input-group">
+                              <select type="day" class="form-select">
+                                <option value="">Day</option>
+                              </select>
+                              <select type="month" class="form-select">
+                                <option value="">Month</option>
+                              </select>
+                              <select type="month" class="form-select">
+                                <option value="">Year</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group mb-4">
+                            <label for="email" class="mb-2">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email Address" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group mb-4">
+                            <label for="password" class="mb-2">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter Password" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group mb-4">
+                            <label for="confirm-password" class="mb-2">Confirm Password</label>
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="confirm-password"
+                              placeholder="Confirm Password"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group mb-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="agree" />
+                          <label class="form-check-label" for="agree">
+                            I accept to the <a href="#">terms & condition</a>, <a href="#">privacy policy</a>
+                          </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn ezy__signup2-btn-submit w-100">Sign Up</button>
+
+                      <div class="position-relative ezy__signup2-or-separator">
+                        <hr class="my-4 my-md-5" />
+                        <span class="px-2">Or</span>
+                      </div>
+
+                      <button class="btn btn-primary ezy__signup2-btn w-100 d-flex align-items-center mb-3">
+                        <span class="fab fa-facebook text-white fs-4"></span>
+                        <span class="w-100 text-center text-white">Continue with Facebook</span>
+                      </button>
+                      <button class="btn btn-danger ezy__signup2-btn w-100 d-flex align-items-center">
+                        <span class="fab fa-google text-white fs-4"></span>
+                        <span class="w-100 text-center text-white">Continue with Google</span>
+                      </button>
+
+                      <div class="text-center mt-4 mt-md-5">
+                        <p class="mb-0 opacity-50 lh-1 me-2">Already have an account?</p>
+                        <a href="#" class="btn btn-link py-0 text-dark text-decoration-none">Sign In</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Sign Up 3
+-->
+    <style>
+      .ezy__signup3 {
+        /* Bootstrap variables */
+        --bs-body-color: #333b7b;
+        --bs-body-bg: rgb(229, 229, 229);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #ffffff;
+        --ezy-form-card-shadow: 0 16px 24px rgba(197, 206, 222, 0.25);
+
+        background-color: var(--bs-body-bg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__signup3,
+      .ezy__signup3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #f6f6f6;
+        --ezy-form-card-shadow: 0 16px 24px rgba(221, 234, 255, 0.25);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__signup3,
+      .ezy__signup3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #253140;
+        --ezy-form-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__signup3,
+      .ezy__signup3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+        --ezy-form-card-shadow: none;
+      }
+
+      .ezy__signup3-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup3-form-card {
+        background-color: var(--ezy-form-card-bg);
+        border: none;
+        box-shadow: var(--ezy-form-card-shadow);
+        border-radius: 15px;
+      }
+
+      .ezy__signup3-form-card *:not(button, button *) {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup3 .form-control,
+      .ezy__signup3 .form-select {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background-color: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup3 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      .ezy__signup3-btn-submit {
+        padding: 12px 30px;
+        background-color: #333b7b;
+        color: #ffffff;
+      }
+
+      .ezy__signup3-btn-submit:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signup3-btn {
+        padding: 12px 30px;
+      }
+
+      .ezy__signup3-btn,
+      .ezy__signup3-btn * {
+        color: #ffffff;
+      }
+
+      .ezy__signup3-btn:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signup3-or-separator {
+        position: relative;
+      }
+
+      .ezy__signup3-or-separator hr {
+        border-color: var(--bs-body-color);
+        opacity: 0.15;
+      }
+
+      .ezy__signup3-or-separator span {
+        background-color: var(--ezy-form-card-bg);
+        color: var(--bs-body-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        opacity: 0.8;
+      }
+    </style>
+    <section
+      class="ezy__signup3 d-flex align-items-center"
+      style="background-image: url(https://cdn.easyfrontend.com/pictures/sign-in-up/sign-in-up-1.png)"
+    >
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-6">
+            <div class="card ezy__signup3-form-card">
+              <div class="card-body p-md-5">
+                <h2 class="ezy__signup3-heading mb-4 mb-md-5">Sign Up</h2>
+
+                <form>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group mb-4">
+                        <label for="first-name" class="mb-2">First Name</label>
+                        <input type="text" class="form-control" id="first-name" placeholder="Your First Name" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mb-4">
+                        <label for="last-name" class="mb-2">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" placeholder="Your Last Name" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group mb-4">
+                        <label for="email" class="mb-2">Birth date</label>
+                        <div class="input-group">
+                          <select type="day" class="form-select">
+                            <option value="">Day</option>
+                          </select>
+                          <select type="month" class="form-select">
+                            <option value="">Month</option>
+                          </select>
+                          <select type="month" class="form-select">
+                            <option value="">Year</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group mb-4">
+                        <label for="email" class="mb-2">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email Address" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mb-4">
+                        <label for="password" class="mb-2">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter Password" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mb-4">
+                        <label for="confirm-password" class="mb-2">Confirm Password</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="confirm-password"
+                          placeholder="Confirm Password"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="agree" />
+                      <label class="form-check-label" for="agree">
+                        I accept to the <a href="#">terms & condition</a>, <a href="#">privacy policy</a>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn ezy__signup3-btn-submit w-100">Sign Up</button>
+
+                  <div class="position-relative ezy__signup3-or-separator">
+                    <hr class="my-4 my-md-5" />
+                    <span class="px-2">Or</span>
+                  </div>
+
+                  <button class="btn btn-primary ezy__signup3-btn w-100 d-flex align-items-center mb-3">
+                    <span class="fab fa-facebook text-white fs-4"></span>
+                    <span class="w-100 text-center text-white">Continue with Facebook</span>
+                  </button>
+                  <button class="btn btn-danger ezy__signup3-btn w-100 d-flex align-items-center">
+                    <span class="fab fa-google text-white fs-4"></span>
+                    <span class="w-100 text-center text-white">Continue with Google</span>
+                  </button>
+
+                  <div class="text-center mt-4 mt-md-5">
+                    <p class="mb-0 opacity-50 lh-1">Already have an account?</p>
+                    <a href="#" class="btn btn-link py-0 text-dark text-decoration-none">Sign In</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Sign Up 4
+-->
+    <style>
+      .ezy__signup4 {
+        /* Bootstrap variables */
+        --bs-body-color: #333b7b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #e7f6ff;
+        --ezy-form-card-shadow: none;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__signup4,
+      .ezy__signup4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #e7f6ff;
+        --ezy-form-card-shadow: 0 16px 24px rgba(221, 234, 255, 0.25);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__signup4,
+      .ezy__signup4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #253140;
+        --ezy-form-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__signup4,
+      .ezy__signup4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+        --ezy-form-card-shadow: none;
+      }
+
+      .ezy__signup4 .container {
+        min-height: 100vh;
+      }
+
+      .ezy__signup4-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup4-bg-holder {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 150px;
+        width: 100%;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__signup4-bg-holder {
+          width: 50vw;
+        }
+      }
+
+      .ezy__signup4-form-card {
+        background-color: var(--ezy-form-card-bg);
+        border: none;
+        box-shadow: var(--ezy-form-card-shadow);
+        border-radius: 15px;
+      }
+
+      .ezy__signup4-form-card *:not(button, button *) {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup4 .form-control,
+      .ezy__signup4 .form-select {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background-color: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup4 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      .ezy__signup4-btn-submit {
+        padding: 12px 30px;
+        background-color: #333b7b;
+        color: #ffffff;
+      }
+
+      .ezy__signup4-btn-submit:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signup4-btn {
+        padding: 12px 30px;
+      }
+
+      .ezy__signup4-btn,
+      .ezy__signup4-btn * {
+        color: #ffffff;
+      }
+
+      .ezy__signup4-btn:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signup4-or-separator {
+        position: relative;
+      }
+
+      .ezy__signup4-or-separator hr {
+        border-color: var(--bs-body-color);
+        opacity: 0.15;
+      }
+
+      .ezy__signup4-or-separator span {
+        background-color: var(--ezy-form-card-bg);
+        color: var(--bs-body-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__signup4 d-flex">
+      <div class="container">
+        <div class="row justify-content-between h-100">
+          <div class="col-lg-6 py-5">
+            <div class="row align-items-center h-100 px-lg-5">
+              <div class="col-12">
+                <div class="card ezy__signup4-form-card">
+                  <div class="card-body p-md-5">
+                    <h2 class="ezy__signup4-heading mb-3">Welcome to Easy Frontend</h2>
+                    <p class="mb-4 mb-md-5">
+                      <span class="opacity-50 me-2">Already have an account?</span>
+                      <a href="#" class="btn btn-link p-0 text-dark text-decoration-none">Sign In</a>
+                    </p>
+
+                    <form>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form-group mb-4">
+                            <label for="first-name" class="mb-2">First Name</label>
+                            <input type="text" class="form-control" id="first-name" placeholder="Your First Name" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group mb-4">
+                            <label for="last-name" class="mb-2">Last Name</label>
+                            <input type="text" class="form-control" id="last-name" placeholder="Your Last Name" />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group mb-4">
+                            <label for="email" class="mb-2">Birth date</label>
+                            <div class="input-group">
+                              <select type="day" class="form-select">
+                                <option value="">Day</option>
+                              </select>
+                              <select type="month" class="form-select">
+                                <option value="">Month</option>
+                              </select>
+                              <select type="month" class="form-select">
+                                <option value="">Year</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group mb-4">
+                            <label for="email" class="mb-2">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email Address" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group mb-4">
+                            <label for="password" class="mb-2">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter Password" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group mb-4">
+                            <label for="confirm-password" class="mb-2">Confirm Password</label>
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="confirm-password"
+                              placeholder="Confirm Password"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group mb-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="agree" />
+                          <label class="form-check-label" for="agree">
+                            I accept to the <a href="#">terms & condition</a>, <a href="#">privacy policy</a>
+                          </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn ezy__signup4-btn-submit w-100">
+                        Sign Up
+                        <span class="fas fa-arrow-right ms-2 text-white"></span>
+                      </button>
+
+                      <div class="position-relative ezy__signup4-or-separator">
+                        <hr class="my-4 my-md-5" />
+                        <span class="px-2">Or</span>
+                      </div>
+
+                      <button class="btn btn-primary ezy__signup4-btn w-100 d-flex align-items-center mb-3">
+                        <span class="fab fa-facebook text-white fs-4"></span>
+                        <span class="w-100 text-center text-white">Continue with Facebook</span>
+                      </button>
+                      <button class="btn btn-danger ezy__signup4-btn w-100 d-flex align-items-center">
+                        <span class="fab fa-google text-white fs-4"></span>
+                        <span class="w-100 text-center text-white">Continue with Google</span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="ezy__signup4-bg-holder d-none d-lg-block h-100"
+              style="background-image: url(https://cdn.easyfrontend.com/pictures/sign-in-up/sign4.jpg)"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: Sign Up 5
+-->
+    <style>
+      .ezy__signup5 {
+        /* Bootstrap variables */
+        --bs-body-color: #333b7b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #e7f6ff;
+        --ezy-form-card-shadow: none;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__signup5,
+      .ezy__signup5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #e7f6ff;
+        --ezy-form-card-shadow: 0 16px 24px rgba(221, 234, 255, 0.25);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__signup5,
+      .ezy__signup5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #253140;
+        --ezy-form-card-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__signup5,
+      .ezy__signup5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+        --bs-dark-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+        --ezy-form-card-shadow: none;
+      }
+
+      .ezy__signup5 .container {
+        min-height: 100vh;
+      }
+
+      .ezy__signup5-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup5-form-card {
+        background-color: var(--ezy-form-card-bg);
+        border: none;
+        box-shadow: var(--ezy-form-card-shadow);
+        border-radius: 15px;
+      }
+
+      .ezy__signup5-form-card *:not(button, button *) {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup5 .form-control,
+      .ezy__signup5 .form-select {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background-color: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__signup5 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      .ezy__signup5-btn-submit {
+        padding: 12px 30px;
+        background-color: #333b7b;
+        color: #ffffff;
+      }
+
+      .ezy__signup5-btn-submit:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signup5-btn {
+        padding: 12px 30px;
+      }
+
+      .ezy__signup5-btn,
+      .ezy__signup5-btn * {
+        color: #ffffff;
+      }
+
+      .ezy__signup5-btn:hover {
+        color: #ffffff;
+      }
+
+      .ezy__signup5-or-separator {
+        position: relative;
+      }
+
+      .ezy__signup5-or-separator hr {
+        border-color: var(--bs-body-color);
+        opacity: 0.15;
+      }
+
+      .ezy__signup5-or-separator span {
+        background-color: var(--ezy-form-card-bg);
+        color: var(--bs-body-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__signup5 d-flex">
+      <div class="container">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-lg-10 py-5">
+            <div class="card ezy__signup5-form-card">
+              <div class="card-body p-md-5">
+                <div class="row mb-4 mb-md-5">
+                  <div class="col-md-6">
+                    <h2 class="ezy__signup5-heading mb-3">Welcome to Easy Frontend!</h2>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="mb-0 text-md-end">
+                      <span class="opacity-50 me-2">Already have an account?</span>
+                      <a href="#" class="btn btn-link p-0 text-dark text-decoration-none">Sign In</a>
+                    </p>
+                  </div>
+                </div>
+                <form>
+                  <div class="row justify-content-between">
+                    <div class="col-md-6 col-lg-5">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form-group mb-4">
+                            <label for="first-name" class="mb-2">First Name</label>
+                            <input type="text" class="form-control" id="first-name" placeholder="Your First Name" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group mb-4">
+                            <label for="last-name" class="mb-2">Last Name</label>
+                            <input type="text" class="form-control" id="last-name" placeholder="Your Last Name" />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group mb-4">
+                            <label for="email" class="mb-2">Birth date</label>
+                            <div class="input-group">
+                              <select type="day" class="form-select">
+                                <option value="">Day</option>
+                              </select>
+                              <select type="month" class="form-select">
+                                <option value="">Month</option>
+                              </select>
+                              <select type="month" class="form-select">
+                                <option value="">Year</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group mb-4">
+                            <label for="email" class="mb-2">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email Address" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group mb-4">
+                            <label for="password" class="mb-2">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter Password" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group mb-4">
+                            <label for="confirm-password" class="mb-2">Confirm Password</label>
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="confirm-password"
+                              placeholder="Confirm Password"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group mb-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="agree" />
+                          <label class="form-check-label" for="agree">
+                            I accept to the <a href="#">terms & condition</a>, <a href="#">privacy policy</a>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                      <button type="submit" class="btn ezy__signup5-btn-submit w-100">
+                        Sign Up
+                        <span class="fas fa-arrow-right ms-2 text-white"></span>
+                      </button>
+
+                      <div class="position-relative ezy__signup5-or-separator">
+                        <hr class="my-4 my-md-5" />
+                        <span class="px-2">Or</span>
+                      </div>
+
+                      <button class="btn btn-primary ezy__signup5-btn w-100 d-flex align-items-center mb-3">
+                        <span class="fab fa-facebook text-white fs-4"></span>
+                        <span class="w-100 text-center text-white">Continue with Facebook</span>
+                      </button>
+                      <button class="btn btn-danger ezy__signup5-btn w-100 d-flex align-items-center">
+                        <span class="fab fa-google text-white fs-4"></span>
+                        <span class="w-100 text-center text-white">Continue with Google</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

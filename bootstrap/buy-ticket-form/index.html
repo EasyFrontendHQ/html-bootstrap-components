@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buy Ticket Form</title>
+
+  <!-- Color Scheme-->
+  <script src="../../assets/demo/script.js"></script>
+  <script>
+    appendHeadInfo("bootstrap");
+  </script>
+</head>
+
+<body>
+  <!-- Start: buy ticket form 1
+    ======================================-->
+  <style>
+.ezy__buyticket1 {
+  /* Bootstrap variables */
+  --bs-body-color: #323e50;
+  --bs-body-bg: rgb(50, 62, 80);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-shape-color: #fff;
+  --ezy-body-color-invert: #fff;
+  --ezy-form-card-bg: #fff;
+  --ezy-box-shadow: 0 7px 65px 0 rgb(50, 61, 79, 0.2);
+
+  background-color: var(--bs-body-bg);
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Gray Block Style */
+.gray .ezy__buyticket1,
+.ezy__buyticket1.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(60, 71, 88);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__buyticket1,
+.ezy__buyticket1.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-shape-color: rgb(77, 88, 105);
+  --ezy-body-color-invert: #fff;
+  --ezy-form-card-bg: rgb(77, 88, 105);
+  --ezy-box-shadow: 0 7px 65px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Dark Block Style */
+.dark .ezy__buyticket1,
+.ezy__buyticket1.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-shape-color: rgb(50, 62, 80);
+  --ezy-body-color-invert: #fff;
+  --ezy-form-card-bg: rgb(50, 62, 80);
+  --ezy-box-shadow: 0 7px 65px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ezy__buyticket1-inner-wrapper {
+  position: relative;
+  padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+  .ezy__buyticket1-inner-wrapper {
+    padding: 100px 0;
+  }
+}
+
+.ezy__buyticket1-triangle-shape {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-style: solid;
+  border-right-width: calc(50vw);
+  border-left-width: calc(50vw);
+  border-top-width: 420px;
+  border-color: var(--ezy-shape-color) transparent transparent;
+}
+
+.ezy__buyticket1-buy-ticket-inner {
+  box-shadow: var(--ezy-box-shadow);
+  padding: 50px;
+  overflow: hidden;
+  background-color: var(--ezy-form-card-bg);
+}
+
+.ezy__buyticket1-headline {
+  color: var(--bs-body-color);
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  z-index: 1;
+}
+
+.ezy__buyticket1-headline::after {
+  width: 110px;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: var(--ezy-theme-color);
+  bottom: 15px;
+  z-index: -1;
+  transform: translate3d(-50%, 0, 0);
+}
+
+@media (min-width: 768px) {
+  .ezy__buyticket1-headline {
+    font-size: 50px;
+    line-height: 42px;
+  }
+}
+
+.ezy__buyticket1-inner {
+  padding: 12px 0 12px 12px;
+  border: 1px solid;
+  border-color: var(--ezy-theme-color);
+  overflow: hidden;
+}
+
+.ezy__buyticket1-heading {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 27px;
+  color: var(--bs-body-color);
+  text-transform: uppercase;
+}
+
+.ezy__buyticket1-sub-heading {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--bs-body-color);
+  opacity: 0.7;
+}
+
+.ezy__buyticket1-btn {
+  background-color: var(--bs-body-bg);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.5s;
+  border: 0;
+}
+
+.ezy__buyticket1-btn .ezy__buyticket1-btn-icon {
+  color: var(--ezy-theme-color);
+}
+
+.ezy__buyticket1-btn:hover {
+  color: #fff !important;
+  background-color: var(--ezy-theme-color);
+}
+
+.ezy__buyticket1-btn:hover .ezy__buyticket1-btn-icon {
+  color: #fff !important;
+}
+
+.ezy__buyticket1-heading-line {
+  position: absolute;
+  bottom: -55px;
+  left: 21px;
+  display: none;
+  z-index: 11;
+}
+
+.ezy__buyticket1-heading-line-inner {
+  transform-origin: 0 50%;
+  transform: rotate(90deg) translate3d(-100%, 0, 0);
+}
+
+@media (min-width: 768px) {
+  .ezy__buyticket1-heading-line {
+    display: inline-flex;
+  }
+}
+
+.ezy__buyticket1-long-line {
+  width: 120px;
+  height: 2px !important;
+  background-color: var(--ezy-theme-color);
+  position: relative;
+  top: -4px;
+  opacity: 1;
+}
+
+.ezy__buyticket1-start {
+  height: 1rem;
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 5px;
+  transform: rotate(180deg);
+  color: var(--ezy-body-color-invert);
+}
+
+.ezy__buyticket1-sponsors {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 567px) {
+  .ezy__buyticket1-sponsors {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 991px) {
+  .ezy__buyticket1-sponsors {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.ezy__buyticket1-sponsors-item {
+  position: relative;
+  padding: 20px 30px;
+}
+
+.ezy__buyticket1-sponsors-item img {
+  max-width: 100%;
+  height: auto;
+}
+  </style>
+<section class="ezy__buyticket1">
+  <div class="ezy__buyticket1-triangle-shape"></div>
+
+  <div class="container">
+    <div class="ezy__buyticket1-inner-wrapper">
+      <div class="row d-flex justify-content-center">
+        <div class="ezy__buyticket1-buy-ticket col-md-11 col-lg-10 col-xl-8">
+          <div class="ezy__buyticket1-buy-ticket-inner">
+            <!-- Start: Section Header -->
+            <div class="section-header mb-5">
+              <h2 class="ezy__buyticket1-headline position-relative">Buy Ticket</h2>
+            </div>
+            <!-- End: Section Header -->
+
+            <div class="col-12">
+              <div class="row ezy__buyticket1-inner mb-5">
+                <div class="col-md-6 d-flex flex-column">
+                  <span class="ezy__buyticket1-heading">Full conference Pass</span>
+                  <span class="ezy__buyticket1-sub-heading">2 Days Full Access + Launch + Gifts</span>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end align-items-center my-2 m-md-0">
+                  <a href="#" class="ezy__buyticket1-btn btn px-5 py-3">Order full pass <i
+                      class="fas fa-arrow-right ezy__buyticket1-btn-icon ms-2"></i></a>
+                </div>
+              </div>
+              <!-- End: .row -->
+            </div>
+            <!-- End: .buy-ticket-form -->
+
+            <div class="col-12">
+              <div class="row ezy__buyticket1-inner">
+                <div class="col-md-6 d-flex flex-column">
+                  <span class="ezy__buyticket1-heading">Full conference Pass</span>
+                  <span class="ezy__buyticket1-sub-heading">2 Days Full Access + Launch + Gifts</span>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end align-items-center my-2 m-md-0">
+                  <a href="#" class="ezy__buyticket1-btn btn px-5 py-3">Order full pass <i
+                      class="fas fa-arrow-right ezy__buyticket1-btn-icon ms-2"></i></a>
+                </div>
+              </div>
+              <!-- End: .row -->
+            </div>
+            <!-- End: .buy-ticket-form -->
+          </div>
+        </div>
+
+        <div class="ezy__buyticket1-heading-line">
+          <div class="ezy__buyticket1-heading-line-inner">
+            <div class="ezy__buyticket1-start">CONFERENCE SPONSORS</div>
+            <hr class="ezy__buyticket1-long-line d-inline-block m-0" />
+          </div>
+        </div>
+
+        <div class="col-md-8 mt-5">
+          <ul class="ezy__buyticket1-sponsors nav text-center">
+            <li class="ezy__buyticket1-sponsors-item">
+              <img src="https://cdn.easyfrontend.com/pictures/logos/dark-logo-1.png" alt="" />
+            </li>
+            <li class="ezy__buyticket1-sponsors-item">
+              <img src="https://cdn.easyfrontend.com/pictures/logos/dark-logo-2.png" alt="" />
+            </li>
+            <li class="ezy__buyticket1-sponsors-item">
+              <img src="https://cdn.easyfrontend.com/pictures/logos/dark-logo-3.png" alt="" />
+            </li>
+            <li class="ezy__buyticket1-sponsors-item">
+              <img src="https://cdn.easyfrontend.com/pictures/logos/dark-logo-4.png" alt="" />
+            </li>
+            <li class="ezy__buyticket1-sponsors-item">
+              <img src="https://cdn.easyfrontend.com/pictures/logos/dark-logo-2.png" alt="" />
+            </li>
+            <li class="ezy__buyticket1-sponsors-item">
+              <img src="https://cdn.easyfrontend.com/pictures/logos/dark-logo-4.png" alt="" />
+            </li>
+            <li class="ezy__buyticket1-sponsors-item">
+              <img src="https://cdn.easyfrontend.com/pictures/logos/dark-logo-1.png" alt="" />
+            </li>
+            <li class="ezy__buyticket1-sponsors-item">
+              <img src="https://cdn.easyfrontend.com/pictures/logos/dark-logo-3.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End: .row -->
+    </div>
+  </div>
+  <!-- End:.container -->
+</section>
+
+  <br />
+
+  <!-- Start: buy ticket form 2
+================================== -->
+  <style>
+.ezy__buyticket2 {
+  /* Bootstrap variables */
+  --bs-body-color: #28303b;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-card-bg: rgb(239, 244, 253);
+  --ezy-card-header-bg: rgb(228, 236, 250);
+
+  background-color: var(--bs-body-bg);
+  overflow: hidden;
+  padding: 60px 0;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__buyticket2 {
+    padding: 100px 0;
+  }
+}
+
+/* Gray Block Style */
+.gray .ezy__buyticket2,
+.ezy__buyticket2.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__buyticket2,
+.ezy__buyticket2.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-card-bg: #162231;
+  --ezy-card-header-bg: rgb(14 27 43);
+}
+
+/* Dark Block Style */
+.dark .ezy__buyticket2,
+.ezy__buyticket2.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-card-bg: #162231;
+  --ezy-card-header-bg: rgb(14 27 43);
+}
+
+.ezy__buyticket2-heading {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 45px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__buyticket2-heading {
+    font-size: 55px;
+    line-height: 70px;
+  }
+}
+
+.ezy__buyticket2-sub-heading {
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--bs-body-color);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+.ezy__buyticket2-item-title {
+  font-size: 35px;
+  line-height: 45px;
+  margin: 0;
+}
+
+.ezy__buyticket2-item-price {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2px;
+}
+
+.ezy__buyticket2-item-header {
+  min-height: 108px;
+  background-color: var(--ezy-card-header-bg);
+}
+
+.ezy__buyticket2-item-key-features ul {
+  padding: 0 40px;
+}
+
+.ezy__buyticket2-item-key-features ul li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.ezy__buyticket2-item-key-features ul li:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ezy__buyticket2-item-inner-wrapper {
+  background-color: var(--ezy-card-bg);
+  border-right: 2px solid var(--bs-body-bg);
+}
+
+.ezy__buyticket2-item:last-child .ezy__buyticket2-item-inner-wrapper {
+  border-right-width: 0;
+}
+
+@media (max-width: 991px) {
+  .ezy__buyticket2-item {
+    margin-bottom: 30px;
+  }
+}
+
+.ezy__buyticket2-form-card {
+  background-color: var(--ezy-card-bg);
+}
+
+.ezy__buyticket2-form-card .card-body:not(:first-child) {
+  border-top: 2px solid var(--bs-body-bg);
+}
+
+.ezy__buyticket2 .form-control {
+  min-height: 48px;
+  line-height: 40px;
+  border: none;
+  border-bottom: 2px solid rgba(163, 190, 241, 0.24);
+  background: transparent;
+  border-radius: 0;
+  color: var(--bs-body-color);
+  outline: none;
+}
+
+.ezy__buyticket2 .form-control:focus {
+  border-color: var(--ezy-theme-color);
+  box-shadow: none;
+}
+
+.ezy__buyticket2 input[type="checkbox"] {
+  appearance: none;
+  cursor: pointer;
+  margin: 0;
+  outline-width: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.ezy__buyticket2 input[type="checkbox"]:before,
+.ezy__buyticket2 input[type="checkbox"]:checked:after {
+  content: "";
+  position: absolute;
+}
+
+.ezy__buyticket2 input[type="checkbox"]:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--bs-body-color);
+  opacity: 0.4;
+}
+
+.ezy__buyticket2 input[type="checkbox"]:checked:after {
+  top: 7px;
+  left: 7px;
+  height: 16px;
+  width: 16px;
+  background-color: var(--bs-body-color);
+}
+
+.ezy__buyticket2-qty {
+  width: 80px;
+}
+
+.ezy__buyticket2 .btn-outline-light {
+  color: var(--bs-body-color);
+  background-color: transparent;
+  border: 1px solid rgba(163, 190, 241, 0.24);
+  padding: 12px 20px;
+  transition: 0.5s;
+}
+
+.ezy__buyticket2 .btn-outline-light:hover {
+  color: var(--bs-body-bg);
+  background-color: var(--bs-body-color);
+}
+
+    /* .ezy__buyticket2 .btn-outline-light {
+        color: var(--bs-body-color);
+        border-color: rgba(163, 190, 241, 0.24);
+        padding: 12px 20px;
+      }
+      .ezy__buyticket2 .btn-outline-light:hover {
+        color: var(--bs-body-bg);
+        background-color: var(--bs-body-color);
+      } */
+  </style>
+<section class="ezy__buyticket2" id="ezy__buyticket2">
+  <div class="container">
+    <div class="row section-separator">
+      <!-- Start: Section Heading -->
+      <div class="col-12 text-center text-sm-start">
+        <h2 class="ezy__buyticket2-heading mb-0">Book Your Ticket</h2>
+        <p class="ezy__buyticket2-sub-heading ms-sm-4">We have worked with hundreds of clients.</p>
+      </div>
+      <!-- End: Section Heading -->
+
+      <!-- Start: Pricing Table Area -->
+      <div class="pricing-table pricing-table-1 col-xs-12 mt-5">
+        <div class="row justify-content-center mx-0">
+          <div class="col-12 col-md-6 px-0 ezy__buyticket2-item">
+            <div class="ezy__buyticket2-item-inner-wrapper text-center">
+              <div class="ezy__buyticket2-item-header px-3 py-4">
+                <h3 class="ezy__buyticket2-item-title">Day 1</h3>
+                <div class="ezy__buyticket2-item-price">Ticket price only $15</div>
+              </div>
+              <div class="ezy__buyticket2-item-key-features">
+                <ul>
+                  <li>Includes breakfast, lunch and snacks during the day</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 px-0 ezy__buyticket2-item">
+            <div class="ezy__buyticket2-item-inner-wrapper text-center">
+              <div class="ezy__buyticket2-item-header px-3 py-4">
+                <h3 class="ezy__buyticket2-item-title">Day 2</h3>
+                <div class="ezy__buyticket2-item-price">Ticket price only $15</div>
+              </div>
+              <div class="ezy__buyticket2-item-key-features">
+                <ul>
+                  <li>Includes breakfast, lunch and snacks during the day</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card ezy__buyticket2-form-card rounded-0 border-0">
+              <div class="card-body d-flex justify-content-between align-items-center px-md-5 py-md-4">
+                <div class="d-flex">
+                  <input type="checkbox" name="day_2" id="day_1" value="re" />
+                  <label for="day_1" class="ms-2 fs-5 text-uppercase">Day 1</label>
+                </div>
+                <div class="form-group">
+                  <input name="number-of-ticket-1" class="form-control ezy__buyticket2-qty px-0 text-center"
+                    type="text" data-value="15" required="" placeholder="QTY" />
+                </div>
+              </div>
+              <div class="card-body d-flex justify-content-between align-items-center px-md-5 py-md-4">
+                <div class="d-flex">
+                  <input type="checkbox" name="day_2" id="day_2" value="re" />
+                  <label for="day_2" class="ms-2 fs-5 text-uppercase">Day 2</label>
+                </div>
+                <div class="form-group">
+                  <input name="number-of-ticket-2" class="form-control ezy__buyticket2-qty px-0 text-center"
+                    type="text" data-value="15" required="" placeholder="QTY" />
+                </div>
+              </div>
+              <div class="card-body p-md-5">
+                <div class="form-group">
+                  <input name="name" class="form-control px-0" type="text" required=""
+                    placeholder="Enter Your Name" />
+                </div>
+                <div class="form-group mt-4">
+                  <input name="email" class="form-control px-0" type="email" required=""
+                    placeholder="Enter Your Email" />
+                </div>
+
+                <!-- Submit Button -->
+                <div class="mt-4 mt-md-5 text-center">
+                  <button class="btn btn-outline-light">
+                    Proceed to Checkout <i class="fas fa-angle-right ms-1"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- End: Pricing Table Area -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>
+
+  <br />
+</body>
+
+</html>

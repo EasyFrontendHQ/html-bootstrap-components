@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!-- Start: schedule 1
+    ======================================-->
+    <style>
+      .ezy__schedule1 {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(50, 62, 80);
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-body-color-invert: #fff;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        position: relative;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__schedule1,
+      .ezy__schedule1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__schedule1,
+      .ezy__schedule1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__schedule1,
+      .ezy__schedule1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__schedule1-heading-line {
+        position: absolute;
+        bottom: -55px;
+        right: 21px;
+        display: none;
+        transform-origin: 0 50%;
+        transform: rotate(90deg) translate3d(-100%, 0, 0);
+        z-index: 11;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__schedule1-heading-line {
+          display: block;
+        }
+      }
+
+      .ezy__schedule1-long-line {
+        width: 120px;
+        height: 2px !important;
+        background-color: var(--ezy-theme-color);
+        position: relative;
+        top: -4px;
+        opacity: 1;
+      }
+
+      .ezy__schedule1-start {
+        height: 1rem;
+        position: relative;
+        display: inline-block;
+        left: 0;
+        top: 0;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 0 5px;
+        transform: rotate(180deg);
+      }
+
+      .ezy__schedule1-headline {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 52px;
+        z-index: 1;
+        color: rgb(37, 45, 58);
+      }
+
+      .ezy__schedule1-headline::after {
+        width: 110px;
+        height: 5px;
+        content: "";
+        position: absolute;
+        background-color: var(--ezy-theme-color);
+        bottom: 15px;
+        z-index: -1;
+        transform: translate3d(-50%, 0, 0);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__schedule1-headline {
+          font-size: 50px;
+          line-height: 42px;
+        }
+      }
+
+      .ezy__schedule1-wrapper {
+        position: absolute;
+        vertical-align: middle;
+        top: 0;
+        bottom: 0;
+        background-image: none;
+        background-size: cover;
+        background-position: top;
+        background-attachment: initial;
+        background-repeat: no-repeat;
+        display: none;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__schedule1-wrapper {
+          display: block;
+        }
+      }
+
+      .ezy__schedule1-inner-wrapper {
+        padding: 80px 0;
+        margin: 0 -15px;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__schedule1-inner-wrapper {
+          padding: 155px 0;
+        }
+      }
+
+      .ezy__schedule1-schedule-heading {
+        border-top: 1px solid;
+        border-top-color: var(--bs-body-color);
+        border-bottom: 1px solid;
+        border-bottom-color: var(--bs-body-color);
+        padding: 8px 0;
+        display: inline-block;
+      }
+
+      .ezy__schedule1-day {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        text-transform: uppercase;
+      }
+
+      .ezy__schedule1-heading {
+        line-height: 27px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__schedule1-sub-heading {
+        font-size: 13px;
+        font-weight: 400;
+        color: var(--bs-body-color);
+        opacity: 0.69;
+      }
+
+      .ezy__schedule1-time {
+        color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__schedule1">
+      <div class="container">
+        <div class="ezy__schedule1-heading-line">
+          <div class="ezy__schedule1-start">Topics</div>
+          <hr class="ezy__schedule1-long-line d-inline-block m-0" />
+        </div>
+
+        <div class="row position-relative">
+          <div
+            class="ezy__schedule1-wrapper col-md-4"
+            style="background-image: url(https://cdn.easyfrontend.com/pictures/schedule/schedule1.jpg)"
+          ></div>
+          <div class="col-md-8"></div>
+
+          <div class="row ezy__schedule1-inner-wrapper">
+            <div class="col-12 col-lg-4">
+              <!-- Start: Section Header -->
+              <div class="mb-5 text-center text-md-start text-lg-center">
+                <h2 class="ezy__schedule1-headline position-relative">Schedule</h2>
+              </div>
+              <!-- End: Section Header -->
+            </div>
+            <div class="col-12 col-lg-8 text-center text-md-start">
+              <div class="row ps-lg-5">
+                <div class="col-sm-6 col-xs-12">
+                  <div>
+                    <p class="ezy__schedule1-schedule-heading">
+                      <span class="ezy__schedule1-day">Day 1 </span>
+                      <span class="ezy__schedule1-sub-heading">Thursday, October 13th</span>
+                    </p>
+
+                    <div>
+                      <div>
+                        <p class="ezy__schedule1-time mb-0">12.30 - 1.30 PM</p>
+                        <p class="ezy__schedule1-heading mb-0">EVERYONE ELSE IS SO CLEVER</p>
+                        <p class="ezy__schedule1-sub-heading">Johnny Ferguson</p>
+                      </div>
+                      <!-- End: .each-schedule -->
+                      <div>
+                        <p class="ezy__schedule1-time mb-0">12.30 - 1.30 PM</p>
+                        <p class="ezy__schedule1-heading mb-0">EVERYONE ELSE IS SO CLEVER</p>
+                        <p class="ezy__schedule1-sub-heading">Johnny Ferguson</p>
+                      </div>
+                      <!-- End: .each-schedule -->
+                      <div>
+                        <p class="ezy__schedule1-time mb-0">12.30 - 1.30 PM</p>
+                        <p class="ezy__schedule1-heading mb-0">EVERYONE ELSE IS SO CLEVER</p>
+                        <p class="ezy__schedule1-sub-heading">Johnny Ferguson</p>
+                      </div>
+                      <!-- End: .each-schedule -->
+                      <div>
+                        <p class="ezy__schedule1-time mb-0">12.30 - 1.30 PM</p>
+                        <p class="ezy__schedule1-heading mb-0">EVERYONE ELSE IS SO CLEVER</p>
+                        <p class="ezy__schedule1-sub-heading">Johnny Ferguson</p>
+                      </div>
+                      <!-- End: .each-schedule -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <div>
+                    <p class="ezy__schedule1-schedule-heading">
+                      <span class="ezy__schedule1-day">Day 2 </span>
+                      <span class="ezy__schedule1-sub-heading">Thursday, October 13th</span>
+                    </p>
+
+                    <div>
+                      <div>
+                        <p class="ezy__schedule1-time mb-0">12.30 - 1.30 PM</p>
+                        <p class="ezy__schedule1-heading mb-0">EVERYONE ELSE IS SO CLEVER</p>
+                        <p class="ezy__schedule1-sub-heading">Johnny Ferguson</p>
+                      </div>
+                      <!-- End: .each-schedule -->
+                      <div>
+                        <p class="ezy__schedule1-time mb-0">12.30 - 1.30 PM</p>
+                        <p class="ezy__schedule1-heading mb-0">EVERYONE ELSE IS SO CLEVER</p>
+                        <p class="ezy__schedule1-sub-heading">Johnny Ferguson</p>
+                      </div>
+                      <!-- End: .each-schedule -->
+                      <div>
+                        <p class="ezy__schedule1-time mb-0">12.30 - 1.30 PM</p>
+                        <p class="ezy__schedule1-heading mb-0">EVERYONE ELSE IS SO CLEVER</p>
+                        <p class="ezy__schedule1-sub-heading">Johnny Ferguson</p>
+                      </div>
+                      <!-- End: .each-schedule -->
+                      <div>
+                        <p class="ezy__schedule1-time mb-0">12.30 - 1.30 PM</p>
+                        <p class="ezy__schedule1-heading mb-0">EVERYONE ELSE IS SO CLEVER</p>
+                        <p class="ezy__schedule1-sub-heading">Johnny Ferguson</p>
+                      </div>
+                      <!-- End: .each-schedule -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End: .row -->
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!-- start: schedule 2
+================================== -->
+
+    <style>
+      .ezy__schedule2 {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(255, 255, 255);
+        --bs-body-bg-rgb: 255, 255, 255;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-item-bg: #ffffff;
+        --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+        --ezy-rating-rgb: 255, 215, 0;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__schedule2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__schedule2,
+      .ezy__schedule2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__schedule2,
+      .ezy__schedule2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+        --bs-body-bg-rgb: 30, 39, 53;
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #162231;
+        --ezy-item-shadow: none;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__schedule2,
+      .ezy__schedule2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+        --bs-body-bg-rgb: 11, 23, 39;
+
+        /* Easy Frontend variables */
+        --ezy-item-bg: #162231;
+        --ezy-item-shadow: none;
+      }
+
+      .ezy__schedule2-heading {
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 45px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__schedule2-heading {
+          font-size: 55px;
+          line-height: 70px;
+        }
+      }
+
+      .ezy__schedule2-sub-heading {
+        font-size: 14px;
+        line-height: 28px;
+        color: var(--bs-body-color);
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        opacity: 0.9;
+      }
+
+      .ezy__schedule2 p {
+        letter-spacing: 1px;
+        opacity: 0.6;
+      }
+
+      .ezy__schedule2-image {
+        position: relative;
+        width: 100px;
+      }
+
+      .ezy__schedule2-image::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        background-image: linear-gradient(
+          rgba(var(--bs-body-bg-rgb), 0.2) 34%,
+          rgba(var(--bs-body-bg-rgb), 0.8) 80%,
+          rgba(var(--bs-body-bg-rgb), 1) 98%
+        );
+      }
+
+      .ezy__schedule2-schedule {
+        line-height: 16px;
+        color: var(--bs-body-color);
+        opacity: 0.6;
+      }
+
+      .ezy__schedule2-title {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .ezy__schedule2-description {
+        color: var(--bs-body-color);
+        line-height: 20px;
+        opacity: 0.6;
+      }
+
+      .ezy__schedule2-nav a {
+        color: var(--bs-body-color);
+        opacity: 0.6;
+        text-decoration: none;
+      }
+    </style>
+    <section class="ezy__schedule2" id="ezy__schedule2">
+      <div class="container">
+        <div class="row">
+          <!-- Start: Section Heading -->
+          <div class="col-12 text-center text-sm-start">
+            <h2 class="ezy__schedule2-heading mb-0">Schedule</h2>
+            <p class="ezy__schedule2-sub-heading ms-sm-4">We design &amp; develop quality products.</p>
+          </div>
+          <!-- End: Section Heading -->
+        </div>
+        <!-- /.row -->
+        <div class="row mt-5">
+          <div class="col-12 col-md-6">
+            <h3>Day 1</h3>
+            <p>Sunday, October 16th</p>
+
+            <div>
+              <div class="mt-5">
+                <div class="ezy__schedule2-image">
+                  <img
+                    class="img-fluid"
+                    src="https://cdn.easyfrontend.com/pictures/team/easy-frontend-team-1.png"
+                    alt="Team Member"
+                  />
+                </div>
+                <div class="position-relative">
+                  <h3 class="ezy__schedule2-title mb-0">Branding The Digital Age</h3>
+                  <span class="ezy__schedule2-schedule">12.30 - 1.30 PM</span>
+                  <p class="ezy__schedule2-description mt-3">
+                    Pitch crowdsource freemium handshake virality user experience termsheet vesting.
+                  </p>
+                  <ul class="nav ezy__schedule2-nav">
+                    <li class="me-3">Speaker: <a href="">KATHY HUDSON</a></li>
+                    <li>Place: <a href=""> Hall 1</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.each-schedule -->
+              <div class="mt-5">
+                <div class="ezy__schedule2-image">
+                  <img
+                    class="img-fluid"
+                    src="https://cdn.easyfrontend.com/pictures/team/easy-frontend-team-2.png"
+                    alt="Team Member"
+                  />
+                </div>
+                <div class="position-relative">
+                  <h3 class="ezy__schedule2-title mb-0">EVERYONE ELSE IS SO CLEVER</h3>
+                  <span class="ezy__schedule2-schedule">12.30 - 1.30 PM</span>
+                  <p class="ezy__schedule2-description mt-3">
+                    Pitch crowdsource freemium handshake virality user experience termsheet vesting.
+                  </p>
+                  <ul class="nav ezy__schedule2-nav">
+                    <li class="me-3">Speaker: <a href="">KATHY HUDSON</a></li>
+                    <li>Place: <a href=""> Hall 1</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.each-schedule -->
+            </div>
+          </div>
+          <!-- /.schedule-area -->
+          <div class="col-12 col-md-6">
+            <h3>Day 2</h3>
+            <p class="mb-0">Monday, October 17th</p>
+
+            <div>
+              <div class="mt-5">
+                <div class="ezy__schedule2-image">
+                  <img
+                    class="img-fluid"
+                    src="https://cdn.easyfrontend.com/pictures/team/easy-frontend-team-4.png"
+                    alt="Team Member"
+                  />
+                </div>
+                <div class="position-relative">
+                  <h3 class="ezy__schedule2-title mb-0">Cerasa Redesign</h3>
+                  <span class="ezy__schedule2-schedule">12.30 - 1.30 PM</span>
+                  <p class="ezy__schedule2-description mt-3">
+                    Pitch crowdsource freemium handshake virality user experience termsheet vesting.
+                  </p>
+                  <ul class="nav ezy__schedule2-nav">
+                    <li class="me-3">Speaker: <a href="">KATHY HUDSON</a></li>
+                    <li>Place: <a href=""> Hall 1</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.each-schedule -->
+
+              <div class="mt-5">
+                <div class="ezy__schedule2-image">
+                  <img
+                    class="img-fluid"
+                    src="https://cdn.easyfrontend.com/pictures/team/easy-frontend-team-5.png"
+                    alt="Team Member"
+                  />
+                </div>
+                <div class="position-relative">
+                  <h3 class="ezy__schedule2-title mb-0">EVERYONE ELSE IS SO CLEVER</h3>
+                  <span class="ezy__schedule2-schedule">12.30 - 1.30 PM</span>
+                  <p class="ezy__schedule2-description mt-3">
+                    Pitch crowdsource freemium handshake virality user experience termsheet vesting.
+                  </p>
+                  <ul class="nav ezy__schedule2-nav">
+                    <li class="me-3">Speaker: <a href="">KATHY HUDSON</a></li>
+                    <li>Place: <a href=""> Hall 1</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.each-schedule -->
+            </div>
+          </div>
+          <!-- /.schedule-area -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+  </body>
+</html>

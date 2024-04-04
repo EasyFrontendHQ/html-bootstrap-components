@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numbers(HTML-Bootstrap)</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body style="background: #000" class="">
+    <!--
+    Name: numbers 1
+-->
+    <style>
+      .ezy__numbers1 {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(50, 62, 80);
+        --bs-body-bg: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        padding: 50px 0;
+        background-color: var(--bs-body-bg);
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__numbers1,
+      .ezy__numbers1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__numbers1,
+      .ezy__numbers1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__numbers1,
+      .ezy__numbers1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__numbers1-tag-code {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__numbers1 {
+        color: var(--bs-body-color);
+      }
+
+      .ezy__numbers1-tag-code span,
+      .ezy__numbers1 strong,
+      .ezy__numbers1 .btn {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__numbers1 .btn {
+        border-color: var(--ezy-theme-color);
+        border-radius: 0;
+        font-size: 14px;
+        font-style: normal;
+        text-transform: uppercase;
+        transition: 0.5s;
+      }
+
+      .ezy__numbers1 .btn:hover {
+        background-color: var(--ezy-theme-color);
+        color: var(--bs-body-color);
+      }
+    </style>
+    <section class="ezy__numbers1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-4 text-center my-4 my-sm-0">
+            <h3 class="ezy__numbers1-tag-code">
+              Flying
+              <span class="color ms-1">
+                <span>&lt;</span>
+                <span>/</span>
+                <span>dreams</span>
+                <span>></span>
+              </span>
+            </h3>
+          </div>
+
+          <div class="col-12 col-lg-8 d-flex mt-3 mt-lg-0 justify-content-center justify-content-lg-end">
+            <ul class="fix-count-down nav align-items-center">
+              <li class="d-flex flex-column pe-4">
+                <strong>11</strong>
+                <span>Speakers</span>
+              </li>
+              <li class="d-flex flex-column pe-4">
+                <strong>4</strong>
+                <span>Hours</span>
+              </li>
+              <li class="d-flex flex-column pe-4">
+                <strong>3</strong>
+                <span>Topics</span>
+              </li>
+              <li>
+                <a href="#" class="btn border-2 py-2 px-4">Get Tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: numbers 2
+-->
+    <style>
+      .ezy__numbers2 {
+        --bs-body-color: #262e3b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__numbers2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__numbers2,
+      .ezy__numbers2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__numbers2,
+      .ezy__numbers2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__numbers2,
+      .ezy__numbers2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__numbers2-heading {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__numbers2-heading {
+          font-size: 45px;
+        }
+      }
+
+      .ezy__numbers2-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      /* card */
+      .ezy__numbers2 .card {
+        background-color: transparent !important;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__numbers2 .card h3 {
+        font-size: 45px;
+        font-weight: 900;
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__numbers2 .card h5 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .ezy__numbers2 .card p {
+        font-size: 16px;
+        opacity: 0.8;
+      }
+
+      .ezy__numbers2 img {
+        border-radius: 10px;
+      }
+    </style>
+    <section class="ezy__numbers2">
+      <div class="container">
+        <!-- heading -->
+        <div class="row justify-content-between">
+          <div class="col-12 col-lg-6">
+            <div class="ezy__numbers2-contents-wrapper">
+              <h1 class="ezy__numbers2-heading mb-3">Let's reveal Something !</h1>
+              <p class="ezy__numbers2-sub-heading mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod perferendis nihil cupiditate
+                aliquid qui exercitationem labore veritatis eaque nobis libero earum.
+              </p>
+            </div>
+            <!-- cards -->
+            <div class="d-flex flex-column flex-sm-row">
+              <!-- card starts -->
+              <div class="card border-0 mb-3">
+                <div class="card-body">
+                  <h3 class="mb-3">432</h3>
+                  <h5>Completed Event</h5>
+                  <p class="mb-0">Partner removes the hassle and confusion that comes from managing.</p>
+                </div>
+              </div>
+              <!-- card ends -->
+              <!-- card starts -->
+              <div class="card border-0 mb-3">
+                <div class="card-body">
+                  <h3 class="mb-3">758</h3>
+                  <h5>Game Completed</h5>
+                  <p class="mb-0">It’s no secret that the digital. From exciting startups to global brands.</p>
+                </div>
+              </div>
+              <!-- card ends -->
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row">
+              <!-- card starts -->
+              <div class="card border-0 mb-3">
+                <div class="card-body">
+                  <h3 class="mb-3">31+</h3>
+                  <h5>Completed Fund</h5>
+                  <p class="mb-0">Sed ut in perspiciatis unde omnis istema natus error sit tatem.</p>
+                </div>
+              </div>
+              <!-- card ends -->
+              <!-- card starts -->
+              <div class="card border-0 mb-3">
+                <div class="card-body">
+                  <h3 class="mb-3">994</h3>
+                  <h5>Completed Ticket</h5>
+                  <p class="mb-0">Viverra tellus in hac habitasse platea dictumst tempor id eu nisl.</p>
+                </div>
+              </div>
+              <!-- card ends -->
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 d-flex justify-content-center align-items-end">
+            <img src="https://cdn.easyfrontend.com/pictures/numbers2.jpg" alt="" class="img-fluid mt-5 mt-md-0" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: numbers 3
+-->
+    <style>
+      .ezy__numbers3 {
+        --bs-body-color: #161b22;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        padding: 60px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__numbers3 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__numbers3,
+      .ezy__numbers3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__numbers3,
+      .ezy__numbers3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__numbers3,
+      .ezy__numbers3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__numbers3-heading {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__numbers3-heading {
+          font-size: 45px;
+        }
+      }
+
+      .ezy__numbers3-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      /* card */
+      .ezy__numbers3 .card {
+        background-color: transparent !important;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__numbers3 .card h3 {
+        font-size: 45px;
+        font-weight: 900;
+      }
+
+      .ezy__numbers3 .card h5 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .ezy__numbers3 .card p {
+        font-size: 16px;
+        opacity: 0.8;
+      }
+
+      .ezy__numbers3 img {
+        border-radius: 10px;
+      }
+    </style>
+    <section class="ezy__numbers3">
+      <div class="container">
+        <!-- heading -->
+        <div class="row justify-content-between">
+          <div class="col-12 col-lg-6">
+            <div class="ezy__numbers3-contents-wrapper">
+              <h1 class="ezy__numbers3-heading mb-3">Some Important Numbers</h1>
+              <p class="ezy__numbers3-sub-heading mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod perferendis nihil cupiditate
+                aliquid qui exercitationem labore veritatis eaque nobis libero earum.
+              </p>
+            </div>
+            <!-- cards -->
+            <div class="d-flex flex-column flex-sm-row">
+              <!-- card starts -->
+              <div class="card border-0 mb-3">
+                <div class="card-body">
+                  <h3 class="mb-3">432</h3>
+                  <h5>Completed Event</h5>
+                  <p class="mb-0">Partner removes the hassle and confusion that comes from managing.</p>
+                </div>
+              </div>
+              <!-- card ends -->
+              <!-- card starts -->
+              <div class="card border-0 mb-3">
+                <div class="card-body">
+                  <h3 class="mb-3">756</h3>
+                  <h5>Game Completed</h5>
+                  <p class="mb-0">It’s no secret that the digital. From exciting startups to global brands.</p>
+                </div>
+              </div>
+              <!-- card ends -->
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row">
+              <!-- card starts -->
+              <div class="card border-0 mb-3">
+                <div class="card-body">
+                  <h3 class="mb-3">73+</h3>
+                  <h5>Completed Fund</h5>
+                  <p class="mb-0">Sed ut in perspiciatis unde omnis istema natus error sit tatem.</p>
+                </div>
+              </div>
+              <!-- card ends -->
+              <!-- card starts -->
+              <div class="card border-0 mb-3">
+                <div class="card-body">
+                  <h3 class="mb-3">999+</h3>
+                  <h5>Completed Ticket</h5>
+                  <p class="mb-0">Viverra tellus in hac habitasse platea dictumst tempor id eu nisl.</p>
+                </div>
+              </div>
+              <!-- card ends -->
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 d-flex justify-content-center align-items-end">
+            <img src="https://cdn.easyfrontend.com/pictures/featured/three.png" alt="" class="img-fluid mt-5 mt-md-0" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: numbers 4
+-->
+    <style>
+      .ezy__numbers4 {
+        --bs-body-color: #262e3b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* easy frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        padding: 190px 0;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__numbers4 {
+          padding: 120px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__numbers4,
+      .ezy__numbers4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__numbers4,
+      .ezy__numbers4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__numbers4,
+      .ezy__numbers4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__numbers4 h3 {
+        font-size: 45px;
+        font-weight: 900;
+      }
+
+      .ezy__numbers4 h5 {
+        font-size: 18px;
+        font-weight: 500;
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__numbers4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+            <h3 class="mb-3 mb-md-4">139</h3>
+            <h5>Completed Event</h5>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+            <h3 class="mb-3 mb-md-4">12k</h3>
+            <h5>Game Completed</h5>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+            <h3 class="mb-3 mb-md-4">97+</h3>
+            <h5>Completed Fund</h5>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+            <h3 class="mb-3 mb-md-4">333</h3>
+            <h5>Completed Ticket</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: numbers 5
+-->
+    <style>
+      .ezy__numbers5 {
+        --bs-body-color: #262e3b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        padding: 100px 0;
+      }
+
+      @media (min-width: 991px) {
+        .ezy__numbers5 {
+          padding: 150px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__numbers5,
+      .ezy__numbers5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__numbers5,
+      .ezy__numbers5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__numbers5,
+      .ezy__numbers5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__numbers5 h3 {
+        font-size: 45px;
+        font-weight: 900;
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__numbers5 h5 {
+        font-size: 18px;
+        font-weight: 500;
+        opacity: 0.8;
+      }
+    </style>
+    <section class="ezy__numbers5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+            <h3 class="mb-3 mb-md-4">754</h3>
+            <h5 class="mb-0">Completed Event</h5>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+            <h3 class="mb-3 mb-md-4">19k</h3>
+            <h5 class="mb-0">Game Completed</h5>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+            <h3 class="mb-3 mb-md-4">53</h3>
+            <h5 class="mb-0">Completed Fund</h5>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+            <h3 class="mb-3 mb-md-4">111</h3>
+            <h5 class="mb-0">Completed Ticket</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

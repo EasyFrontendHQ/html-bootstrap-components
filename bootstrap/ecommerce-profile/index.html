@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+  <body>
+    <!-- ep profile 1 -->
+    <style>
+      .ezy__epprofile1 {
+        /* Bootstrap variables */
+        --bs-body-color: #000;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #ffffff;
+        --ezy-card-shadow: 0px 6px 44px rgba(173, 174, 197, 0.2);
+        --ezy-body-color-invert: rgb(246, 246, 246);
+        --ezy-border-color: rgb(213, 213, 213);
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+        padding: 60px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epprofile1 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epprofile1,
+      .ezy__epprofile1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-body-color-invert: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epprofile1,
+      .ezy__epprofile1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-body-color-invert: rgb(11, 23, 39);
+        --ezy-border-color: rgba(130, 130, 130, 0.4);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epprofile1,
+      .ezy__epprofile1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-body-color-invert: rgb(11, 23, 39);
+        --ezy-border-color: rgba(130, 130, 130, 0.4);
+      }
+
+      .ezy__epprofile1-card {
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+        border-radius: 0p;
+      }
+      .ezy__epprofile1-icon {
+        background-color: var(--ezy-body-color-invert);
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 90px;
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epprofile1 h5 {
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      .ezy__epprofile1 h6 {
+        font-size: 22px;
+      }
+
+      .ezy__epprofile1-sidebar-nav li {
+        background-color: transparent;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      .ezy__epprofile1-sidebar-nav li.active {
+        border-left: 4px solid var(--ezy-theme-color);
+        background-color: var(--ezy-body-color-invert);
+      }
+      .ezy__epprofile1-sidebar-nav li:hover {
+        background-color: var(--ezy-body-color-invert);
+      }
+      .ezy__epprofile1-sidebar-nav li a {
+        text-decoration: none;
+        color: var(--bs-body-color);
+        opacity: 0.8;
+      }
+
+      .ezy__epprofile1 hr {
+        background-color: var(--ezy-border-color);
+      }
+
+      .ezy__epprofile1 a {
+        text-decoration: none;
+        color: var(--bs-body-color);
+      }
+      .ezy__epprofile1 a:hover {
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epprofile1-icon-title {
+        font-size: 17px;
+      }
+
+      .ezy__epprofile1-orders-icon {
+        color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__epprofile1">
+      <div class="container">
+        <div class="row">
+          <!-- sidebar -->
+          <div class="col-12 col-md-3">
+            <div class="ezy__epprofile1-card py-4">
+              <h5 class="mx-3 mb-3">Account</h5>
+
+              <ul class="ezy__epprofile1-sidebar-nav nav flex-column">
+                <li class="px-3 py-2 active"><a href="#!">Overview</a></li>
+                <li class="px-3 py-2"><a href="#!">Orders</a></li>
+                <li class="px-3 py-2"><a href="#!">Payment</a></li>
+                <li class="px-3 py-2"><a href="#!">Refund & Return</a></li>
+                <li class="px-3 py-2"><a href="#!">Feedback</a></li>
+                <li class="px-3 py-2"><a href="#!">Setting</a></li>
+
+                <hr class="my-2 mx-3" />
+
+                <li class="px-3 py-2"><a href="#!">Invite friends</a></li>
+
+                <hr class="my-2 mx-3" />
+
+                <li class="px-3 py-2"><a href="#!">Help Center</a></li>
+                <li class="px-3 py-2"><a href="#!">Manage reports</a></li>
+                <li class="px-3 py-2"><a href="#!">Suggestion</a></li>
+                <li class="px-3 py-2"><a href="#!">DS center</a></li>
+              </ul>
+            </div>
+
+            <div class="ezy__epprofile1-card d-flex flex-column text-center p-4 px-3 px-md-4 mt-4">
+              <h6 class="fw-normal fs-5 mb-1">EZY Mobile App</h6>
+              <p class="small opacity-50 mb-0">Search Anywhere, Anytime!</p>
+              <a href="#!">
+                <img src="https://cdn.easyfrontend.com/pictures/qr-code.png" alt="" class="img-fluid" />
+              </a>
+              <a href="#!" class="small mb-0 opacity-75">Search or click to download</a>
+            </div>
+          </div>
+
+          <!-- profile -->
+          <div class="col-12 col-md-9 mt-4 mt-md-0">
+            <div class="ezy__epprofile1-card p-4">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/team/team_square_3.jpeg"
+                  alt=""
+                  width="70"
+                  height="70"
+                  class="rounded-circle"
+                />
+                <h6 class="fw-bold ms-3">Shafayetur Rahman</h6>
+              </div>
+
+              <div class="row mt-4">
+                <div class="col-6 col-sm-3 text-center mt-4">
+                  <div class="mb-2">
+                    <i class="fas fa-heart fs-2 opacity-25"></i>
+                  </div>
+                  <p class="mb-0 ezy__epprofile1-icon-title">Wish List</p>
+                </div>
+
+                <div class="col-6 col-sm-3 text-center mt-4">
+                  <div class="mb-2">
+                    <i class="fas fa-users fs-2 opacity-25"></i>
+                  </div>
+                  <p class="mb-0 ezy__epprofile1-icon-title">Following</p>
+                </div>
+
+                <div class="col-6 col-sm-3 text-center mt-4">
+                  <div class="mb-2">
+                    <i class="fas fa-clock fs-2 opacity-25"></i>
+                  </div>
+                  <p class="mb-0 ezy__epprofile1-icon-title">Viewed</p>
+                </div>
+
+                <div class="col-6 col-sm-3 text-center mt-4">
+                  <div class="mb-2">
+                    <i class="fas fa-id-card fs-2 opacity-25"></i>
+                  </div>
+                  <p class="mb-0 ezy__epprofile1-icon-title">Coupons</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ezy__epprofile1-card p-4 mt-4">
+              <div class="d-flex align-items-center justify-content-between">
+                <h6 class="fw-bold ms-3">My Orders</h6>
+                <a href="#!" class="opacity-50">View All <i class="fas fa-chevron-right ms-2 small"></i></a>
+              </div>
+
+              <hr class="ms-3" />
+
+              <div class="row my-4">
+                <div class="col-6 col-sm-3 text-center mt-4">
+                  <a href="#!">
+                    <div class="ezy__epprofile1-orders-icon mb-3">
+                      <i class="fas fa-wallet fs-1"></i>
+                    </div>
+                    <p class="mb-0 ezy__epprofile1-icon-title">Unpaid</p>
+                  </a>
+                </div>
+
+                <div class="col-6 col-sm-3 text-center mt-4">
+                  <a href="#!">
+                    <div class="ezy__epprofile1-orders-icon mb-3">
+                      <i class="fas fa-gift fs-1"></i>
+                    </div>
+                    <p class="mb-0 ezy__epprofile1-icon-title">To Be Shipped</p>
+                  </a>
+                </div>
+
+                <div class="col-6 col-sm-3 text-center mt-4">
+                  <a href="#!">
+                    <div class="ezy__epprofile1-orders-icon mb-3">
+                      <i class="fas fa-shipping-fast fs-1"></i>
+                    </div>
+                    <p class="mb-0 ezy__epprofile1-icon-title">Shipped</p>
+                  </a>
+                </div>
+
+                <div class="col-6 col-sm-3 text-center mt-4">
+                  <a href="#!">
+                    <div class="ezy__epprofile1-orders-icon mb-3">
+                      <i class="fas fa-calendar-check fs-1"></i>
+                    </div>
+                    <p class="mb-0 ezy__epprofile1-icon-title">To Be Reviewed</p>
+                  </a>
+                </div>
+              </div>
+
+              <hr class="ms-3" />
+
+              <a href="#!">
+                <div class="d-flex align-items-center justify-content-between px-3">
+                  <div class="d-flex align-items-center opacity-75">
+                    <i class="fas fa-receipt"></i>
+                    <p class="mb-0 ms-2">My Appeal</p>
+                  </div>
+                  <i class="fas fa-chevron-right fs-5 opacity-50"></i>
+                </div>
+              </a>
+
+              <hr class="ms-3" />
+
+              <a href="#!">
+                <div class="d-flex align-items-center justify-content-between px-3">
+                  <div class="d-flex align-items-center opacity-75">
+                    <i class="fas fa-dollar"></i>
+                    <p class="mb-0 ms-2">In dispute</p>
+                  </div>
+                  <i class="fas fa-chevron-right fs-5 opacity-50"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!-- ep profile 2 -->
+    <style>
+      .ezy__epprofile2 {
+        /* Bootstrap variables */
+        --bs-body-color: #000;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #ffffff;
+        --ezy-card-shadow: 0px 6px 44px rgba(173, 174, 197, 0.2);
+        --ezy-body-color-invert: rgb(246, 246, 246);
+        --ezy-border-color: rgb(213, 213, 213);
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+        padding: 60px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epprofile2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epprofile2,
+      .ezy__epprofile2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-body-color-invert: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epprofile2,
+      .ezy__epprofile2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-body-color-invert: rgb(11, 23, 39);
+        --ezy-border-color: rgba(130, 130, 130, 0.4);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epprofile2,
+      .ezy__epprofile2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-body-color-invert: rgb(11, 23, 39);
+        --ezy-border-color: rgba(130, 130, 130, 0.4);
+      }
+
+      .ezy__epprofile2-card {
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+        border-radius: 0;
+      }
+      .ezy__epprofile2-icon {
+        background-color: var(--ezy-body-color-invert);
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 90px;
+        color: var(--ezy-theme-color);
+      }
+
+      .ezy__epprofile2 h5 {
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      .ezy__epprofile2 h6 {
+        font-size: 22px;
+      }
+      .ezy__epprofile2 p {
+        opacity: 0.8;
+      }
+
+      .ezy__epprofile2-navigation li {
+        border-bottom: 4px solid transparent;
+        background-color: transparent;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      .ezy__epprofile2-navigation li.active {
+        border-bottom: 4px solid var(--ezy-theme-color);
+        font-weight: 700;
+      }
+
+      .ezy__epprofile2-navigation li:hover {
+        color: var(--ezy-theme-color);
+      }
+      .ezy__epprofile2-navigation li a {
+        padding: 0 5px;
+        font-size: 17px;
+        text-decoration: none;
+        color: var(--bs-body-color);
+        opacity: 0.95;
+      }
+
+      .ezy__epprofile2-deleted-orders {
+        text-decoration: none;
+        color: var(--bs-body-color);
+        font-size: 13px;
+        opacity: 0.75;
+      }
+      .ezy__epprofile2-deleted-orders:hover {
+        opacity: 1;
+        font-weight: 700;
+        color: var(--bs-body-color);
+      }
+      .ezy__epprofile2 .form-select {
+        height: 40px;
+        line-height: 1;
+        border-color: var(--ezy-border-color);
+        color: var(--bs-body-color);
+        background-color: transparent;
+      }
+
+      .ezy__epprofile2-searchbar .form-select {
+        border-radius: 4px 0 0 4px;
+        border-right: 0;
+      }
+      .ezy__epprofile2-searchbar .form-control {
+        border-radius: 0 4px 4px 0;
+        height: 40px;
+        line-height: 1;
+        color: var(--bs-body-color);
+        background-color: transparent;
+        border-color: var(--ezy-border-color);
+      }
+      .ezy__epprofile2-searchbar .btn {
+        border-radius: 0 4px 4px 0 !important;
+        padding: 5px 20px;
+        height: 40px;
+        line-height: 1;
+        font-size: 20px;
+        background-color: var(--ezy-theme-color);
+        color: #fff;
+      }
+      .ezy__epprofile2-searchbar .btn:hover {
+        color: #fff;
+      }
+
+      .ezy__epprofile2-order-time {
+        border-right: 1px solid var(--ezy-border-color);
+      }
+      .ezy__epprofile2-copy {
+        text-decoration: none;
+        color: var(--ezy-theme-color);
+      }
+      .ezy__epprofile2-copy:hover {
+        color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__epprofile2-order-details-btn {
+        text-decoration: none;
+        color: var(--ezy-body-color);
+      }
+      .ezy__epprofile2-order-details-btn:hover {
+        color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__epprofile2-store {
+        text-decoration: none;
+        color: var(--ezy-body-color);
+        opacity: 0.8;
+      }
+      .ezy__epprofile2-store:hover {
+        color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+      .ezy__epprofile2-store {
+        text-decoration: none;
+        color: var(--ezy-body-color);
+        opacity: 0.8;
+      }
+      .ezy__epprofile2-store:hover {
+        color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+      .ezy__epprofile2-comment {
+        text-decoration: none;
+        color: var(--ezy-theme-color);
+        opacity: 0.8;
+      }
+      .ezy__epprofile2-comment:hover {
+        color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__epprofile2-fill-btn {
+        padding: 12px 20px;
+        line-height: 1;
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+      }
+      .ezy__epprofile2-fill-btn:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+      .ezy__epprofile2-outline-btn {
+        padding: 10px 20px;
+        line-height: 1;
+        color: var(--bs-body-color);
+        background-color: transparent;
+        border: 1px solid var(--ezy-border-color);
+      }
+      .ezy__epprofile2-outline-btn:hover {
+        color: #fff;
+        border: 1px solid rgba(var(--ezy-theme-color-rgb), 0.9);
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+    </style>
+    <section class="ezy__epprofile2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-9 mt-0 mt-md-4">
+            <div class="ezy__epprofile2-card p-4">
+              <div class="d-flex align-items-center justify-content-between">
+                <ul class="nav ezy__epprofile2-navigation">
+                  <li class="active p-2"><a href="#!">All</a></li>
+                  <li class="p-2"><a href="#!">Unpaid</a></li>
+                  <li class="p-2"><a href="#!">Processing</a></li>
+                  <li class="p-2"><a href="#!">Shipped</a></li>
+                  <li class="p-2"><a href="#!">Completed</a></li>
+                </ul>
+                <div>
+                  <a href="#!" class="ezy__epprofile2-deleted-orders"
+                    ><i class="fas fa-trash me-2"></i>Deleted Orders</a
+                  >
+                </div>
+              </div>
+
+              <form action="">
+                <div class="row justify-content-between mt-4">
+                  <div class="col-12 col-md-8">
+                    <div class="ezy__epprofile2-searchbar d-flex">
+                      <div class="input-group w-50">
+                        <select class="form-select ps-4" aria-label="Default select example">
+                          <option selected>Order</option>
+                          <option value="1">Track</option>
+                        </select>
+                      </div>
+                      <div class="input-group">
+                        <input type="email" class="form-control rounded-0 ps-4" placeholder="Email Address" />
+                        <button class="btn d-flex justify-content-center align-items-center rounded-0">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-4 col-lg-3 mt-4 mt-md-0">
+                    <div class="input-group">
+                      <select class="form-select ps-4" aria-label="Default select example">
+                        <option selected>All Time</option>
+                        <option value="1">Last 6 months</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="ezy__epprofile2-card p-4 mt-4">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-12 col-sm-3">
+                      <h6 class="mb-0 fw-bold">Awaiting Payment</h6>
+                    </div>
+                    <div class="col-12 col-sm-8 text-sm-end mt-4 mt-sm-0">
+                      <div class="d-flex align-items-center justify-content-sm-end">
+                        <div class="ezy__epprofile2-order-time pe-3">
+                          <p class="mb-1">Order Date: Apr 22, 2022</p>
+                          <p class="mb-1">
+                            Order id: 81495384112609 <a href="#!" class="ezy__epprofile2-copy">Copy</a>
+                          </p>
+                        </div>
+                        <div>
+                          <a href="#!" class="fw-bold ms-3 ezy__epprofile2-order-details-btn text-nowrap"
+                            >Order Details <i class="fas fa-chevron-right ms-sm-2"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-3" />
+                <div class="col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-12">
+                      <div class="d-flex align-items-center">
+                        <a href="#!" class="ezy__epprofile2-store text-nowrap"
+                          ><i class="fas fa-box me-2"></i>TIEGOULI Store <i class="fas fa-chevron-right mx-2"></i>
+                        </a>
+                        <a href="#!" class="ezy__epprofile2-comment"><i class="fas fa-comment"></i></a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-2 mt-3">
+                      <div class="d-flex justify-content-center align-items-center h-100">
+                        <img src="https://cdn.easyfrontend.com/pictures/chair2.png" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-7 mt-3">
+                      <div>
+                        <h6 class="fw-normal fs-6 mb-0">
+                          JOYLOVE Sofa Chair Nordic Style Single Chair Designer Light Luxury Furniture Beauty
+                        </h6>
+                        <p class="opacity-100 my-2">US $4.17 <span class="opacity-75 ms-2">*1</span></p>
+
+                        <i class="fas fa-user-shield opacity-75"></i>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-3 mt-3">
+                      <div class="d-flex flex-column align-items-center">
+                        <h6 class="fw-bold fs-6 mb-0">Total: US $ 18.75</h6>
+                        <button class="btn ezy__epprofile2-fill-btn w-100 rounded-pill mt-2">Pay Now</button>
+                        <!-- <button class="btn ezy__epprofile2-outline-btn w-100 rounded-pill mt-2">Delete</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ezy__epprofile2-card p-4 mt-4">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-12 col-sm-3">
+                      <div class="d-flex align-items-center">
+                        <h6 class="mb-0 fw-bold">Finished</h6>
+                        <i class="fas fa-tablet-alt opacity-75 ms-3 mt-1"></i>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-8 text-sm-end mt-4 mt-sm-0">
+                      <div class="d-flex align-items-center justify-content-sm-end">
+                        <div class="ezy__epprofile2-order-time pe-3">
+                          <p class="mb-1">Order Date: Apr 22, 2022</p>
+                          <p class="mb-1">
+                            Order id: 81495384112609 <a href="#!" class="ezy__epprofile2-copy">Copy</a>
+                          </p>
+                        </div>
+                        <div>
+                          <a href="#!" class="fw-bold ms-3 ezy__epprofile2-order-details-btn text-nowrap"
+                            >Order Details <i class="fas fa-chevron-right ms-sm-2"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-3" />
+                <div class="col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-12">
+                      <div class="d-flex align-items-center">
+                        <a href="#!" class="ezy__epprofile2-store text-nowrap"
+                          ><i class="fas fa-box me-2"></i>TIEGOULI Store <i class="fas fa-chevron-right mx-2"></i>
+                        </a>
+                        <a href="#!" class="ezy__epprofile2-comment"><i class="fas fa-comment"></i></a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-2 mt-3">
+                      <div class="d-flex justify-content-center align-items-center h-100">
+                        <img src="https://cdn.easyfrontend.com/pictures/chair1.png" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-7 mt-3">
+                      <div>
+                        <h6 class="fw-normal fs-6 mb-0">
+                          JOYLOVE Sofa Chair Nordic Style Single Chair Designer Light Luxury Furniture Beauty
+                        </h6>
+                        <p class="opacity-100 my-2">US $4.17 <span class="opacity-75 ms-2">*1</span></p>
+
+                        <i class="fas fa-user-shield opacity-75"></i>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-3 mt-3">
+                      <div class="d-flex flex-column align-items-center">
+                        <h6 class="fw-bold fs-6 mb-0">Total: US $ 18.75</h6>
+                        <button class="btn ezy__epprofile2-fill-btn w-100 rounded-pill mt-2">Add To Cart</button>
+                        <button class="btn ezy__epprofile2-outline-btn w-100 rounded-pill mt-2">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!-- profile 3 -->
+    <style>
+      .ezy__epprofile3 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #ffffff;
+        --ezy-card-shadow: 0px 6px 44px rgba(173, 174, 197, 0.2);
+        --ezy-img-bg: #f8f8f8;
+        --ezy-border-color: rgba(0, 0, 0, 0.1);
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+        padding: 60px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epprofile3 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epprofile3,
+      .ezy__epprofile3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epprofile3,
+      .ezy__epprofile3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-img-bg: #242e3e;
+        --ezy-border-color: rgba(255, 255, 255, 0.15);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epprofile3,
+      .ezy__epprofile3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-img-bg: #242e3e;
+        --ezy-border-color: rgba(255, 255, 255, 0.15);
+      }
+
+      .ezy__epprofile3-heading {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epprofile3-heading {
+          font-size: 32px;
+        }
+      }
+
+      .ezy__epprofile3-card {
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .ezy__epprofile3-nav-item {
+        transition: 0.5s;
+      }
+      .ezy__epprofile3-nav-item.active,
+      .ezy__epprofile3-nav-item:hover {
+        background-color: var(--ezy-theme-color);
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    </style>
+    <section class="ezy__epprofile3">
+      <div class="container">
+        <div class="row">
+          <!-- nav -->
+          <div class="col-12 col-md-3 col-lg-2">
+            <div class="ezy__epprofile3-card d-flex flex-md-column align-items-center justify-content-center">
+              <div class="ezy__epprofile3-nav-item text-center w-100 py-4">
+                <div class="ezy__epprofile3-nav-icon">
+                  <i class="fas fa-user fs-3"></i>
+                </div>
+                <p class="mb-0 fw-bold fs-5 text-nowrap mt-2">Profile</p>
+              </div>
+              <div class="ezy__epprofile3-nav-item text-center w-100 py-4 active">
+                <div class="ezy__epprofile3-nav-icon">
+                  <i class="fas fa-fire fs-3"></i>
+                </div>
+                <p class="mb-0 fw-bold fs-5 text-nowrap mt-2">Order Stories</p>
+              </div>
+              <div class="ezy__epprofile3-nav-item text-center w-100 py-4">
+                <div class="ezy__epprofile3-nav-icon">
+                  <i class="fas fa-cogs fs-3"></i>
+                </div>
+                <p class="mb-0 fw-bold fs-5 text-nowrap mt-2">Setting</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- content -->
+          <div class="col-12 col-md-9 col-lg-10 mt-5 mt-md-0">
+            <div class="ezy__epprofile3-card p-4 ps-5">
+              <h3 class="ezy__epprofile3-heading mb-0">Order History</h3>
+            </div>
+            <!-- order item -->
+            <div class="ezy__epprofile3-card p-4 mt-4">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.easyfrontend.com/pictures/history_shoe1.png" alt="" class="img-fluid" />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-5 mb-4 mb-md-0">
+                  <div>
+                    <h6 class="mb-0 fw-bold fs-4 ms-md-3">Lace Running Shoes For Boys & Girls (Blue)</h6>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-2">
+                  <div class="text-center">
+                    <p class="mb-0 fs-5">6 <br />Items</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-2">
+                  <div class="text-center">
+                    <h6 class="fw-bold fs-3">$120</h6>
+                    <p class="mb-0">Yesterday</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- order item -->
+            <div class="ezy__epprofile3-card p-4 mt-4">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.easyfrontend.com/pictures/history_shoe2.png" alt="" class="img-fluid" />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-5 mb-4 mb-md-0">
+                  <div>
+                    <h6 class="mb-0 fw-bold fs-4 ms-md-3">Lace Running Shoes For Boys & Girls (Blue)</h6>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-2">
+                  <div class="text-center">
+                    <p class="mb-0 fs-5">6 <br />Items</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-2">
+                  <div class="text-center">
+                    <h6 class="fw-bold fs-3">$120</h6>
+                    <p class="mb-0">Yesterday</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- order item -->
+            <div class="ezy__epprofile3-card p-4 mt-4">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.easyfrontend.com/pictures/history_shoe3.png" alt="" class="img-fluid" />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-5 mb-4 mb-md-0">
+                  <div>
+                    <h6 class="mb-0 fw-bold fs-4 ms-md-3">Lace Running Shoes For Boys & Girls (Blue)</h6>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-2">
+                  <div class="text-center">
+                    <p class="mb-0 fs-5">6 <br />Items</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-2">
+                  <div class="text-center">
+                    <h6 class="fw-bold fs-3">$120</h6>
+                    <p class="mb-0">Yesterday</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- order item -->
+            <div class="ezy__epprofile3-card p-4 mt-4">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.easyfrontend.com/pictures/history_shoe4.png" alt="" class="img-fluid" />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-5 mb-4 mb-md-0">
+                  <div>
+                    <h6 class="mb-0 fw-bold fs-4 ms-md-3">Lace Running Shoes For Boys & Girls (Blue)</h6>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-2">
+                  <div class="text-center">
+                    <p class="mb-0 fs-5">6 <br />Items</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-2">
+                  <div class="text-center">
+                    <h6 class="fw-bold fs-3">$120</h6>
+                    <p class="mb-0">Yesterday</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- order item -->
+            <div class="ezy__epprofile3-card p-4 mt-4">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.easyfrontend.com/pictures/history_shoe2.png" alt="" class="img-fluid" />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-5 mb-4 mb-md-0">
+                  <div>
+                    <h6 class="mb-0 fw-bold fs-4 ms-md-3">Lace Running Shoes For Boys & Girls (Blue)</h6>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-2">
+                  <div class="text-center">
+                    <p class="mb-0 fs-5">6 <br />Items</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-2">
+                  <div class="text-center">
+                    <h6 class="fw-bold fs-3">$120</h6>
+                    <p class="mb-0">Yesterday</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!-- ep profile 4 -->
+    <style>
+      .ezy__epprofile4 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #ffffff;
+        --ezy-card-shadow: 0px 6px 44px rgba(173, 174, 197, 0.2);
+        --ezy-img-bg: #f8f8f8;
+        --ezy-border-color: rgba(0, 0, 0, 0.1);
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+        padding: 60px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epprofile4 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epprofile4,
+      .ezy__epprofile4.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epprofile4,
+      .ezy__epprofile4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-img-bg: #242e3e;
+        --ezy-border-color: rgba(255, 255, 255, 0.15);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epprofile4,
+      .ezy__epprofile4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-img-bg: #242e3e;
+        --ezy-border-color: rgba(255, 255, 255, 0.15);
+      }
+
+      .ezy__epprofile4-heading {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.2;
+        color: var(--ezy-theme-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epprofile4-heading {
+          font-size: 40px;
+        }
+      }
+
+      .ezy__epprofile4-sub-heading {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.2;
+        color: var(--ezy-theme-color);
+      }
+      .ezy__epprofile4-sub-heading:hover {
+        color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__epprofile4-card {
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .ezy__epprofile4-nav-item {
+        transition: 0.5s;
+      }
+      .ezy__epprofile4-nav-item.active,
+      .ezy__epprofile4-nav-item:hover {
+        background-color: var(--ezy-theme-color);
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      /* form */
+      .ezy__epprofile4 .form-control,
+      .ezy__epprofile4 .form-select {
+        min-height: 48px;
+        line-height: 40px;
+        border-color: transparent;
+        background-color: rgba(163, 190, 241, 0.14);
+        border-radius: 10px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__epprofile4 .form-control:focus {
+        border-color: var(--ezy-theme-color);
+        box-shadow: none;
+      }
+
+      .ezy__epprofile4-btn {
+        min-height: 48px;
+        padding: 15px 25px;
+        border-radius: 10px;
+        background-color: var(--ezy-theme-color);
+        color: #fff;
+        line-height: 1;
+        font-size: 18;
+        font-weight: bold;
+      }
+      .ezy__epprofile4-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        color: #fff;
+      }
+      .ezy__epprofile4 .form-check-input {
+        background-color: transparent;
+        border: 1px solid var(--ezy-border-color);
+      }
+      .ezy__epprofile4 .form-check-input:checked {
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__epprofile4">
+      <div class="container">
+        <div class="row">
+          <!-- nav -->
+          <div class="col-12 col-md-3 col-lg-2">
+            <div class="ezy__epprofile4-card d-flex flex-md-column align-items-center justify-content-center">
+              <div class="ezy__epprofile4-nav-item text-center w-100 py-4">
+                <div class="ezy__epprofile4-nav-icon">
+                  <i class="fas fa-user fs-3"></i>
+                </div>
+                <p class="mb-0 fw-bold fs-5 text-nowrap mt-2">Profile</p>
+              </div>
+              <div class="ezy__epprofile4-nav-item text-center w-100 py-4">
+                <div class="ezy__epprofile4-nav-icon">
+                  <i class="fas fa-fire fs-3"></i>
+                </div>
+                <p class="mb-0 fw-bold fs-5 text-nowrap mt-2">Order Stories</p>
+              </div>
+              <div class="ezy__epprofile4-nav-item text-center w-100 py-4 active">
+                <div class="ezy__epprofile4-nav-icon">
+                  <i class="fas fa-cogs fs-3"></i>
+                </div>
+                <p class="mb-0 fw-bold fs-5 text-nowrap mt-2">Setting</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- content -->
+          <div class="col-12 col-md-9 col-lg-10 mt-5 mt-md-0">
+            <div class="ezy__epprofile4-card p-4 py-5">
+              <h3 class="ezy__epprofile4-heading mb-0">Account Setting</h3>
+              <form action="">
+                <!-- change password -->
+                <div class="mt-5">
+                  <div class="row">
+                    <p class="ezy__epprofile4-sub-heading mb-0">Change Your Password</p>
+                    <div class="col-lg-5 mt-4">
+                      <div class="form-group mb-4">
+                        <label for="pEmail" class="mb-2">Enter Email</label>
+                        <input type="email" class="form-control" id="pEmail" />
+                      </div>
+                    </div>
+                    <div class="col-lg-5 mt-4">
+                      <div class="form-group mb-4">
+                        <label for="old-pass" class="mb-2">Old Password</label>
+                        <input type="pass" class="form-control" id="old-pass" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-5 mt-4">
+                      <div class="form-group mb-4">
+                        <label for="new-pass" class="mb-2">Enter New Password</label>
+                        <input type="pass" class="form-control" id="new-pass" />
+                      </div>
+                    </div>
+                    <div class="col-lg-5 mt-4">
+                      <div class="form-group mb-4">
+                        <label for="con-new-pass" class="mb-2">Confirm New Password</label>
+                        <input type="pass" class="form-control" id="con-new-pass" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-5 mt-4">
+                      <div>
+                        <button class="btn ezy__epprofile4-btn w-100">Update Password</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- change email -->
+                <div class="mt-5">
+                  <div class="row">
+                    <p class="ezy__epprofile4-sub-heading mb-0">Change Your Email</p>
+                    <div class="col-lg-5 mt-4">
+                      <div class="form-group mb-4">
+                        <label for="email" class="mb-2">Enter Current Email</label>
+                        <input type="email" class="form-control" id="email" />
+                      </div>
+                    </div>
+                    <div class="col-lg-5 mt-4">
+                      <div class="form-group mb-4">
+                        <label for="new-email" class="mb-2">New Email</label>
+                        <input type="email" class="form-control" id="new-email" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-5 mt-4">
+                      <div class="form-group mb-4">
+                        <label for="con-new-email" class="mb-2">Confirm New Email</label>
+                        <input type="email" class="form-control" id="con-new-email" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-5 mt-4">
+                      <div>
+                        <button class="btn ezy__epprofile4-btn w-100">Update Email</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- conditions -->
+                <div class="mt-5">
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="ezy__epprofile4-sub-heading fw-bold mb-3">Send Me Emails When</p>
+                      <div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="condition1" />
+                          <label class="form-check-label" for="condition1">
+                            Laplo offers and deals on really cool Discounts.
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="condition2" checked />
+                          <label class="form-check-label" for="condition2"> I have an upcoming reservation. </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="condition3" />
+                          <label class="form-check-label" for="condition3">
+                            Travelo has fun company news, as well as periodic emails.
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-5 mt-4">
+                          <div>
+                            <button class="btn ezy__epprofile4-btn w-100">Update All Settings</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!-- ep profile 5 -->
+    <style>
+      .ezy__epprofile5 {
+        /* Bootstrap variables */
+        --bs-body-color: #212529;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #ffffff;
+        --ezy-card-shadow: 0px 6px 44px rgba(173, 174, 197, 0.2);
+        --ezy-img-bg: #f8f8f8;
+        --ezy-border-color: rgba(0, 0, 0, 0.1);
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+        padding: 60px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epprofile5 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__epprofile5,
+      .ezy__epprofile5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__epprofile5,
+      .ezy__epprofile5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-img-bg: #242e3e;
+        --ezy-border-color: rgba(255, 255, 255, 0.15);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__epprofile5,
+      .ezy__epprofile5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-img-bg: #242e3e;
+        --ezy-border-color: rgba(255, 255, 255, 0.15);
+      }
+
+      .ezy__epprofile5-heading {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.2;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__epprofile5-heading {
+          font-size: 40px;
+        }
+      }
+
+      .ezy__epprofile5-sub-heading {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.2;
+        color: var(--ezy-theme-color);
+      }
+      .ezy__epprofile5-sub-heading:hover {
+        color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+
+      .ezy__epprofile5-card {
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .ezy__epprofile5-nav-item {
+        transition: 0.5s;
+      }
+      .ezy__epprofile5-nav-item.active,
+      .ezy__epprofile5-nav-item:hover {
+        background-color: var(--ezy-theme-color);
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .ezy__epprofile5-header {
+        background-image: url(https://cdn.easyfrontend.com/pictures/profile1-bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 350px;
+        border-radius: 10px;
+        margin-bottom: 150px;
+      }
+      .ezy__epprofile5-user {
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+      .ezy__epprofile5-data {
+        text-transform: uppercase;
+        color: var(--ezy-theme-color);
+      }
+    </style>
+    <section class="ezy__epprofile5">
+      <div class="container">
+        <div class="row">
+          <!-- nav -->
+          <div class="col-12 col-md-3 col-lg-2">
+            <div class="ezy__epprofile5-card d-flex flex-md-column align-items-center justify-content-center">
+              <div class="ezy__epprofile5-nav-item text-center w-100 py-4 active">
+                <div class="ezy__epprofile5-nav-icon">
+                  <i class="fas fa-user fs-3"></i>
+                </div>
+                <p class="mb-0 fw-bold fs-5 text-nowrap mt-2">Profile</p>
+              </div>
+              <div class="ezy__epprofile5-nav-item text-center w-100 py-4">
+                <div class="ezy__epprofile5-nav-icon">
+                  <i class="fas fa-fire fs-3"></i>
+                </div>
+                <p class="mb-0 fw-bold fs-5 text-nowrap mt-2">Order Stories</p>
+              </div>
+              <div class="ezy__epprofile5-nav-item text-center w-100 py-4">
+                <div class="ezy__epprofile5-nav-icon">
+                  <i class="fas fa-cogs fs-3"></i>
+                </div>
+                <p class="mb-0 fw-bold fs-5 text-nowrap mt-2">Setting</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- content -->
+          <div class="col-12 col-md-9 col-lg-10 mt-5 mt-md-0">
+            <div class="ezy__epprofile5-card p-4">
+              <div class="ezy__epprofile5-header position-relative">
+                <img src="https://cdn.easyfrontend.com/pictures/profile1-user.png" class="ezy__epprofile5-user" />
+              </div>
+              <div class="px-lg-5">
+                <h1 class="ezy__epprofile5-heading text-center">Jessica Brown</h1>
+                <div class="row justify-content-between mt-4 mt-md-5">
+                  <div class="col-6">
+                    <p class="ezy__epprofile5-data mb-2">USER NAME:</p>
+                  </div>
+                  <div class="col-6 col-lg-auto">
+                    <p class="ezy__epprofile5-value mb-2">INFO@JESSICA.COM</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="ezy__epprofile5-data mb-2">FIRST NAME:</p>
+                  </div>
+                  <div class="col-6 col-lg-auto">
+                    <p class="ezy__epprofile5-value mb-2">JESSICA</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="ezy__epprofile5-data mb-2">LAST NAME:</p>
+                  </div>
+                  <div class="col-6 col-lg-auto">
+                    <p class="ezy__epprofile5-value mb-2">BROWN</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="ezy__epprofile5-data mb-2">PHONE NUMBER:</p>
+                  </div>
+                  <div class="col-6 col-lg-auto">
+                    <p class="ezy__epprofile5-value mb-2">1-800-123-HELLO</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="ezy__epprofile5-data mb-2">DATE OF BIRTH:</p>
+                  </div>
+                  <div class="col-6 col-lg-auto">
+                    <p class="ezy__epprofile5-value mb-2">15 AUGUST 1985</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="ezy__epprofile5-data mb-2">STREET ADDRESS AND NUMBER:</p>
+                  </div>
+                  <div class="col-6 col-lg-auto">
+                    <p class="ezy__epprofile5-value mb-2">353 THIRD FLOOR AVENUE</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="ezy__epprofile5-data mb-2">TOWN / CITY:</p>
+                  </div>
+                  <div class="col-6 col-lg-auto">
+                    <p class="ezy__epprofile5-value mb-2">PARIS,FRANCE</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="ezy__epprofile5-data mb-2">ZIP CODE:</p>
+                  </div>
+                  <div class="col-6 col-lg-auto">
+                    <p class="ezy__epprofile5-value mb-2">75800-875</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="ezy__epprofile5-data mb-0">COUNTRY:</p>
+                  </div>
+                  <div class="col-6 col-lg-auto">
+                    <p class="ezy__epprofile5-value mb-2">UNITED STATES OF AMERICA</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-5 px-lg-5">
+                <h6 class="fs-2 fw-bold mb-4">About Me</h6>
+                <p class="mb-0 opacity-75">
+                  Vestibulum tristique, justo eu sollicitudin sagittis, metus dolor eleifend urna, quis scelerisque
+                  purus quam nec ligula. Suspendisse iaculis odio odio, ac vehicula nisi faucibus eu. Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit. Suspendisse posuere semper sem ac aliquet. Duis vel bibendum
+                  tellus, eu hendrerit sapien. Proin fringilla, enim vel lobortis viverra, augue orci fringilla diam,
+                  sed cursus elit mi vel lacus. Nulla facilisi. Fusce sagittis, magna non vehicula gravida ac rhoncus
+                  vestibulum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+  </body>
+</html>

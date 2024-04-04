@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyFrontend</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+  <body>
+    <!-- ep payment 1 -->
+    <style>
+      .ezy__eppayment1 {
+        /* Bootstrap variables */
+        --bs-body-color: #000;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #ffffff;
+        --ezy-card-shadow: 0px 6px 44px rgba(173, 174, 197, 0.2);
+        --ezy-body-color-invert: rgb(246, 246, 246);
+        --ezy-border-color: rgb(213, 213, 213);
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+        padding: 60px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__eppayment1 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__eppayment1,
+      .ezy__eppayment1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-body-color-invert: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__eppayment1,
+      .ezy__eppayment1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-body-color-invert: rgb(11, 23, 39);
+        --ezy-border-color: rgba(130, 130, 130, 0.4);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__eppayment1,
+      .ezy__eppayment1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+        --ezy-body-color-invert: rgb(11, 23, 39);
+        --ezy-border-color: rgba(130, 130, 130, 0.4);
+      }
+
+      .ezy__eppayment1-card {
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+        border-radius: 0p;
+      }
+
+      .ezy__eppayment1 h5 {
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      .ezy__eppayment1 p {
+        opacity: 0.8;
+      }
+
+      .ezy__eppayment1-fill-btn {
+        padding: 10px 40px;
+        font-size: 14px;
+        line-height: 1;
+        color: #fff;
+        background-color: var(--ezy-theme-color);
+      }
+      .ezy__eppayment1-fill-btn:hover {
+        color: #fff;
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+      .ezy__eppayment1-outline-btn {
+        padding: 10px 40px;
+        font-size: 14px;
+        line-height: 1;
+        color: var(--ezy-theme-color);
+        background-color: transparent;
+        border: 1px solid var(--ezy-border-color);
+      }
+      .ezy__eppayment1-outline-btn:hover {
+        color: #fff;
+        border: 1px solid rgba(var(--ezy-theme-color-rgb), 0.9);
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+    </style>
+    <section class="ezy__eppayment1">
+      <div class="container">
+        <div class="ezy__eppayment1-card p-4 px-lg-5">
+          <div class="row">
+            <div class="col-12">
+              <h5 class="fw-bold mb-2 text-danger">Payment Failed</h5>
+              <p class="mb-4">Not enough balance: Error code: CSE_315489</p>
+              <h6 class="mb-2">Suggestion</h6>
+              <p class="mb-4">Use another payment method or add money to your current account</p>
+              <div class="d-flex align-items-center">
+                <button class="btn ezy__eppayment1-fill-btn">Try Again</button>
+                <button class="btn ezy__eppayment1-outline-btn ms-3">Back to Homepage</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+  </body>
+</html>

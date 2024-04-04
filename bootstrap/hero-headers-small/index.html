@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secondary Header(HTML-Bootstrap)</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+    Name: secondary header 1
+-->
+    <style>
+      .ezy__sheader1 {
+        /* Bootstrap variables */
+        --bs-body-bg: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: rgb(246, 246, 246);
+        --ezy-svg-color: #fff;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__sheader1,
+      .ezy__sheader1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-card-bg: #fff;
+        --ezy-svg-color: #f6f6f6;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__sheader1,
+      .ezy__sheader1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-svg-color: rgb(30, 39, 53);
+        --ezy-card-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__sheader1,
+      .ezy__sheader1.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-svg-color: rgb(11, 23, 39);
+        --ezy-card-bg: rgb(30, 39, 53);
+      }
+
+      .ezy__sheader1-heading {
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__sheader1-heading {
+          font-size: 60px;
+        }
+      }
+
+      .ezy__sheader1-sub-heading {
+        font-size: 20px;
+        line-height: 1.2px;
+        opacity: 0.8;
+      }
+
+      /*  ezy__sheader1-top */
+      .ezy__sheader1-top {
+        background-color: var(--ezy-card-bg);
+        padding: 70px 0;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__sheader1-top {
+          padding: 100px 0;
+        }
+      }
+
+      /* svg */
+      @media (min-width: 768px) {
+        .ezy__sheader1-svg {
+          position: absolute;
+          bottom: 60px;
+          right: 300px;
+        }
+      }
+    </style>
+    <section class="ezy__sheader1">
+      <div class="ezy__sheader1-top position-relative">
+        <svg
+          class="ezy__sheader1-svg d-none d-md-block"
+          width="104"
+          height="104"
+          viewBox="0 0 104 104"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="52" cy="52" r="52" fill="var(--ezy-svg-color)" />
+        </svg>
+        <svg
+          class="position-absolute bottom-0 end-0 d-none d-md-block"
+          width="242"
+          height="164"
+          viewBox="0 0 242 164"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="165.5" cy="165.5" r="150.5" stroke="var(--ezy-svg-color)" stroke-width="30" />
+        </svg>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <p class="ezy__sheader1-sub-heading mb-4">Home / About Us</p>
+              <h1 class="ezy__sheader1-heading mb-0">Let's reveal something new!</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: secondary header 2
+-->
+    <style>
+      .ezy__sheader2 {
+        /* Bootstrap variables */
+        --bs-body-bg: #fff;
+        --bs-body-color: #000;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-svg-color: rgb(246, 246, 246);
+        --ezy-border-color: rgba(0, 0, 0, 0.2);
+        --ezy-topbar-bg: #f6f6f6;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+        padding: 70px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__sheader2 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__sheader2,
+      .ezy__sheader2.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-topbar-bg: #fff;
+        --ezy-svg-color: #fff;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__sheader2,
+      .ezy__sheader2.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-svg-color: rgb(11, 23, 39);
+        --ezy-border-color: rgba(255, 255, 255, 0.2);
+        --ezy-topbar-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__sheader2,
+      .ezy__sheader2.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-svg-color: rgb(30, 39, 53);
+        --ezy-border-color: rgba(150, 150, 150, 0.25);
+        --ezy-topbar-bg: rgb(30, 39, 53);
+      }
+
+      .ezy__sheader2-heading {
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 1.2;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__sheader2-heading {
+          font-size: 60px;
+        }
+      }
+
+      .ezy__sheader2-sub-heading {
+        font-size: 20px;
+        line-height: 1.2;
+        opacity: 0.75;
+      }
+    </style>
+    <section class="ezy__sheader2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <h1 class="ezy__sheader2-heading">Finally you're here!</h1>
+            <p class="ezy__sheader2-sub-heading mt-4 mb-0">
+              Coquettish darn pernicious foresaw therefore much amongst lingeringly shed much due antagonistically
+              alongside so then more and about turgid wrote gravida consequat so stunningly this that much slew.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: secondary header 3
+-->
+    <style>
+      .ezy__sheader3 {
+        /* Bootstrap variables */
+        --bs-body-bg: #fff;
+        --bs-body-color: #000;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-svg-color: rgb(246, 246, 246);
+        --ezy-border-color: rgba(0, 0, 0, 0.2);
+        --ezy-topbar-bg: #f6f6f6;
+
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+        padding: 70px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__sheader3 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__sheader3,
+      .ezy__sheader3.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-topbar-bg: #fff;
+        --ezy-svg-color: #fff;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__sheader3,
+      .ezy__sheader3.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-svg-color: rgb(11, 23, 39);
+        --ezy-border-color: rgba(255, 255, 255, 0.2);
+        --ezy-topbar-bg: rgb(11, 23, 39);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__sheader3,
+      .ezy__sheader3.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-svg-color: rgb(30, 39, 53);
+        --ezy-border-color: rgba(150, 150, 150, 0.25);
+        --ezy-topbar-bg: rgb(30, 39, 53);
+      }
+
+      .ezy__sheader3-heading {
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 1.2;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__sheader3-heading {
+          font-size: 60px;
+        }
+      }
+
+      .ezy__sheader3-sub-heading {
+        font-size: 20px;
+        line-height: 1.2;
+        opacity: 0.75;
+      }
+    </style>
+    <section class="ezy__sheader3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 text-center">
+            <h1 class="ezy__sheader3-heading">Page Heading</h1>
+            <p class="ezy__sheader3-sub-heading mt-4 mb-0">
+              Metus, iaculis aliquam convallis vitae placerat ullamcorper cum id id. Gravida est est, sapien, lacus.
+              Cursus facilisis tortor feugiat maecenas gravida consequat non blandit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+    Name: secondary header 4
+-->
+    <style>
+      .ezy__sheader4 {
+        /* Bootstrap variables */
+        --bs-body-bg: #000;
+        --bs-body-color: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        background-image: url(https://cdn.easyfrontend.com/pictures/background/background1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+        padding: 100px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__sheader4 {
+          padding: 150px 0;
+        }
+      }
+      .ezy__sheader4-heading {
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 1.2;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__sheader4-heading {
+          font-size: 60px;
+        }
+      }
+
+      .ezy__sheader4-sub-heading {
+        font-size: 20px;
+        line-height: 1.45;
+        opacity: 0.75;
+      }
+      .ezy__sheader4-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+      }
+    </style>
+    <section class="ezy__sheader4">
+      <div class="ezy__sheader4-overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 text-center">
+            <h1 class="ezy__sheader4-heading">Secondary Heading</h1>
+            <p class="ezy__sheader4-sub-heading mt-4 mb-0">
+              Cupiditate ullam provident delectus. Eveniet dicta possimus est, alias quo ab cumque labore modi et fuga
+              quas deleniti ipsa quasi magni eius culpa quibusdam a!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+Name: secondary header 5
+-->
+    <style>
+      .ezy__sheader5 {
+        /* Bootstrap variables */
+        --bs-body-bg: #fff;
+        --bs-body-color: #fff;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: #fff;
+        background-image: url(https://cdn.easyfrontend.com/pictures/background/abstract-background1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: var(--bs-body-color);
+        overflow: hidden;
+        position: relative;
+        padding: 100px 0;
+        z-index: 1;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__sheader5 {
+          padding: 200px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__sheader5,
+      .ezy__sheader5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__sheader5,
+      .ezy__sheader5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__sheader5,
+      .ezy__sheader5.dark {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      .ezy__sheader5-heading {
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 1.2;
+      }
+
+      @media (min-width: 768px) {
+        .ezy__sheader5-heading {
+          font-size: 60px;
+        }
+      }
+
+      .ezy__sheader5-sub-heading {
+        font-size: 20px;
+        line-height: 1.45;
+        opacity: 0.75;
+      }
+      .ezy__sheader5-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to right, #0ba6f9, #33f3e4);
+        opacity: 0.9;
+        z-index: -1;
+      }
+
+      .ezy__sheader5 li a {
+        color: #fff;
+        padding: 0 10px;
+        font-size: 18px;
+      }
+
+      .ezy__sheader5-shape-divider {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+      }
+
+      .ezy__sheader5-shape-divider svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 56px;
+      }
+
+      .ezy__sheader5-shape-divider .shape-fill {
+        color: var(--bs-body-bg);
+      }
+    </style>
+    <section class="ezy__sheader5">
+      <div class="ezy__sheader5-overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 text-center">
+            <h1 class="ezy__sheader5-heading">Artificial Inteligence</h1>
+            <p class="ezy__sheader5-sub-heading mt-4 mb-0">
+              Tenetur et neque delectus deleniti suscipit eos. Delectus quis quaerat illum sit esse, qui, quasi
+              obcaecati magni ea cum Beatae non distinctio.
+            </p>
+            <div class="mt-5">
+              <h5>Join Us On</h5>
+              <ul class="nav align-items-center justify-content-center mt-3">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ezy__sheader5-shape-divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            fill="currentColor"
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>

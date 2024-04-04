@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call To Action(HTML-Bootstrap)</title>
+
+    <!-- Color Scheme-->
+    <script src="../../assets/demo/script.js"></script>
+    <script>
+      appendHeadInfo("bootstrap");
+    </script>
+  </head>
+
+  <body>
+    <!--
+   Name:  Call To Action 1
+-->
+    <style>
+      .ezy__cta1 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-form-card-bg: #ffffff;
+
+        background: #ff4e53;
+        background: -webkit-linear-gradient(131deg, #ff9d66, #ff4e53);
+        background: linear-gradient(131deg, #ff9d66, #ff4e53);
+        overflow: hidden;
+        padding: 50px 0;
+      }
+
+      @media (min-width: 992px) {
+        .ezy__cta1 {
+          padding: 100px 0;
+        }
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__cta1,
+      .ezy__cta1.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #f6f6f6;
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__cta1,
+      .ezy__cta1.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #1f2d3f;
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__cta1,
+      .ezy__cta1.dark {
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+
+        /* Easy Frontend variables */
+        --ezy-form-card-bg: #162231;
+      }
+
+      .ezy__cta1-shape {
+        color: var(--bs-body-bg);
+      }
+
+      .ezy__cta1-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--ezy-theme-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__cta1-heading {
+          font-size: 35px;
+          line-height: 35px;
+        }
+      }
+
+      .ezy__cta1-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__cta1-form-card {
+        background-color: var(--ezy-form-card-bg);
+        border-radius: 10px;
+      }
+
+      .ezy__cta1-btn {
+        padding: 12px 30px;
+      }
+
+      .ezy__cta1 .btn-primary {
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+        color: #fff;
+      }
+    </style>
+    <section class="ezy__cta1 position-relative">
+      <svg
+        class="ezy__cta1-shape position-absolute top-0 start-0"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1920 90"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M959 90c320.067 0 640.4-38.333 961-90H0c319.267 76.667 638.933 90 959 90z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
+      <svg
+        class="ezy__cta1-shape position-absolute bottom-0 start-0"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1920 90"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M959 0c320.067 0 640.4 38.333 961 90H0C319.267 38.333 638.933 0 959 0z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
+
+      <div class="container position-relative">
+        <div class="row justify-content-center text-white">
+          <div class="col-lg-6">
+            <section class="ezy__cta1-form-card p-4">
+              <h2 class="ezy__cta1-heading mb-4">Did you know?</h2>
+              <p class="ezy__cta1-sub-heading mb-4">
+                It’s easier to reach your savings goals when you have the right savings account.
+              </p>
+              <button type="submit" class="btn btn-primary ezy__cta1-btn">Subscribe</button>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  Call To Action 2
+-->
+    <style>
+      .ezy__cta2 {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(79, 42, 192);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 50px 0;
+      }
+
+      @media (min-width: 992px) {
+        .ezy__cta2 {
+          padding: 80px 0;
+        }
+      }
+
+      .ezy__cta2-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__cta2-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__cta2-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__cta2-shape {
+        width: 400px;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.03);
+        border-radius: 50%;
+        margin: -100px;
+      }
+
+      .ezy__cta2-btn {
+        padding: 12px 30px;
+      }
+    </style>
+    <section class="ezy__cta2 position-relative">
+      <div class="ezy__cta2-shape position-absolute start-0 top-0"></div>
+      <div class="ezy__cta2-shape position-absolute end-0 bottom-0"></div>
+
+      <div class="container position-relative">
+        <div class="row justify-content-center text-center text-white">
+          <div class="col-lg-5">
+            <h2 class="ezy__cta2-heading mb-4">Did you know?</h2>
+            <p class="ezy__cta2-sub-heading mb-5">
+              It’s easier to reach your savings goals when you have the right savings account.
+            </p>
+            <button type="submit" class="btn btn-light ezy__cta2-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  Call To Action 3
+-->
+    <style>
+      .ezy__cta3 {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(250, 192, 87);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 50px 0;
+      }
+
+      @media (min-width: 992px) {
+        .ezy__cta3 {
+          padding: 80px 0;
+        }
+      }
+
+      .ezy__cta3-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__cta3-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__cta3-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      .ezy__cta3 .form-control {
+        min-height: 48px;
+        line-height: 26px;
+        border: none;
+        background: rgba(255, 255, 255, 1);
+        color: #000000;
+      }
+
+      .ezy__cta3 .form-control:focus {
+        box-shadow: none;
+      }
+
+      .ezy__cta3-btn {
+        padding: 12px 30px;
+        min-width: 110px;
+        height: 48px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__cta3-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+    </style>
+    <section class="ezy__cta3">
+      <div class="container">
+        <div class="row align-items-center justify-content-between text-white">
+          <div class="col-lg-5">
+            <h2 class="ezy__cta3-heading mb-4">Did you know?</h2>
+            <p class="ezy__cta3-sub-heading mb-0">
+              It’s easier to reach your savings goals when you have the right savings account.
+            </p>
+          </div>
+          <div class="col-md-8 col-lg-5 mt-5">
+            <form>
+              <div class="form-group mb-0">
+                <div class="input-group p-1 bg-white rounded">
+                  <input type="email" class="form-control" placeholder="Enter Email" />
+                  <div class="input-group-append">
+                    <button class="btn btn-dark ezy__cta3-btn">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  Call To Action 4
+-->
+    <style>
+      .ezy__cta4 {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: #291e6a;
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 50px 0;
+      }
+
+      @media (min-width: 992px) {
+        .ezy__cta4 {
+          padding: 80px 0;
+        }
+      }
+
+      .ezy__cta4-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__cta4-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__cta4-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+        opacity: 0.7;
+      }
+
+      .ezy__cta4 .form-control {
+        min-height: 48px;
+        line-height: 26px;
+        border: none;
+        background: rgba(255, 255, 255, 1);
+        color: #000000;
+      }
+
+      .ezy__cta4 .form-control:focus {
+        box-shadow: none;
+      }
+
+      .ezy__cta4-btn {
+        padding: 12px 30px;
+        min-width: 110px;
+        height: 48px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__cta4-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+    </style>
+    <section class="ezy__cta4">
+      <div class="container">
+        <div class="row justify-content-center text-center text-white">
+          <div class="col-lg-7">
+            <h2 class="ezy__cta4-heading mb-4">Join with us for more information</h2>
+
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <p class="ezy__cta4-sub-heading mb-5">
+                  It’s easier to reach your savings goals when you have the right savings account.
+                </p>
+              </div>
+              <div class="col-sm-8">
+                <form>
+                  <div class="form-group mb-0">
+                    <div class="input-group p-1 bg-white rounded">
+                      <input type="email" class="form-control" placeholder="Enter Email" />
+                      <div class="input-group-append">
+                        <button class="btn btn-danger ezy__cta4-btn">Subscribe</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <!--
+   Name:  Call To Action 5
+-->
+    <style>
+      .ezy__cta5 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: rgb(255, 255, 255);
+
+        /* Easy Frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+
+        background-color: var(--bs-body-bg);
+        overflow: hidden;
+        padding: 50px 0;
+      }
+
+      /* Gray Block Style */
+      .gray .ezy__cta5,
+      .ezy__cta5.gray {
+        /* Bootstrap variables */
+        --bs-body-bg: rgb(246, 246, 246);
+      }
+
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__cta5,
+      .ezy__cta5.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(30, 39, 53);
+      }
+
+      /* Dark Block Style */
+      .dark .ezy__cta5,
+      .ezy__cta5.dark {
+        /* Bootstrap variables */
+        --bs-body-color: #ffffff;
+        --bs-body-bg: rgb(11, 23, 39);
+      }
+
+      @media (min-width: 992px) {
+        .ezy__cta5 {
+          padding: 80px 0;
+        }
+      }
+
+      .ezy__cta5-heading {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+      }
+
+      @media (min-width: 768px) {
+        .ezy__cta5-heading {
+          font-size: 45px;
+          line-height: 45px;
+        }
+      }
+
+      .ezy__cta5-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--bs-body-color);
+        opacity: 0.7;
+      }
+
+      .ezy__cta5 .form-control {
+        min-height: 48px;
+        line-height: 26px;
+        border: none;
+        background: rgba(255, 255, 255, 1);
+        color: #000000;
+      }
+
+      .ezy__cta5 .form-control:focus {
+        box-shadow: none;
+      }
+
+      .ezy__cta5-btn {
+        padding: 12px 30px;
+        min-width: 110px;
+        height: 48px;
+        background-color: var(--ezy-theme-color);
+        border-color: var(--ezy-theme-color);
+      }
+
+      .ezy__cta5-btn:hover {
+        background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+        border-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+      }
+    </style>
+    <section class="ezy__cta5">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-7">
+            <h2 class="ezy__cta5-heading mb-4">Join with us for more information</h2>
+
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <p class="ezy__cta5-sub-heading mb-5">
+                  It’s easier to reach your savings goals when you have the right savings account.
+                </p>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary ezy__cta5-btn">Quote Now</button>
+            <div>
+              <img src="https://cdn.easyfrontend.com/pictures/cta/cta_5.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+  </body>
+</html>
